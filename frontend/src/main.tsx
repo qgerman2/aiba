@@ -200,6 +200,38 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const visualViewport = window.visualViewport;
+
+    if (!visualViewport) {
+      return;
+    }
+
+    const viewport = visualViewport;
+
+    function updateKeyboardOffset() {
+      const keyboardOffset = Math.max(
+        0,
+        window.innerHeight - viewport.height - viewport.offsetTop
+      );
+
+      document.documentElement.style.setProperty(
+        "--keyboard-offset",
+        `${keyboardOffset}px`
+      );
+    }
+
+    updateKeyboardOffset();
+    viewport.addEventListener("resize", updateKeyboardOffset);
+    viewport.addEventListener("scroll", updateKeyboardOffset);
+
+    return () => {
+      viewport.removeEventListener("resize", updateKeyboardOffset);
+      viewport.removeEventListener("scroll", updateKeyboardOffset);
+      document.documentElement.style.removeProperty("--keyboard-offset");
+    };
+  }, []);
+
   const phrases = useMemo(
     () => phrasePrompts.map((prompt) => prompt.phrase),
     [phrasePrompts]
@@ -464,6 +496,7 @@ function App() {
         <div className="mobileActions" aria-label="Mobile syllable actions">
           <button
             type="button"
+            onPointerDown={(event) => event.preventDefault()}
             onClick={() => playUntilCharacter(selectedPhraseIndex, focusedCharIndex)}
             disabled={!selectedPhrase}
           >
@@ -471,6 +504,7 @@ function App() {
           </button>
           <button
             type="button"
+            onPointerDown={(event) => event.preventDefault()}
             onClick={() => revealHanziHint(selectedPhraseIndex, focusedCharIndex)}
             disabled={!selectedPhrase}
           >
@@ -478,6 +512,7 @@ function App() {
           </button>
           <button
             type="button"
+            onPointerDown={(event) => event.preventDefault()}
             onClick={() => revealPinyinHint(selectedPhraseIndex, focusedCharIndex)}
             disabled={!selectedPhrase}
           >
