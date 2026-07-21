@@ -1,6 +1,7 @@
 import asyncio
 import hashlib
 import os
+import sys
 import uuid
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -22,6 +23,7 @@ MEDIA_DIR = BACKEND_DIR / "media"
 UPLOAD_DIR = MEDIA_DIR / "uploads"
 YOUTUBE_DIR = MEDIA_DIR / "youtube"
 SCRIPT_PATH = BACKEND_DIR / "test4.py"
+PROCESSING_PYTHON = os.environ.get("PROCESSING_PYTHON", sys.executable)
 FRONTEND_FILE_KINDS = {"audio", "thumbnail", "phrase_timestamps", "char_pinyin_timestamps"}
 PROGRESS_TOTAL = 10
 STAGE_PROGRESS = {
@@ -375,7 +377,7 @@ async def run_processing_job(job_id: str):
                 )
 
             command = [
-                str(BACKEND_DIR / "venv" / "bin" / "python"),
+                PROCESSING_PYTHON,
                 "-u",
                 str(SCRIPT_PATH),
                 "--audio",
