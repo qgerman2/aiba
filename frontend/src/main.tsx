@@ -764,14 +764,14 @@ function App() {
   const entriesTags = useMemo(() => {
     const tags = new Map<string, string>();
 
-    for (const entry of entries.filter(isVisibleServerEntry)) {
+    for (const entry of filteredEntries) {
       for (const tag of uniqueEntryTags(entry)) {
         tags.set(tag.toLowerCase(), tag);
       }
     }
 
     return [...tags.values()].sort((left, right) => left.localeCompare(right));
-  }, [entries]);
+  }, [filteredEntries]);
 
   const phrases = useMemo(
     () => phrasePrompts.map((prompt) => prompt.phrase),
