@@ -121,6 +121,7 @@ function App() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const inputRefs = useRef<Record<string, HTMLInputElement | null>>({});
   const playUntilRef = useRef<number | null>(null);
+  const animationFrameRef = useRef<number | null>(null);
   const [phrasePrompts, setPhrasePrompts] = useState<PhrasePrompt[]>([]);
   const [selectedPhraseIndex, setSelectedPhraseIndex] = useState(0);
   const [focusedCharIndex, setFocusedCharIndex] = useState(0);
@@ -159,6 +160,14 @@ function App() {
             : "Could not load timestamp files"
         );
       });
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (animationFrameRef.current !== null) {
+        cancelAnimationFrame(animationFrameRef.current);
+      }
+    };
   }, []);
 
   const phrases = useMemo(
@@ -241,6 +250,30 @@ function App() {
     }
   }
 
+  function stopTrackingPlayback() {
+    if (animationFrameRef.current !== null) {
+      cancelAnimationFrame(animationFrameRef.current);
+      animationFrameRef.current = null;
+    }
+  }
+
+  function trackPlayback() {
+    const audio = audioRef.current;
+
+    if (!audio || audio.paused || audio.ended) {
+      stopTrackingPlayback();
+      return;
+    }
+
+    updateCurrentTime(audio.currentTime);
+    animationFrameRef.current = requestAnimationFrame(trackPlayback);
+  }
+
+  function startTrackingPlayback() {
+    stopTrackingPlayback();
+    animationFrameRef.current = requestAnimationFrame(trackPlayback);
+  }
+
   function focusInput(phraseIndex: number, charIndex: number) {
     inputRefs.current[answerKey(phraseIndex, charIndex)]?.focus();
   }
@@ -283,7 +316,10 @@ function App() {
           src={audioUrl}
           onEnded={() => {
             playUntilRef.current = null;
+            stopTrackingPlayback();
           }}
+          onPause={stopTrackingPlayback}
+          onPlay={startTrackingPlayback}
           onSeeked={(event) => updateCurrentTime(event.currentTarget.currentTime)}
           onTimeUpdate={(event) => updateCurrentTime(event.currentTarget.currentTime)}
         />
