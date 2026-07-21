@@ -38,6 +38,7 @@ const charTimestampUrl = "./your-file_char_timestamps.txt";
 const audioUrl = "./your-file.mp3";
 const syllablePlaybackTailSeconds = 1;
 const phraseStartLeadInSeconds = 1;
+const phraseStartLeadInSyllableCount = 3;
 
 function parseTimestampText(raw: string): TimestampSegment[] {
   return raw
@@ -251,7 +252,7 @@ function App() {
     }
 
     const startAt =
-      charIndex === 0
+      charIndex < phraseStartLeadInSyllableCount
         ? Math.max(0, prompt.phrase.start - phraseStartLeadInSeconds)
         : prompt.phrase.start;
 
@@ -272,7 +273,13 @@ function App() {
     );
 
     setFocusedCharIndex(0);
-    playPhrase(nextIndex);
+    setSelectedPhraseIndex(nextIndex);
+    playUntilRef.current = null;
+
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = phrasePrompts[nextIndex]?.phrase.start ?? 0;
+    }
   }
 
   function updateCurrentTime(time: number) {
