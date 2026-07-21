@@ -152,9 +152,7 @@ function App() {
   const [selectedPhraseIndex, setSelectedPhraseIndex] = useState(0);
   const [focusedCharIndex, setFocusedCharIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
-  const [revealedCharacters, setRevealedCharacters] = useState<
-    Record<string, boolean>
-  >({});
+  const [hanziHintKey, setHanziHintKey] = useState<string | null>(null);
   const [pinyinHintKey, setPinyinHintKey] = useState<string | null>(null);
   const [currentTime, setCurrentTime] = useState(0);
   const [error, setError] = useState<string | null>(null);
@@ -326,10 +324,7 @@ function App() {
 
     if (event.key === "ArrowUp") {
       event.preventDefault();
-      setRevealedCharacters((current) => ({
-        ...current,
-        [answerKey(phraseIndex, charIndex)]: true
-      }));
+      setHanziHintKey(answerKey(phraseIndex, charIndex));
     }
 
     if (event.key === "ArrowDown") {
@@ -463,7 +458,7 @@ function App() {
                 const isCorrect =
                   value.length > 0 &&
                   normalizePinyin(value) === normalizePinyin(char.expected);
-                const isRevealed = isCorrect || revealedCharacters[key];
+                const isRevealed = isCorrect || hanziHintKey === key;
                 const hasPinyinHint = pinyinHintKey === key;
 
                 return (
@@ -497,9 +492,13 @@ function App() {
                       onFocus={() => {
                         setSelectedPhraseIndex(selectedPhraseIndex);
                         setFocusedCharIndex(charIndex);
+                        setHanziHintKey(null);
                         setPinyinHintKey(null);
                       }}
                       onBlur={() => {
+                        setHanziHintKey((current) =>
+                          current === key ? null : current
+                        );
                         setPinyinHintKey((current) =>
                           current === key ? null : current
                         );
