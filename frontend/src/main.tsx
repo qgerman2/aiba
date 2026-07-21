@@ -37,8 +37,7 @@ const phraseTimestampUrl = "./your-file_phrase_timestamps.txt";
 const charTimestampUrl = "./your-file_char_timestamps.txt";
 const audioUrl = "./your-file.mp3";
 const syllablePlaybackTailSeconds = 1;
-const phraseStartLeadInSeconds = 1;
-const phraseStartLeadInSyllableCount = 3;
+const syllablePlaybackLeadInSeconds = 3;
 
 function parseTimestampText(raw: string): TimestampSegment[] {
   return raw
@@ -251,10 +250,9 @@ function App() {
       return;
     }
 
-    const startAt =
-      charIndex < phraseStartLeadInSyllableCount
-        ? Math.max(0, prompt.phrase.start - phraseStartLeadInSeconds)
-        : prompt.phrase.start;
+    const startAt = targetChar
+      ? Math.max(0, targetChar.start - syllablePlaybackLeadInSeconds)
+      : prompt.phrase.start;
 
     setSelectedPhraseIndex(index);
     playUntilRef.current = stopAt;
@@ -422,7 +420,7 @@ function App() {
 
         <section className="shortcuts" aria-label="Keyboard shortcuts">
           <span>
-            <kbd>Space</kbd> play to current syllable + 1s
+            <kbd>Space</kbd> play current syllable window
           </span>
           <span>
             <kbd>Left</kbd> previous input
