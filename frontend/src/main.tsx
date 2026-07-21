@@ -37,7 +37,7 @@ const phraseTimestampUrl = "./your-file_phrase_timestamps.txt";
 const charTimestampUrl = "./your-file_char_timestamps.txt";
 const audioUrl = "./your-file.mp3";
 const syllablePlaybackTailSeconds = 1;
-const syllablePlaybackLeadInSeconds = 3;
+const syllablePlaybackLeadInSeconds = 2;
 
 function parseTimestampText(raw: string): TimestampSegment[] {
   return raw
