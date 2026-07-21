@@ -318,6 +318,34 @@ function App() {
     inputRefs.current[answerKey(phraseIndex, charIndex)]?.focus();
   }
 
+  function revealHanziHint(phraseIndex: number, charIndex: number) {
+    const key = answerKey(phraseIndex, charIndex);
+
+    setHanziHintKey(key);
+    setHintedKeys((current) => ({
+      ...current,
+      [key]: true
+    }));
+    focusInput(phraseIndex, charIndex);
+  }
+
+  function revealPinyinHint(phraseIndex: number, charIndex: number) {
+    const expected = phrasePrompts[phraseIndex]?.chars[charIndex]?.expected;
+
+    if (!expected) {
+      return;
+    }
+
+    const key = answerKey(phraseIndex, charIndex);
+
+    setPinyinHintKey(key);
+    setHintedKeys((current) => ({
+      ...current,
+      [key]: true
+    }));
+    focusInput(phraseIndex, charIndex);
+  }
+
   function handleInputKeyDown(
     event: KeyboardEvent<HTMLInputElement>,
     phraseIndex: number,
@@ -335,29 +363,13 @@ function App() {
     }
 
     if (event.key === "ArrowUp") {
-      const key = answerKey(phraseIndex, charIndex);
-
       event.preventDefault();
-      setHanziHintKey(key);
-      setHintedKeys((current) => ({
-        ...current,
-        [key]: true
-      }));
+      revealHanziHint(phraseIndex, charIndex);
     }
 
     if (event.key === "ArrowDown") {
-      const expected = phrasePrompts[phraseIndex]?.chars[charIndex]?.expected;
-
-      if (expected) {
-        const key = answerKey(phraseIndex, charIndex);
-
-        event.preventDefault();
-        setPinyinHintKey(key);
-        setHintedKeys((current) => ({
-          ...current,
-          [key]: true
-        }));
-      }
+      event.preventDefault();
+      revealPinyinHint(phraseIndex, charIndex);
     }
 
     if (event.key === " ") {
@@ -448,6 +460,30 @@ function App() {
             <kbd>Down</kbd> reveal current pinyin
           </span>
         </section>
+
+        <div className="mobileActions" aria-label="Mobile syllable actions">
+          <button
+            type="button"
+            onClick={() => playUntilCharacter(selectedPhraseIndex, focusedCharIndex)}
+            disabled={!selectedPhrase}
+          >
+            Play syllable
+          </button>
+          <button
+            type="button"
+            onClick={() => revealHanziHint(selectedPhraseIndex, focusedCharIndex)}
+            disabled={!selectedPhrase}
+          >
+            Hanzi hint
+          </button>
+          <button
+            type="button"
+            onClick={() => revealPinyinHint(selectedPhraseIndex, focusedCharIndex)}
+            disabled={!selectedPhrase}
+          >
+            Pinyin hint
+          </button>
+        </div>
 
         {selectedPhrase && (
           <section

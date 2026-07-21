@@ -115,6 +115,10 @@ button:disabled {
   font-size: 0.92rem;
 }
 
+.mobileActions {
+  display: none;
+}
+
 .disclaimer {
   margin: 28px 0 0;
   color: #172026;
@@ -256,6 +260,18 @@ time {
 @media (max-width: 720px) {
   .shell {
     padding: 20px;
+  }
+
+  .mobileActions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .mobileActions button {
+    min-height: 58px;
+    font-size: 1rem;
   }
 
   .phraseRowHeader {
