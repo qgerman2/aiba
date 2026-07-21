@@ -230,6 +230,15 @@ time {
   font-weight: 800;
 }
 
+.punctuation {
+  align-self: center;
+  min-width: 12px;
+  padding: 0 2px 34px;
+  color: #52646f;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
 @media (max-width: 720px) {
   .shell {
     padding: 20px;

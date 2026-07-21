@@ -22,6 +22,17 @@ type PhrasePrompt = {
   chars: CharacterPrompt[];
 };
 
+type PhrasePanelItem =
+  | {
+      type: "char";
+      charIndex: number;
+      char: CharacterPrompt;
+    }
+  | {
+      type: "punctuation";
+      text: string;
+    };
+
 const phraseTimestampUrl = "./your-file_phrase_timestamps.txt";
 const charTimestampUrl = "./your-file_char_timestamps.txt";
 const audioUrl = "./your-file.mp3";
@@ -115,6 +126,21 @@ function findActiveCharacterIndex(chars: CharacterPrompt[], currentTime: number)
   );
 
   return index >= 0 ? index : null;
+}
+
+function buildPhrasePanelItems(prompt: PhrasePrompt): PhrasePanelItem[] {
+  let charIndex = 0;
+
+  return Array.from(prompt.phrase.text).flatMap((text) => {
+    if (!isChineseCharacter(text)) {
+      return { type: "punctuation", text };
+    }
+
+    const char = prompt.chars[charIndex];
+    charIndex += 1;
+
+    return char ? { type: "char", charIndex: charIndex - 1, char } : [];
+  });
 }
 
 function App() {
@@ -305,6 +331,18 @@ function App() {
       }));
     }
 
+    if (event.key === "ArrowDown") {
+      const expected = phrasePrompts[phraseIndex]?.chars[charIndex]?.expected;
+
+      if (expected) {
+        event.preventDefault();
+        setAnswers((current) => ({
+          ...current,
+          [answerKey(phraseIndex, charIndex)]: expected
+        }));
+      }
+    }
+
     if (event.key === " ") {
       event.preventDefault();
       playUntilCharacter(phraseIndex, charIndex);
@@ -389,6 +427,9 @@ function App() {
           <span>
             <kbd>Up</kbd> reveal current character
           </span>
+          <span>
+            <kbd>Down</kbd> reveal current pinyin
+          </span>
         </section>
 
         {selectedPhrase && (
@@ -409,7 +450,16 @@ function App() {
             </div>
 
             <div className="syllables">
-              {selectedPhrase.chars.map((char, charIndex) => {
+              {buildPhrasePanelItems(selectedPhrase).map((item, itemIndex) => {
+                if (item.type === "punctuation") {
+                  return (
+                    <span className="punctuation" key={`punctuation-${itemIndex}`}>
+                      {item.text}
+                    </span>
+                  );
+                }
+
+                const { char, charIndex } = item;
                 const key = answerKey(selectedPhraseIndex, charIndex);
                 const value = answers[key] ?? "";
                 const isCorrect =
