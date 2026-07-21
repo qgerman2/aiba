@@ -155,6 +155,7 @@ function App() {
   const [revealedCharacters, setRevealedCharacters] = useState<
     Record<string, boolean>
   >({});
+  const [pinyinHintKey, setPinyinHintKey] = useState<string | null>(null);
   const [currentTime, setCurrentTime] = useState(0);
   const [error, setError] = useState<string | null>(null);
 
@@ -336,10 +337,7 @@ function App() {
 
       if (expected) {
         event.preventDefault();
-        setAnswers((current) => ({
-          ...current,
-          [answerKey(phraseIndex, charIndex)]: expected
-        }));
+        setPinyinHintKey(answerKey(phraseIndex, charIndex));
       }
     }
 
@@ -466,6 +464,7 @@ function App() {
                   value.length > 0 &&
                   normalizePinyin(value) === normalizePinyin(char.expected);
                 const isRevealed = isCorrect || revealedCharacters[key];
+                const hasPinyinHint = pinyinHintKey === key;
 
                 return (
                   <label
@@ -498,6 +497,12 @@ function App() {
                       onFocus={() => {
                         setSelectedPhraseIndex(selectedPhraseIndex);
                         setFocusedCharIndex(charIndex);
+                        setPinyinHintKey(null);
+                      }}
+                      onBlur={() => {
+                        setPinyinHintKey((current) =>
+                          current === key ? null : current
+                        );
                       }}
                       onKeyDown={(event) =>
                         handleInputKeyDown(
@@ -508,6 +513,9 @@ function App() {
                         )
                       }
                     />
+                    <span className="pinyinHint">
+                      {hasPinyinHint ? char.expected : ""}
+                    </span>
                   </label>
                 );
               })}

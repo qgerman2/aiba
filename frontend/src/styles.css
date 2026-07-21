@@ -230,10 +230,19 @@ time {
   font-weight: 800;
 }
 
+.pinyinHint {
+  min-height: 18px;
+  color: #7a4d16;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
 .punctuation {
   align-self: center;
   min-width: 12px;
-  padding: 0 2px 34px;
+  padding: 0 2px 52px;
   color: #52646f;
   font-size: 1.5rem;
   line-height: 1;
