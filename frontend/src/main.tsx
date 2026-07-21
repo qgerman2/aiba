@@ -126,6 +126,9 @@ function App() {
   const [selectedPhraseIndex, setSelectedPhraseIndex] = useState(0);
   const [focusedCharIndex, setFocusedCharIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [revealedCharacters, setRevealedCharacters] = useState<
+    Record<string, boolean>
+  >({});
   const [currentTime, setCurrentTime] = useState(0);
   const [error, setError] = useState<string | null>(null);
 
@@ -294,6 +297,14 @@ function App() {
       focusInput(phraseIndex, Math.min(charIndex + 1, charCount - 1));
     }
 
+    if (event.key === "ArrowUp") {
+      event.preventDefault();
+      setRevealedCharacters((current) => ({
+        ...current,
+        [answerKey(phraseIndex, charIndex)]: true
+      }));
+    }
+
     if (event.key === " ") {
       event.preventDefault();
       playUntilCharacter(phraseIndex, charIndex);
@@ -304,7 +315,6 @@ function App() {
     <main className="shell">
       <section className="player">
         <header className="header">
-          <p className="eyebrow">your-file.mp3</p>
           <h1>aiba</h1>
         </header>
 
@@ -376,12 +386,10 @@ function App() {
           <span>
             <kbd>Right</kbd> next input
           </span>
+          <span>
+            <kbd>Up</kbd> reveal current character
+          </span>
         </section>
-
-        <p className="disclaimer">
-          Tone checks currently come from a pinyin library and do not apply tone
-          sandhi rules.
-        </p>
 
         {selectedPhrase && (
           <section
@@ -407,6 +415,7 @@ function App() {
                 const isCorrect =
                   value.length > 0 &&
                   normalizePinyin(value) === normalizePinyin(char.expected);
+                const isRevealed = isCorrect || revealedCharacters[key];
 
                 return (
                   <label
@@ -418,8 +427,8 @@ function App() {
                       .join(" ")}
                     key={`${key}-${char.start}`}
                   >
-                    <span className={isCorrect ? "hanzi revealed" : "hanzi"}>
-                      {isCorrect ? char.char : ""}
+                    <span className={isRevealed ? "hanzi revealed" : "hanzi"}>
+                      {isRevealed ? char.char : ""}
                     </span>
                     <input
                       ref={(element) => {
@@ -455,6 +464,13 @@ function App() {
             </div>
           </section>
         )}
+
+        <p className="disclaimer">
+          <strong>
+            Tone checks currently come from a pinyin library and do not apply
+            tone sandhi rules.
+          </strong>
+        </p>
       </section>
     </main>
   );
