@@ -579,6 +579,11 @@ function App() {
                       }}
                       className={isCorrect ? "correct" : ""}
                       inputMode="text"
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      spellCheck={false}
+                      name={`pinyin-${selectedPhraseIndex}-${charIndex}`}
                       value={value}
                       placeholder="pinyin"
                       aria-label={`Pinyin for character ${charIndex + 1}`}
