@@ -187,6 +187,11 @@ time {
   border-radius: 8px;
 }
 
+.syllable.hinted {
+  border-color: #a8b1ad;
+  background: #e8e8e8;
+}
+
 .syllable.playing {
   border-color: #2f65d8;
   background: #eaf0ff;

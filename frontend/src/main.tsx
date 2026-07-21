@@ -155,6 +155,7 @@ function App() {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [hanziHintKey, setHanziHintKey] = useState<string | null>(null);
   const [pinyinHintKey, setPinyinHintKey] = useState<string | null>(null);
+  const [hintedKeys, setHintedKeys] = useState<Record<string, boolean>>({});
   const [currentTime, setCurrentTime] = useState(0);
   const [error, setError] = useState<string | null>(null);
 
@@ -334,16 +335,28 @@ function App() {
     }
 
     if (event.key === "ArrowUp") {
+      const key = answerKey(phraseIndex, charIndex);
+
       event.preventDefault();
-      setHanziHintKey(answerKey(phraseIndex, charIndex));
+      setHanziHintKey(key);
+      setHintedKeys((current) => ({
+        ...current,
+        [key]: true
+      }));
     }
 
     if (event.key === "ArrowDown") {
       const expected = phrasePrompts[phraseIndex]?.chars[charIndex]?.expected;
 
       if (expected) {
+        const key = answerKey(phraseIndex, charIndex);
+
         event.preventDefault();
-        setPinyinHintKey(answerKey(phraseIndex, charIndex));
+        setPinyinHintKey(key);
+        setHintedKeys((current) => ({
+          ...current,
+          [key]: true
+        }));
       }
     }
 
@@ -471,11 +484,13 @@ function App() {
                   normalizePinyin(value) === normalizePinyin(char.expected);
                 const isRevealed = isCorrect || hanziHintKey === key;
                 const hasPinyinHint = pinyinHintKey === key;
+                const hasUsedHint = hintedKeys[key];
 
                 return (
                   <label
                     className={[
                       "syllable",
+                      hasUsedHint ? "hinted" : "",
                       activeCharacterIndex === charIndex ? "playing" : ""
                     ]
                       .filter(Boolean)
