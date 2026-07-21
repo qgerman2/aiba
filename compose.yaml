@@ -24,6 +24,8 @@ services:
       OLLAMA_HOST: ${OLLAMA_HOST:-http://host.docker.internal:11434}
       HF_HOME: /models/huggingface
       TORCH_HOME: /models/torch
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility
     ports:
       - "8000:8000"
     volumes:
@@ -34,6 +36,13 @@ services:
         condition: service_healthy
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
 
   frontend:
     build:
