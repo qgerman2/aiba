@@ -37,6 +37,7 @@ const phraseTimestampUrl = "./your-file_phrase_timestamps.txt";
 const charTimestampUrl = "./your-file_char_timestamps.txt";
 const audioUrl = "./your-file.mp3";
 const syllablePlaybackTailSeconds = 1;
+const phraseStartLeadInSeconds = 1;
 
 function parseTimestampText(raw: string): TimestampSegment[] {
   return raw
@@ -249,9 +250,14 @@ function App() {
       return;
     }
 
+    const startAt =
+      charIndex === 0
+        ? Math.max(0, prompt.phrase.start - phraseStartLeadInSeconds)
+        : prompt.phrase.start;
+
     setSelectedPhraseIndex(index);
     playUntilRef.current = stopAt;
-    audioRef.current.currentTime = prompt.phrase.start;
+    audioRef.current.currentTime = startAt;
     audioRef.current.play();
   }
 
