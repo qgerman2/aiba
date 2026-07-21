@@ -457,6 +457,39 @@ function writeCachedEntries(entries: CachedPlayerEntry[]) {
   );
 }
 
+function cachedProgressFor(jobId: string | null | undefined) {
+  if (!jobId) {
+    return null;
+  }
+
+  return readCachedEntries().find((entry) => entry.jobId === jobId) ?? null;
+}
+
+function answersWithFirstPinyin(
+  prompts: PhrasePrompt[],
+  savedAnswers: Record<string, string> | undefined
+) {
+  const nextAnswers = { ...(savedAnswers ?? {}) };
+
+  for (let phraseIndex = 0; phraseIndex < prompts.length; phraseIndex += 1) {
+    const firstChar = prompts[phraseIndex].chars[0];
+
+    if (!firstChar) {
+      continue;
+    }
+
+    const key = `${phraseIndex}:0`;
+
+    if (!nextAnswers[key]) {
+      nextAnswers[key] = firstChar.expected;
+    }
+
+    break;
+  }
+
+  return nextAnswers;
+}
+
 function playerHref(jobId: string) {
   return `${window.location.pathname}?entry=${encodeURIComponent(jobId)}`;
 }
@@ -957,6 +990,11 @@ function App() {
     const entrySourceUrl = entry.job.source_url ?? null;
     const nextYoutubeVideoId =
       entrySourceType === "youtube" ? extractYouTubeVideoId(entrySourceUrl) : null;
+    const cachedProgress = cachedProgressFor(entry.job.id);
+    const nextAnswers = answersWithFirstPinyin(
+      prompts,
+      cachedProgress?.answers
+    );
 
     setSelectedEntryId(entry.job.id);
     setSelectedRunName(entryName(entry.job));
@@ -969,10 +1007,10 @@ function App() {
     setPhrasePrompts(prompts);
     setSelectedPhraseIndex(0);
     setFocusedCharIndex(0);
-    setAnswers({});
+    setAnswers(nextAnswers);
     setHanziHintKey(null);
     setPinyinHintKey(null);
-    setHintedKeys({});
+    setHintedKeys(cachedProgress?.hintedKeys ?? {});
     setCurrentTime(0);
     setPlayerError(null);
     playUntilRef.current = null;
@@ -992,8 +1030,8 @@ function App() {
       thumbnailFileId: thumbnailFile?.id ?? null,
       thumbnailStaticUrl: thumbnailFile?.static_url ?? null,
       phrasePrompts: prompts,
-      answers: {},
-      hintedKeys: {},
+      answers: nextAnswers,
+      hintedKeys: cachedProgress?.hintedKeys ?? {},
       cachedAt: new Date().toISOString()
     });
   }
@@ -1027,6 +1065,11 @@ function App() {
       const entrySourceUrl = entry?.source_url ?? null;
       const nextYoutubeVideoId =
         entrySourceType === "youtube" ? extractYouTubeVideoId(entrySourceUrl) : null;
+      const cachedProgress = cachedProgressFor(entry?.id);
+      const nextAnswers = answersWithFirstPinyin(
+        prompts,
+        cachedProgress?.answers
+      );
 
       setSelectedRunName(name);
       setSelectedRunTags(entry ? uniqueEntryTags(entry) : []);
@@ -1042,10 +1085,10 @@ function App() {
       setPhrasePrompts(prompts);
       setSelectedPhraseIndex(0);
       setFocusedCharIndex(0);
-      setAnswers({});
+      setAnswers(nextAnswers);
       setHanziHintKey(null);
       setPinyinHintKey(null);
-      setHintedKeys({});
+      setHintedKeys(cachedProgress?.hintedKeys ?? {});
       setCurrentTime(0);
       playUntilRef.current = null;
 
@@ -1073,8 +1116,8 @@ function App() {
             (file) => file.file_kind === "thumbnail"
           )?.static_url,
           phrasePrompts: prompts,
-          answers: {},
-          hintedKeys: {},
+          answers: nextAnswers,
+          hintedKeys: cachedProgress?.hintedKeys ?? {},
           cachedAt: new Date().toISOString()
         });
       }
@@ -1096,9 +1139,31 @@ function App() {
 
   function cachePlayerEntry(entry: CachedPlayerEntry) {
     setCachedEntries((current) => {
+      const stored = readCachedEntries();
+      const mergedCurrent = [
+        ...current,
+        ...stored.filter(
+          (storedEntry) =>
+            !current.some((entry) => entry.jobId === storedEntry.jobId)
+        )
+      ];
+      const existing = mergedCurrent.find(
+        (cached) => cached.jobId === entry.jobId
+      );
+      const nextEntry = {
+        ...entry,
+        answers:
+          Object.keys(entry.answers).length > 0
+            ? entry.answers
+            : existing?.answers ?? {},
+        hintedKeys:
+          Object.keys(entry.hintedKeys).length > 0
+            ? entry.hintedKeys
+            : existing?.hintedKeys ?? {}
+      };
       const next = [
-        entry,
-        ...current.filter((cached) => cached.jobId !== entry.jobId)
+        nextEntry,
+        ...mergedCurrent.filter((cached) => cached.jobId !== entry.jobId)
       ].slice(0, maxCachedEntries);
 
       writeCachedEntries(next);
@@ -1115,7 +1180,17 @@ function App() {
     }
 
     setCachedEntries((current) => {
-      const existing = current.find((entry) => entry.jobId === selectedEntryId);
+      const stored = readCachedEntries();
+      const mergedCurrent = [
+        ...current,
+        ...stored.filter(
+          (storedEntry) =>
+            !current.some((entry) => entry.jobId === storedEntry.jobId)
+        )
+      ];
+      const existing = mergedCurrent.find(
+        (entry) => entry.jobId === selectedEntryId
+      );
 
       if (!existing) {
         return current;
@@ -1128,7 +1203,7 @@ function App() {
           hintedKeys: nextHintedKeys,
           cachedAt: new Date().toISOString()
         },
-        ...current.filter((entry) => entry.jobId !== selectedEntryId)
+        ...mergedCurrent.filter((entry) => entry.jobId !== selectedEntryId)
       ].slice(0, maxCachedEntries);
 
       writeCachedEntries(next);

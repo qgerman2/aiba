@@ -9,6 +9,7 @@ from urllib.request import Request, urlopen
 
 import psycopg
 from fastapi import FastAPI, File, Form, HTTPException, Query, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from psycopg.rows import dict_row
 from yt_dlp import YoutubeDL
@@ -579,6 +580,16 @@ async def lifespan(_app: FastAPI):
 
 
 app = FastAPI(title="AIBA Backend API", lifespan=lifespan)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://qgerman2.github.io",
+        "http://localhost:8080",
+        "http://127.0.0.1:8080",
+    ],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/health")
