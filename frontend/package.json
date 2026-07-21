@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -p tsconfig.json --noEmit && vite build",
+    "deploy:docs": "npm run build && rm -rf ../docs && cp -R dist ../docs",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
