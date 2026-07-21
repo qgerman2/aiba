@@ -347,7 +347,9 @@ function App() {
   }
 
   function focusInput(phraseIndex: number, charIndex: number) {
-    inputRefs.current[answerKey(phraseIndex, charIndex)]?.focus();
+    inputRefs.current[answerKey(phraseIndex, charIndex)]?.focus({
+      preventScroll: true
+    });
   }
 
   function revealHanziHint(phraseIndex: number, charIndex: number) {
