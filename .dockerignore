@@ -1,0 +1,10 @@
+.git
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/venv
+**/node_modules
+frontend/dist
+docs
+backend/media
+audio-files

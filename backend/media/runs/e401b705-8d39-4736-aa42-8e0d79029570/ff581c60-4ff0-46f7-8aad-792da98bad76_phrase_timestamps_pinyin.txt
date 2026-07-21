@@ -1,0 +1,72 @@
+[0.240 -> 2.080] 今天天气真好啊！
+jin1 tian1 tian1 qi4 zhen1 hao3 a5
+
+[2.480 -> 5.360] 是啊，现在是秋天了，
+shi4 a5 xian4 zai4 shi4 qiu1 tian1 le5
+
+[5.680 -> 8.880] 天气凉快了。今天空气也
+tian1 qi4 liang2 kuai4 le5 jin1 tian1 kong1 qi4 ye3
+
+[8.880 -> 12.720] 特别好。秋天是北京最好的
+te4 bie2 hao3 qiu1 tian1 shi4 bei3 jing1 zui4 hao3 de5
+
+[12.720 -> 16.000] 季节，天气不冷也不热，
+ji4 jie2 tian1 qi4 bu4 leng2 ye3 bu2 re4
+
+[16.400 -> 19.760] 很舒服。北京的春天怎么样？
+hen3 shu1 fu2 bei3 jing1 de5 chun1 tian1 zen3 me5 yang4
+
+[20.240 -> 23.760] 春天很暖和，可是常常刮风。
+chun1 tian1 hen2 nuan3 he2 ke3 shi4 chang2 chang2 gua1 feng1
+
+[24.720 -> 27.360] 在你们家乡，你最喜欢什么
+zai4 ni3 men5 jia1 xiang1 ni3 zui4 xi3 huan1 shen2 me5
+
+[27.360 -> 31.360] 季节？我最喜欢春天，春天
+ji4 jie2 wo3 zui4 xi3 huan1 chun1 tian1 chun1 tian1
+
+[31.360 -> 35.040] 树都绿了，很漂亮。夏天和
+shu4 dou1 lv4 le5 hen3 piao1 liang4 xia4 tian1 he2
+
+[35.120 -> 38.720] 冬天怎么样？夏天天气很热，
+dong1 tian1 zen3 me5 yang4 xia4 tian1 tian1 qi4 hen3 re4
+
+[39.040 -> 42.640] 常常下雨。冬天很冷，常常
+chang2 chang2 xia4 yu3 dong1 tian1 hen2 leng3 chang2 chang2
+
+[42.640 -> 46.320] 下雪。夏天你可以游泳，冬
+xia4 xue3 xia4 tian1 ni2 ke2 yi3 you2 yong3 dong1
+
+[46.320 -> 50.480] 天你可以滑雪，多好啊！对，
+tian1 ni2 ke2 yi3 hua2 xue3 duo1 hao3 a5 dui4
+
+[51.280 -> 54.880] 我特别喜欢游泳和滑雪。小
+wo3 te4 bie2 xi3 huan1 you2 yong3 he2 hua2 xue3 xiao3
+
+[54.880 -> 58.400] 云，你会滑雪吗？以前我不会，
+yun2 ni3 hui4 hua2 xue3 ma5 yi3 qian2 wo3 bu2 hui4
+
+[58.720 -> 62.080] 现在刚学。我只会一点啊。
+xian4 zai4 gang1 xue2 wo2 zhi3 hui4 yi4 dian3 a5
+
+[62.720 -> 65.360] 欢迎你来我的家乡，我可以
+huan1 ying2 ni3 lai2 wo3 de5 jia1 xiang1 wo2 ke2 yi3
+
+[65.360 -> 69.920] 教你游泳和滑雪。谢谢。今年
+jiao4 ni3 you2 yong3 he2 hua2 xue3 xie4 xie4 jin1 nian2
+
+[69.920 -> 73.360] 冬天你回国吗？我想回国，
+dong1 tian1 ni3 hui2 guo2 ma5 wo2 xiang3 hui2 guo2
+
+[73.680 -> 77.200] 可是飞机票太贵了。没关系，
+ke3 shi4 fei1 ji1 piao4 tai4 gui4 le5 mei2 guan1 xi4
+
+[77.920 -> 81.200] 你可以不坐飞机。不坐飞机，
+ni2 ke2 yi3 bu2 zuo4 fei1 ji1 bu2 zuo4 fei1 ji1
+
+[81.920 -> 84.720] 我怎么回国？你会游泳，
+wo2 zen3 me5 hui2 guo2 ni3 hui4 you2 yong3
+
+[84.960 -> 86.160] 可以游泳啊。
+ke2 yi3 you2 yong3 a5
+

@@ -1,0 +1,27 @@
+[0.160 -> 3.360] 马大伟每天都六点起床去运动。
+ma3 da4 wei2 mei3 tian1 dou1 liu4 dian2 qi3 chuang2 qu4 yun4 dong4
+
+[3.920 -> 7.840] 今天九点还没起床，他想起床，
+jin1 tian1 jiu2 dian3 hai2 mei2 qi3 chuang2 ta1 xiang2 qi3 chuang2
+
+[8.400 -> 11.440] 可是头很疼，嗓子也有点疼。
+ke3 shi4 tou2 hen3 teng2 sang3 zi5 ye2 you2 dian3 teng2
+
+[12.160 -> 15.040] 丁立波跟他一起去医院看病。
+ding1 li4 bo1 gen1 ta1 yi4 qi3 qu4 yi1 yuan4 kan4 bing4
+
+[15.840 -> 19.520] 头疼应该挂内科，内科在二层。
+tou2 teng2 ying1 gai1 gua4 nei4 ke1 nei4 ke1 zai4 er4 ceng2
+
+[20.320 -> 24.960] 医生给他量体温，他的体温是三十八度四，
+yi1 sheng1 gei3 ta1 liang4 ti3 wen1 ta1 de5 ti3 wen1 shi4 san1 shi2 ba1 du4 si4
+
+[25.440 -> 29.760] 嗓子也有点发炎。医生说不用打针，
+sang3 zi5 ye2 you2 dian3 fa1 yan2 yi1 sheng1 shuo1 bu2 yong4 da3 zhen1
+
+[30.080 -> 33.040] 要多喝水，还要吃点中药。
+yao4 duo1 he1 shui3 hai2 yao4 chi1 dian3 zhong1 yao4
+
+[33.280 -> 36.000] 下星期一大伟再去医院。
+xia4 xing1 qi1 yi2 da4 wei3 zai4 qu4 yi1 yuan4
+

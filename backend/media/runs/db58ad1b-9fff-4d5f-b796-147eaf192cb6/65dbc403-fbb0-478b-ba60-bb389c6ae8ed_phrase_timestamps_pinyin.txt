@@ -1,0 +1,60 @@
+[0.240 -> 4.880] 陆雨萍，你好，好久不见啦，你去哪？
+lu4 yu3 ping2 ni2 hao3 hao2 jiu3 bu2 jian4 la5 ni3 qu4 na3
+
+[5.120 -> 10.480] 是你啊，李博，我去电影学院，他们请我做报告。
+shi4 ni3 a5 li3 bo2 wo3 qu4 dian4 ying3 xue2 yuan4 ta1 men5 qing2 wo3 zuo4 bao4 gao4
+
+[11.360 -> 18.240] 你去哪了？我去王府井了，我去给爸爸妈妈买圣诞节礼物了。
+ni3 qu4 na3 le5 wo3 qu4 wang2 fu2 jing3 le5 wo3 qu4 gei3 ba4 ba4 ma1 ma1 mai3 sheng4 dan4 jie2 li3 wu4 le5
+
+[18.960 -> 23.920] 你爸爸妈妈都好吗？他们都很好，谢谢。
+ni3 ba4 ba4 ma1 ma1 dou1 hao3 ma5 ta1 men5 dou1 hen2 hao3 xie4 xie4
+
+[24.640 -> 27.840] 听说你爸爸妈妈的专业也是中文。
+ting1 shuo1 ni3 ba4 ba4 ma1 ma1 de5 zhuan1 ye4 ye3 shi4 zhong1 wen2
+
+[28.880 -> 32.800] 我爸爸是加拿大人，中文名字叫古波，
+wo3 ba4 ba4 shi4 jia1 na2 da4 ren2 zhong1 wen2 ming2 zi4 jiao4 gu3 bo1
+
+[33.600 -> 39.600] 他以前也在语言学院学汉语，现在是中国文学教授了。
+ta1 yi3 qian2 ye3 zai4 yu3 yan2 xue2 yuan4 xue2 han4 yu3 xian4 zai4 shi4 zhong1 guo2 wen2 xue2 jiao4 shou4 le5
+
+[40.400 -> 46.080] 我妈妈叫丁云，是中国人，他的专业是美国文学，
+wo3 ma1 ma1 jiao4 ding1 yun2 shi4 zhong1 guo2 ren2 ta1 de5 zhuan1 ye4 shi4 mei3 guo2 wen2 xue2
+
+[46.560 -> 52.000] 现在在加拿大教汉语。我们一家人都喜欢中文，
+xian4 zai4 zai4 jia1 na2 da4 jiao4 han4 yu3 wo3 men5 yi4 jia1 ren2 dou1 xi3 huan1 zhong1 wen2
+
+[52.400 -> 57.200] 都说中文。今年你在北京过圣诞节，是不是？
+dou1 shuo1 zhong1 wen2 jin1 nian2 ni3 zai4 bei3 jing1 guo4 sheng4 dan4 jie2 shi4 bu2 shi4
+
+[58.000 -> 64.080] 是啊，北京也是我的家，我哥哥和弟弟都在北京，
+shi4 a5 bei3 jing1 ye3 shi4 wo3 de5 jia1 wo3 ge1 ge1 he2 di4 di4 dou1 zai4 bei3 jing1
+
+[64.880 -> 70.160] 弟弟跟我外婆一起住。现在他们回家拿大过节了吗？
+di4 di4 gen1 wo3 wai4 po2 yi4 qi3 zhu4 xian4 zai4 ta1 men5 hui2 jia1 na2 da4 guo4 jie2 le5 ma5
+
+[70.960 -> 75.120] 没有，弟弟没有回家拿大，他去旅行了。
+mei2 you3 di4 di4 mei2 you3 hui2 jia1 na2 da4 ta1 qu4 lv3 xing2 le5
+
+[75.920 -> 80.320] 哥哥可能回国看爸爸妈妈，他还没有决定。
+ge1 ge1 ke3 neng2 hui2 guo2 kan4 ba4 ba4 ma1 ma1 ta1 hai2 mei2 you3 jue2 ding4
+
+[81.120 -> 84.480] 雨萍，中国人是不是也过圣诞节？
+yu3 ping2 zhong1 guo2 ren2 shi4 bu2 shi4 ye3 guo4 sheng4 dan4 jie2
+
+[84.960 -> 92.480] 中国最重要的节日是春节，现在很多年轻人也喜欢过西方的节日。
+zhong1 guo2 zui4 zhong4 yao4 de5 jie2 ri4 shi4 chun1 jie2 xian4 zai4 hen3 duo1 nian2 qing1 ren2 ye2 xi3 huan1 guo4 xi1 fang1 de5 jie2 ri4
+
+[93.360 -> 100.080] 对了，我们有个美国朋友，我爱人让我给他儿子买一件圣诞礼物。
+dui4 le5 wo3 men5 you3 ge4 mei3 guo2 peng2 you3 wo3 ai4 ren2 rang4 wo2 gei3 ta1 er2 zi5 mai3 yi2 jian4 sheng4 dan4 li3 wu4
+
+[101.040 -> 105.120] 你说，该买什么？他儿子几岁了？
+ni3 shuo1 gai1 mai3 shen2 me5 ta1 er2 zi5 ji3 sui4 le5
+
+[105.680 -> 111.360] 六岁了。你给他买一个小汽车吧，男孩子都喜欢汽车。
+liu4 sui4 le5 ni2 gei3 ta1 mai3 yi2 ge4 xiao3 qi4 che1 ba5 nan2 hai2 zi5 dou1 xi3 huan1 qi4 che1
+
+[112.320 -> 114.160] 好，谢谢你
+hao3 xie4 xie4 ni3
+
