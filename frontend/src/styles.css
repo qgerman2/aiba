@@ -259,19 +259,30 @@ time {
 
 @media (max-width: 720px) {
   .shell {
-    padding: 20px;
+    padding: 20px 20px calc(108px + env(safe-area-inset-bottom));
   }
 
   .mobileActions {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-top: 16px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    position: fixed;
+    right: 12px;
+    bottom: max(12px, env(safe-area-inset-bottom));
+    left: 12px;
+    z-index: 20;
+    padding: 10px;
+    border: 1px solid #d7d0c2;
+    border-radius: 8px;
+    background: rgba(255, 250, 240, 0.96);
+    box-shadow: 0 12px 28px rgba(23, 32, 38, 0.18);
+    backdrop-filter: blur(8px);
   }
 
   .mobileActions button {
-    min-height: 58px;
-    font-size: 1rem;
+    min-height: 52px;
+    padding: 0 8px;
+    font-size: 0.9rem;
   }
 
   .phraseRowHeader {
