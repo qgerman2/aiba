@@ -510,10 +510,27 @@ function App() {
                       placeholder="pinyin"
                       aria-label={`Pinyin for character ${charIndex + 1}`}
                       onChange={(event) => {
+                        const nextValue = event.target.value;
+
                         setAnswers((current) => ({
                           ...current,
-                          [key]: event.target.value
+                          [key]: nextValue
                         }));
+
+                        if (
+                          normalizePinyin(nextValue) ===
+                          normalizePinyin(char.expected)
+                        ) {
+                          window.setTimeout(() => {
+                            focusInput(
+                              selectedPhraseIndex,
+                              Math.min(
+                                charIndex + 1,
+                                selectedPhrase.chars.length - 1
+                              )
+                            );
+                          }, 0);
+                        }
                       }}
                       onFocus={() => {
                         setSelectedPhraseIndex(selectedPhraseIndex);
