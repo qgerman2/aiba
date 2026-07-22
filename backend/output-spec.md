@@ -152,9 +152,9 @@ tags
 is_curated
 ```
 
-`audio_assets.is_curated` is admin/manual metadata. The upload API and `test4.py` do not set it. Use this field for curated/non-curated filtering after an admin has marked the entry; do not rely on a free-form tag named `curated` for this distinction.
+`audio_assets.is_curated` is admin/manual metadata. The upload API and `test4.py` do not set it. Use this field for curated/non-curated filtering after an admin has explicitly reviewed, approved, or chosen to feature the entry; do not rely on a free-form tag named `curated` for this distinction.
 
-Static tags are also admin/manual metadata. They are intended for stable classification or collection membership and should not be accepted through `POST /audio/process`.
+The `static` tag is not a curation signal. It means the entry is available from the frontend static bundle when the backend server is offline or unreachable.
 
 The upload API accepts ordinary user/upload tags:
 
@@ -163,9 +163,9 @@ tags
 tags_csv
 ```
 
-Those are not the same as static tags. Static tags should be set manually by an admin or through a future admin-only endpoint.
+Those are not the same as static tags. Static tags should be assigned only by the static export/deployment workflow or a future admin-only static publishing workflow.
 
-For GitHub Pages/offline deployment, exported successful entries are tagged `static` and written into `frontend/public/static/` with JSON transcript data plus copied audio/thumbnail files.
+For GitHub Pages/offline deployment, selected successful entries are written into `frontend/public/static/` with JSON transcript data plus copied audio/thumbnail files. Exported non-YouTube entries may be tagged `static` to mark offline/static-bundle availability. YouTube entries may be included in the static bundle without being tagged `static` if they should not be shown as static homepage content.
 
 ### `processing_runs`
 

@@ -93,3 +93,5 @@ frontend/public/static/assets/{processing_run_id}/thumbnail.{jpg|png|webp}
 ```
 
 The frontend build copies those files into `docs/static/` through `npm run deploy:docs`.
+
+The `static` tag is an offline availability marker for entries that should be discoverable from the static frontend bundle when the backend is unavailable. It is separate from curation. Admin-curated content is represented by `audio_assets.is_curated`, not by a `static` tag.

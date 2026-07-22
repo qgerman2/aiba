@@ -154,3 +154,5 @@ The static content bundle lives at:
 frontend/public/static/aiba-static.json
 frontend/public/static/assets/
 ```
+
+In metadata, `static` means the entry is bundled for use when the backend is unavailable. `curated` means admin-curated content and is represented by `is_curated`; do not treat `static` as a curated signal.

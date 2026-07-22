@@ -563,7 +563,8 @@ The backend writes generated file rows and parsed transcript rows near the end o
 
 ## Curated Entries
 
-`audio_assets.is_curated` is a boolean metadata field for entries that have been reviewed or overseen by an admin.
+`audio_assets.is_curated` is the boolean metadata field for admin-curated entries.
+Use it only for content the admin has explicitly reviewed, approved, or chosen to feature.
 
 The public upload API does not set this field. It must be changed manually by an admin or a future admin-only endpoint.
 
@@ -571,11 +572,12 @@ The public upload API does not set this field. It must be changed manually by an
 audio_assets.is_curated
 ```
 
-The frontend should use `is_curated` for filtering or badges instead of relying on a free-form tag like `"curated"`.
+The frontend should use `is_curated` for curated filtering or badges instead of relying on a free-form tag like `"curated"`.
 
 ## Static Tags
 
-Static tags are admin-controlled tags used for stable classification, filtering, or collection membership.
+The `static` tag means an entry is available from the frontend static bundle when the backend server is offline or unreachable.
+It is an availability marker, not a curation marker.
 
 They are not part of the public upload API. Do not expose static-tag assignment in the upload form, and do not send static tags through:
 
@@ -583,11 +585,11 @@ They are not part of the public upload API. Do not expose static-tag assignment 
 POST /audio/process
 ```
 
-Public upload fields still support user-supplied `tags` and `tags_csv`, but those should be treated as ordinary upload metadata. Static tags should be managed manually by an admin or a future admin-only endpoint.
+Public upload fields still support user-supplied `tags` and `tags_csv`, but those should be treated as ordinary upload metadata. Static tags should be assigned only by the static export/deployment workflow or a future admin-only static publishing workflow.
 
-The frontend may display or filter by static tags only after the backend exposes them from admin-managed metadata.
+The frontend may display or filter by static tags to indicate offline/static-bundle availability. It must not treat `static` as equivalent to `is_curated`.
 
-For GitHub Pages/offline deployment, the current successful content can be exported into a frontend static bundle. Exported entries are tagged `static` and can be loaded by the frontend when the API is unavailable.
+For GitHub Pages/offline deployment, selected successful content can be exported into a frontend static bundle. Exported non-YouTube entries may be tagged `static` and can be loaded by the frontend when the API is unavailable. YouTube entries may be included in the static bundle without receiving the `static` tag if they should not appear as offline/static homepage content.
 
 ## Error Handling
 
