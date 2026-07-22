@@ -252,6 +252,21 @@ create table if not exists transcript_characters (
     unique (processing_run_id, char_index)
 );
 
+create table if not exists transcription_error_reports (
+    id uuid primary key default gen_random_uuid(),
+    processing_run_id uuid not null references processing_runs(id) on delete cascade,
+    transcript_character_id bigint not null references transcript_characters(id) on delete cascade,
+    char_index integer not null check (char_index >= 0),
+    current_hanzi text not null check (char_length(current_hanzi) = 1),
+    current_pinyin text not null,
+    suggested_hanzi text check (suggested_hanzi is null or char_length(suggested_hanzi) = 1),
+    suggested_pinyin text,
+    status text not null default 'open'
+        check (status in ('open', 'reviewed', 'accepted', 'rejected')),
+    created_at timestamptz not null default now(),
+    unique (processing_run_id, transcript_character_id, suggested_hanzi, suggested_pinyin)
+);
+
 create index if not exists audio_assets_sha256_idx
     on audio_assets (sha256);
 
@@ -290,3 +305,9 @@ create index if not exists transcript_phrases_hanzi_trgm_idx
 
 create index if not exists transcript_characters_hanzi_idx
     on transcript_characters (hanzi);
+
+create index if not exists transcription_error_reports_run_idx
+    on transcription_error_reports (processing_run_id, created_at desc);
+
+create index if not exists transcription_error_reports_status_idx
+    on transcription_error_reports (status, created_at desc);

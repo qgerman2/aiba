@@ -424,6 +424,84 @@ Notes:
 - `pinyin` uses tone numbers.
 - `is_estimated` marks fallback timestamps produced when alignment did not cover the full transcript.
 
+### `POST /runs/{run_id}/characters/{char_index}/error-reports`
+
+Reports a transcription error for one character occurrence in one processed entry. Use `char_index` from `GET /runs/{run_id}/characters`.
+
+Request body:
+
+```ts
+type TranscriptionErrorReportRequest = {
+  suggested_hanzi?: string | null;
+  suggested_pinyin?: string | null;
+};
+```
+
+Both suggestions are optional. Send an empty JSON object to report that the character is wrong without proposing a replacement. `suggested_hanzi`, when provided, must be one character.
+
+Example:
+
+```ts
+await fetch(`${baseUrl}/runs/${runId}/characters/${charIndex}/error-reports`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    suggested_hanzi: "红",
+    suggested_pinyin: "hong2",
+  }),
+});
+```
+
+Flag-only example:
+
+```ts
+await fetch(`${baseUrl}/runs/${runId}/characters/${charIndex}/error-reports`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({}),
+});
+```
+
+Response shape:
+
+```ts
+type TranscriptionErrorReportResponse = {
+  report: {
+    id: string;
+    processing_run_id: string;
+    transcript_character_id: number;
+    char_index: number;
+    current_hanzi: string;
+    current_pinyin: string;
+    suggested_hanzi: string | null;
+    suggested_pinyin: string | null;
+    status: "open" | "reviewed" | "accepted" | "rejected";
+    created_at: string;
+  };
+};
+```
+
+Submitting the same suggestion for the same character again reopens the existing report instead of creating a duplicate.
+
+### `GET /runs/{run_id}/error-reports`
+
+Lists transcription error reports for one run. This is primarily for review/admin UI.
+
+Query params:
+
+```text
+status  optional open | reviewed | accepted | rejected
+```
+
+Response shape:
+
+```ts
+type TranscriptionErrorReportsResponse = {
+  processing_run_id: string;
+  reports: TranscriptionErrorReportResponse["report"][];
+};
+```
+
 ### `GET /runs/{run_id}/frontend-files`
 
 Returns only the generated file records the frontend usually needs:

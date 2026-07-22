@@ -12,6 +12,7 @@ import psycopg
 from fastapi import FastAPI, File, Form, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
+from pydantic import BaseModel, Field, model_validator
 from psycopg.rows import dict_row
 from yt_dlp import YoutubeDL
 
@@ -46,6 +47,17 @@ STAGE_PROGRESS = {
 job_queue: asyncio.Queue[str] = asyncio.Queue()
 worker_task: asyncio.Task | None = None
 active_job_id: str | None = None
+
+
+class TranscriptionErrorReportRequest(BaseModel):
+    suggested_hanzi: str | None = Field(default=None, max_length=1)
+    suggested_pinyin: str | None = Field(default=None, max_length=64)
+
+    @model_validator(mode="after")
+    def normalize_suggestions(self):
+        self.suggested_hanzi = self.suggested_hanzi.strip() if self.suggested_hanzi else None
+        self.suggested_pinyin = self.suggested_pinyin.strip() if self.suggested_pinyin else None
+        return self
 
 
 def connect_db():
@@ -927,3 +939,90 @@ def run_characters(run_id: str):
     if not characters:
         raise HTTPException(status_code=404, detail="No transcript characters found for run")
     return {"processing_run_id": run_id, "characters": characters}
+
+
+@app.post("/runs/{run_id}/characters/{char_index}/error-reports")
+def create_transcription_error_report(
+    run_id: str,
+    char_index: int,
+    report: TranscriptionErrorReportRequest,
+):
+    if char_index < 0:
+        raise HTTPException(status_code=400, detail="char_index must be non-negative")
+
+    with connect_db() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                select id, processing_run_id, char_index, hanzi, pinyin
+                from transcript_characters
+                where processing_run_id = %s and char_index = %s
+                """,
+                (run_id, char_index),
+            )
+            character = cur.fetchone()
+            if character is None:
+                raise HTTPException(status_code=404, detail="Transcript character not found")
+
+            cur.execute(
+                """
+                insert into transcription_error_reports (
+                    processing_run_id,
+                    transcript_character_id,
+                    char_index,
+                    current_hanzi,
+                    current_pinyin,
+                    suggested_hanzi,
+                    suggested_pinyin
+                )
+                values (%s, %s, %s, %s, %s, %s, %s)
+                on conflict (
+                    processing_run_id,
+                    transcript_character_id,
+                    suggested_hanzi,
+                    suggested_pinyin
+                ) do update set
+                    status = 'open'
+                returning *
+                """,
+                (
+                    run_id,
+                    character["id"],
+                    char_index,
+                    character["hanzi"],
+                    character["pinyin"],
+                    report.suggested_hanzi,
+                    report.suggested_pinyin,
+                ),
+            )
+            saved_report = cur.fetchone()
+
+    return {"report": saved_report}
+
+
+@app.get("/runs/{run_id}/error-reports")
+def run_transcription_error_reports(
+    run_id: str,
+    status: Annotated[str | None, Query()] = None,
+):
+    params: list[object] = [run_id]
+    status_clause = ""
+    if status:
+        status_clause = "and ter.status = %s"
+        params.append(status)
+
+    with connect_db() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                f"""
+                select ter.*
+                from transcription_error_reports ter
+                where ter.processing_run_id = %s
+                {status_clause}
+                order by ter.created_at desc
+                """,
+                params,
+            )
+            reports = cur.fetchall()
+
+    return {"processing_run_id": run_id, "reports": reports}

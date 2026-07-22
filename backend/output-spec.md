@@ -270,6 +270,27 @@ pinyin
 is_estimated
 ```
 
+### `transcription_error_reports`
+
+Append-only reports for suspected Hanzi or pinyin transcription errors. Each report targets one character occurrence in one processing run.
+
+Important fields:
+
+```text
+id
+processing_run_id
+transcript_character_id
+char_index
+current_hanzi
+current_pinyin
+suggested_hanzi
+suggested_pinyin
+status             open | reviewed | accepted | rejected
+created_at
+```
+
+`suggested_hanzi` and `suggested_pinyin` are both optional. A report can be a flag-only report with no proposed correction. Reports do not mutate transcript rows; they are review data for a future admin correction workflow.
+
 ## File Storage
 
 Uploaded files first land here:
