@@ -1800,7 +1800,9 @@ function App() {
               <p className="label">Overview</p>
               <h1>Home</h1>
               <p className="pageDescription">
-                Chinese 听力 practice tool.
+                Chinese 听力 practice tool for replaying audio until syllable
+                recognition feels familiar. Upload custom audio or link a
+                YouTube video to process it into the practice database.
               </p>
             </div>
             <button type="button" onClick={() => void loadEntries()}>
@@ -1951,6 +1953,10 @@ function App() {
               Qwen/Qwen3-ForcedAligner-0.6B locally for character timing
               alignment, qwen3:4b-instruct through Ollama for phrase splitting,
               and pypinyin plus tone sandhi rules for numbered pinyin.
+            </p>
+            <p>
+              Complaints, release questions, and bug reports can go to my
+              Instagram. If you are wondering why it is called aiba, ask me.
             </p>
             <div className="aboutLinks">
               <a href={githubRepoUrl} target="_blank" rel="noreferrer">

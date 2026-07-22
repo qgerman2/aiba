@@ -77,6 +77,8 @@ h2 {
 }
 
 .menu button {
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
   width: 100%;
   background: transparent;
@@ -880,6 +882,8 @@ time {
   }
 
   .menu button {
+    min-height: 44px;
+    padding: 0 6px;
     justify-content: center;
     text-align: center;
   }
