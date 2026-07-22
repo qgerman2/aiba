@@ -70,6 +70,7 @@ def main() -> None:
                    set tags = array_append(tags, 'static')
                  where status = 'succeeded'
                    and processing_run_id is not null
+                   and source_type <> 'youtube'
                    and not ('static' = any(tags))
                 """
             )
@@ -81,6 +82,7 @@ def main() -> None:
                   join processing_jobs pj on pj.processing_run_id = pr.id
                  where pr.audio_asset_id = aa.id
                    and pj.status = 'succeeded'
+                   and pj.source_type <> 'youtube'
                    and not ('static' = any(aa.tags))
                 """
             )
@@ -150,8 +152,9 @@ def main() -> None:
             ).fetchall()
 
             static_files = [copy_static_file(run_id, file) for file in files]
-            job["tags"] = with_tag(job["tags"], "static")
-            job["asset_tags"] = with_tag(job["asset_tags"], "static")
+            if job["source_type"] != "youtube":
+                job["tags"] = with_tag(job["tags"], "static")
+                job["asset_tags"] = with_tag(job["asset_tags"], "static")
             entries.append(
                 {
                     "job": job,
