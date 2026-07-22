@@ -1819,9 +1819,6 @@ function App() {
                 YouTube video to process it into the practice database.
               </p>
             </div>
-            <button type="button" onClick={() => void loadEntries()}>
-              Refresh
-            </button>
           </div>
 
           <div className="homeGrid">
