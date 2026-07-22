@@ -157,6 +157,7 @@ type YouTubePlayer = {
   seekTo: (seconds: number, allowSeekAhead: boolean) => void;
   getCurrentTime: () => number;
   getPlayerState: () => number;
+  setPlaybackRate: (suggestedRate: number) => void;
   destroy: () => void;
 };
 
@@ -211,6 +212,7 @@ const apiBaseUrl =
   import.meta.env.VITE_API_BASE_URL ?? "https://backend.java-kokanue.ts.net:443";
 const githubRepoUrl = "https://github.com/qgerman2/aiba";
 const playerCacheKey = "aiba.playerCache.v1";
+const playbackSpeeds = [0.5, 0.75, 1, 1.25, 1.5, 2] as const;
 const maxCachedEntries = 8;
 const syllablePlaybackTailSeconds = 1;
 const syllablePlaybackLeadInSeconds = 2;
@@ -549,6 +551,7 @@ function App() {
   const [thumbnailUrl, setThumbnailUrl] = useState<string | null>(null);
   const [youtubeVideoId, setYoutubeVideoId] = useState<string | null>(null);
   const [mediaMode, setMediaMode] = useState<MediaMode>("audio");
+  const [playbackSpeed, setPlaybackSpeed] = useState(1);
   const [isYouTubeReady, setIsYouTubeReady] = useState(false);
   const [phrasePrompts, setPhrasePrompts] = useState<PhrasePrompt[]>([]);
   const [selectedPhraseIndex, setSelectedPhraseIndex] = useState(0);
@@ -665,6 +668,7 @@ function App() {
           onReady: () => {
             if (isCurrent) {
               setIsYouTubeReady(true);
+              youtubePlayerRef.current?.setPlaybackRate(playbackSpeed);
             }
           },
           onStateChange: (event) => {
@@ -693,6 +697,16 @@ function App() {
       setIsYouTubeReady(false);
     };
   }, [mediaMode, youtubeVideoId]);
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.playbackRate = playbackSpeed;
+    }
+
+    if (mediaMode === "youtube" && isYouTubeReady) {
+      youtubePlayerRef.current?.setPlaybackRate(playbackSpeed);
+    }
+  }, [isYouTubeReady, mediaMode, playbackSpeed, audioUrl]);
 
   useEffect(() => {
     if (pendingMediaSeekRef.current === null) {
@@ -2331,6 +2345,20 @@ function App() {
           >
             Next
           </button>
+          <label className="speedControl">
+            <span>Speed</span>
+            <select
+              value={playbackSpeed}
+              onChange={(event) => setPlaybackSpeed(Number(event.target.value))}
+              aria-label="Playback speed"
+            >
+              {playbackSpeeds.map((speed) => (
+                <option key={speed} value={speed}>
+                  {speed}x
+                </option>
+              ))}
+            </select>
+          </label>
           <label className="switchControl">
             <input
               type="checkbox"

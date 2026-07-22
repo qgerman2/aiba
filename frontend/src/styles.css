@@ -644,7 +644,8 @@ h2 {
   margin-top: 16px;
 }
 
-.switchControl {
+.switchControl,
+.speedControl {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -655,6 +656,18 @@ h2 {
   background: #fffaf0;
   color: #40515b;
   font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.speedControl select {
+  height: 30px;
+  padding: 0 8px;
+  border: 1px solid #a8b1ad;
+  border-radius: 6px;
+  background: #fff;
+  color: #172026;
+  font: inherit;
+  font-size: 0.84rem;
   font-weight: 800;
 }
 
