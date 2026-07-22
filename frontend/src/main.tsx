@@ -90,6 +90,21 @@ type ProcessingResponse = {
   output_files_available: GeneratedFile[];
 };
 
+type TranscriptionErrorReportResponse = {
+  report: {
+    id: string;
+    processing_run_id: string;
+    transcript_character_id: number;
+    char_index: number;
+    current_hanzi: string;
+    current_pinyin: string;
+    suggested_hanzi: string | null;
+    suggested_pinyin: string | null;
+    status: "open" | "reviewed" | "accepted" | "rejected";
+    created_at: string;
+  };
+};
+
 type QueueResponse = {
   active_job_id: string | null;
   pending_in_memory: number;
@@ -134,6 +149,7 @@ type TimestampSegment = {
 };
 
 type CharacterPrompt = {
+  charIndex: number;
   char: string;
   start: number;
   end: number;
@@ -345,6 +361,7 @@ function buildPhrasePrompts(
         text: phrase.hanzi
       },
       chars: matchedCharacters.map((char) => ({
+        charIndex: char.char_index,
         char: char.hanzi,
         start: char.start_seconds,
         end: char.end_seconds,
@@ -556,6 +573,7 @@ function App() {
   const [selectedEntryId, setSelectedEntryId] = useState<string | null>(
     () => new URLSearchParams(window.location.search).get("entry")
   );
+  const [selectedRunId, setSelectedRunId] = useState<string | null>(null);
   const [selectedRunName, setSelectedRunName] = useState("aiba");
   const [selectedRunTags, setSelectedRunTags] = useState<string[]>([]);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
@@ -574,6 +592,13 @@ function App() {
   const [currentTime, setCurrentTime] = useState(0);
   const [highlightCurrentPhrase, setHighlightCurrentPhrase] = useState(true);
   const [highlightCurrentSyllable, setHighlightCurrentSyllable] = useState(true);
+  const [isReportDialogOpen, setIsReportDialogOpen] = useState(false);
+  const [isCheckingReportServer, setIsCheckingReportServer] = useState(false);
+  const [isSubmittingReport, setIsSubmittingReport] = useState(false);
+  const [reportHanziSuggestion, setReportHanziSuggestion] = useState("");
+  const [reportPinyinSuggestion, setReportPinyinSuggestion] = useState("");
+  const [reportMessage, setReportMessage] = useState<string | null>(null);
+  const [reportError, setReportError] = useState<string | null>(null);
   const [entriesError, setEntriesError] = useState<string | null>(null);
   const [playerError, setPlayerError] = useState<string | null>(null);
   const [isLoadingRun, setIsLoadingRun] = useState(false);
@@ -854,6 +879,7 @@ function App() {
   );
 
   const selectedPhrase = phrasePrompts[selectedPhraseIndex] ?? null;
+  const selectedCharacter = selectedPhrase?.chars[focusedCharIndex] ?? null;
   const currentPhrase =
     activePhraseIndex === null
       ? selectedPhrase
@@ -1055,6 +1081,7 @@ function App() {
     );
 
     setSelectedEntryId(entry.job.id);
+    setSelectedRunId(entry.run.id);
     setSelectedRunName(entryName(entry.job));
     setSelectedRunTags(uniqueEntryTags(entry.job));
     setAudioUrl(audioFile.static_url);
@@ -1130,6 +1157,7 @@ function App() {
       );
 
       setSelectedRunName(name);
+      setSelectedRunId(runId);
       setSelectedRunTags(entry ? uniqueEntryTags(entry) : []);
       setAudioUrl(apiUrl(`/files/${audioFile.id}/download`));
       setThumbnailUrl(
@@ -1271,6 +1299,7 @@ function App() {
 
   function loadCachedRun(entry: CachedPlayerEntry) {
     setSelectedEntryId(entry.jobId);
+    setSelectedRunId(entry.runId);
     setSelectedRunName(entry.name);
     setSelectedRunTags(
       [...entry.tags, ...(entry.assetTags ?? [])]
@@ -1758,6 +1787,93 @@ function App() {
     setHanziHintKey(null);
     setPinyinHintKey(null);
     updateCachedProgress({}, {});
+  }
+
+  async function openReportDialog() {
+    setReportMessage(null);
+    setReportError(null);
+
+    if (!selectedRunId || !selectedCharacter) {
+      setReportError("Select a character before reporting an issue.");
+      return;
+    }
+
+    setIsCheckingReportServer(true);
+
+    try {
+      const health = await fetchJson<{ ok: boolean; db: boolean }>("/health");
+
+      if (!health.ok || !health.db) {
+        throw new Error("Backend health check failed");
+      }
+
+      setReportHanziSuggestion("");
+      setReportPinyinSuggestion("");
+      setIsReportDialogOpen(true);
+    } catch {
+      setReportError("Server is not available. Error reports need the backend.");
+    } finally {
+      setIsCheckingReportServer(false);
+    }
+  }
+
+  function closeReportDialog() {
+    setIsReportDialogOpen(false);
+    setReportHanziSuggestion("");
+    setReportPinyinSuggestion("");
+    setReportError(null);
+  }
+
+  async function submitReport() {
+    if (!selectedRunId || !selectedCharacter) {
+      setReportError("Select a character before reporting an issue.");
+      return;
+    }
+
+    setIsSubmittingReport(true);
+    setReportError(null);
+    setReportMessage(null);
+
+    try {
+      const payload: {
+        suggested_hanzi?: string;
+        suggested_pinyin?: string;
+      } = {};
+      const suggestedHanzi = reportHanziSuggestion.trim();
+      const suggestedPinyin = reportPinyinSuggestion.trim();
+
+      if (suggestedHanzi) {
+        payload.suggested_hanzi = suggestedHanzi;
+      }
+
+      if (suggestedPinyin) {
+        payload.suggested_pinyin = suggestedPinyin;
+      }
+
+      await fetchJson<TranscriptionErrorReportResponse>(
+        `/runs/${selectedRunId}/characters/${selectedCharacter.charIndex}/error-reports`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        }
+      );
+
+      setIsReportDialogOpen(false);
+      setReportHanziSuggestion("");
+      setReportPinyinSuggestion("");
+      setReportMessage("Report sent.");
+    } catch (unknownError) {
+      setReportError(
+        unknownError instanceof Error
+          ? `Could not send report: ${unknownError.message}`
+          : "Could not send report."
+      );
+    } finally {
+      setIsSubmittingReport(false);
+    }
   }
 
   function handleInputKeyDown(
@@ -2413,7 +2529,107 @@ function App() {
             />
             <span>Syllable highlight</span>
           </label>
+          <button
+            type="button"
+            className="ghostButton"
+            onClick={() => void openReportDialog()}
+            disabled={
+              isCheckingReportServer ||
+              !selectedRunId ||
+              !selectedPhrase ||
+              !selectedCharacter
+            }
+          >
+            {isCheckingReportServer ? "Checking server" : "Report character"}
+          </button>
         </div>
+
+        {(reportError || reportMessage) && (
+          <p
+            className={reportError ? "errorText" : "successText"}
+            role={reportError ? "alert" : "status"}
+          >
+            {reportError ?? reportMessage}
+          </p>
+        )}
+
+        {isReportDialogOpen && selectedCharacter && (
+          <div
+            className="modalBackdrop"
+            role="presentation"
+            onMouseDown={(event) => {
+              if (event.target === event.currentTarget) {
+                closeReportDialog();
+              }
+            }}
+          >
+            <section
+              className="reportDialog"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="report-dialog-title"
+            >
+              <div className="reportDialogHeader">
+                <div>
+                  <p className="label">Report issue</p>
+                  <h2 id="report-dialog-title">Character correction</h2>
+                </div>
+                <button
+                  type="button"
+                  className="iconButton"
+                  aria-label="Close report dialog"
+                  onClick={closeReportDialog}
+                >
+                  x
+                </button>
+              </div>
+              <div className="reportCurrent">
+                <span className="hanzi revealed">{selectedCharacter.char}</span>
+                <span>{selectedCharacter.expected}</span>
+              </div>
+              <label>
+                <span>Hanzi suggestion</span>
+                <input
+                  type="text"
+                  maxLength={1}
+                  value={reportHanziSuggestion}
+                  placeholder={selectedCharacter.char}
+                  onChange={(event) =>
+                    setReportHanziSuggestion(event.target.value)
+                  }
+                />
+              </label>
+              <label>
+                <span>Pinyin suggestion</span>
+                <input
+                  type="text"
+                  value={reportPinyinSuggestion}
+                  placeholder={selectedCharacter.expected}
+                  onChange={(event) =>
+                    setReportPinyinSuggestion(event.target.value)
+                  }
+                />
+              </label>
+              <div className="reportActions">
+                <button
+                  type="button"
+                  className="ghostButton"
+                  onClick={closeReportDialog}
+                  disabled={isSubmittingReport}
+                >
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  onClick={() => void submitReport()}
+                  disabled={isSubmittingReport}
+                >
+                  {isSubmittingReport ? "Sending" : "Send"}
+                </button>
+              </div>
+            </section>
+          </div>
+        )}
 
         <section className="nowPlaying" aria-live="polite">
           <p className="label">Current phrase</p>

@@ -568,6 +568,12 @@ h2 {
   line-height: 1.35;
 }
 
+.successText {
+  margin: 10px 0 0;
+  color: #164d33;
+  line-height: 1.35;
+}
+
 .emptyText {
   margin: 0;
   padding: 10px 0;
@@ -642,6 +648,90 @@ h2 {
   align-items: center;
   gap: 10px;
   margin-top: 16px;
+}
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(23, 32, 38, 0.34);
+}
+
+.reportDialog {
+  display: grid;
+  gap: 14px;
+  width: min(100%, 420px);
+  padding: 18px;
+  border: 1px solid #d6d0c4;
+  border-radius: 8px;
+  background: #fffaf0;
+  box-shadow: 0 18px 44px rgba(23, 32, 38, 0.22);
+}
+
+.reportDialogHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  min-width: 34px;
+  min-height: 34px;
+  padding: 0;
+  background: #fff;
+  color: #172026;
+}
+
+.reportCurrent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #40515b;
+  font-weight: 800;
+}
+
+.reportCurrent .hanzi {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+}
+
+.reportDialog label {
+  display: grid;
+  gap: 6px;
+  color: #40515b;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.reportDialog input {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 10px;
+  border: 1px solid #a8b1ad;
+  border-radius: 8px;
+  background: #fff;
+  color: #172026;
+  outline: none;
+}
+
+.reportDialog input:focus {
+  border-color: #172026;
+  box-shadow: 0 0 0 2px rgba(23, 32, 38, 0.14);
+}
+
+.reportActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 .switchControl,
