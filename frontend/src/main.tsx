@@ -2004,8 +2004,7 @@ function App() {
               and pypinyin plus tone sandhi rules for numbered pinyin.
             </p>
             <p>
-              Complaints, release questions, and bug reports can go to my
-              Instagram. If you are wondering why it is called aiba, ask me.
+              Ask me why its called aiba.
             </p>
             <div className="aboutLinks">
               <a href={githubRepoUrl} target="_blank" rel="noreferrer">
