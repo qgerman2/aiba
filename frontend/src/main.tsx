@@ -825,22 +825,43 @@ function App() {
     ? findActiveCharacterIndex(selectedPhrase.chars, currentTime)
     : null;
 
+  function mergeEntries(serverJobs: ApiJob[], staticMap: Record<string, StaticEntry>) {
+    const entriesById = new Map<string, ApiJob>();
+
+    for (const entry of Object.values(staticMap)) {
+      entriesById.set(entry.job.id, entry.job);
+    }
+
+    for (const job of serverJobs) {
+      entriesById.set(job.id, job);
+    }
+
+    return [...entriesById.values()];
+  }
+
   async function loadEntries(nextSelectedId?: string) {
     try {
       setEntriesError(null);
       const data = await fetchJson<QueueResponse>("/queue?limit=100");
+      const staticMap = await loadStaticBundle();
+      const mergedEntries = mergeEntries(data.jobs, staticMap);
 
-      setEntries(data.jobs);
-      void loadEntryThumbnails(data.jobs);
+      setStaticEntries(staticMap);
+      setEntries(mergedEntries);
+      void loadEntryThumbnails(mergedEntries);
 
       const nextSelection = nextSelectedId ?? null;
 
       if (nextSelection) {
         setSelectedEntryId(nextSelection);
-        const entry = data.jobs.find((job) => job.id === nextSelection);
+        const entry = mergedEntries.find((job) => job.id === nextSelection);
 
         if (entry?.processing_run_id) {
-          await loadRun(entry.processing_run_id, entryName(entry), entry);
+          if (staticMap[entry.id]) {
+            loadStaticRun(staticMap[entry.id]);
+          } else {
+            await loadRun(entry.processing_run_id, entryName(entry), entry);
+          }
           setViewMode("player");
         }
       }
