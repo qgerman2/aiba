@@ -1,4 +1,11 @@
-import { StrictMode, useEffect, useMemo, useRef, useState } from "react";
+import {
+  StrictMode,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState
+} from "react";
 import type { FormEvent, KeyboardEvent } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
@@ -530,6 +537,10 @@ function App() {
   const youtubeHostRef = useRef<HTMLDivElement | null>(null);
   const youtubePlayerRef = useRef<YouTubePlayer | null>(null);
   const inputRefs = useRef<Record<string, HTMLInputElement | null>>({});
+  const pendingInputFocusRef = useRef<{
+    phraseIndex: number;
+    charIndex: number;
+  } | null>(null);
   const playUntilRef = useRef<number | null>(null);
   const pendingMediaSeekRef = useRef<number | null>(null);
   const animationFrameRef = useRef<number | null>(null);
@@ -721,6 +732,18 @@ function App() {
     pendingMediaSeekRef.current = null;
     seekMedia(nextTime);
   }, [mediaMode, isYouTubeReady, audioUrl]);
+
+  useLayoutEffect(() => {
+    const pendingFocus = pendingInputFocusRef.current;
+
+    if (!pendingFocus || pendingFocus.phraseIndex !== selectedPhraseIndex) {
+      return;
+    }
+
+    if (focusInput(pendingFocus.phraseIndex, pendingFocus.charIndex)) {
+      pendingInputFocusRef.current = null;
+    }
+  }, [selectedPhraseIndex, phrasePrompts]);
 
   useEffect(() => {
     const visualViewport = window.visualViewport;
@@ -1626,9 +1649,20 @@ function App() {
   }
 
   function focusInput(phraseIndex: number, charIndex: number) {
-    inputRefs.current[answerKey(phraseIndex, charIndex)]?.focus({
+    const input = inputRefs.current[answerKey(phraseIndex, charIndex)];
+
+    if (!input) {
+      return false;
+    }
+
+    input.focus({
       preventScroll: true
     });
+
+    const cursorPosition = input.value.length;
+    input.setSelectionRange(cursorPosition, cursorPosition);
+
+    return true;
   }
 
   function moveInputFocus(
@@ -1653,9 +1687,12 @@ function App() {
         const nextPhrase = phrasePrompts[nextPhraseIndex];
 
         if (nextPhrase.chars.length > 0) {
+          pendingInputFocusRef.current = {
+            phraseIndex: nextPhraseIndex,
+            charIndex: 0
+          };
           setSelectedPhraseIndex(nextPhraseIndex);
           setFocusedCharIndex(0);
-          window.setTimeout(() => focusInput(nextPhraseIndex, 0), 0);
           return;
         }
       }
@@ -1672,12 +1709,12 @@ function App() {
       const lastCharIndex = previousPhrase.chars.length - 1;
 
       if (lastCharIndex >= 0) {
+        pendingInputFocusRef.current = {
+          phraseIndex: previousPhraseIndex,
+          charIndex: lastCharIndex
+        };
         setSelectedPhraseIndex(previousPhraseIndex);
         setFocusedCharIndex(lastCharIndex);
-        window.setTimeout(
-          () => focusInput(previousPhraseIndex, lastCharIndex),
-          0
-        );
         return;
       }
     }
@@ -1760,6 +1797,7 @@ function App() {
     uploadSourceType === "youtube"
       ? youtubeThumbnailUrl(statusJob?.source_url ?? youtubeInputUrl)
       : null;
+  const selectedPhrasePanelIndex = selectedPhraseIndex;
 
   return (
     <main className="shell">
@@ -2475,7 +2513,7 @@ function App() {
                 }
 
                 const { char, charIndex } = item;
-                const key = answerKey(selectedPhraseIndex, charIndex);
+                const key = answerKey(selectedPhrasePanelIndex, charIndex);
                 const value = answers[key] ?? "";
                 const isCorrect =
                   value.length > 0 &&
@@ -2510,7 +2548,7 @@ function App() {
                       autoComplete="off"
                       autoCorrect="off"
                       spellCheck={false}
-                      name={`pinyin-${selectedPhraseIndex}-${charIndex}`}
+                      name={`pinyin-${selectedPhrasePanelIndex}-${charIndex}`}
                       value={value}
                       placeholder="pinyin"
                       aria-label={`Pinyin for character ${charIndex + 1}`}
@@ -2529,12 +2567,12 @@ function App() {
                           normalizePinyin(char.expected)
                         ) {
                           window.setTimeout(() => {
-                            moveInputFocus(selectedPhraseIndex, charIndex, 1);
+                            moveInputFocus(selectedPhrasePanelIndex, charIndex, 1);
                           }, 0);
                         }
                       }}
                       onFocus={() => {
-                        setSelectedPhraseIndex(selectedPhraseIndex);
+                        setSelectedPhraseIndex(selectedPhrasePanelIndex);
                         setFocusedCharIndex(charIndex);
                         setHanziHintKey(null);
                         setPinyinHintKey(null);
@@ -2550,7 +2588,7 @@ function App() {
                       onKeyDown={(event) =>
                         handleInputKeyDown(
                           event,
-                          selectedPhraseIndex,
+                          selectedPhrasePanelIndex,
                           charIndex,
                           selectedPhrase.chars.length
                         )
