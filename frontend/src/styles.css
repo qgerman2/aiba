@@ -796,6 +796,28 @@ button:disabled {
   line-height: 1.35;
 }
 
+.playerStatusMessage.loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #d7d0c2;
+  border-top-color: #172026;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .label {
   margin: 0;
   color: #52646f;
@@ -1003,15 +1025,6 @@ time {
   background: #e2f6e9;
   color: #164d33;
   font-weight: 800;
-}
-
-.pinyinHint {
-  min-height: 18px;
-  color: #7a4d16;
-  text-align: center;
-  font-size: 0.78rem;
-  font-weight: 800;
-  line-height: 1.2;
 }
 
 .wordGroup,

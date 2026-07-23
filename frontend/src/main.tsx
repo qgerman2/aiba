@@ -691,6 +691,7 @@ function App() {
   const pendingMediaSeekRef = useRef<number | null>(null);
   const animationFrameRef = useRef<number | null>(null);
   const previousPhraseIndexRef = useRef(0);
+  const skipNextHistoryPushRef = useRef(true);
   const [entries, setEntries] = useState<ApiJob[]>([]);
   const [entryThumbnailUrls, setEntryThumbnailUrls] = useState<Record<string, string>>({});
   const [staticEntries, setStaticEntries] = useState<Record<string, StaticEntry>>({});
@@ -764,6 +765,34 @@ function App() {
     if (entryId) {
       void loadEntryFromUrl(entryId);
     }
+
+    window.history.replaceState(
+      { viewMode: initialViewMode(), entryId: entryId ?? null },
+      "",
+      `${window.location.pathname}${window.location.search}`
+    );
+
+    function handlePopState(event: PopStateEvent) {
+      skipNextHistoryPushRef.current = true;
+
+      const state = event.state as
+        | { viewMode: ViewMode; entryId: string | null }
+        | null;
+      const params = new URLSearchParams(window.location.search);
+      const nextEntryId = state?.entryId ?? params.get("entry");
+      const nextView = state?.viewMode ?? initialViewMode();
+
+      if (nextEntryId) {
+        void loadEntryFromUrl(nextEntryId);
+        return;
+      }
+
+      setSelectedEntryId(null);
+      setViewMode(nextView);
+    }
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
   }, []);
 
   useEffect(() => {
@@ -774,8 +803,19 @@ function App() {
         ? playerHref(selectedEntryId)
         : viewHref(viewMode);
 
-    if (`${window.location.pathname}${window.location.search}` !== nextUrl) {
-      window.history.replaceState(null, "", nextUrl);
+    const shouldSkipPush = skipNextHistoryPushRef.current;
+    skipNextHistoryPushRef.current = false;
+
+    if (`${window.location.pathname}${window.location.search}` === nextUrl) {
+      return;
+    }
+
+    const historyState = { viewMode, entryId: selectedEntryId };
+
+    if (shouldSkipPush) {
+      window.history.replaceState(historyState, "", nextUrl);
+    } else {
+      window.history.pushState(historyState, "", nextUrl);
     }
   }, [selectedEntryId, viewMode]);
 
@@ -1078,12 +1118,13 @@ function App() {
         const entry = mergedEntries.find((job) => job.id === nextSelection);
 
         if (entry?.processing_run_id) {
+          setViewMode("player");
+
           if (staticMap[entry.id]) {
             loadStaticRun(staticMap[entry.id]);
           } else {
             await loadRun(entry.processing_run_id, entryName(entry), entry);
           }
-          setViewMode("player");
         }
       }
     } catch (unknownError) {
@@ -1170,11 +1211,11 @@ function App() {
 
   async function loadEntryFromUrl(entryId: string) {
     const cached = cachedEntries.find((entry) => entry.jobId === entryId);
+    setSelectedEntryId(entryId);
+    setViewMode("player");
 
     try {
       const status = await fetchJson<ProcessingResponse>(`/processing/${entryId}`);
-
-      setSelectedEntryId(entryId);
 
       if (status.job.status === "succeeded" && status.job.processing_run_id) {
         await loadRun(
@@ -1182,12 +1223,10 @@ function App() {
           entryName(status.job),
           status.job
         );
-        setViewMode("player");
         return;
       }
 
       setPlayerError("This entry is not ready yet.");
-      setViewMode("player");
     } catch {
       try {
         const staticMap =
@@ -1198,7 +1237,6 @@ function App() {
 
         if (staticMap[entryId]) {
           loadStaticRun(staticMap[entryId]);
-          setViewMode("player");
           return;
         }
       } catch {
@@ -1207,12 +1245,10 @@ function App() {
 
       if (cached) {
         loadCachedRun(cached);
-        setViewMode("player");
         return;
       }
 
       setPlayerError("Entry could not be loaded.");
-      setViewMode("player");
     }
   }
 
@@ -1257,7 +1293,6 @@ function App() {
     setCurrentTime(0);
     setPlayerError(null);
     playUntilRef.current = null;
-    updateEntryUrl(entry.job.id);
 
     cachePlayerEntry({
       jobId: entry.job.id,
@@ -1495,7 +1530,6 @@ function App() {
     setHintedKeys(entry.hintedKeys ?? {});
     setCurrentTime(0);
     setPlayerError(null);
-    updateEntryUrl(entry.jobId);
   }
 
   function cachedEntryThumbnail(entry: CachedPlayerEntry) {
@@ -1561,6 +1595,7 @@ function App() {
 
   async function selectEntry(entry: ApiJob) {
     setSelectedEntryId(entry.id);
+    setViewMode("player");
 
     if (entry.status !== "succeeded" || !entry.processing_run_id) {
       setPlayerError("This entry is not ready yet.");
@@ -1569,13 +1604,10 @@ function App() {
 
     if (staticEntries[entry.id]) {
       loadStaticRun(staticEntries[entry.id]);
-      setViewMode("player");
       return;
     }
 
     await loadRun(entry.processing_run_id, entryName(entry), entry);
-    setViewMode("player");
-    updateEntryUrl(entry.id);
   }
 
   async function handleUploadSubmit(event: FormEvent<HTMLFormElement>) {
@@ -1652,7 +1684,6 @@ function App() {
             status.job
           );
           setSelectedEntryId(status.job.id);
-          updateEntryUrl(status.job.id);
         }
         return;
       }
@@ -1667,10 +1698,6 @@ function App() {
 
       await new Promise((resolve) => window.setTimeout(resolve, 2500));
     }
-  }
-
-  function updateEntryUrl(jobId: string) {
-    window.history.replaceState(null, "", playerHref(jobId));
   }
 
   function toggleTagFilter(tag: string) {
@@ -1937,10 +1964,15 @@ function App() {
       ...hintedKeys,
       [key]: true
     };
+    const nextAnswers = {
+      ...answers,
+      [key]: ""
+    };
 
     setPinyinHintKey(key);
     setHintedKeys(nextHintedKeys);
-    updateCachedProgress(answers, nextHintedKeys);
+    setAnswers(nextAnswers);
+    updateCachedProgress(nextAnswers, nextHintedKeys);
     focusInput(phraseIndex, charIndex);
   }
 
@@ -2148,7 +2180,7 @@ function App() {
           tabIndex={interactive ? undefined : -1}
           name={`pinyin-${phraseIndex}-${charIndex}`}
           value={value}
-          placeholder="pinyin"
+          placeholder={hasPinyinHint ? char.expected : "pinyin"}
           aria-label={`Pinyin for character ${charIndex + 1}`}
           onChange={
             interactive
@@ -2202,9 +2234,6 @@ function App() {
               : undefined
           }
         />
-        <span className="pinyinHint">
-          {hasPinyinHint ? char.expected : ""}
-        </span>
       </label>
     );
   }
@@ -2471,9 +2500,11 @@ function App() {
             <p>
               Character-level timing is produced by
               Qwen/Qwen3-ForcedAligner-0.6B. Pinyin readings are resolved
-              per character via pypinyin's dictionary lookup. FastAPI and
-              Postgres store job state, transcripts, phrase timings,
-              character timings, and generated file records.
+              per character via pypinyin's dictionary lookup, and jieba
+              segments each phrase into words so multi-character words can
+              be typed and reviewed as a unit. FastAPI and Postgres store
+              job state, transcripts, phrase timings, character timings,
+              word segments, and generated file records.
             </p>
             <p>
               Transcription or pinyin errors can be flagged per character
@@ -2742,8 +2773,8 @@ function App() {
                   href={playerHref(uploadedEntryId)}
                   onClick={(event) => {
                     event.preventDefault();
+                    setSelectedEntryId(uploadedEntryId);
                     setViewMode("player");
-                    updateEntryUrl(uploadedEntryId);
                   }}
                 >
                   Open player
@@ -3032,7 +3063,17 @@ function App() {
         )}
 
         {(playerError || isLoadingRun) && (
-          <p className="playerStatusMessage" role="status" aria-live="polite">
+          <p
+            className={[
+              "playerStatusMessage",
+              playerError ? "" : "loading"
+            ]
+              .filter(Boolean)
+              .join(" ")}
+            role="status"
+            aria-live="polite"
+          >
+            {!playerError && <span className="spinner" aria-hidden="true" />}
             {playerError ?? "Loading run..."}
           </p>
         )}

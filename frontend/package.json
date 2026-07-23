@@ -7,6 +7,7 @@
     "dev": "vite --host 0.0.0.0 --port 8080",
     "build": "tsc -p tsconfig.json --noEmit && vite build",
     "export:static": "cd ../backend && ./venv/bin/python ../frontend/scripts/export_static_content.py",
+    "import:static": "cd ../backend && ./venv/bin/python ../frontend/scripts/import_static_content.py",
     "deploy:docs": "npm run build && rm -rf ../docs && cp -R dist ../docs",
     "preview": "vite preview --host 0.0.0.0 --port 8080"
   },

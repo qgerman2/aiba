@@ -182,6 +182,7 @@ asr_model
 aligner_model
 phrase_splitter_model
 pinyin_method
+word_segmenter
 output_dir
 error_message
 started_at
@@ -268,6 +269,23 @@ end_seconds
 hanzi
 pinyin
 is_estimated
+```
+
+### `transcript_words`
+
+Word-segmented timing data, used to group multi-character words in the frontend once all their characters are answered correctly. Segmentation is produced by jieba over each phrase's hanzi text.
+
+Important fields:
+
+```text
+word_index
+phrase_id
+phrase_word_index
+start_seconds
+end_seconds
+hanzi
+pinyin
+char_count
 ```
 
 ### `transcription_error_reports`
@@ -444,6 +462,5 @@ Notes:
 - Pinyin uses Hanyu Pinyin with tone numbers.
 - Neutral tone is written with `5`.
 - Punctuation is omitted from character-level rows/files.
-- Sandhi is applied for `一`, `不`, and adjacent third tones.
-- Punctuation acts as a sandhi boundary.
+- Pinyin readings come from pypinyin's dictionary lookup (phrase-aware, no manual tone-sandhi rules).
 - `is_estimated = true` means the forced aligner ran out of exact character timestamps and the script estimated timing over the remaining audio.

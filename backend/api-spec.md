@@ -24,6 +24,7 @@ Start backend from `backend/`:
    ```text
    GET /runs/{run_id}/phrases
    GET /runs/{run_id}/characters
+   GET /runs/{run_id}/words
    GET /runs/{run_id}/frontend-files
    ```
 6. Download/play the audio through:
@@ -424,6 +425,36 @@ Notes:
 - `pinyin` uses tone numbers.
 - `is_estimated` marks fallback timestamps produced when alignment did not cover the full transcript.
 
+### `GET /runs/{run_id}/words`
+
+Returns word-segmented Hanzi and pinyin timing data as JSON. Segmentation is produced by jieba over each phrase's hanzi text.
+
+Use this to group multi-character words in the frontend (e.g. merging their character boxes once every character in the word has been answered correctly).
+
+Response shape:
+
+```ts
+type WordsResponse = {
+  processing_run_id: string;
+  words: Array<{
+    word_index: number;
+    phrase_index: number;
+    phrase_word_index: number | null;
+    start_seconds: number;
+    end_seconds: number;
+    hanzi: string;
+    pinyin: string;
+    char_count: number;
+  }>;
+};
+```
+
+Notes:
+
+- `hanzi` is the full word (one or more Chinese characters).
+- `pinyin` is a space-separated list of tone-numbered syllables, one per character in the word.
+- 404s if the run has no word rows (e.g. it was processed before word segmentation was added).
+
 ### `POST /runs/{run_id}/characters/{char_index}/error-reports`
 
 Reports a transcription error for one character occurrence in one processed entry. Use `char_index` from `GET /runs/{run_id}/characters`.
@@ -634,6 +665,7 @@ Do not expect these endpoints to be populated until the job succeeds:
 ```text
 GET /runs/{run_id}/phrases
 GET /runs/{run_id}/characters
+GET /runs/{run_id}/words
 GET /runs/{run_id}/frontend-files
 ```
 
