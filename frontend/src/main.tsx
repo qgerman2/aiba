@@ -2965,12 +2965,17 @@ function App() {
                     highlightCurrentSyllable &&
                     activeCharacterIndex !== null &&
                     item.charIndexes.includes(activeCharacterIndex);
+                  const wordHasHint = item.charIndexes.some(
+                    (charIndex) =>
+                      hintedKeys[answerKey(selectedPhrasePanelIndex, charIndex)]
+                  );
 
                   return (
                     <div
                       className={[
                         "wordGroup",
                         item.completed ? "completed" : "",
+                        item.completed && wordHasHint ? "hinted" : "",
                         isWordPlaying ? "playing" : ""
                       ]
                         .filter(Boolean)

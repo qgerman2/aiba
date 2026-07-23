@@ -996,6 +996,11 @@ time {
   border-radius: 0;
 }
 
+.wordGroup.completed.hinted {
+  border-color: #a8b1ad;
+  background: #e8e8e8;
+}
+
 .wordGroup.completed.playing {
   border-color: #2f65d8;
   background: #eaf0ff;
