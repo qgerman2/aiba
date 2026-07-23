@@ -84,6 +84,17 @@ type ApiCharacter = {
   is_estimated: boolean;
 };
 
+type ApiWord = {
+  word_index: number;
+  phrase_index: number;
+  phrase_word_index: number | null;
+  start_seconds: number;
+  end_seconds: number;
+  hanzi: string;
+  pinyin: string;
+  char_count: number;
+};
+
 type ProcessingResponse = {
   job: ApiJob;
   run: ApiRun | null;
@@ -117,6 +128,7 @@ type StaticEntry = {
   files: StaticGeneratedFile[];
   phrases: ApiPhrase[];
   characters: ApiCharacter[];
+  words: ApiWord[];
 };
 
 type StaticBundle = {
@@ -156,9 +168,17 @@ type CharacterPrompt = {
   expected: string;
 };
 
+type WordGroup = {
+  startCharIndex: number;
+  charCount: number;
+  hanzi: string;
+  pinyin: string;
+};
+
 type PhrasePrompt = {
   phrase: TimestampSegment;
   chars: CharacterPrompt[];
+  words: WordGroup[];
 };
 
 type PhrasePanelItem =
@@ -170,6 +190,15 @@ type PhrasePanelItem =
   | {
       type: "punctuation";
       text: string;
+    };
+
+type PhraseRenderItem =
+  | PhrasePanelItem
+  | {
+      type: "word";
+      charIndexes: number[];
+      hanzi: string;
+      pinyin: string;
     };
 
 type MediaMode = "youtube" | "audio";
@@ -337,6 +366,10 @@ function isChineseCharacter(char: string) {
   return /\p{Script=Han}/u.test(char);
 }
 
+function answerKey(phraseIndex: number, charIndex: number) {
+  return `${phraseIndex}:${charIndex}`;
+}
+
 function normalizePinyin(value: string) {
   return value
     .trim()
@@ -348,11 +381,12 @@ function normalizePinyin(value: string) {
 
 function buildPhrasePrompts(
   phrases: ApiPhrase[],
-  characters: ApiCharacter[]
+  characters: ApiCharacter[],
+  words: ApiWord[] = []
 ): PhrasePrompt[] {
   let charCursor = 0;
 
-  return phrases.map((phrase) => {
+  return phrases.map((phrase, phraseIndex) => {
     const phraseCharacters = Array.from(phrase.hanzi).filter(isChineseCharacter);
     const matchedCharacters: ApiCharacter[] = [];
 
@@ -370,6 +404,21 @@ function buildPhrasePrompts(
       }
     }
 
+    const phraseWords = words
+      .filter((word) => word.phrase_index === phraseIndex)
+      .sort((a, b) => (a.phrase_word_index ?? 0) - (b.phrase_word_index ?? 0));
+    let wordCharCursor = 0;
+    const wordGroups: WordGroup[] = phraseWords.map((word) => {
+      const group = {
+        startCharIndex: wordCharCursor,
+        charCount: word.char_count,
+        hanzi: word.hanzi,
+        pinyin: word.pinyin
+      };
+      wordCharCursor += word.char_count;
+      return group;
+    });
+
     return {
       phrase: {
         start: phrase.start_seconds,
@@ -382,7 +431,8 @@ function buildPhrasePrompts(
         start: char.start_seconds,
         end: char.end_seconds,
         expected: normalizePinyin(char.pinyin)
-      }))
+      })),
+      words: wordGroups
     };
   });
 }
@@ -418,6 +468,70 @@ function buildPhrasePanelItems(prompt: PhrasePrompt): PhrasePanelItem[] {
   });
 }
 
+function buildPhraseRenderItems(
+  prompt: PhrasePrompt,
+  phraseIndex: number,
+  answers: Record<string, string>
+): PhraseRenderItem[] {
+  const panelItems = buildPhrasePanelItems(prompt);
+  const wordStartLookup = new Map<number, WordGroup>();
+
+  for (const group of prompt.words) {
+    if (group.charCount > 1) {
+      wordStartLookup.set(group.startCharIndex, group);
+    }
+  }
+
+  const result: PhraseRenderItem[] = [];
+  let i = 0;
+
+  while (i < panelItems.length) {
+    const item = panelItems[i];
+
+    if (item.type === "punctuation") {
+      result.push(item);
+      i += 1;
+      continue;
+    }
+
+    const group = wordStartLookup.get(item.charIndex);
+
+    if (group) {
+      const charIndexes = Array.from(
+        { length: group.charCount },
+        (_, offset) => item.charIndex + offset
+      );
+      const allCorrect = charIndexes.every((charIndex) => {
+        const char = prompt.chars[charIndex];
+        if (!char) {
+          return false;
+        }
+        const value = answers[answerKey(phraseIndex, charIndex)] ?? "";
+        return (
+          value.length > 0 &&
+          normalizePinyin(value) === normalizePinyin(char.expected)
+        );
+      });
+
+      if (allCorrect) {
+        result.push({
+          type: "word",
+          charIndexes,
+          hanzi: group.hanzi,
+          pinyin: group.pinyin
+        });
+        i += group.charCount;
+        continue;
+      }
+    }
+
+    result.push(item);
+    i += 1;
+  }
+
+  return result;
+}
+
 function entryName(job: ApiJob) {
   return job.display_name || job.upload_path?.split("/").at(-1) || job.id;
 }
@@ -447,6 +561,7 @@ function stageLabel(stage: string) {
     pinyin: "Generating pinyin",
     alignment: "Aligning timestamps",
     timestamp_mapping: "Mapping timestamps",
+    word_segmentation: "Segmenting words",
     db_save: "Saving results",
     completed: "Completed",
     failed: "Failed"
@@ -1085,7 +1200,7 @@ function App() {
       return;
     }
 
-    const prompts = buildPhrasePrompts(entry.phrases, entry.characters);
+    const prompts = buildPhrasePrompts(entry.phrases, entry.characters, entry.words);
     const entrySourceType = entry.job.source_type ?? "upload";
     const entrySourceUrl = entry.job.source_url ?? null;
     const nextYoutubeVideoId =
@@ -1142,9 +1257,12 @@ function App() {
     setPlayerError(null);
 
     try {
-      const [phrasesData, charactersData, filesData] = await Promise.all([
+      const [phrasesData, charactersData, wordsData, filesData] = await Promise.all([
         fetchJson<{ phrases: ApiPhrase[] }>(`/runs/${runId}/phrases`),
         fetchJson<{ characters: ApiCharacter[] }>(`/runs/${runId}/characters`),
+        fetchJson<{ words: ApiWord[] }>(`/runs/${runId}/words`).catch(() => ({
+          words: [] as ApiWord[]
+        })),
         fetchJson<{ files: GeneratedFile[] }>(`/runs/${runId}/frontend-files`)
       ]);
       const audioFile = filesData.files.find(
@@ -1160,7 +1278,8 @@ function App() {
 
       const prompts = buildPhrasePrompts(
         phrasesData.phrases,
-        charactersData.characters
+        charactersData.characters,
+        wordsData.words
       );
       const entrySourceType = entry?.source_type ?? "upload";
       const entrySourceUrl = entry?.source_url ?? null;
@@ -1521,10 +1640,6 @@ function App() {
 
       await new Promise((resolve) => window.setTimeout(resolve, 2500));
     }
-  }
-
-  function answerKey(phraseIndex: number, charIndex: number) {
-    return `${phraseIndex}:${charIndex}`;
   }
 
   function updateEntryUrl(jobId: string) {
@@ -2743,12 +2858,28 @@ function App() {
             </div>
 
             <div className="syllables">
-              {buildPhrasePanelItems(selectedPhrase).map((item, itemIndex) => {
+              {buildPhraseRenderItems(
+                selectedPhrase,
+                selectedPhrasePanelIndex,
+                answers
+              ).map((item, itemIndex) => {
                 if (item.type === "punctuation") {
                   return (
                     <span className="punctuation" key={`punctuation-${itemIndex}`}>
                       {item.text}
                     </span>
+                  );
+                }
+
+                if (item.type === "word") {
+                  return (
+                    <div
+                      className="wordGroup completed"
+                      key={`word-${item.charIndexes[0]}`}
+                    >
+                      <span className="hanzi revealed">{item.hanzi}</span>
+                      <span className="wordPinyin">{item.pinyin}</span>
+                    </div>
                   );
                 }
 

@@ -962,6 +962,33 @@ time {
   line-height: 1.2;
 }
 
+.wordGroup.completed {
+  display: grid;
+  gap: 5px;
+  padding: 6px 10px;
+  border: 2px solid #227a4f;
+  border-radius: 8px;
+  background: #e2f6e9;
+}
+
+.wordGroup.completed .hanzi {
+  min-height: 28px;
+  background: transparent;
+  text-align: center;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.wordGroup.completed .wordPinyin {
+  color: #164d33;
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: 800;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
 .punctuation {
   align-self: center;
   min-width: 12px;

@@ -9,6 +9,7 @@ import shutil
 import uuid
 from pathlib import Path
 
+import jieba
 import ollama
 import psycopg
 import soundfile as sf
@@ -16,6 +17,8 @@ import torch
 from pydub import AudioSegment, silence
 from pypinyin import Style, pinyin as hanzi_to_pinyin
 from qwen_asr import Qwen3ASRModel, Qwen3ForcedAligner
+
+jieba.setLogLevel(60)
 
 
 BACKEND_DIR = Path(__file__).resolve().parent
@@ -394,6 +397,23 @@ def pinyin_units_with_dictionary(phrase):
     ]
 
 
+def segment_phrase_words(phrase, units):
+    tokens = jieba.lcut(phrase)
+    words = []
+    unit_index = 0
+
+    for token in tokens:
+        char_count = sum(1 for ch in token if "一" <= ch <= "鿿")
+        if char_count == 0:
+            continue
+
+        word_units = units[unit_index:unit_index + char_count]
+        words.append({"word": token, "char_count": char_count, "units": word_units})
+        unit_index += char_count
+
+    return words
+
+
 def expand_to_char_timestamps(segments, offset_seconds=0.0):
     chars = []
     for segment in segments:
@@ -489,9 +509,10 @@ def create_processing_run(conn, run_id, audio_asset_id, output_dir):
                 aligner_model,
                 phrase_splitter_model,
                 pinyin_method,
+                word_segmenter,
                 output_dir
             )
-            values (%s, %s, 'running', %s, %s, %s, %s, %s)
+            values (%s, %s, 'running', %s, %s, %s, %s, %s, %s)
             """,
             (
                 run_id,
@@ -500,12 +521,13 @@ def create_processing_run(conn, run_id, audio_asset_id, output_dir):
                 ALIGNER_MODEL,
                 OLLAMA_MODEL,
                 "pypinyin+dictionary",
+                "jieba",
                 relative_to_backend(output_dir),
             ),
         )
 
 
-def persist_results(conn, run_id, transcript, chunks, generated_file_records, phrase_timestamps, char_pinyin_timestamps):
+def persist_results(conn, run_id, transcript, chunks, generated_file_records, phrase_timestamps, char_pinyin_timestamps, word_timestamps):
     with conn.cursor() as cur:
         cur.execute(
             "update processing_runs set transcript_text = %s where id = %s",
@@ -629,6 +651,41 @@ def persist_results(conn, run_id, transcript, chunks, generated_file_records, ph
                     hanzi,
                     pinyin,
                     is_estimated,
+                ),
+            )
+
+        phrase_id_by_index = {
+            phrase_index: phrase_id
+            for phrase_index, (phrase_id, _start_offset, _char_count) in enumerate(phrase_ids)
+        }
+
+        for word_index, item in enumerate(word_timestamps):
+            start, end, hanzi, pinyin, phrase_index, phrase_word_index, char_count = item
+            cur.execute(
+                """
+                insert into transcript_words (
+                    processing_run_id,
+                    phrase_id,
+                    word_index,
+                    phrase_word_index,
+                    start_seconds,
+                    end_seconds,
+                    hanzi,
+                    pinyin,
+                    char_count
+                )
+                values (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+                """,
+                (
+                    run_id,
+                    phrase_id_by_index.get(phrase_index),
+                    word_index,
+                    phrase_word_index,
+                    start,
+                    end,
+                    hanzi,
+                    pinyin,
+                    char_count,
                 ),
             )
 
@@ -831,8 +888,12 @@ def run_pipeline(args):
             for start, end, ch, pinyin, _is_estimated in char_pinyin_timestamps:
                 f.write(f"[{start:.3f} -> {end:.3f}] {ch} {pinyin}\n")
 
+        log("Starting word segmentation.")
+        word_timestamps = []
         char_offset = 0
-        for phrase, pinyin, units in zip(phrases, phrase_pinyin, phrase_pinyin_units):
+        for phrase_index, (phrase, pinyin, units) in enumerate(
+            zip(phrases, phrase_pinyin, phrase_pinyin_units)
+        ):
             phrase_char_count = len(units)
             phrase_chars = char_pinyin_timestamps[char_offset:char_offset + phrase_char_count]
             char_offset += phrase_char_count
@@ -841,6 +902,29 @@ def run_pipeline(args):
                 start_time = phrase_chars[0][0]
                 end_time = phrase_chars[-1][1]
                 phrase_timestamps.append((start_time, end_time, phrase, pinyin, phrase_char_count))
+
+            words = segment_phrase_words(phrase, units)
+            word_char_offset = 0
+            for phrase_word_index, word in enumerate(words):
+                word_chars = phrase_chars[
+                    word_char_offset:word_char_offset + word["char_count"]
+                ]
+                word_char_offset += word["char_count"]
+                if not word_chars:
+                    continue
+                word_pinyin = " ".join(unit["pinyin"] for unit in word["units"])
+                word_timestamps.append(
+                    (
+                        word_chars[0][0],
+                        word_chars[-1][1],
+                        word["word"],
+                        word_pinyin,
+                        phrase_index,
+                        phrase_word_index,
+                        word["char_count"],
+                    )
+                )
+        log(f"Number of words segmented: {len(word_timestamps)}")
 
         phrase_timestamps_file = output_dir / f"{base_name}_phrase_timestamps.txt"
         with phrase_timestamps_file.open("w", encoding="utf-8") as f:
@@ -889,6 +973,7 @@ def run_pipeline(args):
                 generated_file_records,
                 phrase_timestamps,
                 char_pinyin_timestamps,
+                word_timestamps,
             )
             conn.commit()
             log("Database rows saved.")

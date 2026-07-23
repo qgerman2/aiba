@@ -62,6 +62,7 @@ create table if not exists processing_runs (
     aligner_model text not null default 'Qwen/Qwen3-ForcedAligner-0.6B',
     phrase_splitter_model text not null default 'qwen3:4b-instruct',
     pinyin_method text not null default 'pypinyin+dictionary',
+    word_segmenter text not null default 'jieba',
     script_name text not null default 'test4.py',
     script_version text,
     output_dir text not null,
@@ -71,6 +72,9 @@ create table if not exists processing_runs (
     created_at timestamptz not null default now(),
     check (completed_at is null or completed_at >= started_at)
 );
+
+alter table processing_runs
+    add column if not exists word_segmenter text not null default 'jieba';
 
 create table if not exists processing_jobs (
     id uuid primary key default gen_random_uuid(),
@@ -251,6 +255,24 @@ create table if not exists transcript_characters (
     created_at timestamptz not null default now(),
     unique (processing_run_id, char_index)
 );
+
+create table if not exists transcript_words (
+    id bigserial primary key,
+    processing_run_id uuid not null references processing_runs(id) on delete cascade,
+    phrase_id bigint references transcript_phrases(id) on delete set null,
+    word_index integer not null check (word_index >= 0),
+    phrase_word_index integer check (phrase_word_index is null or phrase_word_index >= 0),
+    start_seconds numeric(12, 3) not null check (start_seconds >= 0),
+    end_seconds numeric(12, 3) not null check (end_seconds >= start_seconds),
+    hanzi text not null,
+    pinyin text not null,
+    char_count integer not null check (char_count > 0),
+    created_at timestamptz not null default now(),
+    unique (processing_run_id, word_index)
+);
+
+create index if not exists transcript_words_run_time_idx
+    on transcript_words (processing_run_id, start_seconds, end_seconds);
 
 create table if not exists transcription_error_reports (
     id uuid primary key default gen_random_uuid(),

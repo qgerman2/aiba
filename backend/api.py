@@ -26,7 +26,7 @@ YOUTUBE_DIR = MEDIA_DIR / "youtube"
 SCRIPT_PATH = BACKEND_DIR / "test4.py"
 PROCESSING_PYTHON = os.environ.get("PROCESSING_PYTHON", sys.executable)
 FRONTEND_FILE_KINDS = {"audio", "thumbnail", "phrase_timestamps", "char_pinyin_timestamps"}
-PROGRESS_TOTAL = 10
+PROGRESS_TOTAL = 11
 STAGE_PROGRESS = {
     "queued": 0,
     "upload_saved": 1,
@@ -39,9 +39,10 @@ STAGE_PROGRESS = {
     "pinyin": 6,
     "alignment": 7,
     "timestamp_mapping": 8,
-    "db_save": 9,
-    "completed": 10,
-    "failed": 10,
+    "word_segmentation": 9,
+    "db_save": 10,
+    "completed": 11,
+    "failed": 11,
 }
 
 job_queue: asyncio.Queue[str] = asyncio.Queue()
@@ -204,6 +205,8 @@ def infer_stage(line: str, stream_name: str) -> str | None:
         or line.startswith("Number of phrase timestamps:")
     ):
         return "timestamp_mapping"
+    if line.startswith("Starting word segmentation.") or line.startswith("Number of words segmented:"):
+        return "word_segmentation"
     if line.startswith("Starting database save.") or line.startswith("Database rows saved."):
         return "db_save"
     return None
@@ -939,6 +942,27 @@ def run_characters(run_id: str):
     if not characters:
         raise HTTPException(status_code=404, detail="No transcript characters found for run")
     return {"processing_run_id": run_id, "characters": characters}
+
+
+@app.get("/runs/{run_id}/words")
+def run_words(run_id: str):
+    with connect_db() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                select tw.word_index, tp.phrase_index, tw.phrase_word_index,
+                       tw.start_seconds, tw.end_seconds, tw.hanzi, tw.pinyin, tw.char_count
+                from transcript_words tw
+                join transcript_phrases tp on tp.id = tw.phrase_id
+                where tw.processing_run_id = %s
+                order by tw.word_index
+                """,
+                (run_id,),
+            )
+            words = cur.fetchall()
+    if not words:
+        raise HTTPException(status_code=404, detail="No transcript words found for run")
+    return {"processing_run_id": run_id, "words": words}
 
 
 @app.post("/runs/{run_id}/characters/{char_index}/error-reports")

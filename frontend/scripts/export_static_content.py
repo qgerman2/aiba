@@ -139,6 +139,17 @@ def main() -> None:
                 """,
                 (run_id,),
             ).fetchall()
+            words = conn.execute(
+                """
+                select tw.word_index, tp.phrase_index, tw.phrase_word_index,
+                       tw.start_seconds, tw.end_seconds, tw.hanzi, tw.pinyin, tw.char_count
+                  from transcript_words tw
+                  join transcript_phrases tp on tp.id = tw.phrase_id
+                 where tw.processing_run_id = %s
+                 order by tw.word_index
+                """,
+                (run_id,),
+            ).fetchall()
             files = conn.execute(
                 """
                 select id, processing_run_id, file_kind, storage_path, mime_type,
@@ -162,6 +173,7 @@ def main() -> None:
                     "files": static_files,
                     "phrases": phrases,
                     "characters": characters,
+                    "words": words,
                 }
             )
 
