@@ -989,6 +989,11 @@ time {
   white-space: nowrap;
 }
 
+.wordGroup.completed.playing {
+  border-color: #2f65d8;
+  background: #eaf0ff;
+}
+
 .punctuation {
   align-self: center;
   min-width: 12px;
