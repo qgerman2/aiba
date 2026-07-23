@@ -198,7 +198,6 @@ type PhraseRenderItem =
       type: "word";
       charIndexes: number[];
       hanzi: string;
-      pinyin: string;
     };
 
 type MediaMode = "youtube" | "audio";
@@ -517,8 +516,7 @@ function buildPhraseRenderItems(
         result.push({
           type: "word",
           charIndexes,
-          hanzi: group.hanzi,
-          pinyin: group.pinyin
+          hanzi: group.hanzi
         });
         i += group.charCount;
         continue;
@@ -1825,68 +1823,17 @@ function App() {
     return true;
   }
 
-  function isCharFocusable(phraseIndex: number, charIndex: number) {
-    const prompt = phrasePrompts[phraseIndex];
-    const char = prompt?.chars[charIndex];
-
-    if (!prompt || !char) {
-      return false;
-    }
-
-    const group = prompt.words.find(
-      (word) =>
-        word.charCount > 1 &&
-        charIndex >= word.startCharIndex &&
-        charIndex < word.startCharIndex + word.charCount
-    );
-
-    if (!group) {
-      return true;
-    }
-
-    const groupCharIndexes = Array.from(
-      { length: group.charCount },
-      (_, offset) => group.startCharIndex + offset
-    );
-    const allCorrect = groupCharIndexes.every((groupCharIndex) => {
-      const groupChar = prompt.chars[groupCharIndex];
-      if (!groupChar) {
-        return false;
-      }
-      const value = answers[answerKey(phraseIndex, groupCharIndex)] ?? "";
-      return (
-        value.length > 0 &&
-        normalizePinyin(value) === normalizePinyin(groupChar.expected)
-      );
-    });
-
-    return !allCorrect;
-  }
-
-  function findFocusableCharIndex(phraseIndex: number, direction: -1 | 1) {
-    const chars = phrasePrompts[phraseIndex]?.chars ?? [];
-    const range =
-      direction === 1
-        ? Array.from({ length: chars.length }, (_, index) => index)
-        : Array.from({ length: chars.length }, (_, index) => chars.length - 1 - index);
-
-    return range.find((index) => isCharFocusable(phraseIndex, index)) ?? -1;
-  }
-
   function moveInputFocus(
     phraseIndex: number,
     charIndex: number,
     offset: -1 | 1
   ) {
     const currentPhraseChars = phrasePrompts[phraseIndex]?.chars.length ?? 0;
-    let nextCharIndex = charIndex + offset;
+    const nextCharIndex = charIndex + offset;
 
-    while (nextCharIndex >= 0 && nextCharIndex < currentPhraseChars) {
-      if (isCharFocusable(phraseIndex, nextCharIndex)) {
-        focusInput(phraseIndex, nextCharIndex);
-        return;
-      }
-      nextCharIndex += offset;
+    if (nextCharIndex >= 0 && nextCharIndex < currentPhraseChars) {
+      focusInput(phraseIndex, nextCharIndex);
+      return;
     }
 
     if (offset === 1) {
@@ -1895,15 +1842,15 @@ function App() {
         nextPhraseIndex < phrasePrompts.length;
         nextPhraseIndex += 1
       ) {
-        const targetCharIndex = findFocusableCharIndex(nextPhraseIndex, 1);
+        const nextPhrase = phrasePrompts[nextPhraseIndex];
 
-        if (targetCharIndex >= 0) {
+        if (nextPhrase.chars.length > 0) {
           pendingInputFocusRef.current = {
             phraseIndex: nextPhraseIndex,
-            charIndex: targetCharIndex
+            charIndex: 0
           };
           setSelectedPhraseIndex(nextPhraseIndex);
-          setFocusedCharIndex(targetCharIndex);
+          setFocusedCharIndex(0);
           return;
         }
       }
@@ -1916,15 +1863,16 @@ function App() {
       previousPhraseIndex >= 0;
       previousPhraseIndex -= 1
     ) {
-      const targetCharIndex = findFocusableCharIndex(previousPhraseIndex, -1);
+      const previousPhrase = phrasePrompts[previousPhraseIndex];
+      const lastCharIndex = previousPhrase.chars.length - 1;
 
-      if (targetCharIndex >= 0) {
+      if (lastCharIndex >= 0) {
         pendingInputFocusRef.current = {
           phraseIndex: previousPhraseIndex,
-          charIndex: targetCharIndex
+          charIndex: lastCharIndex
         };
         setSelectedPhraseIndex(previousPhraseIndex);
-        setFocusedCharIndex(targetCharIndex);
+        setFocusedCharIndex(lastCharIndex);
         return;
       }
     }
@@ -2101,6 +2049,97 @@ function App() {
       ? youtubeThumbnailUrl(statusJob?.source_url ?? youtubeInputUrl)
       : null;
   const selectedPhrasePanelIndex = selectedPhraseIndex;
+
+  function renderSyllable(charIndex: number, options: { hideHanzi?: boolean } = {}) {
+    const char = selectedPhrase!.chars[charIndex];
+    const key = answerKey(selectedPhrasePanelIndex, charIndex);
+    const value = answers[key] ?? "";
+    const isCorrect =
+      value.length > 0 && normalizePinyin(value) === normalizePinyin(char.expected);
+    const isRevealed = isCorrect || hanziHintKey === key;
+    const hasPinyinHint = pinyinHintKey === key;
+    const hasUsedHint = hintedKeys[key];
+
+    return (
+      <label
+        className={[
+          "syllable",
+          hasUsedHint ? "hinted" : "",
+          highlightCurrentSyllable && activeCharacterIndex === charIndex
+            ? "playing"
+            : ""
+        ]
+          .filter(Boolean)
+          .join(" ")}
+        key={`${key}-${char.start}`}
+      >
+        {!options.hideHanzi && (
+          <span className={isRevealed ? "hanzi revealed" : "hanzi"}>
+            {isRevealed ? char.char : ""}
+          </span>
+        )}
+        <input
+          ref={(element) => {
+            inputRefs.current[key] = element;
+          }}
+          className={isCorrect ? "correct" : ""}
+          inputMode="text"
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect="off"
+          spellCheck={false}
+          name={`pinyin-${selectedPhrasePanelIndex}-${charIndex}`}
+          value={value}
+          placeholder="pinyin"
+          aria-label={`Pinyin for character ${charIndex + 1}`}
+          onChange={(event) => {
+            const nextValue = event.target.value;
+            const nextAnswers = {
+              ...answers,
+              [key]: nextValue
+            };
+
+            setAnswers(nextAnswers);
+            updateCachedProgress(nextAnswers, hintedKeys);
+
+            if (
+              normalizePinyin(nextValue) ===
+              normalizePinyin(char.expected)
+            ) {
+              window.setTimeout(() => {
+                moveInputFocus(selectedPhrasePanelIndex, charIndex, 1);
+              }, 0);
+            }
+          }}
+          onFocus={() => {
+            setSelectedPhraseIndex(selectedPhrasePanelIndex);
+            setFocusedCharIndex(charIndex);
+            setHanziHintKey(null);
+            setPinyinHintKey(null);
+          }}
+          onBlur={() => {
+            setHanziHintKey((current) =>
+              current === key ? null : current
+            );
+            setPinyinHintKey((current) =>
+              current === key ? null : current
+            );
+          }}
+          onKeyDown={(event) =>
+            handleInputKeyDown(
+              event,
+              selectedPhrasePanelIndex,
+              charIndex,
+              selectedPhrase!.chars.length
+            )
+          }
+        />
+        <span className="pinyinHint">
+          {hasPinyinHint ? char.expected : ""}
+        </span>
+      </label>
+    );
+  }
 
   return (
     <main className="shell">
@@ -2938,99 +2977,17 @@ function App() {
                         .join(" ")}
                       key={`word-${item.charIndexes[0]}`}
                     >
-                      <span className="hanzi revealed">{item.hanzi}</span>
-                      <span className="wordPinyin">{item.pinyin}</span>
+                      <span className="hanzi revealed wordHanzi">{item.hanzi}</span>
+                      <div className="wordSyllables">
+                        {item.charIndexes.map((charIndex) =>
+                          renderSyllable(charIndex, { hideHanzi: true })
+                        )}
+                      </div>
                     </div>
                   );
                 }
 
-                const { char, charIndex } = item;
-                const key = answerKey(selectedPhrasePanelIndex, charIndex);
-                const value = answers[key] ?? "";
-                const isCorrect =
-                  value.length > 0 &&
-                  normalizePinyin(value) === normalizePinyin(char.expected);
-                const isRevealed = isCorrect || hanziHintKey === key;
-                const hasPinyinHint = pinyinHintKey === key;
-                const hasUsedHint = hintedKeys[key];
-
-                return (
-                  <label
-                    className={[
-                      "syllable",
-                      hasUsedHint ? "hinted" : "",
-                      highlightCurrentSyllable && activeCharacterIndex === charIndex
-                        ? "playing"
-                        : ""
-                    ]
-                      .filter(Boolean)
-                      .join(" ")}
-                    key={`${key}-${char.start}`}
-                  >
-                    <span className={isRevealed ? "hanzi revealed" : "hanzi"}>
-                      {isRevealed ? char.char : ""}
-                    </span>
-                    <input
-                      ref={(element) => {
-                        inputRefs.current[key] = element;
-                      }}
-                      className={isCorrect ? "correct" : ""}
-                      inputMode="text"
-                      autoCapitalize="none"
-                      autoComplete="off"
-                      autoCorrect="off"
-                      spellCheck={false}
-                      name={`pinyin-${selectedPhrasePanelIndex}-${charIndex}`}
-                      value={value}
-                      placeholder="pinyin"
-                      aria-label={`Pinyin for character ${charIndex + 1}`}
-                      onChange={(event) => {
-                        const nextValue = event.target.value;
-                        const nextAnswers = {
-                          ...answers,
-                          [key]: nextValue
-                        };
-
-                        setAnswers(nextAnswers);
-                        updateCachedProgress(nextAnswers, hintedKeys);
-
-                        if (
-                          normalizePinyin(nextValue) ===
-                          normalizePinyin(char.expected)
-                        ) {
-                          window.setTimeout(() => {
-                            moveInputFocus(selectedPhrasePanelIndex, charIndex, 1);
-                          }, 0);
-                        }
-                      }}
-                      onFocus={() => {
-                        setSelectedPhraseIndex(selectedPhrasePanelIndex);
-                        setFocusedCharIndex(charIndex);
-                        setHanziHintKey(null);
-                        setPinyinHintKey(null);
-                      }}
-                      onBlur={() => {
-                        setHanziHintKey((current) =>
-                          current === key ? null : current
-                        );
-                        setPinyinHintKey((current) =>
-                          current === key ? null : current
-                        );
-                      }}
-                      onKeyDown={(event) =>
-                        handleInputKeyDown(
-                          event,
-                          selectedPhrasePanelIndex,
-                          charIndex,
-                          selectedPhrase.chars.length
-                        )
-                      }
-                    />
-                    <span className="pinyinHint">
-                      {hasPinyinHint ? char.expected : ""}
-                    </span>
-                  </label>
-                );
+                return renderSyllable(item.charIndex);
               })}
             </div>
           </section>
