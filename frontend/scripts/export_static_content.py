@@ -105,6 +105,8 @@ def main() -> None:
               join processing_runs pr on pr.id = pj.processing_run_id
               join audio_assets aa on aa.id = pr.audio_asset_id
              where pj.status = 'succeeded'
+               and not ('no-publish' = any(pj.tags))
+               and not ('no-publish' = any(aa.tags))
              order by pj.completed_at desc nulls last, pj.queued_at desc
             """
         ).fetchall()
