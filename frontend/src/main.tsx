@@ -687,6 +687,7 @@ function App() {
     charIndex: number;
   } | null>(null);
   const playUntilRef = useRef<number | null>(null);
+  const suppressPhraseAutoAdvanceRef = useRef(false);
   const pendingMediaSeekRef = useRef<number | null>(null);
   const animationFrameRef = useRef<number | null>(null);
   const previousPhraseIndexRef = useRef(0);
@@ -1015,6 +1016,7 @@ function App() {
   useEffect(() => {
     if (
       isPlaybackActive &&
+      !suppressPhraseAutoAdvanceRef.current &&
       activePhraseIndex !== null &&
       activePhraseIndex !== selectedPhraseIndex
     ) {
@@ -1038,10 +1040,6 @@ function App() {
   const selectedPhrase = phrasePrompts[selectedPhraseIndex] ?? null;
   const nextPhrase = phrasePrompts[selectedPhraseIndex + 1] ?? null;
   const selectedCharacter = selectedPhrase?.chars[focusedCharIndex] ?? null;
-  const currentPhrase =
-    activePhraseIndex === null
-      ? selectedPhrase
-      : phrasePrompts[activePhraseIndex] ?? selectedPhrase;
   const activeCharacterIndex = selectedPhrase
     ? findActiveCharacterIndex(selectedPhrase.chars, currentTime)
     : null;
@@ -1782,6 +1780,7 @@ function App() {
       : prompt.phrase.start;
 
     setSelectedPhraseIndex(index);
+    suppressPhraseAutoAdvanceRef.current = true;
     playUntilRef.current = stopAt;
     seekMedia(startAt);
     playMedia();
@@ -1819,6 +1818,7 @@ function App() {
       animationFrameRef.current = null;
     }
     setIsPlaybackActive(false);
+    suppressPhraseAutoAdvanceRef.current = false;
   }
 
   function trackPlayback() {
@@ -2092,16 +2092,20 @@ function App() {
     uploadSourceType === "youtube"
       ? youtubeThumbnailUrl(statusJob?.source_url ?? youtubeInputUrl)
       : null;
-  const selectedPhrasePanelIndex = selectedPhraseIndex;
-
-  function renderSyllable(charIndex: number, options: { hideHanzi?: boolean } = {}) {
-    const char = selectedPhrase!.chars[charIndex];
-    const key = answerKey(selectedPhrasePanelIndex, charIndex);
+  function renderSyllable(
+    phraseIndex: number,
+    charIndex: number,
+    options: { hideHanzi?: boolean; interactive?: boolean } = {}
+  ) {
+    const interactive = options.interactive ?? true;
+    const prompt = phrasePrompts[phraseIndex]!;
+    const char = prompt.chars[charIndex];
+    const key = answerKey(phraseIndex, charIndex);
     const value = answers[key] ?? "";
     const isCorrect =
       value.length > 0 && normalizePinyin(value) === normalizePinyin(char.expected);
-    const isRevealed = isCorrect || hanziHintKey === key;
-    const hasPinyinHint = pinyinHintKey === key;
+    const isRevealed = isCorrect || (interactive && hanziHintKey === key);
+    const hasPinyinHint = interactive && pinyinHintKey === key;
     const hasUsedHint = !options.hideHanzi && hintedKeys[key];
 
     return (
@@ -2109,7 +2113,10 @@ function App() {
         className={[
           "syllable",
           hasUsedHint ? "hinted" : "",
-          highlightCurrentSyllable && activeCharacterIndex === charIndex
+          !interactive ? "preview" : "",
+          interactive &&
+          highlightCurrentSyllable &&
+          activeCharacterIndex === charIndex
             ? "playing"
             : ""
         ]
@@ -2124,7 +2131,9 @@ function App() {
         )}
         <input
           ref={(element) => {
-            inputRefs.current[key] = element;
+            if (interactive) {
+              inputRefs.current[key] = element;
+            }
           }}
           className={isCorrect ? "correct" : ""}
           inputMode="text"
@@ -2132,56 +2141,128 @@ function App() {
           autoComplete="off"
           autoCorrect="off"
           spellCheck={false}
-          name={`pinyin-${selectedPhrasePanelIndex}-${charIndex}`}
+          disabled={!interactive}
+          tabIndex={interactive ? undefined : -1}
+          name={`pinyin-${phraseIndex}-${charIndex}`}
           value={value}
           placeholder="pinyin"
           aria-label={`Pinyin for character ${charIndex + 1}`}
-          onChange={(event) => {
-            const nextValue = event.target.value;
-            const nextAnswers = {
-              ...answers,
-              [key]: nextValue
-            };
+          onChange={
+            interactive
+              ? (event) => {
+                  const nextValue = event.target.value;
+                  const nextAnswers = {
+                    ...answers,
+                    [key]: nextValue
+                  };
 
-            setAnswers(nextAnswers);
-            updateCachedProgress(nextAnswers, hintedKeys);
+                  setAnswers(nextAnswers);
+                  updateCachedProgress(nextAnswers, hintedKeys);
 
-            if (
-              normalizePinyin(nextValue) ===
-              normalizePinyin(char.expected)
-            ) {
-              window.setTimeout(() => {
-                moveInputFocus(selectedPhrasePanelIndex, charIndex, 1);
-              }, 0);
-            }
-          }}
-          onFocus={() => {
-            setSelectedPhraseIndex(selectedPhrasePanelIndex);
-            setFocusedCharIndex(charIndex);
-            setHanziHintKey(null);
-            setPinyinHintKey(null);
-          }}
-          onBlur={() => {
-            setHanziHintKey((current) =>
-              current === key ? null : current
-            );
-            setPinyinHintKey((current) =>
-              current === key ? null : current
-            );
-          }}
-          onKeyDown={(event) =>
-            handleInputKeyDown(
-              event,
-              selectedPhrasePanelIndex,
-              charIndex,
-              selectedPhrase!.chars.length
-            )
+                  if (
+                    normalizePinyin(nextValue) ===
+                    normalizePinyin(char.expected)
+                  ) {
+                    window.setTimeout(() => {
+                      moveInputFocus(phraseIndex, charIndex, 1);
+                    }, 0);
+                  }
+                }
+              : undefined
+          }
+          onFocus={
+            interactive
+              ? () => {
+                  setSelectedPhraseIndex(phraseIndex);
+                  setFocusedCharIndex(charIndex);
+                  setHanziHintKey(null);
+                  setPinyinHintKey(null);
+                }
+              : undefined
+          }
+          onBlur={
+            interactive
+              ? () => {
+                  setHanziHintKey((current) =>
+                    current === key ? null : current
+                  );
+                  setPinyinHintKey((current) =>
+                    current === key ? null : current
+                  );
+                }
+              : undefined
+          }
+          onKeyDown={
+            interactive
+              ? (event) =>
+                  handleInputKeyDown(event, phraseIndex, charIndex, prompt.chars.length)
+              : undefined
           }
         />
         <span className="pinyinHint">
           {hasPinyinHint ? char.expected : ""}
         </span>
       </label>
+    );
+  }
+
+  function renderPhraseSyllableRow(
+    phraseIndex: number,
+    prompt: PhrasePrompt,
+    interactive: boolean
+  ) {
+    return buildPhraseRenderItems(prompt, phraseIndex, answers).map(
+      (item, itemIndex) => {
+        if (item.type === "punctuation") {
+          return (
+            <span
+              className="punctuation"
+              key={`punctuation-${phraseIndex}-${itemIndex}`}
+            >
+              {item.text}
+            </span>
+          );
+        }
+
+        if (item.type === "word") {
+          const isWordPlaying =
+            interactive &&
+            highlightCurrentSyllable &&
+            activeCharacterIndex !== null &&
+            item.charIndexes.includes(activeCharacterIndex);
+          const wordHasHint = item.charIndexes.some(
+            (charIndex) => hintedKeys[answerKey(phraseIndex, charIndex)]
+          );
+
+          return (
+            <div
+              className={[
+                "wordGroup",
+                item.completed ? "completed" : "",
+                item.completed && wordHasHint ? "hinted" : "",
+                isWordPlaying ? "playing" : ""
+              ]
+                .filter(Boolean)
+                .join(" ")}
+              key={`word-${phraseIndex}-${item.charIndexes[0]}`}
+            >
+              {item.completed && (
+                <span className="hanzi revealed wordHanzi">{item.hanzi}</span>
+              )}
+              <div className="wordSyllables">
+                {item.charIndexes.map((charIndex) =>
+                  renderSyllable(phraseIndex, charIndex, {
+                    hideHanzi: item.completed,
+                    interactive
+                  })
+                )}
+              </div>
+            </div>
+          );
+        }
+
+        return renderSyllable(phraseIndex, item.charIndex, { interactive });
+      }
     );
   }
 
@@ -2391,6 +2472,9 @@ function App() {
             <p>
               Transcription or pinyin errors can be flagged per character
               using the report control in the player.
+            </p>
+            <p>
+              Built with Claude Sonnet 5 and GPT-5.5.
             </p>
             <p>
               Ask me why its called aiba.
@@ -2685,22 +2769,37 @@ function App() {
               </div>
             )}
           </div>
-          <button
-            type="button"
-            className="ghostButton"
-            onClick={fillPlayerProgress}
-            disabled={!selectedEntryId || phrasePrompts.length === 0}
-          >
-            Fill progress
-          </button>
-          <button
-            type="button"
-            className="ghostButton"
-            onClick={clearPlayerProgress}
-            disabled={!selectedEntryId || phrasePrompts.length === 0}
-          >
-            Clear progress
-          </button>
+          <div className="playerHeaderActions">
+            <button
+              type="button"
+              className="ghostButton"
+              onClick={fillPlayerProgress}
+              disabled={!selectedEntryId || phrasePrompts.length === 0}
+            >
+              Fill progress
+            </button>
+            <button
+              type="button"
+              className="ghostButton"
+              onClick={clearPlayerProgress}
+              disabled={!selectedEntryId || phrasePrompts.length === 0}
+            >
+              Clear progress
+            </button>
+            <button
+              type="button"
+              className="ghostButton"
+              onClick={() => void openReportDialog()}
+              disabled={
+                isCheckingReportServer ||
+                !selectedRunId ||
+                !selectedPhrase ||
+                !selectedCharacter
+              }
+            >
+              {isCheckingReportServer ? "Checking server" : "Report character"}
+            </button>
+          </div>
         </header>
 
         <section className="mediaPanel">
@@ -2826,19 +2925,6 @@ function App() {
             />
             <span>Syllable highlight</span>
           </label>
-          <button
-            type="button"
-            className="ghostButton"
-            onClick={() => void openReportDialog()}
-            disabled={
-              isCheckingReportServer ||
-              !selectedRunId ||
-              !selectedPhrase ||
-              !selectedCharacter
-            }
-          >
-            {isCheckingReportServer ? "Checking server" : "Report character"}
-          </button>
         </div>
 
         {(reportError || reportMessage) && (
@@ -2928,42 +3014,11 @@ function App() {
           </div>
         )}
 
-        <section className="nowPlaying" aria-live="polite">
-          <p className="label">Current phrase</p>
-          <p className="phrase">
-            {playerError ??
-              (isLoadingRun
-                ? "Loading run..."
-                : currentPhrase
-                  ? `Phrase ${selectedPhraseIndex + 1}`
-                  : "Select a completed entry")}
+        {(playerError || isLoadingRun) && (
+          <p className="playerStatusMessage" role="status" aria-live="polite">
+            {playerError ?? "Loading run..."}
           </p>
-          <div className="meta">
-            <span>{currentTime.toFixed(2)}s</span>
-            <span>
-              {phrasePrompts.length > 0 ? selectedPhraseIndex + 1 : 0} /{" "}
-              {phrasePrompts.length}
-            </span>
-          </div>
-        </section>
-
-        <section className="shortcuts" aria-label="Keyboard shortcuts">
-          <span>
-            <kbd>Space</kbd> play current syllable window
-          </span>
-          <span>
-            <kbd>Left</kbd> previous input
-          </span>
-          <span>
-            <kbd>Right</kbd> next input
-          </span>
-          <span>
-            <kbd>Up</kbd> reveal current character
-          </span>
-          <span>
-            <kbd>Down</kbd> reveal current pinyin
-          </span>
-        </section>
+        )}
 
         <div className="mobileActions" aria-label="Mobile syllable actions">
           <button
@@ -3017,65 +3072,44 @@ function App() {
             </div>
 
             <div className="syllables">
-              {buildPhraseRenderItems(
-                selectedPhrase,
-                selectedPhrasePanelIndex,
-                answers
-              ).map((item, itemIndex) => {
-                if (item.type === "punctuation") {
-                  return (
-                    <span className="punctuation" key={`punctuation-${itemIndex}`}>
-                      {item.text}
-                    </span>
-                  );
-                }
-
-                if (item.type === "word") {
-                  const isWordPlaying =
-                    highlightCurrentSyllable &&
-                    activeCharacterIndex !== null &&
-                    item.charIndexes.includes(activeCharacterIndex);
-                  const wordHasHint = item.charIndexes.some(
-                    (charIndex) =>
-                      hintedKeys[answerKey(selectedPhrasePanelIndex, charIndex)]
-                  );
-
-                  return (
-                    <div
-                      className={[
-                        "wordGroup",
-                        item.completed ? "completed" : "",
-                        item.completed && wordHasHint ? "hinted" : "",
-                        isWordPlaying ? "playing" : ""
-                      ]
-                        .filter(Boolean)
-                        .join(" ")}
-                      key={`word-${item.charIndexes[0]}`}
-                    >
-                      {item.completed && (
-                        <span className="hanzi revealed wordHanzi">{item.hanzi}</span>
-                      )}
-                      <div className="wordSyllables">
-                        {item.charIndexes.map((charIndex) =>
-                          renderSyllable(charIndex, { hideHanzi: item.completed })
-                        )}
-                      </div>
-                    </div>
-                  );
-                }
-
-                return renderSyllable(item.charIndex);
-              })}
+              {renderPhraseSyllableRow(selectedPhraseIndex, selectedPhrase, true)}
             </div>
           </section>
         )}
 
         {nextPhrase && (
-          <section className="nextPhrasePreview" aria-label="Next phrase preview">
-            <p className="label">Next phrase</p>
-            <p className="nextPhraseText">{nextPhrase.phrase.text}</p>
+          <section className="phraseCard nextPhrasePreview">
+            <div className="phraseRowHeader">
+              <span>Next phrase</span>
+            </div>
+
+            <div className="syllables">
+              {renderPhraseSyllableRow(
+                selectedPhraseIndex + 1,
+                nextPhrase,
+                false
+              )}
+            </div>
           </section>
         )}
+
+        <section className="shortcuts" aria-label="Keyboard shortcuts">
+          <span>
+            <kbd>Space</kbd> play current syllable window
+          </span>
+          <span>
+            <kbd>Left</kbd> previous input
+          </span>
+          <span>
+            <kbd>Right</kbd> next input
+          </span>
+          <span>
+            <kbd>Up</kbd> reveal current character
+          </span>
+          <span>
+            <kbd>Down</kbd> reveal current pinyin
+          </span>
+        </section>
       </section>
       )}
     </main>

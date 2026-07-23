@@ -784,13 +784,16 @@ button:disabled {
   cursor: not-allowed;
 }
 
-.nowPlaying {
-  margin-top: 14px;
-  padding: 12px 14px;
-  border: 1px solid #d7d0c2;
-  border-radius: 8px;
-  background: #fffaf0;
-  box-shadow: 0 8px 20px rgba(23, 32, 38, 0.07);
+.playerHeaderActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.playerStatusMessage {
+  margin: 14px 0 0;
+  color: #52646f;
+  line-height: 1.35;
 }
 
 .label {
@@ -896,22 +899,22 @@ kbd {
 }
 
 .nextPhrasePreview {
-  margin-top: 12px;
-  padding: 12px 18px;
-  border: 1px dashed #d7d0c2;
-  border-radius: 8px;
+  border-style: dashed;
   background: #f7f3ea;
+  opacity: 0.85;
+}
+
+.syllable.preview input:disabled {
+  border-color: #d7d0c2;
+  background: #f2ede1;
   color: #7a7263;
+  cursor: default;
 }
 
-.nextPhrasePreview .label {
-  margin: 0 0 4px;
-}
-
-.nextPhraseText {
-  margin: 0;
-  font-size: 1.1rem;
-  line-height: 1.4;
+.syllable.preview input.correct:disabled {
+  border-color: #a9d3bb;
+  background: #eaf5ee;
+  color: #3c7455;
 }
 
 .phraseRowHeader {
