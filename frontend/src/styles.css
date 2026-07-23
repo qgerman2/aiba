@@ -1023,8 +1023,13 @@ time {
   display: grid;
   gap: 5px;
   padding: 6px;
-  border: 2px solid #227a4f;
+  border: 2px solid #d7d0c2;
   border-radius: 8px;
+  background: #fffaf0;
+}
+
+.wordGroup.completed.graded {
+  border-color: #227a4f;
   background: #e2f6e9;
 }
 

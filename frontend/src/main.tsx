@@ -727,6 +727,7 @@ function App() {
   >("forward");
   const [highlightCurrentPhrase, setHighlightCurrentPhrase] = useState(true);
   const [highlightCurrentSyllable, setHighlightCurrentSyllable] = useState(true);
+  const [showGradingHighlights, setShowGradingHighlights] = useState(true);
   const [isReportDialogOpen, setIsReportDialogOpen] = useState(false);
   const [isCheckingReportServer, setIsCheckingReportServer] = useState(false);
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
@@ -853,6 +854,7 @@ function App() {
             ) {
               if (event.data === window.YT?.PlayerState.ENDED) {
                 playUntilRef.current = null;
+                suppressPhraseAutoAdvanceRef.current = false;
               }
               stopTrackingPlayback();
             }
@@ -1799,6 +1801,7 @@ function App() {
     setFocusedCharIndex(0);
     setSelectedPhraseIndex(nextIndex);
     playUntilRef.current = null;
+    suppressPhraseAutoAdvanceRef.current = false;
     pauseMedia();
     seekMedia(phrasePrompts[nextIndex]?.phrase.start ?? 0);
   }
@@ -1809,6 +1812,7 @@ function App() {
     if (playUntilRef.current !== null && time >= playUntilRef.current) {
       pauseMedia();
       playUntilRef.current = null;
+      suppressPhraseAutoAdvanceRef.current = false;
     }
   }
 
@@ -1818,7 +1822,6 @@ function App() {
       animationFrameRef.current = null;
     }
     setIsPlaybackActive(false);
-    suppressPhraseAutoAdvanceRef.current = false;
   }
 
   function trackPlayback() {
@@ -2106,7 +2109,7 @@ function App() {
       value.length > 0 && normalizePinyin(value) === normalizePinyin(char.expected);
     const isRevealed = isCorrect || (interactive && hanziHintKey === key);
     const hasPinyinHint = interactive && pinyinHintKey === key;
-    const hasUsedHint = !options.hideHanzi && hintedKeys[key];
+    const hasUsedHint = showGradingHighlights && !options.hideHanzi && hintedKeys[key];
 
     return (
       <label
@@ -2135,7 +2138,7 @@ function App() {
               inputRefs.current[key] = element;
             }
           }}
-          className={isCorrect ? "correct" : ""}
+          className={showGradingHighlights && isCorrect ? "correct" : ""}
           inputMode="text"
           autoCapitalize="none"
           autoComplete="off"
@@ -2239,7 +2242,10 @@ function App() {
               className={[
                 "wordGroup",
                 item.completed ? "completed" : "",
-                item.completed && wordHasHint ? "hinted" : "",
+                item.completed && showGradingHighlights ? "graded" : "",
+                item.completed && showGradingHighlights && wordHasHint
+                  ? "hinted"
+                  : "",
                 isWordPlaying ? "playing" : ""
               ]
                 .filter(Boolean)
@@ -2844,6 +2850,7 @@ function App() {
             src={audioUrl ?? undefined}
             onEnded={() => {
               playUntilRef.current = null;
+              suppressPhraseAutoAdvanceRef.current = false;
               stopTrackingPlayback();
             }}
             onPause={stopTrackingPlayback}
@@ -2924,6 +2931,16 @@ function App() {
               }
             />
             <span>Syllable highlight</span>
+          </label>
+          <label className="switchControl">
+            <input
+              type="checkbox"
+              checked={showGradingHighlights}
+              onChange={(event) =>
+                setShowGradingHighlights(event.target.checked)
+              }
+            />
+            <span>Grading highlight</span>
           </label>
         </div>
 
