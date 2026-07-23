@@ -307,11 +307,27 @@ function loadYouTubeApi() {
   });
 }
 
+class ApiError extends Error {
+  status: number;
+
+  constructor(status: number, message: string) {
+    super(message);
+    this.status = status;
+  }
+}
+
 async function fetchJson<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch(apiUrl(path), init);
 
   if (!response.ok) {
-    throw new Error(`${response.status} ${response.statusText}`);
+    let detail = response.statusText;
+    try {
+      const body = (await response.json()) as { detail?: string };
+      detail = body.detail ?? detail;
+    } catch {
+      // response had no JSON body; fall back to statusText
+    }
+    throw new ApiError(response.status, detail);
   }
 
   return response.json() as Promise<T>;
@@ -1866,11 +1882,17 @@ function App() {
       setReportPinyinSuggestion("");
       setReportMessage("Report sent.");
     } catch (unknownError) {
-      setReportError(
-        unknownError instanceof Error
-          ? `Could not send report: ${unknownError.message}`
-          : "Could not send report."
-      );
+      if (unknownError instanceof ApiError && unknownError.status === 404) {
+        setReportError(
+          "This entry is out of date on the server. Reload the page and try again."
+        );
+      } else {
+        setReportError(
+          unknownError instanceof Error
+            ? `Could not send report: ${unknownError.message}`
+            : "Could not send report."
+        );
+      }
     } finally {
       setIsSubmittingReport(false);
     }
@@ -2100,24 +2122,27 @@ function App() {
           </div>
 
           <section className="aboutPanel">
-            <p>Programmed by GPT-5.5.</p>
             <p>
-              The backend uses FastAPI with Postgres for job metadata, generated
-              file records, phrase timings, and character timings. Audio uploads
-              are processed through an in-process queue that runs the ASR and
-              alignment pipeline.
+              aiba converts Chinese audio into a transcript, pinyin, and
+              per-character timestamps aligned to playback.
             </p>
             <p>
-              Long audio is split locally with silence-based VAD before ASR.
-              Chunk boundaries and per-chunk transcripts are stored in
-              Postgres and a chunk manifest, while playback timestamps remain
-              aligned to the original full audio.
+              Input: uploaded audio file or YouTube URL. Audio above a
+              duration threshold is chunked locally via silence-based VAD.
+              Each chunk is transcribed with Qwen/Qwen3-ASR-0.6B. The full
+              transcript is segmented into phrases with qwen3:4b-instruct
+              through Ollama.
             </p>
             <p>
-              The AI stack runs Qwen/Qwen3-ASR-0.6B locally for transcription,
-              Qwen/Qwen3-ForcedAligner-0.6B locally for character timing
-              alignment, qwen3:4b-instruct through Ollama for phrase splitting,
-              and pypinyin plus tone sandhi rules for numbered pinyin.
+              Character-level timing is produced by
+              Qwen/Qwen3-ForcedAligner-0.6B. Pinyin readings are resolved
+              per character via pypinyin's dictionary lookup. FastAPI and
+              Postgres store job state, transcripts, phrase timings,
+              character timings, and generated file records.
+            </p>
+            <p>
+              Transcription or pinyin errors can be flagged per character
+              using the report control in the player.
             </p>
             <p>
               Ask me why its called aiba.

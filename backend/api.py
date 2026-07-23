@@ -636,7 +636,7 @@ def pipeline_state():
             "asr": "Qwen/Qwen3-ASR-0.6B",
             "aligner": "Qwen/Qwen3-ForcedAligner-0.6B",
             "phrase_splitter": "qwen3:4b-instruct",
-            "pinyin": "pypinyin+sandhi-rules",
+            "pinyin": "pypinyin+dictionary",
         },
         "queue": {
             "active_job_id": active_job_id,

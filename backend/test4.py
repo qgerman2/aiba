@@ -374,58 +374,24 @@ def split_phrases(text, max_chars):
     return phrases
 
 
-def tone_number(syllable):
-    match = re.search(r"([1-5])$", syllable)
-    return int(match.group(1)) if match else None
+def pinyin_units_with_dictionary(phrase):
+    han_indices = [
+        index for index, ch in enumerate(phrase) if "\u4e00" <= ch <= "\u9fff"
+    ]
+    if not han_indices:
+        return []
 
+    readings = hanzi_to_pinyin(
+        phrase,
+        style=Style.TONE3,
+        neutral_tone_with_five=True,
+        errors="ignore",
+    )
 
-def replace_tone(syllable, tone):
-    return re.sub(r"[1-5]$", str(tone), syllable)
-
-
-def pinyin_units_with_sandhi(phrase):
-    units = []
-    for ch in phrase:
-        if "\u4e00" <= ch <= "\u9fff":
-            token = hanzi_to_pinyin(
-                ch,
-                style=Style.TONE3,
-                neutral_tone_with_five=True,
-                errors="ignore",
-            )[0][0]
-            units.append({"char": ch, "pinyin": token})
-        elif units and units[-1] is not None:
-            units.append(None)
-
-    for index, unit in enumerate(units):
-        if unit is None:
-            continue
-
-        next_unit = units[index + 1] if index + 1 < len(units) else None
-        next_tone = tone_number(next_unit["pinyin"]) if next_unit is not None else None
-
-        if unit["char"] == "不":
-            unit["pinyin"] = "bu2" if next_tone == 4 else "bu4"
-            continue
-
-        if unit["char"] == "一":
-            prev_unit = units[index - 1] if index > 0 else None
-            prev_ch = prev_unit["char"] if prev_unit is not None else ""
-            if prev_ch == "第" or next_tone is None:
-                unit["pinyin"] = "yi1"
-            elif next_tone == 4:
-                unit["pinyin"] = "yi2"
-            else:
-                unit["pinyin"] = "yi4"
-
-    for index, unit in enumerate(units[:-1]):
-        next_unit = units[index + 1]
-        if unit is None or next_unit is None:
-            continue
-        if tone_number(unit["pinyin"]) == 3 and tone_number(next_unit["pinyin"]) == 3:
-            unit["pinyin"] = replace_tone(unit["pinyin"], 2)
-
-    return [unit for unit in units if unit is not None]
+    return [
+        {"char": phrase[char_index], "pinyin": reading[0]}
+        for char_index, reading in zip(han_indices, readings)
+    ]
 
 
 def expand_to_char_timestamps(segments, offset_seconds=0.0):
@@ -533,7 +499,7 @@ def create_processing_run(conn, run_id, audio_asset_id, output_dir):
                 ASR_MODEL,
                 ALIGNER_MODEL,
                 OLLAMA_MODEL,
-                "pypinyin+sandhi-rules",
+                "pypinyin+dictionary",
                 relative_to_backend(output_dir),
             ),
         )
@@ -776,9 +742,9 @@ def run_pipeline(args):
         phrases_file.write_text("\n".join(phrases) + "\n", encoding="utf-8")
         log(f"Phrases saved to: {relative_to_backend(phrases_file)}")
 
-        # Step 2.5: Generate sandhi-aware pinyin
+        # Step 2.5: Generate dictionary-based pinyin
         log("Starting pinyin generation.")
-        phrase_pinyin_units = [pinyin_units_with_sandhi(phrase) for phrase in phrases]
+        phrase_pinyin_units = [pinyin_units_with_dictionary(phrase) for phrase in phrases]
         phrase_pinyin = [
             " ".join(unit["pinyin"] for unit in units)
             for units in phrase_pinyin_units

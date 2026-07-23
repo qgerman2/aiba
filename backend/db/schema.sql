@@ -61,7 +61,7 @@ create table if not exists processing_runs (
     asr_model text not null default 'Qwen/Qwen3-ASR-0.6B',
     aligner_model text not null default 'Qwen/Qwen3-ForcedAligner-0.6B',
     phrase_splitter_model text not null default 'qwen3:4b-instruct',
-    pinyin_method text not null default 'pypinyin+sandhi-rules',
+    pinyin_method text not null default 'pypinyin+dictionary',
     script_name text not null default 'test4.py',
     script_version text,
     output_dir text not null,
