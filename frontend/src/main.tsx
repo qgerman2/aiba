@@ -265,9 +265,8 @@ const apiBaseUrl =
 const githubRepoUrl = "https://github.com/qgerman2/aiba";
 const playerCacheKey = "aiba.playerCache.v1";
 const playbackSpeeds = [0.5, 0.75, 1, 1.25, 1.5, 2] as const;
+const syllablePlaybackWindows = [1, 1.5, 2] as const;
 const maxCachedEntries = 8;
-const syllablePlaybackTailSeconds = 1;
-const syllablePlaybackLeadInSeconds = 2;
 
 function apiUrl(path: string) {
   return `${apiBaseUrl}${path}`;
@@ -690,6 +689,7 @@ function App() {
   const playUntilRef = useRef<number | null>(null);
   const pendingMediaSeekRef = useRef<number | null>(null);
   const animationFrameRef = useRef<number | null>(null);
+  const previousPhraseIndexRef = useRef(0);
   const [entries, setEntries] = useState<ApiJob[]>([]);
   const [entryThumbnailUrls, setEntryThumbnailUrls] = useState<Record<string, string>>({});
   const [staticEntries, setStaticEntries] = useState<Record<string, StaticEntry>>({});
@@ -710,6 +710,7 @@ function App() {
   const [youtubeVideoId, setYoutubeVideoId] = useState<string | null>(null);
   const [mediaMode, setMediaMode] = useState<MediaMode>("audio");
   const [playbackSpeed, setPlaybackSpeed] = useState(1);
+  const [syllablePlaybackWindow, setSyllablePlaybackWindow] = useState<number>(1);
   const [isYouTubeReady, setIsYouTubeReady] = useState(false);
   const [phrasePrompts, setPhrasePrompts] = useState<PhrasePrompt[]>([]);
   const [selectedPhraseIndex, setSelectedPhraseIndex] = useState(0);
@@ -719,6 +720,10 @@ function App() {
   const [pinyinHintKey, setPinyinHintKey] = useState<string | null>(null);
   const [hintedKeys, setHintedKeys] = useState<Record<string, boolean>>({});
   const [currentTime, setCurrentTime] = useState(0);
+  const [isPlaybackActive, setIsPlaybackActive] = useState(false);
+  const [phraseTransitionDirection, setPhraseTransitionDirection] = useState<
+    "forward" | "backward"
+  >("forward");
   const [highlightCurrentPhrase, setHighlightCurrentPhrase] = useState(true);
   const [highlightCurrentSyllable, setHighlightCurrentSyllable] = useState(true);
   const [isReportDialogOpen, setIsReportDialogOpen] = useState(false);
@@ -1007,7 +1012,31 @@ function App() {
     [phrases, currentTime]
   );
 
+  useEffect(() => {
+    if (
+      isPlaybackActive &&
+      activePhraseIndex !== null &&
+      activePhraseIndex !== selectedPhraseIndex
+    ) {
+      setSelectedPhraseIndex(activePhraseIndex);
+      setFocusedCharIndex(0);
+    }
+  }, [isPlaybackActive, activePhraseIndex]);
+
+  useEffect(() => {
+    const previous = previousPhraseIndexRef.current;
+
+    if (selectedPhraseIndex > previous) {
+      setPhraseTransitionDirection("forward");
+    } else if (selectedPhraseIndex < previous) {
+      setPhraseTransitionDirection("backward");
+    }
+
+    previousPhraseIndexRef.current = selectedPhraseIndex;
+  }, [selectedPhraseIndex]);
+
   const selectedPhrase = phrasePrompts[selectedPhraseIndex] ?? null;
+  const nextPhrase = phrasePrompts[selectedPhraseIndex + 1] ?? null;
   const selectedCharacter = selectedPhrase?.chars[focusedCharIndex] ?? null;
   const currentPhrase =
     activePhraseIndex === null
@@ -1739,7 +1768,7 @@ function App() {
       prompt && targetChar
         ? Math.min(
             Math.max(targetChar.start, targetChar.end) +
-              syllablePlaybackTailSeconds,
+              syllablePlaybackWindow,
             prompt.phrase.end
           )
         : prompt?.phrase.end;
@@ -1749,7 +1778,7 @@ function App() {
     }
 
     const startAt = targetChar
-      ? Math.max(0, targetChar.start - syllablePlaybackLeadInSeconds)
+      ? Math.max(0, targetChar.start - syllablePlaybackWindow)
       : prompt.phrase.start;
 
     setSelectedPhraseIndex(index);
@@ -1789,6 +1818,7 @@ function App() {
       cancelAnimationFrame(animationFrameRef.current);
       animationFrameRef.current = null;
     }
+    setIsPlaybackActive(false);
   }
 
   function trackPlayback() {
@@ -1803,6 +1833,7 @@ function App() {
 
   function startTrackingPlayback() {
     stopTrackingPlayback();
+    setIsPlaybackActive(true);
     animationFrameRef.current = requestAnimationFrame(trackPlayback);
   }
 
@@ -1916,6 +1947,19 @@ function App() {
     setHanziHintKey(null);
     setPinyinHintKey(null);
     updateCachedProgress({}, {});
+  }
+
+  function fillPlayerProgress() {
+    const nextAnswers: Record<string, string> = {};
+
+    phrasePrompts.forEach((prompt, phraseIndex) => {
+      prompt.chars.forEach((char, charIndex) => {
+        nextAnswers[answerKey(phraseIndex, charIndex)] = char.expected;
+      });
+    });
+
+    setAnswers(nextAnswers);
+    updateCachedProgress(nextAnswers, hintedKeys);
   }
 
   async function openReportDialog() {
@@ -2644,6 +2688,14 @@ function App() {
           <button
             type="button"
             className="ghostButton"
+            onClick={fillPlayerProgress}
+            disabled={!selectedEntryId || phrasePrompts.length === 0}
+          >
+            Fill progress
+          </button>
+          <button
+            type="button"
+            className="ghostButton"
             onClick={clearPlayerProgress}
             disabled={!selectedEntryId || phrasePrompts.length === 0}
           >
@@ -2734,6 +2786,22 @@ function App() {
               {playbackSpeeds.map((speed) => (
                 <option key={speed} value={speed}>
                   {speed}x
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="speedControl">
+            <span>Syllable window</span>
+            <select
+              value={syllablePlaybackWindow}
+              onChange={(event) =>
+                setSyllablePlaybackWindow(Number(event.target.value))
+              }
+              aria-label="Syllable playback window"
+            >
+              {syllablePlaybackWindows.map((seconds) => (
+                <option key={seconds} value={seconds}>
+                  {seconds}s
                 </option>
               ))}
             </select>
@@ -2926,8 +2994,10 @@ function App() {
 
         {selectedPhrase && (
           <section
+            key={selectedPhraseIndex}
             className={[
               "phraseCard",
+              `phraseAnim-${phraseTransitionDirection}`,
               highlightCurrentPhrase && selectedPhraseIndex === activePhraseIndex
                 ? "active"
                 : ""
@@ -2997,6 +3067,13 @@ function App() {
                 return renderSyllable(item.charIndex);
               })}
             </div>
+          </section>
+        )}
+
+        {nextPhrase && (
+          <section className="nextPhrasePreview" aria-label="Next phrase preview">
+            <p className="label">Next phrase</p>
+            <p className="nextPhraseText">{nextPhrase.phrase.text}</p>
           </section>
         )}
       </section>

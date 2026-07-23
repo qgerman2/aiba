@@ -865,6 +865,55 @@ kbd {
   background: #eff8f2;
 }
 
+.phraseCard.phraseAnim-forward {
+  animation: phraseSlideForward 220ms ease-out;
+}
+
+.phraseCard.phraseAnim-backward {
+  animation: phraseSlideBackward 220ms ease-out;
+}
+
+@keyframes phraseSlideForward {
+  from {
+    transform: translateX(28px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes phraseSlideBackward {
+  from {
+    transform: translateX(-28px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.nextPhrasePreview {
+  margin-top: 12px;
+  padding: 12px 18px;
+  border: 1px dashed #d7d0c2;
+  border-radius: 8px;
+  background: #f7f3ea;
+  color: #7a7263;
+}
+
+.nextPhrasePreview .label {
+  margin: 0 0 4px;
+}
+
+.nextPhraseText {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
 .phraseRowHeader {
   display: flex;
   flex-wrap: wrap;
