@@ -962,6 +962,11 @@ time {
   line-height: 1.2;
 }
 
+.wordGroup,
+.wordGroup .wordSyllables {
+  display: contents;
+}
+
 .wordGroup.completed {
   display: grid;
   gap: 5px;

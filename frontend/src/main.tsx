@@ -198,6 +198,7 @@ type PhraseRenderItem =
       type: "word";
       charIndexes: number[];
       hanzi: string;
+      completed: boolean;
     };
 
 type MediaMode = "youtube" | "audio";
@@ -512,15 +513,14 @@ function buildPhraseRenderItems(
         );
       });
 
-      if (allCorrect) {
-        result.push({
-          type: "word",
-          charIndexes,
-          hanzi: group.hanzi
-        });
-        i += group.charCount;
-        continue;
-      }
+      result.push({
+        type: "word",
+        charIndexes,
+        hanzi: group.hanzi,
+        completed: allCorrect
+      });
+      i += group.charCount;
+      continue;
     }
 
     result.push(item);
@@ -2058,7 +2058,7 @@ function App() {
       value.length > 0 && normalizePinyin(value) === normalizePinyin(char.expected);
     const isRevealed = isCorrect || hanziHintKey === key;
     const hasPinyinHint = pinyinHintKey === key;
-    const hasUsedHint = hintedKeys[key];
+    const hasUsedHint = !options.hideHanzi && hintedKeys[key];
 
     return (
       <label
@@ -2970,17 +2970,19 @@ function App() {
                     <div
                       className={[
                         "wordGroup",
-                        "completed",
+                        item.completed ? "completed" : "",
                         isWordPlaying ? "playing" : ""
                       ]
                         .filter(Boolean)
                         .join(" ")}
                       key={`word-${item.charIndexes[0]}`}
                     >
-                      <span className="hanzi revealed wordHanzi">{item.hanzi}</span>
+                      {item.completed && (
+                        <span className="hanzi revealed wordHanzi">{item.hanzi}</span>
+                      )}
                       <div className="wordSyllables">
                         {item.charIndexes.map((charIndex) =>
-                          renderSyllable(charIndex, { hideHanzi: true })
+                          renderSyllable(charIndex, { hideHanzi: item.completed })
                         )}
                       </div>
                     </div>
