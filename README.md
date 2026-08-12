@@ -27,6 +27,36 @@ Job state, transcripts, phrase/character/word timings, and generated file record
 - An NVIDIA GPU with drivers and the NVIDIA Container Toolkit (the backend requests all available GPUs for ASR/alignment)
 - An Ollama instance reachable from the backend container, with the `qwen3:4b-instruct` model pulled, for phrase splitting
 
+## Troubleshooting: `CUDA unknown error` inside the backend container
+
+If a processing job fails with a traceback ending in something like:
+
+```text
+RuntimeError: CUDA unknown error - this may be due to an incorrectly set up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero.
+```
+
+but `docker exec <backend-container> nvidia-smi` works fine, the cause is almost always a **stale CDI spec**. Docker uses `/etc/cdi/nvidia.yaml` to decide which device nodes (major/minor numbers) to inject into containers for GPU access. `nvidia-uvm`/`nvidia-uvm-tools` get a dynamically-assigned major number each time that kernel module loads, and it can change after a driver reload, suspend/resume, or reboot. `nvidia-smi` doesn't need UVM, so it keeps working even when the injected UVM device node is stale/wrong — but PyTorch's CUDA init does need it, so it fails immediately with an unhelpful "unknown error".
+
+Check for a mismatch:
+
+```bash
+grep -i nvidia /proc/devices          # what the host kernel currently uses
+grep -A2 "nvidia-uvm" /etc/cdi/nvidia.yaml   # what's baked into the CDI spec
+```
+
+If they disagree, regenerate the spec and recreate the container:
+
+```bash
+sudo nvidia-ctk cdi generate --output=/etc/cdi/nvidia.yaml
+docker compose up -d --force-recreate backend
+```
+
+Verify with:
+
+```bash
+docker exec <backend-container> python3 -c "import torch; torch.zeros(1).cuda(); print('ok')"
+```
+
 ## Run everything with Docker Compose
 
 ```bash
