@@ -945,9 +945,15 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (mediaMode !== "youtube" || !youtubeVideoId || !youtubeHostRef.current) {
+    if (
+      viewMode !== "player" ||
+      mediaMode !== "youtube" ||
+      !youtubeVideoId ||
+      !youtubeHostRef.current
+    ) {
       youtubePlayerRef.current?.destroy();
       youtubePlayerRef.current = null;
+      setIsYouTubeReady(false);
       return;
     }
 
@@ -1000,7 +1006,7 @@ function App() {
       youtubePlayerRef.current = null;
       setIsYouTubeReady(false);
     };
-  }, [mediaMode, youtubeVideoId]);
+  }, [viewMode, mediaMode, youtubeVideoId]);
 
   useEffect(() => {
     if (audioRef.current) {
