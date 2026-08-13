@@ -27,6 +27,22 @@ Job state, transcripts, phrase/character/word timings, and generated file record
 - An NVIDIA GPU with drivers and the NVIDIA Container Toolkit (the backend requests all available GPUs for ASR/alignment)
 - An Ollama instance reachable from the backend container, with the `qwen3:4b-instruct` model pulled, for phrase splitting
 
+Install the NVIDIA Container Toolkit (Arch Linux):
+
+```bash
+sudo pacman -S nvidia-container-toolkit
+sudo nvidia-ctk runtime configure --runtime=docker
+sudo systemctl restart docker
+```
+
+Install Ollama and pull the model (Arch Linux):
+
+```bash
+sudo pacman -S ollama
+sudo systemctl enable --now ollama
+ollama pull qwen3:4b-instruct
+```
+
 ## Commands
 
 Run everything locally:
