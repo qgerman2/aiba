@@ -56,3 +56,11 @@ Run only the database and backend:
 ```bash
 docker compose up --build db backend
 ```
+
+Regenerate the static bundle (`docs/`, used by GitHub Pages):
+
+```bash
+cd frontend
+npm run export:static   # pull fresh data from Postgres
+npm run deploy:docs     # build and copy into docs/
+```

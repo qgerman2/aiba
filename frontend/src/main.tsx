@@ -264,9 +264,55 @@ const apiBaseUrl =
   import.meta.env.VITE_API_BASE_URL ?? "https://backend.java-kokanue.ts.net:443";
 const githubRepoUrl = "https://github.com/qgerman2/aiba";
 const playerCacheKey = "aiba.playerCache.v1";
+const playerSettingsKey = "aiba.playerSettings.v1";
+const themeStorageKey = "aiba.theme.v1";
 const playbackSpeeds = [0.5, 0.75, 1, 1.25, 1.5, 2] as const;
 const syllablePlaybackWindows = [1, 1.5, 2] as const;
 const maxCachedEntries = 8;
+
+type PlayerSettings = {
+  playbackSpeed: number;
+  syllablePlaybackWindow: number;
+  highlightCurrentPhrase: boolean;
+  highlightCurrentSyllable: boolean;
+  showGradingHighlights: boolean;
+  showNextPhrase: boolean;
+  showKeyboardShortcuts: boolean;
+};
+
+const defaultPlayerSettings: PlayerSettings = {
+  playbackSpeed: 1,
+  syllablePlaybackWindow: 1,
+  highlightCurrentPhrase: true,
+  highlightCurrentSyllable: true,
+  showGradingHighlights: true,
+  showNextPhrase: false,
+  showKeyboardShortcuts: true
+};
+
+function readPlayerSettings(): PlayerSettings {
+  try {
+    const raw = window.localStorage.getItem(playerSettingsKey);
+
+    return raw
+      ? { ...defaultPlayerSettings, ...(JSON.parse(raw) as Partial<PlayerSettings>) }
+      : defaultPlayerSettings;
+  } catch {
+    return defaultPlayerSettings;
+  }
+}
+
+function writePlayerSettings(settings: PlayerSettings) {
+  window.localStorage.setItem(playerSettingsKey, JSON.stringify(settings));
+}
+
+function readNightModePreference(): boolean {
+  try {
+    return window.localStorage.getItem(themeStorageKey) === "dark";
+  } catch {
+    return false;
+  }
+}
 
 function apiUrl(path: string) {
   return `${apiBaseUrl}${path}`;
@@ -711,8 +757,12 @@ function App() {
   const [thumbnailUrl, setThumbnailUrl] = useState<string | null>(null);
   const [youtubeVideoId, setYoutubeVideoId] = useState<string | null>(null);
   const [mediaMode, setMediaMode] = useState<MediaMode>("audio");
-  const [playbackSpeed, setPlaybackSpeed] = useState(1);
-  const [syllablePlaybackWindow, setSyllablePlaybackWindow] = useState<number>(1);
+  const [playbackSpeed, setPlaybackSpeed] = useState(
+    () => readPlayerSettings().playbackSpeed
+  );
+  const [syllablePlaybackWindow, setSyllablePlaybackWindow] = useState<number>(
+    () => readPlayerSettings().syllablePlaybackWindow
+  );
   const [isYouTubeReady, setIsYouTubeReady] = useState(false);
   const [phrasePrompts, setPhrasePrompts] = useState<PhrasePrompt[]>([]);
   const [selectedPhraseIndex, setSelectedPhraseIndex] = useState(0);
@@ -726,9 +776,22 @@ function App() {
   const [phraseTransitionDirection, setPhraseTransitionDirection] = useState<
     "forward" | "backward"
   >("forward");
-  const [highlightCurrentPhrase, setHighlightCurrentPhrase] = useState(true);
-  const [highlightCurrentSyllable, setHighlightCurrentSyllable] = useState(true);
-  const [showGradingHighlights, setShowGradingHighlights] = useState(true);
+  const [highlightCurrentPhrase, setHighlightCurrentPhrase] = useState(
+    () => readPlayerSettings().highlightCurrentPhrase
+  );
+  const [highlightCurrentSyllable, setHighlightCurrentSyllable] = useState(
+    () => readPlayerSettings().highlightCurrentSyllable
+  );
+  const [showGradingHighlights, setShowGradingHighlights] = useState(
+    () => readPlayerSettings().showGradingHighlights
+  );
+  const [showNextPhrase, setShowNextPhrase] = useState(
+    () => readPlayerSettings().showNextPhrase
+  );
+  const [showKeyboardShortcuts, setShowKeyboardShortcuts] = useState(
+    () => readPlayerSettings().showKeyboardShortcuts
+  );
+  const [nightMode, setNightMode] = useState(() => readNightModePreference());
   const [isReportDialogOpen, setIsReportDialogOpen] = useState(false);
   const [isCheckingReportServer, setIsCheckingReportServer] = useState(false);
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
@@ -756,6 +819,34 @@ function App() {
     state: "checking",
     message: "Checking server..."
   });
+
+  useEffect(() => {
+    document.documentElement.setAttribute(
+      "data-theme",
+      nightMode ? "dark" : "light"
+    );
+    window.localStorage.setItem(themeStorageKey, nightMode ? "dark" : "light");
+  }, [nightMode]);
+
+  useEffect(() => {
+    writePlayerSettings({
+      playbackSpeed,
+      syllablePlaybackWindow,
+      highlightCurrentPhrase,
+      highlightCurrentSyllable,
+      showGradingHighlights,
+      showNextPhrase,
+      showKeyboardShortcuts
+    });
+  }, [
+    playbackSpeed,
+    syllablePlaybackWindow,
+    highlightCurrentPhrase,
+    highlightCurrentSyllable,
+    showGradingHighlights,
+    showNextPhrase,
+    showKeyboardShortcuts
+  ]);
 
   useEffect(() => {
     void loadEntries();
@@ -2180,7 +2271,7 @@ function App() {
           tabIndex={interactive ? undefined : -1}
           name={`pinyin-${phraseIndex}-${charIndex}`}
           value={value}
-          placeholder={hasPinyinHint ? char.expected : "pinyin"}
+          placeholder={hasPinyinHint ? char.expected : ""}
           aria-label={`Pinyin for character ${charIndex + 1}`}
           onChange={
             interactive
@@ -2306,6 +2397,16 @@ function App() {
       <aside className="sidebar">
         <div className="brandBlock">
           <span className="brandMark">aiba</span>
+          <button
+            type="button"
+            className="themeToggle"
+            role="switch"
+            aria-checked={nightMode}
+            aria-label="Toggle night mode"
+            onClick={() => setNightMode((current) => !current)}
+          >
+            <span className="themeToggleKnob" />
+          </button>
         </div>
         <nav className="menu" aria-label="Main">
           <button
@@ -2505,6 +2606,12 @@ function App() {
               be typed and reviewed as a unit. FastAPI and Postgres store
               job state, transcripts, phrase timings, character timings,
               word segments, and generated file records.
+            </p>
+            <p>
+              Transcripts, pinyin, and timings are all AI-generated and can
+              contain errors — mis-transcribed characters, wrong pinyin, or
+              misaligned timing. Treat them as a study aid, not a ground
+              truth.
             </p>
             <p>
               Transcription or pinyin errors can be flagged per character
@@ -2806,59 +2913,142 @@ function App() {
               </div>
             )}
           </div>
-          <div className="playerHeaderActions">
-            <button
-              type="button"
-              className="ghostButton"
-              onClick={fillPlayerProgress}
-              disabled={!selectedEntryId || phrasePrompts.length === 0}
-            >
-              Fill progress
-            </button>
-            <button
-              type="button"
-              className="ghostButton"
-              onClick={clearPlayerProgress}
-              disabled={!selectedEntryId || phrasePrompts.length === 0}
-            >
-              Clear progress
-            </button>
-            <button
-              type="button"
-              className="ghostButton"
-              onClick={() => void openReportDialog()}
-              disabled={
-                isCheckingReportServer ||
-                !selectedRunId ||
-                !selectedPhrase ||
-                !selectedCharacter
-              }
-            >
-              {isCheckingReportServer ? "Checking server" : "Report character"}
-            </button>
-          </div>
         </header>
 
-        <section className="mediaPanel">
-          {youtubeVideoId && (
-            <div className="mediaModeToggle" aria-label="Playback mode">
-              <button
-                type="button"
-                className={mediaMode === "youtube" ? "active" : ""}
-                onClick={() => changeMediaMode("youtube")}
-              >
-                YouTube
-              </button>
-              <button
-                type="button"
-                className={mediaMode === "audio" ? "active" : ""}
-                onClick={() => changeMediaMode("audio")}
-              >
-                Audio only
-              </button>
-            </div>
-          )}
+        {(playerError || isLoadingRun) && (
+          <p
+            className={[
+              "playerStatusMessage",
+              playerError ? "" : "loading"
+            ]
+              .filter(Boolean)
+              .join(" ")}
+            role="status"
+            aria-live="polite"
+          >
+            {!playerError && <span className="spinner" aria-hidden="true" />}
+            {playerError ?? "Loading run..."}
+          </p>
+        )}
 
+        <div className="phraseNav">
+          <button
+            type="button"
+            onClick={() => movePhrase(-1)}
+            disabled={selectedPhraseIndex <= 0}
+          >
+            Previous
+          </button>
+          <button
+            type="button"
+            onClick={() => playPhrase(selectedPhraseIndex)}
+            disabled={!selectedPhrase}
+          >
+            Play phrase
+          </button>
+          <button
+            type="button"
+            onClick={() => movePhrase(1)}
+            disabled={selectedPhraseIndex >= phrasePrompts.length - 1}
+          >
+            Next
+          </button>
+        </div>
+
+        <div className="mobileActions" aria-label="Mobile syllable actions">
+          <button
+            type="button"
+            onPointerDown={(event) => event.preventDefault()}
+            onClick={() => playUntilCharacter(selectedPhraseIndex, focusedCharIndex)}
+            disabled={!selectedPhrase}
+          >
+            Play syllable
+          </button>
+          <button
+            type="button"
+            onPointerDown={(event) => event.preventDefault()}
+            onClick={() => revealHanziHint(selectedPhraseIndex, focusedCharIndex)}
+            disabled={!selectedPhrase}
+          >
+            Hanzi hint
+          </button>
+          <button
+            type="button"
+            onPointerDown={(event) => event.preventDefault()}
+            onClick={() => revealPinyinHint(selectedPhraseIndex, focusedCharIndex)}
+            disabled={!selectedPhrase}
+          >
+            Pinyin hint
+          </button>
+        </div>
+
+        {selectedPhrase && (
+          <section
+            key={selectedPhraseIndex}
+            className={[
+              "phraseCard",
+              `phraseAnim-${phraseTransitionDirection}`,
+              highlightCurrentPhrase && selectedPhraseIndex === activePhraseIndex
+                ? "active"
+                : ""
+            ]
+              .filter(Boolean)
+              .join(" ")}
+          >
+            <div className="phraseRowHeader">
+              <time>
+                {selectedPhrase.phrase.start.toFixed(2)} -{" "}
+                {selectedPhrase.phrase.end.toFixed(2)}
+              </time>
+              <span>Type the numbered pinyin for each hidden character</span>
+              <span className="phraseCount">
+                Phrase {selectedPhraseIndex + 1} of {phrasePrompts.length}
+              </span>
+            </div>
+
+            <div className="syllables">
+              {renderPhraseSyllableRow(selectedPhraseIndex, selectedPhrase, true)}
+            </div>
+
+            {showKeyboardShortcuts && (
+            <section className="shortcuts" aria-label="Keyboard shortcuts">
+              <span>
+                <kbd>Space</kbd> play current syllable window
+              </span>
+              <span>
+                <kbd>Left</kbd> previous input
+              </span>
+              <span>
+                <kbd>Right</kbd> next input
+              </span>
+              <span>
+                <kbd>Up</kbd> reveal current character
+              </span>
+              <span>
+                <kbd>Down</kbd> reveal current pinyin
+              </span>
+            </section>
+            )}
+          </section>
+        )}
+
+        {showNextPhrase && nextPhrase && (
+          <section className="phraseCard nextPhrasePreview">
+            <div className="phraseRowHeader">
+              <span>Next phrase</span>
+            </div>
+
+            <div className="syllables">
+              {renderPhraseSyllableRow(
+                selectedPhraseIndex + 1,
+                nextPhrase,
+                false
+              )}
+            </div>
+          </section>
+        )}
+
+        <section className="mediaPanel">
           {mediaMode === "youtube" && youtubeVideoId && (
             <div className="youtubeFrameWrap">
               <div ref={youtubeHostRef} className="youtubeFrame" />
@@ -2889,30 +3079,28 @@ function App() {
             onSeeked={(event) => updateCurrentTime(event.currentTarget.currentTime)}
             onTimeUpdate={(event) => updateCurrentTime(event.currentTarget.currentTime)}
           />
+
+          {youtubeVideoId && (
+            <div className="mediaModeToggle" aria-label="Playback mode">
+              <button
+                type="button"
+                className={mediaMode === "youtube" ? "active" : ""}
+                onClick={() => changeMediaMode("youtube")}
+              >
+                YouTube
+              </button>
+              <button
+                type="button"
+                className={mediaMode === "audio" ? "active" : ""}
+                onClick={() => changeMediaMode("audio")}
+              >
+                Audio only
+              </button>
+            </div>
+          )}
         </section>
 
         <div className="controls">
-          <button
-            type="button"
-            onClick={() => movePhrase(-1)}
-            disabled={selectedPhraseIndex <= 0}
-          >
-            Previous
-          </button>
-          <button
-            type="button"
-            onClick={() => playPhrase(selectedPhraseIndex)}
-            disabled={!selectedPhrase}
-          >
-            Play phrase
-          </button>
-          <button
-            type="button"
-            onClick={() => movePhrase(1)}
-            disabled={selectedPhraseIndex >= phrasePrompts.length - 1}
-          >
-            Next
-          </button>
           <label className="speedControl">
             <span>Speed</span>
             <select
@@ -2973,6 +3161,56 @@ function App() {
             />
             <span>Grading highlight</span>
           </label>
+          <label className="switchControl">
+            <input
+              type="checkbox"
+              checked={showNextPhrase}
+              onChange={(event) => setShowNextPhrase(event.target.checked)}
+            />
+            <span>Show next phrase</span>
+          </label>
+          <label className="switchControl">
+            <input
+              type="checkbox"
+              checked={showKeyboardShortcuts}
+              onChange={(event) =>
+                setShowKeyboardShortcuts(event.target.checked)
+              }
+            />
+            <span>Show keyboard shortcuts</span>
+          </label>
+        </div>
+
+        <div className="playerHeaderActions playerBottomActions">
+          <button
+            type="button"
+            className="ghostButton"
+            onClick={fillPlayerProgress}
+            disabled={!selectedEntryId || phrasePrompts.length === 0}
+          >
+            Fill progress
+          </button>
+          <button
+            type="button"
+            className="ghostButton"
+            onClick={clearPlayerProgress}
+            disabled={!selectedEntryId || phrasePrompts.length === 0}
+          >
+            Clear progress
+          </button>
+          <button
+            type="button"
+            className="ghostButton"
+            onClick={() => void openReportDialog()}
+            disabled={
+              isCheckingReportServer ||
+              !selectedRunId ||
+              !selectedPhrase ||
+              !selectedCharacter
+            }
+          >
+            {isCheckingReportServer ? "Checking server" : "Report character"}
+          </button>
         </div>
 
         {(reportError || reportMessage) && (
@@ -3061,113 +3299,6 @@ function App() {
             </section>
           </div>
         )}
-
-        {(playerError || isLoadingRun) && (
-          <p
-            className={[
-              "playerStatusMessage",
-              playerError ? "" : "loading"
-            ]
-              .filter(Boolean)
-              .join(" ")}
-            role="status"
-            aria-live="polite"
-          >
-            {!playerError && <span className="spinner" aria-hidden="true" />}
-            {playerError ?? "Loading run..."}
-          </p>
-        )}
-
-        <div className="mobileActions" aria-label="Mobile syllable actions">
-          <button
-            type="button"
-            onPointerDown={(event) => event.preventDefault()}
-            onClick={() => playUntilCharacter(selectedPhraseIndex, focusedCharIndex)}
-            disabled={!selectedPhrase}
-          >
-            Play syllable
-          </button>
-          <button
-            type="button"
-            onPointerDown={(event) => event.preventDefault()}
-            onClick={() => revealHanziHint(selectedPhraseIndex, focusedCharIndex)}
-            disabled={!selectedPhrase}
-          >
-            Hanzi hint
-          </button>
-          <button
-            type="button"
-            onPointerDown={(event) => event.preventDefault()}
-            onClick={() => revealPinyinHint(selectedPhraseIndex, focusedCharIndex)}
-            disabled={!selectedPhrase}
-          >
-            Pinyin hint
-          </button>
-        </div>
-
-        {selectedPhrase && (
-          <section
-            key={selectedPhraseIndex}
-            className={[
-              "phraseCard",
-              `phraseAnim-${phraseTransitionDirection}`,
-              highlightCurrentPhrase && selectedPhraseIndex === activePhraseIndex
-                ? "active"
-                : ""
-            ]
-              .filter(Boolean)
-              .join(" ")}
-          >
-            <div className="phraseRowHeader">
-              <time>
-                {selectedPhrase.phrase.start.toFixed(2)} -{" "}
-                {selectedPhrase.phrase.end.toFixed(2)}
-              </time>
-              <span>Type the numbered pinyin for each hidden character</span>
-              <span className="phraseCount">
-                Phrase {selectedPhraseIndex + 1} of {phrasePrompts.length}
-              </span>
-            </div>
-
-            <div className="syllables">
-              {renderPhraseSyllableRow(selectedPhraseIndex, selectedPhrase, true)}
-            </div>
-          </section>
-        )}
-
-        {nextPhrase && (
-          <section className="phraseCard nextPhrasePreview">
-            <div className="phraseRowHeader">
-              <span>Next phrase</span>
-            </div>
-
-            <div className="syllables">
-              {renderPhraseSyllableRow(
-                selectedPhraseIndex + 1,
-                nextPhrase,
-                false
-              )}
-            </div>
-          </section>
-        )}
-
-        <section className="shortcuts" aria-label="Keyboard shortcuts">
-          <span>
-            <kbd>Space</kbd> play current syllable window
-          </span>
-          <span>
-            <kbd>Left</kbd> previous input
-          </span>
-          <span>
-            <kbd>Right</kbd> next input
-          </span>
-          <span>
-            <kbd>Up</kbd> reveal current character
-          </span>
-          <span>
-            <kbd>Down</kbd> reveal current pinyin
-          </span>
-        </section>
       </section>
       )}
     </main>
