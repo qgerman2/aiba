@@ -1930,6 +1930,7 @@ function App() {
       phrasePrompts.length - 1
     );
 
+    pendingInputFocusRef.current = { phraseIndex: nextIndex, charIndex: 0 };
     setFocusedCharIndex(0);
     setSelectedPhraseIndex(nextIndex);
     playUntilRef.current = null;
@@ -2948,6 +2949,7 @@ function App() {
         <div className="phraseNav">
           <button
             type="button"
+            onMouseDown={(event) => event.preventDefault()}
             onClick={() => movePhrase(-1)}
             disabled={selectedPhraseIndex <= 0}
           >
@@ -2955,6 +2957,7 @@ function App() {
           </button>
           <button
             type="button"
+            onMouseDown={(event) => event.preventDefault()}
             onClick={() => playPhrase(selectedPhraseIndex)}
             disabled={!selectedPhrase}
           >
@@ -2962,6 +2965,7 @@ function App() {
           </button>
           <button
             type="button"
+            onMouseDown={(event) => event.preventDefault()}
             onClick={() => movePhrase(1)}
             disabled={selectedPhraseIndex >= phrasePrompts.length - 1}
           >
