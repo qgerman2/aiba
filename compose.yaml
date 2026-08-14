@@ -29,7 +29,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - backend-media:/app/media
+      - ./backend/media:/app/media
       - model-cache:/models
     depends_on:
       db:
@@ -57,5 +57,4 @@ services:
 
 volumes:
   postgres-data:
-  backend-media:
   model-cache:
