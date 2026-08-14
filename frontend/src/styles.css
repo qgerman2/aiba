@@ -1167,7 +1167,10 @@ time {
   border-color: var(--color-success);
   background: var(--color-success-bg-alt);
   color: var(--color-success-text);
+  font-size: 1.05rem;
   font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
 }
 
 .wordGroup,
