@@ -735,6 +735,7 @@ function App() {
   const playUntilRef = useRef<number | null>(null);
   const suppressPhraseAutoAdvanceRef = useRef(false);
   const pendingMediaSeekRef = useRef<number | null>(null);
+  const wasMediaPlayingRef = useRef(false);
   const animationFrameRef = useRef<number | null>(null);
   const previousPhraseIndexRef = useRef(0);
   const skipNextHistoryPushRef = useRef(true);
@@ -1030,6 +1031,12 @@ function App() {
     const nextTime = pendingMediaSeekRef.current;
     pendingMediaSeekRef.current = null;
     seekMedia(nextTime);
+
+    // YouTube's IFrame API starts playback as a side effect of seekTo() on a
+    // freshly cued player, even if it was paused before the mode switch.
+    if (mediaMode === "youtube" && !wasMediaPlayingRef.current) {
+      pauseMedia();
+    }
   }, [mediaMode, isYouTubeReady, audioUrl]);
 
   useLayoutEffect(() => {
@@ -1866,6 +1873,7 @@ function App() {
     }
 
     const syncedTime = currentMediaTime();
+    wasMediaPlayingRef.current = isMediaPlaying();
     pauseMedia();
     pendingMediaSeekRef.current = syncedTime;
     setMediaMode(nextMode);
