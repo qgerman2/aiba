@@ -257,6 +257,7 @@ type CachedPlayerEntry = {
   phrasePrompts: PhrasePrompt[];
   answers: Record<string, string>;
   hintedKeys: Record<string, boolean>;
+  lastPhraseIndex?: number;
   cachedAt: string;
 };
 
@@ -663,6 +664,14 @@ function cachedProgressFor(jobId: string | null | undefined) {
   }
 
   return readCachedEntries().find((entry) => entry.jobId === jobId) ?? null;
+}
+
+function clampPhraseIndex(index: number | null | undefined, length: number) {
+  if (length <= 0) {
+    return 0;
+  }
+
+  return Math.min(Math.max(index ?? 0, 0), length - 1);
 }
 
 function answersWithFirstPinyin(
@@ -1183,6 +1192,10 @@ function App() {
     previousPhraseIndexRef.current = selectedPhraseIndex;
   }, [selectedPhraseIndex]);
 
+  useEffect(() => {
+    updateCachedPhraseIndex(selectedPhraseIndex);
+  }, [selectedPhraseIndex, selectedEntryId]);
+
   const selectedPhrase = phrasePrompts[selectedPhraseIndex] ?? null;
   const nextPhrase = phrasePrompts[selectedPhraseIndex + 1] ?? null;
   const selectedCharacter = selectedPhrase?.chars[focusedCharIndex] ?? null;
@@ -1377,6 +1390,10 @@ function App() {
       prompts,
       cachedProgress?.answers
     );
+    const restoredPhraseIndex = clampPhraseIndex(
+      cachedProgress?.lastPhraseIndex,
+      prompts.length
+    );
 
     setSelectedEntryId(entry.job.id);
     setSelectedRunId(entry.run.id);
@@ -1388,7 +1405,7 @@ function App() {
     setMediaMode(nextYoutubeVideoId ? "youtube" : "audio");
     setIsYouTubeReady(false);
     setPhrasePrompts(prompts);
-    setSelectedPhraseIndex(0);
+    setSelectedPhraseIndex(restoredPhraseIndex);
     setFocusedCharIndex(0);
     setAnswers(nextAnswers);
     setHanziHintKey(null);
@@ -1414,6 +1431,7 @@ function App() {
       phrasePrompts: prompts,
       answers: nextAnswers,
       hintedKeys: cachedProgress?.hintedKeys ?? {},
+      lastPhraseIndex: restoredPhraseIndex,
       cachedAt: new Date().toISOString()
     });
   }
@@ -1456,6 +1474,10 @@ function App() {
         prompts,
         cachedProgress?.answers
       );
+      const restoredPhraseIndex = clampPhraseIndex(
+        cachedProgress?.lastPhraseIndex,
+        prompts.length
+      );
 
       setSelectedRunName(name);
       setSelectedRunId(runId);
@@ -1470,7 +1492,7 @@ function App() {
       setMediaMode(nextYoutubeVideoId ? "youtube" : "audio");
       setIsYouTubeReady(false);
       setPhrasePrompts(prompts);
-      setSelectedPhraseIndex(0);
+      setSelectedPhraseIndex(restoredPhraseIndex);
       setFocusedCharIndex(0);
       setAnswers(nextAnswers);
       setHanziHintKey(null);
@@ -1505,6 +1527,7 @@ function App() {
           phrasePrompts: prompts,
           answers: nextAnswers,
           hintedKeys: cachedProgress?.hintedKeys ?? {},
+          lastPhraseIndex: restoredPhraseIndex,
           cachedAt: new Date().toISOString()
         });
       }
@@ -1598,6 +1621,38 @@ function App() {
     });
   }
 
+  function updateCachedPhraseIndex(phraseIndex: number) {
+    if (!selectedEntryId) {
+      return;
+    }
+
+    setCachedEntries((current) => {
+      const stored = readCachedEntries();
+      const mergedCurrent = [
+        ...current,
+        ...stored.filter(
+          (storedEntry) =>
+            !current.some((entry) => entry.jobId === storedEntry.jobId)
+        )
+      ];
+      const existing = mergedCurrent.find(
+        (entry) => entry.jobId === selectedEntryId
+      );
+
+      if (!existing || existing.lastPhraseIndex === phraseIndex) {
+        return current;
+      }
+
+      const next = [
+        { ...existing, lastPhraseIndex: phraseIndex },
+        ...mergedCurrent.filter((entry) => entry.jobId !== selectedEntryId)
+      ].slice(0, maxCachedEntries);
+
+      writeCachedEntries(next);
+      return next;
+    });
+  }
+
   function loadCachedRun(entry: CachedPlayerEntry) {
     setSelectedEntryId(entry.jobId);
     setSelectedRunId(entry.runId);
@@ -1626,7 +1681,9 @@ function App() {
     setMediaMode(nextYoutubeVideoId ? "youtube" : "audio");
     setIsYouTubeReady(false);
     setPhrasePrompts(entry.phrasePrompts);
-    setSelectedPhraseIndex(0);
+    setSelectedPhraseIndex(
+      clampPhraseIndex(entry.lastPhraseIndex, entry.phrasePrompts.length)
+    );
     setFocusedCharIndex(0);
     setAnswers(entry.answers ?? {});
     setHanziHintKey(null);
