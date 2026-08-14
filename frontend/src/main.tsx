@@ -867,6 +867,7 @@ function App() {
   const [phrasePrompts, setPhrasePrompts] = useState<PhrasePrompt[]>([]);
   const [selectedPhraseIndex, setSelectedPhraseIndex] = useState(0);
   const [focusedCharIndex, setFocusedCharIndex] = useState(0);
+  const [focusedInputKey, setFocusedInputKey] = useState<string | null>(null);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [hanziHintKey, setHanziHintKey] = useState<string | null>(null);
   const [pinyinHintKey, setPinyinHintKey] = useState<string | null>(null);
@@ -1502,6 +1503,7 @@ function App() {
     setPhrasePrompts(prompts);
     setSelectedPhraseIndex(restoredPhraseIndex);
     setFocusedCharIndex(0);
+    setFocusedInputKey(null);
     setAnswers(nextAnswers);
     setHanziHintKey(null);
     setPinyinHintKey(null);
@@ -1589,6 +1591,7 @@ function App() {
       setPhrasePrompts(prompts);
       setSelectedPhraseIndex(restoredPhraseIndex);
       setFocusedCharIndex(0);
+      setFocusedInputKey(null);
       setAnswers(nextAnswers);
       setHanziHintKey(null);
       setPinyinHintKey(null);
@@ -1780,6 +1783,7 @@ function App() {
       clampPhraseIndex(entry.lastPhraseIndex, entry.phrasePrompts.length)
     );
     setFocusedCharIndex(0);
+    setFocusedInputKey(null);
     setAnswers(entry.answers ?? {});
     setHanziHintKey(null);
     setPinyinHintKey(null);
@@ -2405,8 +2409,7 @@ function App() {
     const isRevealed = isCorrect || (interactive && hanziHintKey === key);
     const hasPinyinHint = interactive && pinyinHintKey === key;
     const hasUsedHint = showGradingHighlights && !options.hideHanzi && hintedKeys[key];
-    const isCurrentEditFocus =
-      interactive && phraseIndex === selectedPhraseIndex && charIndex === focusedCharIndex;
+    const isCurrentEditFocus = interactive && focusedInputKey === key;
     const displayValue =
       isCorrect && !isCurrentEditFocus ? toneMarkPinyin(char.expected) : value;
 
@@ -2477,6 +2480,7 @@ function App() {
               ? () => {
                   setSelectedPhraseIndex(phraseIndex);
                   setFocusedCharIndex(charIndex);
+                  setFocusedInputKey(key);
                   setHanziHintKey(null);
                   setPinyinHintKey(null);
                 }
@@ -2485,6 +2489,9 @@ function App() {
           onBlur={
             interactive
               ? () => {
+                  setFocusedInputKey((current) =>
+                    current === key ? null : current
+                  );
                   setHanziHintKey((current) =>
                     current === key ? null : current
                   );
