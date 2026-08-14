@@ -1173,9 +1173,14 @@ function App() {
   );
 
   useEffect(() => {
+    const isEditingAnswer = Object.values(inputRefs.current).some(
+      (input) => input !== null && input === document.activeElement
+    );
+
     if (
       isPlaybackActive &&
       !suppressPhraseAutoAdvanceRef.current &&
+      !isEditingAnswer &&
       activePhraseIndex !== null &&
       activePhraseIndex !== selectedPhraseIndex
     ) {
