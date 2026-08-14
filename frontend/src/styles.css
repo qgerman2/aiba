@@ -1228,6 +1228,16 @@ time {
   line-height: 1;
 }
 
+.latinText {
+  align-self: center;
+  padding: 0 2px 52px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: pre-wrap;
+}
+
 @media (max-width: 940px) {
   .shell {
     grid-template-columns: 1fr;

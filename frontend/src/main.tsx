@@ -190,6 +190,10 @@ type PhrasePanelItem =
   | {
       type: "punctuation";
       text: string;
+    }
+  | {
+      type: "latin";
+      text: string;
     };
 
 type PhraseRenderItem =
@@ -412,6 +416,10 @@ function isChineseCharacter(char: string) {
   return /\p{Script=Han}/u.test(char);
 }
 
+function isLatinTextChar(char: string) {
+  return /[\p{L}\p{N}]/u.test(char) && !isChineseCharacter(char);
+}
+
 function answerKey(phraseIndex: number, charIndex: number) {
   return `${phraseIndex}:${charIndex}`;
 }
@@ -502,16 +510,33 @@ function findActiveCharacterIndex(chars: CharacterPrompt[], currentTime: number)
 function buildPhrasePanelItems(prompt: PhrasePrompt): PhrasePanelItem[] {
   let charIndex = 0;
 
-  return Array.from(prompt.phrase.text).flatMap((text) => {
-    if (!isChineseCharacter(text)) {
-      return { type: "punctuation", text };
+  const rawItems: PhrasePanelItem[] = Array.from(prompt.phrase.text).flatMap(
+    (text) => {
+      if (!isChineseCharacter(text)) {
+        return { type: isLatinTextChar(text) ? "latin" : "punctuation", text };
+      }
+
+      const char = prompt.chars[charIndex];
+      charIndex += 1;
+
+      return char ? { type: "char", charIndex: charIndex - 1, char } : [];
+    }
+  );
+
+  const items: PhrasePanelItem[] = [];
+
+  for (const item of rawItems) {
+    const previous = items[items.length - 1];
+
+    if (item.type === "latin" && previous?.type === "latin") {
+      previous.text += item.text;
+      continue;
     }
 
-    const char = prompt.chars[charIndex];
-    charIndex += 1;
+    items.push(item);
+  }
 
-    return char ? { type: "char", charIndex: charIndex - 1, char } : [];
-  });
+  return items;
 }
 
 function buildPhraseRenderItems(
@@ -534,7 +559,7 @@ function buildPhraseRenderItems(
   while (i < panelItems.length) {
     const item = panelItems[i];
 
-    if (item.type === "punctuation") {
+    if (item.type === "punctuation" || item.type === "latin") {
       result.push(item);
       i += 1;
       continue;
@@ -2427,6 +2452,17 @@ function App() {
             <span
               className="punctuation"
               key={`punctuation-${phraseIndex}-${itemIndex}`}
+            >
+              {item.text}
+            </span>
+          );
+        }
+
+        if (item.type === "latin") {
+          return (
+            <span
+              className="latinText"
+              key={`latin-${phraseIndex}-${itemIndex}`}
             >
               {item.text}
             </span>
