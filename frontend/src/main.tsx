@@ -416,8 +416,12 @@ function isChineseCharacter(char: string) {
   return /\p{Script=Han}/u.test(char);
 }
 
+function isCjkPunctuation(char: string) {
+  return /[　-〿＀-￯]/.test(char);
+}
+
 function isLatinTextChar(char: string) {
-  return /[\p{L}\p{N}]/u.test(char) && !isChineseCharacter(char);
+  return !isChineseCharacter(char) && !isCjkPunctuation(char);
 }
 
 function answerKey(phraseIndex: number, charIndex: number) {

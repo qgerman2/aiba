@@ -1229,10 +1229,10 @@ time {
 }
 
 .latinText {
-  align-self: center;
-  padding: 0 2px 52px;
+  align-self: flex-end;
+  padding: 0 2px 8px;
   color: var(--color-muted);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 700;
   line-height: 1.2;
   white-space: pre-wrap;
