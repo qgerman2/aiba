@@ -428,6 +428,63 @@ function answerKey(phraseIndex: number, charIndex: number) {
   return `${phraseIndex}:${charIndex}`;
 }
 
+const TONE_MARKS: Record<string, string[]> = {
+  a: ["ā", "á", "ǎ", "à"],
+  e: ["ē", "é", "ě", "è"],
+  i: ["ī", "í", "ǐ", "ì"],
+  o: ["ō", "ó", "ǒ", "ò"],
+  u: ["ū", "ú", "ǔ", "ù"],
+  ü: ["ǖ", "ǘ", "ǚ", "ǜ"]
+};
+
+// Converts pypinyin's numbered-tone syllables (e.g. "ni3", "lv4") into the
+// standard tone-mark form (e.g. "nǐ", "lǜ"), following the usual placement
+// rule: a/e take priority, then the "ou"/"iu"/"ui" special cases, then
+// whichever vowel remains.
+function toneMarkPinyin(pinyin: string) {
+  const match = pinyin.match(/^([a-zA-Zv]+)([1-5])$/);
+
+  if (!match) {
+    return pinyin;
+  }
+
+  const [, syllable, toneDigit] = match;
+  const base = syllable.replace(/v/g, "ü");
+  const tone = Number(toneDigit);
+
+  if (tone === 5) {
+    return base;
+  }
+
+  let vowelIndex = -1;
+
+  if (base.includes("a")) {
+    vowelIndex = base.indexOf("a");
+  } else if (base.includes("e")) {
+    vowelIndex = base.indexOf("e");
+  } else if (base.includes("ou")) {
+    vowelIndex = base.indexOf("o");
+  } else if (base.includes("iu")) {
+    vowelIndex = base.indexOf("u");
+  } else if (base.includes("ui")) {
+    vowelIndex = base.indexOf("i");
+  } else {
+    for (const vowel of ["o", "i", "u", "ü"]) {
+      if (base.includes(vowel)) {
+        vowelIndex = base.indexOf(vowel);
+        break;
+      }
+    }
+  }
+
+  if (vowelIndex === -1) {
+    return base;
+  }
+
+  const marked = TONE_MARKS[base[vowelIndex]][tone - 1];
+  return base.slice(0, vowelIndex) + marked + base.slice(vowelIndex + 1);
+}
+
 function normalizePinyin(value: string) {
   return value
     .trim()
@@ -2348,6 +2405,10 @@ function App() {
     const isRevealed = isCorrect || (interactive && hanziHintKey === key);
     const hasPinyinHint = interactive && pinyinHintKey === key;
     const hasUsedHint = showGradingHighlights && !options.hideHanzi && hintedKeys[key];
+    const isCurrentEditFocus =
+      interactive && phraseIndex === selectedPhraseIndex && charIndex === focusedCharIndex;
+    const displayValue =
+      isCorrect && !isCurrentEditFocus ? toneMarkPinyin(char.expected) : value;
 
     return (
       <label
@@ -2385,7 +2446,7 @@ function App() {
           disabled={!interactive}
           tabIndex={interactive ? undefined : -1}
           name={`pinyin-${phraseIndex}-${charIndex}`}
-          value={value}
+          value={displayValue}
           placeholder={hasPinyinHint ? char.expected : ""}
           aria-label={`Pinyin for character ${charIndex + 1}`}
           onChange={
