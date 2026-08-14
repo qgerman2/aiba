@@ -1028,6 +1028,11 @@ kbd {
   background: var(--color-success-bg-panel);
 }
 
+:root[data-theme="dark"] .phraseCard.active {
+  border-color: rgba(110, 163, 255, 0.45);
+  background: rgba(110, 163, 255, 0.1);
+}
+
 .phraseCard.phraseAnim-forward {
   animation: phraseSlideForward 220ms ease-out;
 }
