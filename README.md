@@ -31,6 +31,7 @@ Install the NVIDIA Container Toolkit (Arch Linux):
 
 ```bash
 sudo pacman -S nvidia-container-toolkit
+sudo nvidia-ctk cdi generate --output=/etc/cdi/nvidia.yaml
 sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl restart docker
 ```

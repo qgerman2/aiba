@@ -541,13 +541,17 @@ function buildPhraseRenderItems(
     }
 
     const group = wordStartLookup.get(item.charIndex);
+    const charIndexes = group
+      ? Array.from(
+          { length: group.charCount },
+          (_, offset) => item.charIndex + offset
+        )
+      : null;
+    const isValidGroup =
+      group && charIndexes!.every((charIndex) => prompt.chars[charIndex]);
 
-    if (group) {
-      const charIndexes = Array.from(
-        { length: group.charCount },
-        (_, offset) => item.charIndex + offset
-      );
-      const allCorrect = charIndexes.every((charIndex) => {
+    if (group && isValidGroup) {
+      const allCorrect = charIndexes!.every((charIndex) => {
         const char = prompt.chars[charIndex];
         if (!char) {
           return false;
@@ -561,7 +565,7 @@ function buildPhraseRenderItems(
 
       result.push({
         type: "word",
-        charIndexes,
+        charIndexes: charIndexes!,
         hanzi: group.hanzi,
         completed: allCorrect
       });
@@ -2296,8 +2300,13 @@ function App() {
     options: { hideHanzi?: boolean; interactive?: boolean } = {}
   ) {
     const interactive = options.interactive ?? true;
-    const prompt = phrasePrompts[phraseIndex]!;
-    const char = prompt.chars[charIndex];
+    const prompt = phrasePrompts[phraseIndex];
+    const char = prompt?.chars[charIndex];
+
+    if (!prompt || !char) {
+      return null;
+    }
+
     const key = answerKey(phraseIndex, charIndex);
     const value = answers[key] ?? "";
     const isCorrect =
