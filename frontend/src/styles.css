@@ -38,6 +38,7 @@
   --color-neutral-fill-soft: #f2ede1;
   --color-neutral-fill-tan: #7a7263;
   --color-media-placeholder: #172026;
+  --color-panel-bg-translucent: rgba(255, 250, 240, 0.96);
   color: var(--color-text);
   background: var(--color-bg);
   --keyboard-offset: 0px;
@@ -83,6 +84,7 @@
   --color-neutral-fill-alt: #2a3135;
   --color-neutral-fill-soft: #2a3135;
   --color-neutral-fill-tan: #b7ada0;
+  --color-panel-bg-translucent: rgba(28, 34, 38, 0.96);
 }
 
 * {
@@ -1287,7 +1289,7 @@ time {
     padding: 10px;
     border: 1px solid var(--color-border-soft);
     border-radius: 8px;
-    background: rgba(255, 250, 240, 0.96);
+    background: var(--color-panel-bg-translucent);
     box-shadow: 0 12px 28px rgba(23, 32, 38, 0.18);
     backdrop-filter: blur(8px);
   }
