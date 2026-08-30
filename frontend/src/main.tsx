@@ -2090,6 +2090,13 @@ function App() {
     suppressPhraseAutoAdvanceRef.current = false;
     pauseMedia();
     seekMedia(phrasePrompts[nextIndex]?.phrase.start ?? 0);
+
+    // YouTube's IFrame API can resume playback as a side effect of seekTo()
+    // even right after pauseVideo(), since the pause command is async over
+    // postMessage. Pause again once the seek has been issued.
+    if (mediaMode === "youtube") {
+      pauseMedia();
+    }
   }
 
   function movePhrase(offset: number) {
