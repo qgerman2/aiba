@@ -1,3 +1,5 @@
 **/venv/
 backend/media/
 audio-files/
+backend/__pycache__/
+

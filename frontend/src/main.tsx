@@ -2076,15 +2076,12 @@ function App() {
     playMedia();
   }
 
-  function movePhrase(offset: number) {
+  function goToPhraseIndex(index: number) {
     if (phrasePrompts.length === 0) {
       return;
     }
 
-    const nextIndex = Math.min(
-      Math.max(selectedPhraseIndex + offset, 0),
-      phrasePrompts.length - 1
-    );
+    const nextIndex = Math.min(Math.max(index, 0), phrasePrompts.length - 1);
 
     pendingInputFocusRef.current = { phraseIndex: nextIndex, charIndex: 0 };
     setFocusedCharIndex(0);
@@ -2093,6 +2090,10 @@ function App() {
     suppressPhraseAutoAdvanceRef.current = false;
     pauseMedia();
     seekMedia(phrasePrompts[nextIndex]?.phrase.start ?? 0);
+  }
+
+  function movePhrase(offset: number) {
+    goToPhraseIndex(selectedPhraseIndex + offset);
   }
 
   function updateCurrentTime(time: number) {
@@ -2244,6 +2245,7 @@ function App() {
     setHanziHintKey(null);
     setPinyinHintKey(null);
     updateCachedProgress({}, {});
+    goToPhraseIndex(0);
   }
 
   function fillPlayerProgress() {

@@ -15,10 +15,29 @@ import psycopg
 import soundfile as sf
 import torch
 from pydub import AudioSegment, silence
-from pypinyin import Style, pinyin as hanzi_to_pinyin
+from pypinyin import Style, load_phrases_dict, pinyin as hanzi_to_pinyin
+from pypinyin.seg.mmseg import retrain as retrain_pypinyin_seg
+from pypinyin.seg.mmseg import seg as pypinyin_seg
 from qwen_asr import Qwen3ASRModel, Qwen3ForcedAligner
 
 jieba.setLogLevel(60)
+
+# pypinyin's built-in dictionary mis-reads a handful of common phrases when
+# they're embedded in a longer sentence (its forward-maximum-match segmenter
+# greedily prefers an unrelated longer/earlier phrase, e.g. "西藏" swallows
+# the "藏" in "东西藏在..."). These overrides correct the readings that were
+# found wrong in practice; retrain() rebuilds the segmenter's prefix set so
+# the overrides actually take effect during phrase splitting, not just exact
+# lookups.
+PYPINYIN_PHRASE_OVERRIDES = {
+    "都会": [["dou1"], ["hui4"]],  # adverb "all/both" (dōuhuì), not "metropolis" (dūhuì)
+    "悄悄地": [["qiao1"], ["qiao1"], ["de5"]],  # adverbial 地 (de), not "land" (dì)
+    "挨家挨户地": [["ai1"], ["jia1"], ["ai1"], ["hu4"], ["de5"]],
+    "东西藏在": [["dong1"], ["xi1"], ["cang2"], ["zai4"]],  # "hide" (cáng), not "Tibet" (Xīzàng)
+    "不便宜": [["bu4"], ["pian2"], ["yi5"]],  # "not cheap" (piányi), not "inconvenient" (bùbiàn)
+}
+load_phrases_dict(PYPINYIN_PHRASE_OVERRIDES)
+retrain_pypinyin_seg(pypinyin_seg)
 
 
 BACKEND_DIR = Path(__file__).resolve().parent
