@@ -3992,7 +3992,7 @@
   {
    "id": "zCjdARBe*H",
    "lesson": 11,
-   "point": "Usage L11 · 排队 (separable verb)",
+   "point": "Usage L11 · 离合词 · Separable verbs",
    "type": "Translate",
    "instruction": "Say it in Chinese",
    "prompt": "Which line should I queue in?",
@@ -7920,6 +7920,1795 @@
     "今天没有昨天那么冷。",
     "今天不比昨天冷。"
    ]
+  },
+  {
+   "id": "L11n31",
+   "lesson": 11,
+   "point": "Usage L11 · 从……到……",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I'm going from the museum to the library.",
+   "context": "",
+   "accepted": [
+    "我从博物馆去图书馆。"
+   ],
+   "answer": "我从博物馆去图书馆。",
+   "pinyin": "Wǒ cóng bówùguǎn qù túshūguǎn.",
+   "es": "I'm going from the museum to the library.",
+   "rule": "从 + place comes before the verb: 从 A 去 B.",
+   "note": ""
+  },
+  {
+   "id": "L11n32",
+   "lesson": 11,
+   "point": "Usage L11 · 从……到……",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I have Chinese class every day from Monday to Friday.",
+   "context": "",
+   "accepted": [
+    "我从星期一到星期五每天都有汉语课。",
+    "我从星期一到星期五每天有汉语课。",
+    "我从星期一到星期五都有汉语课。",
+    "我从星期一到星期五有汉语课。",
+    "从星期一到星期五我每天都有汉语课。",
+    "从星期一到星期五我每天有汉语课。",
+    "从星期一到星期五我都有汉语课。",
+    "从星期一到星期五我有汉语课。",
+    "从星期一到星期五每天我都有汉语课。",
+    "从星期一到星期五每天我有汉语课。"
+   ],
+   "answer": "我从星期一到星期五每天都有汉语课。",
+   "pinyin": "Wǒ cóng xīngqīyī dào xīngqīwǔ měitiān dōu yǒu Hànyǔ kè.",
+   "es": "I have Chinese class every day from Monday to Friday.",
+   "rule": "从…到… marks a span of time; 都 often follows to say \"all through it\".",
+   "note": ""
+  },
+  {
+   "id": "L11n33",
+   "lesson": 11,
+   "point": "Usage L11 · 从……到……",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Tomorrow I'm going from Xi'an to Shanghai.",
+   "context": "",
+   "accepted": [
+    "我明天从西安去上海。",
+    "明天我从西安去上海。"
+   ],
+   "answer": "我明天从西安去上海。",
+   "pinyin": "Wǒ míngtiān cóng Xī'ān qù Shànghǎi.",
+   "es": "Tomorrow I'm going from Xi'an to Shanghai.",
+   "rule": "Time word, then 从 + starting place, then 去 + destination.",
+   "note": ""
+  },
+  {
+   "id": "L11n34",
+   "lesson": 11,
+   "point": "Usage L11 · 从……到……",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "都在家 / 他 / 十点 / 从 / 今天 / 到 / 六点",
+   "context": "Today he was at home from six to ten.",
+   "tiles": [
+    "都在家",
+    "他",
+    "十点",
+    "从",
+    "今天",
+    "到",
+    "六点"
+   ],
+   "accepted": [
+    "他今天从六点到十点都在家。",
+    "今天他从六点到十点都在家。"
+   ],
+   "answer": "他今天从六点到十点都在家。",
+   "pinyin": "Tā jīntiān cóng liù diǎn dào shí diǎn dōu zài jiā.",
+   "es": "Today he was at home from six to ten.",
+   "rule": "Subject/time word + 从 + time + 到 + time + 都 + verb phrase.",
+   "note": ""
+  },
+  {
+   "id": "L11n35",
+   "lesson": 11,
+   "point": "Usage L11 · 从……到……",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我去图书馆从宿舍。",
+   "context": "",
+   "accepted": [
+    "我从宿舍去图书馆。"
+   ],
+   "answer": "我从宿舍去图书馆。",
+   "pinyin": "Wǒ cóng sùshè qù túshūguǎn.",
+   "es": "I go from the dorm to the library.",
+   "rule": "The 从 phrase goes before the verb, not at the end.",
+   "note": ""
+  },
+  {
+   "id": "L11n36",
+   "lesson": 11,
+   "point": "Usage L11 · 从……到……",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "他刚"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "学校回家。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "从",
+     "hint": ""
+    }
+   ],
+   "answer": "他刚从学校回家。",
+   "pinyin": "Tā gāng cóng xuéxiào huí jiā.",
+   "es": "He has just come home from school.",
+   "rule": "从 + place = from (a place).",
+   "note": ""
+  },
+  {
+   "id": "L11n37",
+   "lesson": 11,
+   "point": "Usage L11 · 从……到……",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "他们"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "十点"
+    },
+    {
+     "gap": 1
+    },
+    {
+     "text": "十二点都在参观兵马俑。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "从",
+     "hint": ""
+    },
+    {
+     "answer": "到",
+     "hint": ""
+    }
+   ],
+   "answer": "他们从十点到十二点都在参观兵马俑。",
+   "pinyin": "Tāmen cóng shí diǎn dào shí'èr diǎn dōu zài cānguān Bīngmǎyǒng.",
+   "es": "They were visiting the Terracotta Warriors from ten to twelve.",
+   "rule": "从…到… = from … to … (time or place).",
+   "note": ""
+  },
+  {
+   "id": "L11n38",
+   "lesson": 11,
+   "point": "Usage L11 · 刚 / 刚才",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "We only arrived yesterday.",
+   "context": "",
+   "accepted": [
+    "我们昨天刚到。",
+    "我们昨天刚刚到。",
+    "昨天我们刚到。",
+    "昨天我们刚刚到。"
+   ],
+   "answer": "我们昨天刚到。",
+   "pinyin": "Wǒmen zuótiān gāng dào.",
+   "es": "We only arrived yesterday.",
+   "rule": "刚 is relative (\"only just\"), so it works with 昨天; 刚才 can't.",
+   "note": ""
+  },
+  {
+   "id": "L11n39",
+   "lesson": 11,
+   "point": "Usage L11 · 刚 / 刚才",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Where did you go just now?",
+   "context": "",
+   "accepted": [
+    "你刚才去哪儿了？",
+    "刚才你去哪儿了？",
+    "你刚才去哪里了？",
+    "刚才你去哪里了？"
+   ],
+   "answer": "你刚才去哪儿了？",
+   "pinyin": "Nǐ gāngcái qù nǎr le?",
+   "es": "Where did you go just now?",
+   "rule": "刚才 is a time word (\"a moment ago\"); a completed action takes 了.",
+   "note": ""
+  },
+  {
+   "id": "L11n40",
+   "lesson": 11,
+   "point": "Usage L11 · 刚 / 刚才",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I've only been in Shanghai for a week.",
+   "context": "",
+   "accepted": [
+    "我刚来上海一个星期。",
+    "我刚到上海一个星期。",
+    "我刚刚来上海一个星期。",
+    "我刚刚到上海一个星期。",
+    "我来上海刚一个星期。",
+    "我来上海才一个星期。",
+    "我来上海刚刚一个星期。",
+    "我到上海刚一个星期。",
+    "我到上海才一个星期。",
+    "我到上海刚刚一个星期。"
+   ],
+   "answer": "我刚来上海一个星期。",
+   "pinyin": "Wǒ gāng lái Shànghǎi yí ge xīngqī.",
+   "es": "I've only been in Shanghai for a week.",
+   "rule": "Only 刚 can be followed by a duration.",
+   "note": "Also: 我来上海才一个星期。"
+  },
+  {
+   "id": "L11n41",
+   "lesson": 11,
+   "point": "Usage L11 · 刚 / 刚才",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "I wasn't at home just now.",
+   "context": "",
+   "options": [
+    "我刚不在家。",
+    "我刚才不在家。"
+   ],
+   "accepted": [
+    "我刚才不在家。"
+   ],
+   "answer": "我刚才不在家。",
+   "pinyin": "Wǒ gāngcái bú zài jiā.",
+   "es": "I wasn't at home just now.",
+   "rule": "Only 刚才 can be negated (不/没); 刚 can't.",
+   "note": ""
+  },
+  {
+   "id": "L11n42",
+   "lesson": 11,
+   "point": "Usage L11 · 刚 / 刚才",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我们昨天刚才到西安。",
+   "context": "",
+   "accepted": [
+    "我们昨天刚到西安。",
+    "我们昨天刚刚到西安。",
+    "昨天我们刚到西安。",
+    "昨天我们刚刚到西安。"
+   ],
+   "answer": "我们昨天刚到西安。",
+   "pinyin": "Wǒmen zuótiān gāng dào Xī'ān.",
+   "es": "We only got to Xi'an yesterday.",
+   "rule": "刚才 means minutes ago, so it can't go with 昨天; use 刚.",
+   "note": ""
+  },
+  {
+   "id": "L11n43",
+   "lesson": 11,
+   "point": "Usage L11 · 刚 / 刚才",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "到宾馆，还没吃饭呢。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "刚",
+     "hint": "",
+     "alternatives": [
+      "刚刚"
+     ]
+    }
+   ],
+   "answer": "我刚到宾馆，还没吃饭呢。",
+   "pinyin": "Wǒ gāng dào bīnguǎn, hái méi chī fàn ne.",
+   "es": "I've just got to the hotel and haven't eaten yet.",
+   "rule": "刚 + verb, usually without 了.",
+   "note": ""
+  },
+  {
+   "id": "L11n44",
+   "lesson": 11,
+   "point": "Usage L11 · 又 / 再",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "You're late again!",
+   "context": "",
+   "accepted": [
+    "你又迟到了！"
+   ],
+   "answer": "你又迟到了！",
+   "pinyin": "Nǐ yòu chídào le!",
+   "es": "You're late again!",
+   "rule": "又 + verb + 了: it happened again (already).",
+   "note": ""
+  },
+  {
+   "id": "L11n45",
+   "lesson": 11,
+   "point": "Usage L11 · 又 / 再",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Please say it again.",
+   "context": "",
+   "accepted": [
+    "请你再说一遍。",
+    "请你再说一次。",
+    "请您再说一遍。",
+    "请您再说一次。",
+    "请再说一遍。",
+    "请再说一次。"
+   ],
+   "answer": "请你再说一遍。",
+   "pinyin": "Qǐng zài shuō yí biàn.",
+   "es": "Please say it again.",
+   "rule": "再 = again, for something that hasn't happened yet (a request).",
+   "note": ""
+  },
+  {
+   "id": "L11n46",
+   "lesson": 11,
+   "point": "Usage L11 · 又 / 再",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "My younger brother has bought a new phone again.",
+   "context": "",
+   "accepted": [
+    "我弟弟又买新手机了。",
+    "我弟弟又买了新手机。",
+    "我弟弟又买了一个新手机。",
+    "我弟弟又买了个新手机。",
+    "我的弟弟又买新手机了。",
+    "我的弟弟又买了新手机。",
+    "我的弟弟又买了一个新手机。",
+    "我的弟弟又买了个新手机。"
+   ],
+   "answer": "我弟弟又买新手机了。",
+   "pinyin": "Wǒ dìdi yòu mǎi xīn shǒujī le.",
+   "es": "My younger brother has bought a new phone again.",
+   "rule": "又 for a repeated action that has already happened, usually with 了.",
+   "note": ""
+  },
+  {
+   "id": "L11n47",
+   "lesson": 11,
+   "point": "Usage L11 · 又 / 再",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "他上午来了一次，下午"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "来了，说明天"
+    },
+    {
+     "gap": 1
+    },
+    {
+     "text": "来。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "又",
+     "hint": ""
+    },
+    {
+     "answer": "再",
+     "hint": ""
+    }
+   ],
+   "answer": "他上午来了一次，下午又来了，说明天再来。",
+   "pinyin": "Tā shàngwǔ lái le yí cì, xiàwǔ yòu lái le, shuō míngtiān zài lái.",
+   "es": "He came once this morning, came again this afternoon, and says he'll come again tomorrow.",
+   "rule": "又 = again (already happened); 再 = again (not yet happened).",
+   "note": ""
+  },
+  {
+   "id": "L11n48",
+   "lesson": 11,
+   "point": "Usage L11 · 又 / 再",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我明年又去上海。",
+   "context": "",
+   "accepted": [
+    "我明年再去上海。",
+    "我明年要再去上海。",
+    "我明年还要再去上海。",
+    "我明年还要去上海。",
+    "我明年还去上海。",
+    "明年我再去上海。",
+    "明年我要再去上海。",
+    "明年我还要再去上海。",
+    "明年我还要去上海。",
+    "明年我还去上海。"
+   ],
+   "answer": "我明年再去上海。",
+   "pinyin": "Wǒ míngnián zài qù Shànghǎi.",
+   "es": "Next year I'll go to Shanghai again.",
+   "rule": "明年 is in the future, so use 再, not 又.",
+   "note": ""
+  },
+  {
+   "id": "L11n49",
+   "lesson": 11,
+   "point": "Usage L11 · 该……了",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "It's my turn to buy the tickets.",
+   "context": "",
+   "accepted": [
+    "该我买票了。"
+   ],
+   "answer": "该我买票了。",
+   "pinyin": "Gāi wǒ mǎi piào le.",
+   "es": "It's my turn to buy the tickets.",
+   "rule": "该 + person + verb phrase + 了 = it's someone's turn.",
+   "note": ""
+  },
+  {
+   "id": "L11n50",
+   "lesson": 11,
+   "point": "Usage L11 · 该……了",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "It's time to go to bed.",
+   "context": "",
+   "accepted": [
+    "该睡觉了。",
+    "该去睡觉了。",
+    "我们该睡觉了。",
+    "我们该去睡觉了。",
+    "你该睡觉了。",
+    "你该去睡觉了。"
+   ],
+   "answer": "该睡觉了。",
+   "pinyin": "Gāi shuìjiào le.",
+   "es": "It's time to go to bed.",
+   "rule": "该…了 reminds someone that the time has come to do something.",
+   "note": ""
+  },
+  {
+   "id": "L11n51",
+   "lesson": 11,
+   "point": "Usage L11 · 该……了",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "It's eleven o'clock; I should go back to the dorm.",
+   "context": "",
+   "accepted": [
+    "十一点了，我该回宿舍了。",
+    "已经十一点了，我该回宿舍了。",
+    "现在十一点了，我该回宿舍了。",
+    "现在已经十一点了，我该回宿舍了。"
+   ],
+   "answer": "十一点了，我该回宿舍了。",
+   "pinyin": "Shíyī diǎn le, wǒ gāi huí sùshè le.",
+   "es": "It's eleven o'clock; I should go back to the dorm.",
+   "rule": "Time + 了, then subject + 该 + verb + 了.",
+   "note": ""
+  },
+  {
+   "id": "L11n52",
+   "lesson": 11,
+   "point": "Usage L11 · 该……了",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "Your friend has felt ill for days. Tell them it's time they saw a doctor.",
+   "context": "",
+   "accepted": [
+    "你该去看病了。",
+    "你该看病了。",
+    "你该去看医生了。",
+    "你该看医生了。"
+   ],
+   "answer": "你该去看病了。",
+   "pinyin": "Nǐ gāi qù kàn bìng le.",
+   "es": "It's time you went to see a doctor.",
+   "rule": "该 + verb + 了: it's time (you should) do it now.",
+   "note": ""
+  },
+  {
+   "id": "L11n53",
+   "lesson": 11,
+   "point": "Usage L11 · 该……了",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "七点半了，"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "去上课了。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "该",
+     "hint": "",
+     "alternatives": [
+      "应该"
+     ]
+    }
+   ],
+   "answer": "七点半了，该去上课了。",
+   "pinyin": "Qī diǎn bàn le, gāi qù shàng kè le.",
+   "es": "It's half past seven — time to go to class.",
+   "rule": "该 + verb + 了 = it's time to …",
+   "note": ""
+  },
+  {
+   "id": "L11n54",
+   "lesson": 11,
+   "point": "Usage L11 · 该……了",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "口语 / 了 / 林娜 / 练习 / 该",
+   "context": "It's Lin Na's turn to practise speaking.",
+   "tiles": [
+    "口语",
+    "了",
+    "林娜",
+    "练习",
+    "该"
+   ],
+   "accepted": [
+    "该林娜练习口语了。"
+   ],
+   "answer": "该林娜练习口语了。",
+   "pinyin": "Gāi Lín Nà liànxí kǒuyǔ le.",
+   "es": "It's Lin Na's turn to practise speaking.",
+   "rule": "该 + person + verb + object + 了.",
+   "note": ""
+  },
+  {
+   "id": "L11n55",
+   "lesson": 11,
+   "point": "Usage L11 · 该……了",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "该我们走。",
+   "context": "",
+   "accepted": [
+    "该我们走了。"
+   ],
+   "answer": "该我们走了。",
+   "pinyin": "Gāi wǒmen zǒu le.",
+   "es": "It's our turn to go.",
+   "rule": "该… needs 了 at the end.",
+   "note": ""
+  },
+  {
+   "id": "L11n56",
+   "lesson": 11,
+   "point": "Usage L11 · 还可以",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "The hotel room is OK, nothing special.",
+   "context": "",
+   "accepted": [
+    "宾馆的房间还可以。",
+    "宾馆房间还可以。",
+    "这个宾馆的房间还可以。",
+    "这个宾馆房间还可以。",
+    "我们宾馆的房间还可以。",
+    "我们宾馆房间还可以。"
+   ],
+   "answer": "宾馆的房间还可以。",
+   "pinyin": "Bīnguǎn de fángjiān hái kěyǐ.",
+   "es": "The hotel room is OK, nothing special.",
+   "rule": "还可以 = OK, acceptable, so-so.",
+   "note": ""
+  },
+  {
+   "id": "L11n57",
+   "lesson": 11,
+   "point": "Usage L11 · 还可以",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "My Chinese is so-so.",
+   "context": "",
+   "accepted": [
+    "我的汉语还可以。",
+    "我汉语还可以。",
+    "我说汉语说得还可以。我汉语说得还可以。"
+   ],
+   "answer": "我的汉语还可以。",
+   "pinyin": "Wǒ de Hànyǔ hái kěyǐ.",
+   "es": "My Chinese is so-so.",
+   "rule": "还可以 = not bad, just OK.",
+   "note": ""
+  },
+  {
+   "id": "L11n58",
+   "lesson": 11,
+   "point": "Usage L11 · 还可以",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "He sings reasonably well.",
+   "context": "",
+   "accepted": [
+    "他唱得还可以。",
+    "他唱歌唱得还可以。",
+    "他歌唱得还可以。"
+   ],
+   "answer": "他唱得还可以。",
+   "pinyin": "Tā chàng de hái kěyǐ.",
+   "es": "He sings reasonably well.",
+   "rule": "V得 + 还可以: does it acceptably, nothing special.",
+   "note": ""
+  },
+  {
+   "id": "L11n59",
+   "lesson": 11,
+   "point": "Usage L11 · 还可以",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "A friend asks how the snacks at Wangfujing were. Say they were OK, nothing special.",
+   "context": "",
+   "accepted": [
+    "还可以。",
+    "小吃还可以。",
+    "王府井的小吃还可以。",
+    "那儿的小吃还可以。"
+   ],
+   "answer": "还可以。",
+   "pinyin": "Hái kěyǐ.",
+   "es": "They were OK.",
+   "rule": "还可以 on its own is a common reply: \"it's OK\".",
+   "note": ""
+  },
+  {
+   "id": "L11n60",
+   "lesson": 11,
+   "point": "Usage L11 · 还可以",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "A：你的新房间怎么样？B："
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "还可以",
+     "hint": "",
+     "alternatives": [
+      "还行"
+     ]
+    }
+   ],
+   "answer": "A：你的新房间怎么样？B：还可以。",
+   "pinyin": "Nǐ de xīn fángjiān zěnmeyàng? Hái kěyǐ.",
+   "es": "A: How's your new room? B: It's OK.",
+   "rule": "还可以 = OK, so-so.",
+   "note": ""
+  },
+  {
+   "id": "L11n61",
+   "lesson": 11,
+   "point": "Usage L11 · 还可以",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "A friend asks 你在西安玩儿得怎么样？ You want to say it was so-so.",
+   "context": "",
+   "options": [
+    "玩儿得非常高兴。",
+    "玩儿得还可以。",
+    "玩儿得不高兴。"
+   ],
+   "accepted": [
+    "玩儿得还可以。"
+   ],
+   "answer": "玩儿得还可以。",
+   "pinyin": "Wánr de hái kěyǐ.",
+   "es": "It was OK.",
+   "rule": "还可以 = so-so; 非常高兴 is much stronger.",
+   "note": ""
+  },
+  {
+   "id": "L11n62",
+   "lesson": 11,
+   "point": "Usage L11 · 还可以",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我说汉语说还可以。",
+   "context": "",
+   "accepted": [
+    "我说汉语说得还可以。",
+    "我汉语说得还可以。"
+   ],
+   "answer": "我说汉语说得还可以。",
+   "pinyin": "Wǒ shuō Hànyǔ shuō de hái kěyǐ.",
+   "es": "I speak Chinese reasonably well.",
+   "rule": "A verb followed by a comment like 还可以 needs 得.",
+   "note": ""
+  },
+  {
+   "id": "L11n63",
+   "lesson": 11,
+   "point": "Usage L11 · 还可以",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "写 / 汉字 / 还可以 / 他 / 得 / 写",
+   "context": "He writes Chinese characters reasonably well.",
+   "tiles": [
+    "写",
+    "汉字",
+    "还可以",
+    "他",
+    "得",
+    "写"
+   ],
+   "accepted": [
+    "他写汉字写得还可以。"
+   ],
+   "answer": "他写汉字写得还可以。",
+   "pinyin": "Tā xiě Hànzì xiě de hái kěyǐ.",
+   "es": "He writes Chinese characters reasonably well.",
+   "rule": "V + O + V得 + 还可以.",
+   "note": ""
+  },
+  {
+   "id": "L11n64",
+   "lesson": 11,
+   "point": "Usage L11 · 还可以",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I slept OK last night.",
+   "context": "",
+   "accepted": [
+    "我昨天晚上睡得还可以。",
+    "昨天晚上我睡得还可以。",
+    "我昨晚睡得还可以。",
+    "昨晚我睡得还可以。"
+   ],
+   "answer": "我昨天晚上睡得还可以。",
+   "pinyin": "Wǒ zuótiān wǎnshang shuì de hái kěyǐ.",
+   "es": "I slept OK last night.",
+   "rule": "睡得 + 还可以.",
+   "note": ""
+  },
+  {
+   "id": "L11n65",
+   "lesson": 11,
+   "point": "Usage L11 · 这么 / 那么",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Why are you so happy today?",
+   "context": "",
+   "accepted": [
+    "你今天为什么这么高兴？",
+    "你今天怎么这么高兴？",
+    "今天你为什么这么高兴？",
+    "今天你怎么这么高兴？"
+   ],
+   "answer": "你今天为什么这么高兴？",
+   "pinyin": "Nǐ jīntiān wèi shénme zhème gāoxìng?",
+   "es": "Why are you so happy today?",
+   "rule": "这么 + adjective: \"so\", about something you see right now.",
+   "note": ""
+  },
+  {
+   "id": "L11n66",
+   "lesson": 11,
+   "point": "Usage L11 · 这么 / 那么",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Don't walk so fast!",
+   "context": "",
+   "accepted": [
+    "你不要走得这么快！",
+    "你不要走这么快！",
+    "你别走得这么快！",
+    "你别走这么快！",
+    "不要走得这么快！",
+    "不要走这么快！",
+    "别走得这么快！",
+    "别走这么快！"
+   ],
+   "answer": "你不要走得这么快！",
+   "pinyin": "Nǐ búyào zǒu de zhème kuài!",
+   "es": "Don't walk so fast!",
+   "rule": "这么 + adjective after V得; the speaker sees it happening now.",
+   "note": ""
+  },
+  {
+   "id": "L11n67",
+   "lesson": 11,
+   "point": "Usage L11 · 这么 / 那么",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "(You've never been there) Does Shanghai really have that many people?",
+   "context": "",
+   "accepted": [
+    "上海有那么多人吗？",
+    "上海真的有那么多人吗？"
+   ],
+   "answer": "上海有那么多人吗？",
+   "pinyin": "Shànghǎi zhēn de yǒu nàme duō rén ma?",
+   "es": "(You've never been there) Does Shanghai really have that many people?",
+   "rule": "那么 for something far away or imagined.",
+   "note": ""
+  },
+  {
+   "id": "L11n68",
+   "lesson": 11,
+   "point": "Usage L11 · 这么 / 那么",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "(Looking at Pudong's skyline) So many tall buildings!",
+   "context": "",
+   "accepted": [
+    "这么多高楼大厦！",
+    "有这么多高楼大厦！",
+    "这儿有这么多高楼大厦！",
+    "这里有这么多高楼大厦！",
+    "浦东有这么多高楼大厦！",
+    "这么多高楼！",
+    "有这么多高楼！",
+    "这儿有这么多高楼！",
+    "这里有这么多高楼！",
+    "浦东有这么多高楼！"
+   ],
+   "answer": "这么多高楼大厦！",
+   "pinyin": "Zhème duō gāolóu dàshà!",
+   "es": "(Looking at Pudong's skyline) So many tall buildings!",
+   "rule": "这么多 + noun: surprise at what you see right now.",
+   "note": ""
+  },
+  {
+   "id": "L11n69",
+   "lesson": 11,
+   "point": "Usage L11 · 这么 / 那么",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "（Pointing at the money on the table）"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "多钱！你要买什么？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "这么",
+     "hint": ""
+    }
+   ],
+   "answer": "这么多钱！你要买什么？",
+   "pinyin": "Zhème duō qián! Nǐ yào mǎi shénme?",
+   "es": "So much money! What are you going to buy?",
+   "rule": "这么 for what is in front of you.",
+   "note": ""
+  },
+  {
+   "id": "L11n70",
+   "lesson": 11,
+   "point": "Usage L11 · 这么 / 那么",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "你这么说得快！",
+   "context": "",
+   "accepted": [
+    "你说得这么快！"
+   ],
+   "answer": "你说得这么快！",
+   "pinyin": "Nǐ shuō de zhème kuài!",
+   "es": "You speak so fast!",
+   "rule": "这么 goes before the adjective after 得: V得 + 这么 + adj.",
+   "note": ""
+  },
+  {
+   "id": "L11n71",
+   "lesson": 11,
+   "point": "Usage L11 · 这么 / 那么",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "不对 / 这么 / 汉字 / 写",
+   "context": "Writing characters like this is wrong.",
+   "tiles": [
+    "不对",
+    "这么",
+    "汉字",
+    "写"
+   ],
+   "accepted": [
+    "这么写汉字不对。",
+    "汉字这么写不对。"
+   ],
+   "answer": "这么写汉字不对。",
+   "pinyin": "Zhème xiě Hànzì bú duì.",
+   "es": "Writing characters like this is wrong.",
+   "rule": "这么 + verb = in this way.",
+   "note": ""
+  },
+  {
+   "id": "L11n72",
+   "lesson": 11,
+   "point": "Usage L11 · 次",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I've been to Xi'an once.",
+   "context": "",
+   "accepted": [
+    "我去过一次西安。",
+    "我去过西安一次。"
+   ],
+   "answer": "我去过一次西安。",
+   "pinyin": "Wǒ qù guo yí cì Xī'ān.",
+   "es": "I've been to Xi'an once.",
+   "rule": "Number + 次 goes after the verb (and 过).",
+   "note": ""
+  },
+  {
+   "id": "L11n73",
+   "lesson": 11,
+   "point": "Usage L11 · 次",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "This is my first time in China.",
+   "context": "",
+   "accepted": [
+    "这是我第一次来中国。",
+    "我是第一次来中国。",
+    "我第一次来中国。",
+    "这是我第一次到中国。"
+   ],
+   "answer": "这是我第一次来中国。",
+   "pinyin": "Zhè shì wǒ dì-yī cì lái Zhōngguó.",
+   "es": "This is my first time in China.",
+   "rule": "第一次 + verb = the first time doing something.",
+   "note": ""
+  },
+  {
+   "id": "L11n74",
+   "lesson": 11,
+   "point": "Usage L11 · 次",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Next time it's on me.",
+   "context": "",
+   "accepted": [
+    "下次我请你。",
+    "下次我请客。",
+    "我下次请你。",
+    "我下次请客。"
+   ],
+   "answer": "下次我请你。",
+   "pinyin": "Xià cì wǒ qǐng nǐ.",
+   "es": "Next time it's on me.",
+   "rule": "下次 = next time; it goes at the start, like a time word.",
+   "note": ""
+  },
+  {
+   "id": "L11n75",
+   "lesson": 11,
+   "point": "Usage L11 · 次",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "He takes medicine three times a day.",
+   "context": "",
+   "accepted": [
+    "他一天吃三次药。",
+    "他一天要吃三次药。",
+    "他每天吃三次药。",
+    "他每天要吃三次药。"
+   ],
+   "answer": "他一天吃三次药。",
+   "pinyin": "Tā yì tiān chī sān cì yào.",
+   "es": "He takes medicine three times a day.",
+   "rule": "Time period + verb + number + 次 + object.",
+   "note": ""
+  },
+  {
+   "id": "L11n76",
+   "lesson": 11,
+   "point": "Usage L11 · 次",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我去了西安两个次。",
+   "context": "",
+   "accepted": [
+    "我去了西安两次。",
+    "我去了两次西安。"
+   ],
+   "answer": "我去了西安两次。",
+   "pinyin": "Wǒ qù le Xī'ān liǎng cì.",
+   "es": "I went to Xi'an twice.",
+   "rule": "次 is itself a measure word: 两次, not 两个次.",
+   "note": ""
+  },
+  {
+   "id": "L11n77",
+   "lesson": 11,
+   "point": "Usage L11 · 次",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我找过两次他。",
+   "context": "",
+   "accepted": [
+    "我找过他两次。"
+   ],
+   "answer": "我找过他两次。",
+   "pinyin": "Wǒ zhǎo guo tā liǎng cì.",
+   "es": "I've looked for him twice.",
+   "rule": "A pronoun object comes before number + 次.",
+   "note": ""
+  },
+  {
+   "id": "L11n78",
+   "lesson": 11,
+   "point": "Usage L11 · 次",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "上"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "我们去了西安，"
+    },
+    {
+     "gap": 1
+    },
+    {
+     "text": "我们去上海吧。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "次",
+     "hint": ""
+    },
+    {
+     "answer": "下次",
+     "hint": ""
+    }
+   ],
+   "answer": "上次我们去了西安，下次我们去上海吧。",
+   "pinyin": "Shàng cì wǒmen qù le Xī'ān, xià cì wǒmen qù Shànghǎi ba.",
+   "es": "Last time we went to Xi'an; next time let's go to Shanghai.",
+   "rule": "上次 = last time, 下次 = next time.",
+   "note": ""
+  },
+  {
+   "id": "L11n79",
+   "lesson": 11,
+   "point": "Usage L11 · 次",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "图书馆 / 两次 / 他 / 去 / 一个星期",
+   "context": "He goes to the library twice a week.",
+   "tiles": [
+    "图书馆",
+    "两次",
+    "他",
+    "去",
+    "一个星期"
+   ],
+   "accepted": [
+    "他一个星期去两次图书馆。",
+    "他一个星期去图书馆两次。"
+   ],
+   "answer": "他一个星期去两次图书馆。",
+   "pinyin": "Tā yí ge xīngqī qù liǎng cì túshūguǎn.",
+   "es": "He goes to the library twice a week.",
+   "rule": "Time period + verb + number + 次 (+ place).",
+   "note": ""
+  },
+  {
+   "id": "L11n80",
+   "lesson": 11,
+   "point": "Usage L11 · 数 shǔ / shù",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct reading",
+   "prompt": "数学 (mathematics): how is 数 read?",
+   "context": "",
+   "options": [
+    "shǔ",
+    "shù"
+   ],
+   "accepted": [
+    "shù"
+   ],
+   "answer": "shù",
+   "pinyin": "shùxué",
+   "es": "mathematics",
+   "rule": "数 shù is the noun \"number\" (数学, 数字); 数 shǔ is the verb \"to count\".",
+   "note": ""
+  },
+  {
+   "id": "L11n81",
+   "lesson": 11,
+   "point": "Usage L11 · 数 shǔ / shù",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct reading",
+   "prompt": "数钱 (to count money): how is 数 read?",
+   "context": "",
+   "options": [
+    "shǔ",
+    "shù"
+   ],
+   "accepted": [
+    "shǔ"
+   ],
+   "answer": "shǔ",
+   "pinyin": "shǔ qián",
+   "es": "to count money",
+   "rule": "数 shǔ is the verb \"to count\".",
+   "note": ""
+  },
+  {
+   "id": "L11n82",
+   "lesson": 11,
+   "point": "Usage L11 · 数 shǔ / shù",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct reading",
+   "prompt": "数字 (digit, number): how is 数 read?",
+   "context": "",
+   "options": [
+    "shǔ",
+    "shù"
+   ],
+   "accepted": [
+    "shù"
+   ],
+   "answer": "shù",
+   "pinyin": "shùzì",
+   "es": "digit, number",
+   "rule": "数 shù is the noun \"number\".",
+   "note": ""
+  },
+  {
+   "id": "L11n83",
+   "lesson": 11,
+   "point": "Usage L11 · 数 shǔ / shù",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct reading",
+   "prompt": "我妹妹喜欢数数。 How is 数数 read?",
+   "context": "",
+   "options": [
+    "shǔ shù",
+    "shù shǔ",
+    "shǔ shǔ",
+    "shù shù"
+   ],
+   "accepted": [
+    "shǔ shù"
+   ],
+   "answer": "shǔ shù",
+   "pinyin": "Wǒ mèimei xǐhuan shǔ shù.",
+   "es": "My younger sister likes counting numbers.",
+   "rule": "数数 = verb 数 shǔ (count) + noun 数 shù (numbers).",
+   "note": ""
+  },
+  {
+   "id": "L11n84",
+   "lesson": 11,
+   "point": "Usage L11 · 数 shǔ / shù",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Please count the money.",
+   "context": "",
+   "accepted": [
+    "请数一数钱。",
+    "请数一数这些钱。",
+    "请数一下钱。",
+    "请数一下这些钱。",
+    "请数数钱。",
+    "请数数这些钱。",
+    "请你数一数钱。",
+    "请你数一数这些钱。",
+    "请你数一下钱。",
+    "请你数一下这些钱。",
+    "请你数数钱。",
+    "请你数数这些钱。",
+    "请您数一数钱。",
+    "请您数一数这些钱。",
+    "请您数一下钱。",
+    "请您数一下这些钱。",
+    "请您数数钱。",
+    "请您数数这些钱。"
+   ],
+   "answer": "请数一数钱。",
+   "pinyin": "Qǐng shǔ yi shǔ qián.",
+   "es": "Please count the money.",
+   "rule": "数 shǔ = to count; soften it with 一数 / 一下.",
+   "note": ""
+  },
+  {
+   "id": "L11n85",
+   "lesson": 11,
+   "point": "Usage L11 · 数 shǔ / shù",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "My younger sister likes counting numbers.",
+   "context": "",
+   "accepted": [
+    "我妹妹喜欢数数。",
+    "我的妹妹喜欢数数。"
+   ],
+   "answer": "我妹妹喜欢数数。",
+   "pinyin": "Wǒ mèimei xǐhuan shǔ shù.",
+   "es": "My younger sister likes counting numbers.",
+   "rule": "数数 shǔ shù: count (v.) + numbers (n.).",
+   "note": ""
+  },
+  {
+   "id": "L11n86",
+   "lesson": 11,
+   "point": "Usage L11 · 数 shǔ / shù",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Let me count how many there are.",
+   "context": "",
+   "accepted": [
+    "我数一数有多少。",
+    "我数一下有多少。",
+    "我数数有多少。",
+    "数一数有多少。",
+    "数一下有多少。",
+    "数数有多少。",
+    "让我数一数有多少。",
+    "让我数一下有多少。",
+    "让我数数有多少。"
+   ],
+   "answer": "我数一数有多少。",
+   "pinyin": "Wǒ shǔ yi shǔ yǒu duōshao.",
+   "es": "Let me count how many there are.",
+   "rule": "数 shǔ (to count) + what is counted.",
+   "note": ""
+  },
+  {
+   "id": "L11n87",
+   "lesson": 11,
+   "point": "Usage L11 · 数 shǔ / shù",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "请你"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "一下，这是五百块。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "数",
+     "hint": "",
+     "alternatives": [
+      "数一"
+     ]
+    }
+   ],
+   "answer": "请你数一下，这是五百块。",
+   "pinyin": "Qǐng nǐ shǔ yíxià, zhè shì wǔbǎi kuài.",
+   "es": "Please count it — that's five hundred kuai.",
+   "rule": "数 shǔ = to count.",
+   "note": ""
+  },
+  {
+   "id": "L11n88",
+   "lesson": 11,
+   "point": "Usage L11 · 数 shǔ / shù",
+   "type": "Read",
+   "mode": "reveal",
+   "instruction": "Read aloud (pinyin)",
+   "prompt": "数羊 / 数码相机",
+   "context": "",
+   "answer": "shǔ yáng / shùmǎ xiàngjī",
+   "pinyin": "",
+   "es": "",
+   "rule": "数羊 (count sheep): verb shǔ; 数码相机 (digital camera): noun shù.",
+   "note": ""
+  },
+  {
+   "id": "L11n89",
+   "lesson": 11,
+   "point": "Usage L11 · 离合词 · Separable verbs",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "There are a lot of people at the bank; everyone has to queue.",
+   "context": "",
+   "accepted": [
+    "银行人很多，大家都要排队。",
+    "银行人很多，大家都得排队。",
+    "银行人很多，大家要排队。",
+    "银行人很多，大家得排队。",
+    "银行的人很多，大家都要排队。",
+    "银行的人很多，大家都得排队。",
+    "银行的人很多，大家要排队。",
+    "银行的人很多，大家得排队。",
+    "银行里人很多，大家都要排队。",
+    "银行里人很多，大家都得排队。",
+    "银行里人很多，大家要排队。",
+    "银行里人很多，大家得排队。"
+   ],
+   "answer": "银行人很多，大家都要排队。",
+   "pinyin": "Yínháng rén hěn duō, dàjiā yào páiduì.",
+   "es": "There are a lot of people at the bank; everyone has to queue.",
+   "rule": "排队 used as a whole: no 了 or duration, so it stays together.",
+   "note": ""
+  },
+  {
+   "id": "L11n90",
+   "lesson": 11,
+   "point": "Usage L11 · 离合词 · Separable verbs",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Last night I only slept five hours.",
+   "context": "",
+   "accepted": [
+    "我昨天晚上只睡了五个小时觉。",
+    "我昨天晚上只睡了五个小时的觉。",
+    "我昨天晚上睡觉只睡了五个小时。",
+    "昨天晚上我只睡了五个小时觉。",
+    "昨天晚上我只睡了五个小时的觉。",
+    "昨天晚上我睡觉只睡了五个小时。",
+    "我昨晚只睡了五个小时觉。",
+    "我昨晚只睡了五个小时的觉。",
+    "我昨晚睡觉只睡了五个小时。",
+    "昨晚我只睡了五个小时觉。",
+    "昨晚我只睡了五个小时的觉。",
+    "昨晚我睡觉只睡了五个小时。"
+   ],
+   "answer": "我昨天晚上只睡了五个小时觉。",
+   "pinyin": "Zuótiān wǎnshang wǒ zhǐ shuì le wǔ ge xiǎoshí jiào.",
+   "es": "Last night I only slept five hours.",
+   "rule": "睡觉 is separable: the duration goes between 睡 and 觉.",
+   "note": ""
+  },
+  {
+   "id": "L11n91",
+   "lesson": 11,
+   "point": "Usage L11 · 离合词 · Separable verbs",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Yesterday I queued at the bank for two hours.",
+   "context": "",
+   "accepted": [
+    "昨天我在银行排了两个小时队。",
+    "昨天我在银行排了两个小时的队。",
+    "昨天我在银行排队排了两个小时。",
+    "我昨天在银行排了两个小时队。",
+    "我昨天在银行排了两个小时的队。",
+    "我昨天在银行排队排了两个小时。"
+   ],
+   "answer": "昨天我在银行排了两个小时队。",
+   "pinyin": "Zuótiān wǒ zài yínháng pái le liǎng ge xiǎoshí duì.",
+   "es": "Yesterday I queued at the bank for two hours.",
+   "rule": "排队 is separable: 排 + 了 + duration + 队.",
+   "note": ""
+  },
+  {
+   "id": "L11n92",
+   "lesson": 11,
+   "point": "Usage L11 · 离合词 · Separable verbs",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I went to see the doctor twice this week.",
+   "context": "",
+   "accepted": [
+    "这个星期我看了两次病。",
+    "这个星期我去看了两次病。",
+    "我这个星期看了两次病。",
+    "我这个星期去看了两次病。"
+   ],
+   "answer": "这个星期我看了两次病。",
+   "pinyin": "Zhège xīngqī wǒ kàn le liǎng cì bìng.",
+   "es": "I went to see the doctor twice this week.",
+   "rule": "看病 is separable: number + 次 goes between 看 and 病.",
+   "note": ""
+  },
+  {
+   "id": "L11n93",
+   "lesson": 11,
+   "point": "Usage L11 · 离合词 · Separable verbs",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我排队了一个小时。",
+   "context": "",
+   "accepted": [
+    "我排了一个小时队。",
+    "我排了一个小时的队。",
+    "我排队排了一个小时。"
+   ],
+   "answer": "我排了一个小时队。",
+   "pinyin": "Wǒ pái le yí ge xiǎoshí duì.",
+   "es": "I queued for an hour.",
+   "rule": "A duration can't follow the whole separable verb: split it (排了一个小时队) or repeat the verb (排队排了一个小时).",
+   "note": ""
+  },
+  {
+   "id": "L11n94",
+   "lesson": 11,
+   "point": "Usage L11 · 离合词 · Separable verbs",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "这里有两个队，我应该排队哪个？",
+   "context": "",
+   "accepted": [
+    "这里有两个队，我应该排哪个队？"
+   ],
+   "answer": "这里有两个队，我应该排哪个队？",
+   "pinyin": "Zhèli yǒu liǎng ge duì, wǒ yīnggāi pái nǎge duì?",
+   "es": "There are two lines here; which one should I join?",
+   "rule": "排队 already contains its object 队, so 哪个 goes before 队: 排哪个队.",
+   "note": ""
+  },
+  {
+   "id": "L11n95",
+   "lesson": 11,
+   "point": "Usage L11 · 离合词 · Separable verbs",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "人太多了，我们排了半个小时"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "队",
+     "hint": "",
+     "alternatives": [
+      "的队"
+     ]
+    }
+   ],
+   "answer": "人太多了，我们排了半个小时队。",
+   "pinyin": "Rén tài duō le, wǒmen pái le bàn ge xiǎoshí duì.",
+   "es": "There were too many people — we queued for half an hour.",
+   "rule": "排 + 了 + duration + 队.",
+   "note": ""
+  },
+  {
+   "id": "L11n96",
+   "lesson": 11,
+   "point": "Usage L11 · 离合词 · Separable verbs",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我昨天晚上没睡好"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "，今天很累。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "觉",
+     "hint": ""
+    }
+   ],
+   "answer": "我昨天晚上没睡好觉，今天很累。",
+   "pinyin": "Wǒ zuótiān wǎnshang méi shuì hǎo jiào, jīntiān hěn lèi.",
+   "es": "I didn't sleep well last night, so I'm very tired today.",
+   "rule": "睡觉 splits around a complement: 睡好觉.",
+   "note": ""
+  },
+  {
+   "id": "L11n97",
+   "lesson": 11,
+   "point": "Usage L11 · 离合词 · Separable verbs",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "钱 / 两次 / 我 / 换 / 了 / 今天",
+   "context": "I changed money twice today.",
+   "tiles": [
+    "钱",
+    "两次",
+    "我",
+    "换",
+    "了",
+    "今天"
+   ],
+   "accepted": [
+    "我今天换了两次钱。",
+    "今天我换了两次钱。"
+   ],
+   "answer": "我今天换了两次钱。",
+   "pinyin": "Wǒ jīntiān huàn le liǎng cì qián.",
+   "es": "I changed money twice today.",
+   "rule": "换钱 is separable: 换 + 了 + number + 次 + 钱.",
+   "note": ""
+  },
+  {
+   "id": "L11n98",
+   "lesson": 11,
+   "point": "Usage L11 · Reading amounts of money",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "305 yuan (spoken)",
+   "context": "",
+   "accepted": [
+    "三百零五块",
+    "三百零五元"
+   ],
+   "answer": "三百零五块",
+   "pinyin": "sānbǎi líng wǔ kuài",
+   "es": "305 yuan (spoken)",
+   "rule": "A zero in the middle is read 零.",
+   "note": ""
+  },
+  {
+   "id": "L11n99",
+   "lesson": 11,
+   "point": "Usage L11 · Reading amounts of money",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "1008 yuan (spoken)",
+   "context": "",
+   "accepted": [
+    "一千零八块",
+    "一千零八元"
+   ],
+   "answer": "一千零八块",
+   "pinyin": "yìqiān líng bā kuài",
+   "es": "1008 yuan (spoken)",
+   "rule": "Several zeros in a row in the middle: say 零 only once.",
+   "note": ""
+  },
+  {
+   "id": "L11n100",
+   "lesson": 11,
+   "point": "Usage L11 · Reading amounts of money",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "654.30 yuan (spoken)",
+   "context": "",
+   "accepted": [
+    "六百五十四块三毛",
+    "六百五十四块三",
+    "六百五十四元三角"
+   ],
+   "answer": "六百五十四块三毛",
+   "pinyin": "liùbǎi wǔshísì kuài sān máo",
+   "es": "654.30 yuan (spoken)",
+   "rule": "The decimal part of an amount in yuan is read with 毛/角; for other currencies, read the number and then the currency.",
+   "note": ""
+  },
+  {
+   "id": "L11n101",
+   "lesson": 11,
+   "point": "Usage L11 · Reading amounts of money",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "2040 yuan (spoken)",
+   "context": "",
+   "accepted": [
+    "两千零四十块",
+    "两千零四十元",
+    "二千零四十块",
+    "二千零四十元"
+   ],
+   "answer": "两千零四十块",
+   "pinyin": "liǎngqiān líng sìshí kuài",
+   "es": "2040 yuan (spoken)",
+   "rule": "两千 before 千; the zero in the hundreds place is read 零.",
+   "note": ""
+  },
+  {
+   "id": "L11n102",
+   "lesson": 11,
+   "point": "Usage L11 · Reading amounts of money",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "1500 pesos",
+   "context": "",
+   "accepted": [
+    "一千五百比索",
+    "一千五比索"
+   ],
+   "answer": "一千五百比索",
+   "pinyin": "yìqiān wǔbǎi bǐsuǒ",
+   "es": "1500 pesos",
+   "rule": "Other currencies: number + currency name.",
+   "note": ""
+  },
+  {
+   "id": "L11n103",
+   "lesson": 11,
+   "point": "Usage L11 · Reading amounts of money",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "1567.80 yuan (spoken)",
+   "context": "",
+   "accepted": [
+    "一千五百六十七块八毛",
+    "一千五百六十七块八",
+    "一千五百六十七元八角"
+   ],
+   "answer": "一千五百六十七块八毛",
+   "pinyin": "yìqiān wǔbǎi liùshíqī kuài bā máo",
+   "es": "1567.80 yuan (spoken)",
+   "rule": "The decimal part of an amount in yuan is read with 毛/角; for other currencies, read the number and then the currency.",
+   "note": ""
+  },
+  {
+   "id": "L11n104",
+   "lesson": 11,
+   "point": "Usage L11 · Reading amounts of money",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "At the bank the clerk asks how much you want to change. Say you want to change 200 US dollars.",
+   "context": "",
+   "accepted": [
+    "我想换两百美元。",
+    "我想换两百美金。",
+    "我想换二百美元。",
+    "我想换二百美金。",
+    "我要换两百美元。",
+    "我要换两百美金。",
+    "我要换二百美元。",
+    "我要换二百美金。",
+    "换两百美元。",
+    "换两百美金。",
+    "换二百美元。",
+    "换二百美金。"
+   ],
+   "answer": "我想换两百美元。",
+   "pinyin": "Wǒ xiǎng huàn liǎngbǎi měiyuán.",
+   "es": "I'd like to change 200 US dollars.",
+   "rule": "Number + 美元; 两百 and 二百 are both used.",
+   "note": ""
+  },
+  {
+   "id": "L11n105",
+   "lesson": 11,
+   "point": "Usage L11 · Reading amounts of money",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "How much RMB do you get for 100 euros?",
+   "context": "",
+   "accepted": [
+    "一百欧元能换多少人民币？",
+    "一百欧元可以换多少人民币？",
+    "一百欧元换多少人民币？",
+    "一百欧元是多少人民币？"
+   ],
+   "answer": "一百欧元能换多少人民币？",
+   "pinyin": "Yìbǎi ōuyuán néng huàn duōshao rénmínbì?",
+   "es": "How much RMB do you get for 100 euros?",
+   "rule": "Amount + currency + 换 + 多少 + other currency.",
+   "note": ""
   }
  ]
 }

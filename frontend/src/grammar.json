@@ -5067,36 +5067,92 @@
   "missing": false
  },
  {
-  "point": "Usage L11 · 排队 (separable verb)",
+  "point": "Usage L11 · 离合词 · Separable verbs",
   "lesson": 11,
-  "title": "排队 VO (to stand in line)",
-  "source": "Lesson 11 A (slides), p. 8",
+  "title": "离合词 · Separable verbs (排队, 睡觉, 换钱…)",
+  "source": "Lesson 11 A (slides), p. 8 (排队); general rules from the Chinese Grammar Wiki (AllSet Learning), “Separable verb” — not from the textbook",
   "explanation": [
-   "排 v. to arrange / to put in order",
-   "队 N. line / team"
+   "排队 páiduì (to stand in line) is a verb-object (VO) word: 排 v. to arrange / put in order + 队 n. line / team. (Slides)",
+   "Many common verbs are built the same way and are called separable verbs (离合词): 睡觉 (sleep), 吃饭 (eat), 上课 (have class), 换钱 (change money), 看病 (see a doctor), 生病 (fall ill), 唱歌 (sing), 游泳 (swim), 见面 (meet). They can be used as one word (我要排队), but other words often go between the verb and its object.",
+   "了 / 过 go after the verb part, not after the whole word: 我换了钱, 我们见过面. A duration or a number of times also goes in the middle: 我排了一个小时队, 我只睡了五个小时觉, 我看了两次病. Another way is to repeat the verb: 我排队排了一个小时.",
+   "A separable verb already has its object, so it can’t take another one after it: say 跟他见面 (meet him), not 见面他. 一下 can’t follow the whole word either; repeat the verb part instead: 见见面, 帮帮忙."
   ],
-  "patterns": [],
+  "patterns": [
+   {
+    "label": "Together",
+    "formula": "Subject + VO",
+    "examples": [
+     "银行人很多，大家要排队。",
+     "他们在排队买票。"
+    ]
+   },
+   {
+    "label": "了 / 过 in the middle",
+    "formula": "V + 了/过 + O",
+    "examples": [
+     "我已经换了钱。",
+     "我们见过面。"
+    ]
+   },
+   {
+    "label": "Duration or times in the middle",
+    "formula": "V + (了) + duration / number + 次 + O",
+    "examples": [
+     "我排了一个小时队。",
+     "昨天晚上我只睡了五个小时觉。",
+     "这个星期我看了两次病。"
+    ]
+   },
+   {
+    "label": "Repeating the verb",
+    "formula": "VO + V + 了 + duration",
+    "examples": [
+     "我排队排了一个小时。"
+    ]
+   }
+  ],
   "examples": [
    {
     "zh": "银行人很多，大家要排队。",
-    "pinyin": "",
-    "es": ""
-   },
-   {
-    "zh": "他们在排队买票。",
-    "pinyin": "mǎi piào",
-    "es": ""
+    "pinyin": "Yínháng rén hěn duō, dàjiā yào páiduì.",
+    "es": "There are lots of people at the bank; everyone has to queue."
    },
    {
     "zh": "这里有两个队，我应该排哪个队？",
+    "pinyin": "Zhèli yǒu liǎng ge duì, wǒ yīnggāi pái nǎge duì?",
+    "es": "There are two lines here; which one should I join?"
+   },
+   {
+    "zh": "我排了一个小时队。",
+    "pinyin": "Wǒ pái le yí ge xiǎoshí duì.",
+    "es": "I queued for an hour."
+   },
+   {
+    "zh": "昨天晚上我只睡了五个小时觉。",
+    "pinyin": "Zuótiān wǎnshang wǒ zhǐ shuì le wǔ ge xiǎoshí jiào.",
+    "es": "Last night I only slept five hours."
+   },
+   {
+    "zh": "✗ 我排队了一个小时。",
     "pinyin": "",
-    "es": ""
+    "es": "Wrong: the duration goes between 排 and 队: 我排了一个小时队。"
+   },
+   {
+    "zh": "✗ 我想见面他。",
+    "pinyin": "",
+    "es": "Wrong: 见面 already has an object: 我想跟他见面。"
    }
   ],
   "notes": [
-   "排队 páiduì VO"
+   "排队 páiduì VO",
+   "In dictionaries separable verbs are often written with a // mark: pái//duì, shuì//jiào."
   ],
-  "missing": false
+  "missing": false,
+  "sourceUrl": "https://resources.allsetlearning.com/chinese/grammar/Separable_verb",
+  "sourceUrls": [
+   "https://resources.allsetlearning.com/chinese/grammar/Separable_verb",
+   "https://resources.allsetlearning.com/chinese/grammar/List_of_separable_verbs"
+  ]
  },
  {
   "point": "Usage L11 · Reading amounts of money",
