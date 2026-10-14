@@ -1253,7 +1253,7 @@ time {
   }
 
   .menu {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .menu button {
@@ -1311,5 +1311,519 @@ time {
 
   .syllable {
     width: 64px;
+  }
+}
+
+/* Exercises */
+
+.exerciseTabs {
+  flex: 0 0 auto;
+  width: 220px;
+}
+
+.exerciseResume {
+  margin: 0 0 16px;
+}
+
+.exerciseResume .statusGrid button {
+  min-height: 30px;
+}
+
+.exerciseLessonTitle {
+  grid-column: 1 / -1;
+  color: var(--color-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.exerciseCoverage {
+  grid-column: 1 / -1;
+  height: 6px;
+  margin-top: 4px;
+}
+
+.exerciseLessonHeader {
+  margin-bottom: 18px;
+}
+
+.exerciseSubtle {
+  margin: 6px 0 0;
+}
+
+.exercisePointList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.exercisePointList h2 {
+  line-height: 1.3;
+}
+
+.exerciseRows {
+  display: grid;
+  gap: 6px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.exerciseRows li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.exerciseRows .entryTag {
+  flex: 0 0 auto;
+  min-width: 84px;
+  justify-content: center;
+}
+
+.exerciseRowPrompt {
+  margin: 0;
+  overflow: hidden;
+  color: var(--color-text);
+  font-size: 0.92rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.exerciseCard {
+  margin-top: 18px;
+}
+
+.exerciseCard.correct {
+  border-color: var(--color-success);
+  background: var(--color-success-bg-panel);
+}
+
+.exerciseCard.missed {
+  border-color: var(--color-danger);
+}
+
+.exerciseSentence,
+.exercisePrompt {
+  margin: 18px 0 0;
+  color: var(--color-text);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.1;
+  overflow-wrap: anywhere;
+}
+
+.exercisePrompt.muted {
+  color: var(--color-muted);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.exercisePromptLine {
+  display: block;
+}
+
+.exercisePromptLine + .exercisePromptLine {
+  color: var(--color-muted-strong);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.exerciseSituation {
+  margin: 16px 0 -10px;
+  color: var(--color-muted-strong);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.exerciseTranslation {
+  margin: 6px 0 0;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.exerciseGapInput {
+  min-width: 3em;
+  height: 44px;
+  margin: 0 4px;
+  padding: 0 8px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 8px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  outline: none;
+}
+
+.exerciseGapInput::placeholder {
+  color: var(--color-muted-soft);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.exerciseGapInput:focus,
+.exerciseTextInput:focus {
+  border-color: var(--color-text);
+  box-shadow: 0 0 0 2px rgba(23, 32, 38, 0.16);
+}
+
+.exerciseGapInput.correct,
+.exerciseTextInput.correct,
+.exerciseTileAnswer.correct {
+  border-color: var(--color-success);
+  background: var(--color-success-bg-alt);
+  color: var(--color-success-text);
+}
+
+.exerciseGapInput.wrong,
+.exerciseTextInput.wrong,
+.exerciseTileAnswer.wrong {
+  border-color: var(--color-danger);
+  background: var(--color-danger-bg);
+  color: var(--color-danger-text);
+}
+
+.exerciseGapChoices {
+  display: inline-flex;
+  gap: 6px;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+
+.exerciseGapChoices .tagChip,
+.exerciseChoices .tagChip,
+.exerciseTiles .tagChip {
+  min-height: 40px;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.tagChip.right:disabled {
+  border-color: var(--color-success);
+  background: var(--color-success-bg-alt);
+  color: var(--color-success-text);
+}
+
+.tagChip.wrong:disabled {
+  border-color: var(--color-danger);
+  background: var(--color-danger-bg);
+  color: var(--color-danger-text);
+}
+
+.tagChip:disabled:not(.right):not(.wrong):not(.active) {
+  opacity: 0.45;
+}
+
+.tagChip.active:disabled {
+  border-color: var(--color-accent);
+  background: var(--color-accent-bg);
+  color: var(--color-accent-text);
+}
+
+.exerciseTextInput {
+  min-height: 52px;
+  margin-top: 16px;
+  font-size: 1.3rem;
+}
+
+.exerciseTiles {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.exerciseTileAnswer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  min-height: 60px;
+  padding: 8px;
+  border: 1px dashed var(--color-border-strong);
+  border-radius: 8px;
+  background: var(--color-surface);
+}
+
+.exerciseTileAnswer .emptyText {
+  padding: 0 4px;
+}
+
+.exerciseTilePool,
+.exerciseChoices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.exerciseChoices {
+  margin-top: 16px;
+}
+
+.exerciseActions {
+  justify-content: flex-end;
+}
+
+.exerciseVerdict {
+  font-weight: 800;
+}
+
+.exerciseAnswer {
+  margin-top: 12px;
+  padding: 14px;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 8px;
+  background: var(--color-surface);
+}
+
+.exerciseAnswerText {
+  margin: 0;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.exerciseAnswerPinyin {
+  margin: 4px 0 0;
+  color: var(--color-accent-text);
+  font-weight: 700;
+}
+
+.exerciseNote {
+  margin: 8px 0 0;
+  color: var(--color-muted-strong);
+  font-size: 0.9rem;
+}
+
+.exerciseRule {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--color-border-soft);
+}
+
+.exerciseRule p {
+  margin: 0;
+  color: var(--color-heading);
+  line-height: 1.5;
+}
+
+.exerciseRule .entryMeta {
+  margin-top: 4px;
+}
+
+.exerciseResults {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.exerciseResults li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+}
+
+.exerciseResults li > div {
+  min-width: 0;
+}
+
+.exerciseResults .serverDot {
+  margin-top: 6px;
+}
+
+.exerciseResults .entryMeta {
+  margin: 4px 0 0;
+}
+
+.exerciseResultAnswer {
+  margin: 4px 0 0;
+  color: var(--color-success-text);
+  font-weight: 700;
+}
+
+@media (max-width: 940px) {
+  .exercisePointList {
+    grid-template-columns: 1fr;
+  }
+}
+
+.exerciseCard .phraseRowHeader .entryTag {
+  justify-self: start;
+}
+
+.exercisePointTag {
+  min-height: 28px;
+  font-size: 0.82rem;
+}
+
+.exerciseInstructionRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.exerciseInstructionRow .exerciseInstruction {
+  margin: 0;
+}
+
+.exerciseInstructionRow .tagChip {
+  min-height: 30px;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.exerciseAnswerHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.grammarPanel {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--color-accent);
+  border-radius: 8px;
+  background: var(--color-accent-bg-alt);
+}
+
+.grammarPanel h3 {
+  margin: 4px 0 8px;
+  color: var(--color-heading);
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.grammarSourceLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 2px 0 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.grammarSourceLinks a {
+  color: var(--color-accent-text);
+}
+
+.grammarParagraph {
+  margin: 8px 0 0;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.grammarPatterns {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.grammarPattern {
+  padding: 10px 12px;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 8px;
+  background: var(--color-surface);
+}
+
+.grammarPatternLabel {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.grammarFormula {
+  margin: 4px 0 0;
+  color: var(--color-accent-text);
+  font-weight: 800;
+}
+
+.grammarPattern ul,
+.grammarExamples {
+  display: grid;
+  gap: 4px;
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.grammarPattern li {
+  font-size: 1.05rem;
+}
+
+.grammarExamples {
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.grammarExamples li {
+  display: grid;
+  gap: 1px;
+}
+
+.grammarExampleZh {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.grammarExamplePinyin {
+  color: var(--color-accent-text);
+  font-size: 0.88rem;
+}
+
+.grammarExampleEs {
+  color: var(--color-muted);
+  font-size: 0.88rem;
+  font-style: italic;
+}
+
+.grammarNote {
+  margin: 10px 0 0;
+  padding-left: 10px;
+  border-left: 3px solid var(--color-border-strong);
+  color: var(--color-muted-strong);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.exerciseInstruction {
+  margin: 14px 0 0;
+  color: var(--color-muted-strong);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+@media (max-width: 720px) {
+  .menu {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .pageHeader:has(.exerciseTabs) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .exerciseTabs {
+    width: 100%;
+  }
+
+  .exerciseSentence,
+  .exercisePrompt {
+    font-size: 1.35rem;
   }
 }

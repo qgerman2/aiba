@@ -8,6 +8,7 @@ import {
 } from "react";
 import type { FormEvent, KeyboardEvent } from "react";
 import { createRoot } from "react-dom/client";
+import { ExercisesView } from "./exercises";
 import "./styles.css";
 
 type ApiJob = {
@@ -243,7 +244,7 @@ declare global {
   }
 }
 
-type ViewMode = "home" | "entries" | "upload" | "player" | "about";
+type ViewMode = "home" | "entries" | "upload" | "player" | "exercises" | "about";
 
 type CachedPlayerEntry = {
   jobId: string;
@@ -807,6 +808,7 @@ function isViewMode(value: string | null): value is ViewMode {
     value === "entries" ||
     value === "upload" ||
     value === "player" ||
+    value === "exercises" ||
     value === "about"
   );
 }
@@ -2643,6 +2645,13 @@ function App() {
           </button>
           <button
             type="button"
+            className={viewMode === "exercises" ? "active" : ""}
+            onClick={() => setViewMode("exercises")}
+          >
+            Exercises
+          </button>
+          <button
+            type="button"
             className={viewMode === "about" ? "active" : ""}
             onClick={() => setViewMode("about")}
           >
@@ -2779,6 +2788,8 @@ function App() {
           </div>
         </section>
       )}
+
+      {viewMode === "exercises" && <ExercisesView />}
 
       {viewMode === "about" && (
         <section className="page narrow">

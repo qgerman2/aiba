@@ -1,0 +1,7925 @@
+{
+ "lessons": [
+  {
+   "number": 1,
+   "title": "你最近怎么样"
+  },
+  {
+   "number": 2,
+   "title": "你是哪国人"
+  },
+  {
+   "number": 3,
+   "title": "你们家有几口人"
+  },
+  {
+   "number": 4,
+   "title": "你明天几点有课"
+  },
+  {
+   "number": 5,
+   "title": "祝你生日快乐"
+  },
+  {
+   "number": 6,
+   "title": "图书馆在食堂北边"
+  },
+  {
+   "number": 7,
+   "title": "苹果多少钱一斤"
+  },
+  {
+   "number": 8,
+   "title": "我全身都不舒服"
+  },
+  {
+   "number": 9,
+   "title": "天气凉快了"
+  },
+  {
+   "number": 10,
+   "title": "祝你圣诞快乐"
+  },
+  {
+   "number": 11,
+   "title": "我玩儿得非常高兴"
+  },
+  {
+   "number": 12,
+   "title": "您要寄到哪儿"
+  },
+  {
+   "number": 13,
+   "title": "请您把姓名和手机号写在这儿"
+  },
+  {
+   "number": 14,
+   "title": "租的比买的便宜多了"
+  }
+ ],
+ "exercises": [
+  {
+   "id": "Rcr^=T%olM",
+   "lesson": 1,
+   "point": "用“吗”的是非问句 · Yes/no questions with 吗",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你叫马大为"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "吗",
+     "hint": ""
+    }
+   ],
+   "answer": "你叫马大为吗？",
+   "pinyin": "Nǐ jiào Mǎ Dàwéi ma?",
+   "es": "Is your name Ma Dawei?",
+   "rule": "Statement + 吗 = yes/no question. The word order does not change.",
+   "note": ""
+  },
+  {
+   "id": "vCHIDbF)DZ",
+   "lesson": 1,
+   "point": "用“吗”的是非问句 · Yes/no questions with 吗",
+   "type": "Transform",
+   "instruction": "Turn it into a question",
+   "prompt": "你很忙。",
+   "answer": "你忙吗？",
+   "pinyin": "Nǐ máng ma?",
+   "es": "Are you busy?",
+   "rule": "In questions with 吗, 很 is usually dropped.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你忙吗？",
+    "你忙不忙？",
+    "你很忙吗？"
+   ]
+  },
+  {
+   "id": "jrI-{Ausho",
+   "lesson": 1,
+   "point": "形容词谓语句 · Adjectival predicate",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "好。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "很",
+     "hint": ""
+    }
+   ],
+   "answer": "我很好。",
+   "pinyin": "Wǒ hěn hǎo.",
+   "es": "I'm fine.",
+   "rule": "The adjective is the predicate, without 是. In affirmative sentences 很 is usually added (with almost no meaning).",
+   "note": ""
+  },
+  {
+   "id": "l7~FsT^A-R",
+   "lesson": 1,
+   "point": "形容词谓语句 · Adjectival predicate",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我是很忙。",
+   "answer": "我很忙。",
+   "pinyin": "Wǒ hěn máng.",
+   "es": "I'm very busy.",
+   "rule": "With an adjectival predicate, 是 is not used (except for emphasis: 我是很忙！).",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我很忙。"
+   ]
+  },
+  {
+   "id": "ImgIKHj!B{",
+   "lesson": 1,
+   "point": "形容词谓语句 · Adjectival predicate",
+   "type": "Transform",
+   "instruction": "Make it negative",
+   "prompt": "我很忙。",
+   "answer": "我不忙。",
+   "pinyin": "Wǒ bù máng.",
+   "es": "I'm not busy.",
+   "rule": "Negative: 不 + adjective (很 is dropped).",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我不忙。"
+   ]
+  },
+  {
+   "id": "vKZnF(VTDG",
+   "lesson": 1,
+   "point": "副词“也”的位置 · Position of 也",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "林娜"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "很高兴。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "也",
+     "hint": ""
+    }
+   ],
+   "answer": "林娜也很高兴。",
+   "pinyin": "Lín Nà yě hěn gāoxìng.",
+   "es": "Lin Na is happy too.",
+   "rule": "也 goes after the subject and before the verb/adjective.",
+   "note": ""
+  },
+  {
+   "id": "wf5Y[AZDi[",
+   "lesson": 1,
+   "point": "副词“也”的位置 · Position of 也",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "也我很好。",
+   "answer": "我也很好。",
+   "pinyin": "Wǒ yě hěn hǎo.",
+   "es": "I'm fine too.",
+   "rule": "也 never goes before the subject or on its own.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我也很好。"
+   ]
+  },
+  {
+   "id": "FIv38>IU#)",
+   "lesson": 1,
+   "point": "副词“也”的位置 · Position of 也",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "prompt": "不 / 也 / 忙 / 力波",
+   "answer": "力波也不忙。",
+   "pinyin": "Lìbō yě bù máng.",
+   "es": "Libo isn't busy either.",
+   "rule": "Order: 也 + 不 + adjective.",
+   "note": "",
+   "context": "Libo isn't busy either.",
+   "mode": "tiles",
+   "tiles": [
+    "不",
+    "也",
+    "忙",
+    "力波"
+   ],
+   "accepted": [
+    "力波也不忙。"
+   ]
+  },
+  {
+   "id": "vir/ld48RQ",
+   "lesson": 1,
+   "point": "汉语的语序 · Word order",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "He knows me, but I don't know him.",
+   "answer": "他认识我，我不认识他。",
+   "pinyin": "Tā rènshi wǒ, wǒ bú rènshi tā.",
+   "es": "",
+   "rule": "Chinese has no inflection: word order (subject + verb + object) gives the meaning. 我/他 don't change form.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他认识我，我不认识他。"
+   ]
+  },
+  {
+   "id": "tL.|Ctux=:",
+   "lesson": 1,
+   "point": "Notes L1 · 请 + verb",
+   "type": "Situation",
+   "instruction": "What would you say?",
+   "prompt": "Politely invite someone to come in.",
+   "answer": "请进！",
+   "pinyin": "Qǐng jìn!",
+   "es": "Come in, please!",
+   "rule": "请 + verb = polite request.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "请进！"
+   ]
+  },
+  {
+   "id": "stpe;ZDttD",
+   "lesson": 1,
+   "point": "Notes L1 · ……怎么样？",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "How have you been lately?",
+   "answer": "你最近怎么样？",
+   "pinyin": "Nǐ zuìjìn zěnmeyàng?",
+   "es": "",
+   "rule": "……怎么样？ asks about the state of something/someone.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你最近怎么样？"
+   ]
+  },
+  {
+   "id": "N8bFhU$buX",
+   "lesson": 1,
+   "point": "Tones of 一 and 不",
+   "type": "Read",
+   "instruction": "Read aloud (pinyin)",
+   "prompt": "一起 / 一下 / 一天 / 第一",
+   "answer": "yìqǐ / yíxià / yì tiān / dì-yī",
+   "pinyin": "",
+   "es": "",
+   "rule": "一 → yí before a 4th tone; yì before 1st, 2nd and 3rd tones; yī on its own, when counting, or as an ordinal.",
+   "note": "",
+   "context": "",
+   "mode": "reveal"
+  },
+  {
+   "id": "J0lC__}-2j",
+   "lesson": 1,
+   "point": "Tones of 一 and 不",
+   "type": "Read",
+   "instruction": "Read aloud (pinyin)",
+   "prompt": "不是 / 不去 / 不忙 / 不好",
+   "answer": "bú shì / bú qù / bù máng / bù hǎo",
+   "pinyin": "",
+   "es": "",
+   "rule": "不 → bú before a 4th tone; otherwise bù.",
+   "note": "",
+   "context": "",
+   "mode": "reveal"
+  },
+  {
+   "id": "Cthj.z*r2t",
+   "lesson": 2,
+   "point": "“是”字句(1) · Sentences with 是",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "那"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "饺子。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "不是",
+     "hint": ""
+    }
+   ],
+   "answer": "那不是饺子。",
+   "pinyin": "Nà bú shì jiǎozi.",
+   "es": "Those aren't jiaozi.",
+   "rule": "是 links two nouns/pronouns. Negative: 不是.",
+   "note": ""
+  },
+  {
+   "id": "x.2Mlc223%",
+   "lesson": 2,
+   "point": "“是”字句(1) · Sentences with 是",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我没是美国人。",
+   "answer": "我不是美国人。",
+   "pinyin": "Wǒ bú shì Měiguó rén.",
+   "es": "I'm not American.",
+   "rule": "是 is always negated with 不, never with 没.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我不是美国人。"
+   ]
+  },
+  {
+   "id": "rEsu%(:vfC",
+   "lesson": 2,
+   "point": "用疑问代词的问句(1)：什么、哪 · Question words 什么 / 哪",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "这是"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "什么",
+     "hint": ""
+    }
+   ],
+   "answer": "这是什么？",
+   "pinyin": "Zhè shì shénme?",
+   "es": "What is this?",
+   "rule": "The question word takes the place of the information being asked about; the word order doesn't change.",
+   "note": ""
+  },
+  {
+   "id": "zI>>,_>uqQ",
+   "lesson": 2,
+   "point": "用疑问代词的问句(1)：什么、哪 · Question words 什么 / 哪",
+   "type": "Transform",
+   "instruction": "Ask what country he is from",
+   "prompt": "他是美国人。",
+   "answer": "他是哪国人？",
+   "pinyin": "Tā shì nǎ guórén?",
+   "es": "What country is he from?",
+   "rule": "The information is replaced by the question word, without changing the word order.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他是哪国人？"
+   ]
+  },
+  {
+   "id": "tuaNcAg;Wu",
+   "lesson": 2,
+   "point": "用疑问代词的问句(1)：什么、哪 · Question words 什么 / 哪",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "什么是这？",
+   "answer": "这是什么？",
+   "pinyin": "Zhè shì shénme?",
+   "es": "What is this?",
+   "rule": "The word order is the same as in the answer (这是饺子 → 这是什么).",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "这是什么？"
+   ]
+  },
+  {
+   "id": "Q*-2i2P@;D",
+   "lesson": 2,
+   "point": "连词“和” · The conjunction 和",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "爸爸"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "妈妈都很忙。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "和",
+     "hint": "",
+     "alternatives": [
+      "跟"
+     ]
+    }
+   ],
+   "answer": "爸爸和妈妈都很忙。",
+   "pinyin": "Bàba hé māma dōu hěn máng.",
+   "es": "Mom and Dad are both very busy.",
+   "rule": "和 links nouns and pronouns.",
+   "note": "跟 also works here."
+  },
+  {
+   "id": "pGlo>O56b]",
+   "lesson": 2,
+   "point": "连词“和” · The conjunction 和",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我很忙和很累。",
+   "answer": "我很忙，也很累。",
+   "pinyin": "Wǒ hěn máng, yě hěn lèi.",
+   "es": "I'm very busy and very tired.",
+   "rule": "和 doesn't link clauses and almost never links verbs or adjectives.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我很忙，也很累。"
+   ]
+  },
+  {
+   "id": "t<ff%6FSPr",
+   "lesson": 2,
+   "point": "副词“都”的位置 · Position of 都",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "包子和饺子"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "很好吃。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "都",
+     "hint": ""
+    }
+   ],
+   "answer": "包子和饺子都很好吃。",
+   "pinyin": "Bāozi hé jiǎozi dōu hěn hǎochī.",
+   "es": "Both the baozi and the jiaozi are delicious.",
+   "rule": "都 goes after the (plural) subject and before the verb/adjective.",
+   "note": ""
+  },
+  {
+   "id": "t#:hmzsO[X",
+   "lesson": 2,
+   "point": "副词“都”的位置 · Position of 都",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "prompt": "都 / 也 / 我们 / 很忙",
+   "answer": "我们也都很忙。",
+   "pinyin": "Wǒmen yě dōu hěn máng.",
+   "es": "We're all very busy too.",
+   "rule": "If both appear: 也都 (never 都也).",
+   "note": "",
+   "context": "We're all very busy too.",
+   "mode": "tiles",
+   "tiles": [
+    "都",
+    "也",
+    "我们",
+    "很忙"
+   ],
+   "accepted": [
+    "我们也都很忙。"
+   ]
+  },
+  {
+   "id": "bGt]<j2$J-",
+   "lesson": 2,
+   "point": "Notes L2 · 您贵姓",
+   "type": "Situation",
+   "instruction": "What would you say?",
+   "prompt": "Politely ask an older person their surname.",
+   "answer": "您贵姓？",
+   "pinyin": "Nín guìxìng?",
+   "es": "What is your surname, please?",
+   "rule": "您贵姓？ is the polite form; answer: 我姓……",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "您贵姓？"
+   ]
+  },
+  {
+   "id": "v@k#03h|>1",
+   "lesson": 2,
+   "point": "Notes L2 · Country + 人",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "I'm Spanish.",
+   "answer": "我是西班牙人。",
+   "pinyin": "Wǒ shì Xībānyá rén.",
+   "es": "",
+   "rule": "Nationality = country + 人.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我是西班牙人。"
+   ]
+  },
+  {
+   "id": "zB0X=zZ|f6",
+   "lesson": 3,
+   "point": "“有”字句 · Sentences with 有",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "她"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "妹妹。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "没有",
+     "hint": ""
+    }
+   ],
+   "answer": "她没有妹妹。",
+   "pinyin": "Tā méiyǒu mèimei.",
+   "es": "She doesn't have any younger sisters.",
+   "rule": "有 = to have. Negative: 没有 (never 不有).",
+   "note": ""
+  },
+  {
+   "id": "rryv65~DOy",
+   "lesson": 3,
+   "point": "“有”字句 · Sentences with 有",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我不有哥哥。",
+   "answer": "我没有哥哥。",
+   "pinyin": "Wǒ méiyǒu gēge.",
+   "es": "I don't have any older brothers.",
+   "rule": "有 is negated with 没.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我没有哥哥。"
+   ]
+  },
+  {
+   "id": "dHl*in.,C/",
+   "lesson": 3,
+   "point": "“有”字句 · Sentences with 有",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我们学校"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "很多学生。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "有",
+     "hint": ""
+    }
+   ],
+   "answer": "我们学校有很多学生。",
+   "pinyin": "Wǒmen xuéxiào yǒu hěn duō xuésheng.",
+   "es": "There are many students at our school.",
+   "rule": "Place/organization + 有 = there is/are.",
+   "note": ""
+  },
+  {
+   "id": "t3PU-BA~cz",
+   "lesson": 3,
+   "point": "表领属关系的定语 · Possessive modifier with 的",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "这是我们家"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "照片。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "的",
+     "hint": ""
+    }
+   ],
+   "answer": "这是我们家的照片。",
+   "pinyin": "Zhè shì wǒmen jiā de zhàopiān.",
+   "es": "This is a photo of our family.",
+   "rule": "Noun/pronoun + 的 + noun = possession.",
+   "note": ""
+  },
+  {
+   "id": "jbxzW`F,&T",
+   "lesson": 3,
+   "point": "表领属关系的定语 · Possessive modifier with 的",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "my mother / our school",
+   "answer": "我妈妈 / 我们学校",
+   "pinyin": "Wǒ māma / wǒmen xuéxiào",
+   "es": "",
+   "rule": "With family members, workplace or home, 的 is usually omitted.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我妈妈 / 我们学校"
+   ]
+  },
+  {
+   "id": "e6PA$Z;v2i",
+   "lesson": 3,
+   "point": "数量词做定语 · Number + measure word",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我有两"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "姐姐。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "个",
+     "hint": ""
+    }
+   ],
+   "answer": "我有两个姐姐。",
+   "pinyin": "Wǒ yǒu liǎng ge jiějie.",
+   "es": "I have two older sisters.",
+   "rule": "Number + measure word + noun. 个 is the general measure word.",
+   "note": ""
+  },
+  {
+   "id": "G/WokW]u3~",
+   "lesson": 3,
+   "point": "数量词做定语 · Number + measure word",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "三"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "照片"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "张",
+     "hint": ""
+    }
+   ],
+   "answer": "三张照片",
+   "pinyin": "Sān zhāng zhàopiān",
+   "es": "three photos",
+   "rule": "张: measure word for flat objects (photos, tables, banknotes…).",
+   "note": ""
+  },
+  {
+   "id": "D&#z9q_aVN",
+   "lesson": 3,
+   "point": "数量词做定语 · Number + measure word",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我有三照片。",
+   "answer": "我有三张照片。",
+   "pinyin": "Wǒ yǒu sān zhāng zhàopiān.",
+   "es": "I have three photos.",
+   "rule": "A measure word is needed between a number and a noun.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我有三张照片。"
+   ]
+  },
+  {
+   "id": "H)${E^@r,2",
+   "lesson": 3,
+   "point": "数量词做定语 · Number + measure word",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我有二个哥哥。",
+   "answer": "我有两个哥哥。",
+   "pinyin": "Wǒ yǒu liǎng ge gēge.",
+   "es": "I have two older brothers.",
+   "rule": "Before a measure word, «2» is 两, not 二.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我有两个哥哥。"
+   ]
+  },
+  {
+   "id": "hK/V&O%Krf",
+   "lesson": 3,
+   "point": "用疑问代词的问句(2)：谁、几 · Question words 谁 / 几",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "那是"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "谁",
+     "hint": ""
+    }
+   ],
+   "answer": "那是谁？",
+   "pinyin": "Nà shì shéi?",
+   "es": "Who is that?",
+   "rule": "谁 asks about people; the word order doesn't change.",
+   "note": ""
+  },
+  {
+   "id": "jM901P-6xp",
+   "lesson": 3,
+   "point": "用疑问代词的问句(2)：谁、几 · Question words 谁 / 几",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你们家有"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "口人？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "几",
+     "hint": ""
+    }
+   ],
+   "answer": "你们家有几口人？",
+   "pinyin": "Nǐmen jiā yǒu jǐ kǒu rén?",
+   "es": "How many people are there in your family?",
+   "rule": "几 + measure word asks about small numbers (usually < 10). 口: measure word for family members.",
+   "note": ""
+  },
+  {
+   "id": "M?>nO63m&O",
+   "lesson": 3,
+   "point": "还(1)：表示补充 · 还 = also, in addition",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我有两个姐姐，"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "有一个哥哥。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "还",
+     "hint": ""
+    }
+   ],
+   "answer": "我有两个姐姐，还有一个哥哥。",
+   "pinyin": "Wǒ yǒu liǎng ge jiějie, hái yǒu yí ge gēge.",
+   "es": "I have two older sisters, and also an older brother.",
+   "rule": "还 adds information: «also, in addition».",
+   "note": ""
+  },
+  {
+   "id": "M7|A3#`Wl;",
+   "lesson": 3,
+   "point": "Notes L3 · 真 + adjective",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Your home is really beautiful!",
+   "answer": "你们家真漂亮！",
+   "pinyin": "Nǐmen jiā zhēn piàoliang!",
+   "es": "",
+   "rule": "真 + adjective = exclamation.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你们家真漂亮！",
+    "你家真漂亮！"
+   ]
+  },
+  {
+   "id": "xkp[$@iw#N",
+   "lesson": 4,
+   "point": "称数法 · 几 and 多少",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你们班一共有"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "学生？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "多少",
+     "hint": ""
+    }
+   ],
+   "answer": "你们班一共有多少学生？",
+   "pinyin": "Nǐmen bān yígòng yǒu duōshao xuésheng?",
+   "es": "How many students are there in your class altogether?",
+   "rule": "多少: any quantity (usually ≥ 10); the measure word is optional. 几: < 10, with a measure word.",
+   "note": ""
+  },
+  {
+   "id": "je/zf)HFg)",
+   "lesson": 4,
+   "point": "称数法 · 几 and 多少",
+   "type": "Choose",
+   "instruction": "Choose and explain",
+   "prompt": "You're asking about the number of students at a university: 几 or 多少?",
+   "answer": "多少",
+   "pinyin": "Duōshao",
+   "es": "",
+   "rule": "几 for small numbers (< 10) with a measure word; 多少 for any number.",
+   "note": "",
+   "context": "",
+   "mode": "choice",
+   "options": [
+    "几",
+    "多少"
+   ],
+   "accepted": [
+    "多少"
+   ]
+  },
+  {
+   "id": "Lzm_VukN1,",
+   "lesson": 4,
+   "point": "钟点读法 · Telling the time",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "It's five to three.",
+   "answer": "差五分三点。",
+   "pinyin": "Chà wǔ fēn sān diǎn.",
+   "es": "",
+   "rule": "差 = «short of»: 差 + minutes + hour.",
+   "note": "两点五十五（分）",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "差五分三点。",
+    "两点五十五分",
+    "两点五十五"
+   ]
+  },
+  {
+   "id": "LA@$,EVAjI",
+   "lesson": 4,
+   "point": "钟点读法 · Telling the time",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "A quarter past two.",
+   "answer": "两点一刻。",
+   "pinyin": "Liǎng diǎn yí kè.",
+   "es": "",
+   "rule": "刻 = quarter of an hour; 2 o'clock is 两点.",
+   "note": "两点十五（分）",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "两点一刻。",
+    "两点十五分",
+    "两点十五"
+   ]
+  },
+  {
+   "id": "kl`Ze3Kwn@",
+   "lesson": 4,
+   "point": "钟点读法 · Telling the time",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Five past eight.",
+   "answer": "八点五分。",
+   "pinyin": "Bā diǎn wǔ fēn.",
+   "es": "",
+   "rule": "If 分 is omitted with minutes < 10, 零 is needed: 八点零五.",
+   "note": "八点零五（分）",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "八点五分。",
+    "八点零五分",
+    "八点零五"
+   ]
+  },
+  {
+   "id": "t|(X!(H54*",
+   "lesson": 4,
+   "point": "表时间的词语做状语 · Time expressions",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "prompt": "有 / 八点半 / 我 / 语法课 / 明天上午",
+   "answer": "我明天上午八点半有语法课。",
+   "pinyin": "Wǒ míngtiān shàngwǔ bā diǎn bàn yǒu yǔfǎ kè.",
+   "es": "Tomorrow at eight thirty in the morning I have grammar class.",
+   "rule": "Time goes before the verb (after or before the subject), from largest to smallest unit. Never at the end.",
+   "note": "明天上午八点半我有语法课。",
+   "context": "Tomorrow at eight thirty in the morning I have grammar class.",
+   "mode": "tiles",
+   "tiles": [
+    "有",
+    "八点半",
+    "我",
+    "语法课",
+    "明天上午"
+   ],
+   "accepted": [
+    "我明天上午八点半有语法课。",
+    "明天上午八点半我有语法课。"
+   ]
+  },
+  {
+   "id": "lYn]1Cq6<[",
+   "lesson": 4,
+   "point": "表时间的词语做状语 · Time expressions",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我有课明天。",
+   "answer": "我明天有课。",
+   "pinyin": "Wǒ míngtiān yǒu kè.",
+   "es": "I have class tomorrow.",
+   "rule": "A point in time (when) never goes after the verb. Note: duration does go after it (L13).",
+   "note": "明天我有课。",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我明天有课。",
+    "明天我有课。"
+   ]
+  },
+  {
+   "id": "kw*7hJMt~.",
+   "lesson": 4,
+   "point": "正反疑问句 · Affirmative-negative questions (V不V)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你明天有"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "时间？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "没有",
+     "hint": ""
+    }
+   ],
+   "answer": "你明天有没有时间？",
+   "pinyin": "Nǐ míngtiān yǒu mei yǒu shíjiān?",
+   "es": "Do you have time tomorrow?",
+   "rule": "有 → 有没有.",
+   "note": ""
+  },
+  {
+   "id": "bML!7]`{$+",
+   "lesson": 4,
+   "point": "正反疑问句 · Affirmative-negative questions (V不V)",
+   "type": "Transform",
+   "instruction": "Ask the same question without 吗",
+   "prompt": "你忙吗？",
+   "answer": "你忙不忙？",
+   "pinyin": "Nǐ máng bu máng?",
+   "es": "Are you busy?",
+   "rule": "Adjective + 不 + adjective, without 吗.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你忙不忙？"
+   ]
+  },
+  {
+   "id": "Lq[i4[X!C,",
+   "lesson": 4,
+   "point": "正反疑问句 · Affirmative-negative questions (V不V)",
+   "type": "Transform",
+   "instruction": "Ask the same question without 吗",
+   "prompt": "他是你哥哥吗？",
+   "answer": "他是不是你哥哥？",
+   "pinyin": "Tā shì bu shì nǐ gēge?",
+   "es": "Is he your older brother?",
+   "rule": "是 → 是不是.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他是不是你哥哥？"
+   ]
+  },
+  {
+   "id": "i3?oDOAP|.",
+   "lesson": 4,
+   "point": "正反疑问句 · Affirmative-negative questions (V不V)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "你忙不忙吗？",
+   "answer": "你忙不忙？",
+   "pinyin": "Nǐ máng bu máng?",
+   "es": "Are you busy?",
+   "rule": "The A-not-A form is not combined with 吗.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你忙不忙？"
+   ]
+  },
+  {
+   "id": "L@3BP)n:Jx",
+   "lesson": 4,
+   "point": "用“呢”构成的省略问句 · Questions with 呢",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我很好。你"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "呢",
+     "hint": ""
+    }
+   ],
+   "answer": "我很好。你呢？",
+   "pinyin": "Wǒ hěn hǎo. Nǐ ne?",
+   "es": "I'm fine. And you?",
+   "rule": "Noun/pronoun + 呢 repeats the previous question, depending on context.",
+   "note": ""
+  },
+  {
+   "id": "o9M6gL<Hjm",
+   "lesson": 4,
+   "point": "Notes L4 · 吧 (suggestion)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我们一起去"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "吧",
+     "hint": ""
+    }
+   ],
+   "answer": "我们一起去吧。",
+   "pinyin": "Wǒmen yìqǐ qù ba.",
+   "es": "Let's go together.",
+   "rule": "Final 吧 softens: suggestion, request or advice.",
+   "note": ""
+  },
+  {
+   "id": "ybK!FP.,tc",
+   "lesson": 4,
+   "point": "Notes L4 · 恐怕不行",
+   "type": "Situation",
+   "instruction": "What would you say?",
+   "prompt": "Politely turn down a proposal.",
+   "answer": "恐怕不行。",
+   "pinyin": "Kǒngpà bù xíng.",
+   "es": "I'm afraid I can't.",
+   "rule": "恐怕 = «I'm afraid that»; polite refusal.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "恐怕不行。"
+   ]
+  },
+  {
+   "id": "M0hW2Y)h02",
+   "lesson": 4,
+   "point": "Notes L4 · 对了",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "By the way, do you have time tomorrow evening?",
+   "answer": "对了，你明天晚上有没有时间？",
+   "pinyin": "Duì le, nǐ míngtiān wǎnshang yǒu mei yǒu shíjiān?",
+   "es": "",
+   "rule": "对了 changes the subject or introduces something just remembered.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "对了，你明天晚上有没有时间？"
+   ]
+  },
+  {
+   "id": "rfm+s_1iZ~",
+   "lesson": 4,
+   "point": "Notes L4 · 吧 (assumption)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你是林娜"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "吧",
+     "hint": ""
+    }
+   ],
+   "answer": "你是林娜吧？",
+   "pinyin": "Nǐ shì Lín Nà ba?",
+   "es": "You're Lin Na, right?",
+   "rule": "吧 at the end of a question = assumption («I suppose…»). Different from the 吧 of suggestion.",
+   "note": ""
+  },
+  {
+   "id": "kvXp<?c+.6",
+   "lesson": 5,
+   "point": "年、月、日和星期 · Dates",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Today is Friday, December 25.",
+   "answer": "今天十二月二十五号，星期五。",
+   "pinyin": "Jīntiān shí'èr yuè èrshíwǔ hào, xīngqī wǔ.",
+   "es": "",
+   "rule": "Order: year → month → day → day of the week → part of the day → time (largest to smallest).",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "今天十二月二十五号，星期五。"
+   ]
+  },
+  {
+   "id": "E:AVKh6xB5",
+   "lesson": 5,
+   "point": "年、月、日和星期 · Dates",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "the year 2020 (spoken)",
+   "answer": "二〇二〇年",
+   "pinyin": "Èr líng èr líng nián",
+   "es": "",
+   "rule": "Years are read digit by digit: èr líng èr líng nián.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "二〇二〇年"
+   ]
+  },
+  {
+   "id": "j2JJy8w)ti",
+   "lesson": 5,
+   "point": "名词谓语句 · Nominal predicate",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "He is twenty this year.",
+   "answer": "他今年二十岁。",
+   "pinyin": "Tā jīnnián èrshí suì.",
+   "es": "",
+   "rule": "Age, date, time and price can be the predicate without 是.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他今年二十岁。"
+   ]
+  },
+  {
+   "id": "pT2G~]xad$",
+   "lesson": 5,
+   "point": "名词谓语句 · Nominal predicate",
+   "type": "Transform",
+   "instruction": "Make it negative",
+   "prompt": "今天五号。",
+   "answer": "今天不是五号。",
+   "pinyin": "Jīntiān bú shì wǔ hào.",
+   "es": "Today isn't the 5th.",
+   "rule": "In the negative, 不是 is needed.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "今天不是五号。"
+   ]
+  },
+  {
+   "id": "K,%i`?XwH:",
+   "lesson": 5,
+   "point": "双宾语动词谓语句(1)：送、教 · Double objects",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "prompt": "我 / 英语 / 她 / 教",
+   "answer": "她教我英语。",
+   "pinyin": "Tā jiào wǒ Yīngyǔ.",
+   "es": "She teaches me English.",
+   "rule": "Verb + person + thing.",
+   "note": "",
+   "context": "She teaches me English.",
+   "mode": "tiles",
+   "tiles": [
+    "我",
+    "英语",
+    "她",
+    "教"
+   ],
+   "accepted": [
+    "她教我英语。"
+   ]
+  },
+  {
+   "id": "xKgy.@nlz&",
+   "lesson": 5,
+   "point": "双宾语动词谓语句(1)：送、教 · Double objects",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "I give my friend a book (as a gift).",
+   "answer": "我送朋友一本书。",
+   "pinyin": "Wǒ sòng péngyou yì běn shū.",
+   "es": "",
+   "rule": "送 + person + thing.",
+   "note": "我送给朋友一本书。",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我送朋友一本书。",
+    "我送给朋友一本书。"
+   ]
+  },
+  {
+   "id": "JS1T?>[2+U",
+   "lesson": 5,
+   "point": "“就”(1)：表示强调 · Emphatic 就",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "他"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "是我哥哥。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "就",
+     "hint": ""
+    }
+   ],
+   "answer": "他就是我哥哥。",
+   "pinyin": "Tā jiù shì wǒ gēge.",
+   "es": "That's my older brother! (the very one I meant)",
+   "rule": "就 before the verb adds emphasis: «exactly, precisely».",
+   "note": ""
+  },
+  {
+   "id": "uSUEQCqz@F",
+   "lesson": 5,
+   "point": "疑问语调句 · Intonation questions",
+   "type": "Situation",
+   "instruction": "What would you say?",
+   "prompt": "You're surprised: you know my younger sister?",
+   "answer": "你认识我妹妹？",
+   "pinyin": "Nǐ rènshi wǒ mèimei?",
+   "es": "You know my sister?",
+   "rule": "Statement with rising intonation = surprise or doubt.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你认识我妹妹？"
+   ]
+  },
+  {
+   "id": "G<afVShQ^r",
+   "lesson": 5,
+   "point": "Notes L5 · 多大 / 几岁",
+   "type": "Choose",
+   "instruction": "Say it in Chinese",
+   "prompt": "Ask a young adult their age.",
+   "answer": "你多大？",
+   "pinyin": "Nǐ duō dà?",
+   "es": "",
+   "rule": "几岁 only for children; 多大 for young people/adults; 您多大年纪 for older people.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你多大？",
+    "你今年多大？"
+   ]
+  },
+  {
+   "id": "r8DEA}OqO~",
+   "lesson": 5,
+   "point": "Notes L5 · 咱们 / 我们",
+   "type": "Situation",
+   "instruction": "What would you say?",
+   "prompt": "Suggest to your classmate that the two of you go eat.",
+   "answer": "咱们去吃饭吧！",
+   "pinyin": "Zánmen qù chīfàn ba!",
+   "es": "Let's go eat!",
+   "rule": "咱们 always includes the listener; 我们 may or may not.",
+   "note": "我们去吃饭吧！",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "咱们去吃饭吧！",
+    "我们去吃饭吧！"
+   ]
+  },
+  {
+   "id": "xy~j#*<jxm",
+   "lesson": 5,
+   "point": "Notes L5 · V + 一下",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Let me introduce you all.",
+   "answer": "我来介绍一下。",
+   "pinyin": "Wǒ lái jièshào yíxià.",
+   "es": "",
+   "rule": "Verb + 一下 = do something a little / briefly.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我来介绍一下。"
+   ]
+  },
+  {
+   "id": "D48HWV$c><",
+   "lesson": 5,
+   "point": "Notes L5 · 祝",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Happy birthday!",
+   "answer": "祝你生日快乐！",
+   "pinyin": "Zhù nǐ shēngrì kuàilè!",
+   "es": "",
+   "rule": "祝 + person + wish.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "祝你生日快乐！"
+   ]
+  },
+  {
+   "id": "LX.i6LLo+i",
+   "lesson": 6,
+   "point": "方位词 · Location words",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "银行在图书馆"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "东边",
+     "hint": ""
+    }
+   ],
+   "answer": "银行在图书馆东边。",
+   "pinyin": "Yínháng zài túshūguǎn dōngbian.",
+   "es": "The bank is east of the library.",
+   "rule": "里边、外边、上边、下边、前边、后边、左边、右边、旁边、东/西/南/北边、对面.",
+   "note": ""
+  },
+  {
+   "id": "pNPL`TV4Im",
+   "lesson": 6,
+   "point": "方位词 · Location words",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "学校"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "有银行。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "里",
+     "hint": "",
+     "alternatives": [
+      "里边",
+      "里面"
+     ]
+    }
+   ],
+   "answer": "学校里有银行。",
+   "pinyin": "Xuéxiào lǐ yǒu yínháng.",
+   "es": "There's a bank at the school.",
+   "rule": "Single-syllable forms (里、上…) attach to the noun: 学校里、楼上.",
+   "note": ""
+  },
+  {
+   "id": "p7i(u6(oIZ",
+   "lesson": 6,
+   "point": "方位词 · Location words",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我在中国里边学习。",
+   "answer": "我在中国学习。",
+   "pinyin": "Wǒ zài Zhōngguó xuéxí.",
+   "es": "I study in China.",
+   "rule": "里边 is not used with countries and cities.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我在中国学习。"
+   ]
+  },
+  {
+   "id": "g#n3mISrMv",
+   "lesson": 6,
+   "point": "用“在”表方位 · Location with 在",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "图书馆"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "食堂西边。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "不在",
+     "hint": ""
+    }
+   ],
+   "answer": "图书馆不在食堂西边。",
+   "pinyin": "Túshūguǎn bú zài shítáng xībian.",
+   "es": "The library isn't west of the cafeteria.",
+   "rule": "Person/thing + 在 + place. Negative: 不在.",
+   "note": ""
+  },
+  {
+   "id": "HOpq]>`;v~",
+   "lesson": 6,
+   "point": "用“有”“是”表存在 · Existence with 有 / 是",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "学校里边"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "一个银行。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "有",
+     "hint": ""
+    }
+   ],
+   "answer": "学校里边有一个银行。",
+   "pinyin": "Xuéxiào lǐbian yǒu yí ge yínháng.",
+   "es": "Inside the school there is a bank.",
+   "rule": "Place + 有 + something non-specific («there is a…»).",
+   "note": ""
+  },
+  {
+   "id": "Ki4lY6t2&?",
+   "lesson": 6,
+   "point": "用“有”“是”表存在 · Existence with 有 / 是",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "（What's the building next door?）食堂旁边"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "我们的办公楼。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "是",
+     "hint": ""
+    }
+   ],
+   "answer": "食堂旁边是我们的办公楼。",
+   "pinyin": "Shítáng pángbian shì wǒmen de bàngōnglóu.",
+   "es": "Next to the cafeteria is our office building.",
+   "rule": "Place + 是 + something: identifies what is there. Place + 有 only says that something exists.",
+   "note": ""
+  },
+  {
+   "id": ")x[`iFKWu",
+   "lesson": 6,
+   "point": "用“有”“是”表存在 · Existence with 有 / 是",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "学校里边有那个银行。",
+   "answer": "那个银行在学校里边。",
+   "pinyin": "Nàge yínháng zài xuéxiào lǐbian.",
+   "es": "That bank is inside the school.",
+   "rule": "Something specific (那个…) is located with 在, not with 有.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "那个银行在学校里边。"
+   ]
+  },
+  {
+   "id": "mVbq{cVP6t",
+   "lesson": 6,
+   "point": "介词结构(1)：跟 / 给 · 跟 and 给",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "我来。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "跟",
+     "hint": ""
+    }
+   ],
+   "answer": "你跟我来。",
+   "pinyin": "Nǐ gēn wǒ lái.",
+   "es": "Come with me.",
+   "rule": "跟 + person = with. It goes before the verb.",
+   "note": ""
+  },
+  {
+   "id": "o86_jy$cMp",
+   "lesson": 6,
+   "point": "介词结构(1)：跟 / 给 · 跟 and 给",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "你介绍一下。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "给",
+     "hint": ""
+    }
+   ],
+   "answer": "我给你介绍一下。",
+   "pinyin": "Wǒ gěi nǐ jièshào yíxià.",
+   "es": "Let me introduce you.",
+   "rule": "给 + person = to/for. It goes before the verb.",
+   "note": ""
+  },
+  {
+   "id": "KltY{rj@UR",
+   "lesson": 6,
+   "point": "介词结构(1)：跟 / 给 · 跟 and 给",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我介绍一下给你。",
+   "answer": "我给你介绍一下。",
+   "pinyin": "Wǒ gěi nǐ jièshào yíxià.",
+   "es": "Let me introduce you.",
+   "rule": "跟 + person always goes before the verb; so does 给 + beneficiary (给你介绍). But with transfer verbs, 给 goes after: 送给、交给、还给、寄给.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我给你介绍一下。"
+   ]
+  },
+  {
+   "id": "KZJqJ33KOp",
+   "lesson": 6,
+   "point": "……，好吗？ / ……，对吗？",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我们一起去，"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "好吗",
+     "hint": "",
+     "alternatives": [
+      "好不好",
+      "怎么样",
+      "行吗"
+     ]
+    }
+   ],
+   "answer": "我们一起去，好吗？",
+   "pinyin": "Wǒmen yìqǐ qù, hǎo ma?",
+   "es": "Let's go together, OK?",
+   "rule": "……，好吗？ asks for agreement with a proposal.",
+   "note": ""
+  },
+  {
+   "id": "iA^46<+[`4",
+   "lesson": 6,
+   "point": "……，好吗？ / ……，对吗？",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你是中国人，"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "对吗",
+     "hint": "",
+     "alternatives": [
+      "对不对",
+      "是不是",
+      "是吗"
+     ]
+    }
+   ],
+   "answer": "你是中国人，对吗？",
+   "pinyin": "Nǐ shì Zhōngguó rén, duì ma?",
+   "es": "You're Chinese, right?",
+   "rule": "……，对吗？ confirms something you're almost sure of.",
+   "note": ""
+  },
+  {
+   "id": "Ml^sA;-7H",
+   "lesson": 6,
+   "point": "Notes L6 · 别 + verb",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Don't worry.",
+   "answer": "别着急。",
+   "pinyin": "Bié zháojí.",
+   "es": "",
+   "rule": "别 + verb/adjective = \"don't…\" (prohibition, advice).",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "别着急。"
+   ]
+  },
+  {
+   "id": "bm)IK*I?i6",
+   "lesson": 7,
+   "point": "百、千的称数法 · Numbers up to 9999",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "2191",
+   "answer": "两千一百九十一",
+   "pinyin": "Liǎngqiān yìbǎi jiǔshíyī",
+   "es": "",
+   "rule": "Before 千 (and often before 百), \"2\" is said 两.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "两千一百九十一"
+   ]
+  },
+  {
+   "id": "uK2FCoyI4-",
+   "lesson": 7,
+   "point": "百、千的称数法 · Numbers up to 9999",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "305",
+   "answer": "三百零五",
+   "pinyin": "Sānbǎi líng wǔ",
+   "es": "",
+   "rule": "A zero in the middle is said 零.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "三百零五"
+   ]
+  },
+  {
+   "id": "K?:`%<adgh",
+   "lesson": 7,
+   "point": "百、千的称数法 · Numbers up to 9999",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "1008",
+   "answer": "一千零八",
+   "pinyin": "Yìqiān líng bā",
+   "es": "",
+   "rule": "Several consecutive zeros in the middle are said with a single 零.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "一千零八"
+   ]
+  },
+  {
+   "id": "y_Jh<b~OFx",
+   "lesson": 7,
+   "point": "能愿动词(1)：想、可以 · Auxiliaries 想 / 可以",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "买点儿苹果。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "想",
+     "hint": "",
+     "alternatives": [
+      "要"
+     ]
+    }
+   ],
+   "answer": "我想买点儿苹果。",
+   "pinyin": "Wǒ xiǎng mǎi diǎnr píngguǒ.",
+   "es": "I want to buy some apples.",
+   "rule": "想 + verb = wish, intention. Negative: 不想.",
+   "note": ""
+  },
+  {
+   "id": "or;0[vzb`C",
+   "lesson": 7,
+   "point": "能愿动词(1)：想、可以 · Auxiliaries 想 / 可以",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "试一下吗？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "可以",
+     "hint": "",
+     "alternatives": [
+      "能"
+     ]
+    }
+   ],
+   "answer": "我可以试一下吗？",
+   "pinyin": "Wǒ kěyǐ shì yí xià ma?",
+   "es": "Can I try it on?",
+   "rule": "可以 = permission / possibility. Negative: 不可以 or 不能.",
+   "note": ""
+  },
+  {
+   "id": "CxtEzHz}4O",
+   "lesson": 7,
+   "point": "能愿动词(1)：想、可以 · Auxiliaries 想 / 可以",
+   "type": "Transform",
+   "instruction": "Turn it into a question",
+   "prompt": "你想看电影。",
+   "answer": "你想不想看电影？",
+   "pinyin": "Nǐ xiǎng bu xiǎng kàn diànyǐng?",
+   "es": "Do you want to see a movie?",
+   "rule": "The auxiliary is repeated, not the main verb.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你想不想看电影？",
+    "你想看电影吗？"
+   ]
+  },
+  {
+   "id": "s>>lhE-t.K",
+   "lesson": 7,
+   "point": "能愿动词(1)：想、可以 · Auxiliaries 想 / 可以",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "你想看不看电影？",
+   "answer": "你想不想看电影？",
+   "pinyin": "Nǐ xiǎng bu xiǎng kàn diànyǐng?",
+   "es": "Do you want to see a movie?",
+   "rule": "With an auxiliary, the A不A form is made with the auxiliary.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你想不想看电影？"
+   ]
+  },
+  {
+   "id": "P|K{J4H){>",
+   "lesson": 7,
+   "point": "双宾语动词(2)：给、问、找 · Double objects",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "prompt": "八块 / 找 / 我 / 您",
+   "answer": "我找您八块。",
+   "pinyin": "Wǒ zhǎo nín bā kuài.",
+   "es": "Here's eight yuan in change.",
+   "rule": "找 + person + amount = give change.",
+   "note": "",
+   "context": "Here's eight yuan in change.",
+   "mode": "tiles",
+   "tiles": [
+    "八块",
+    "找",
+    "我",
+    "您"
+   ],
+   "accepted": [
+    "我找您八块。"
+   ]
+  },
+  {
+   "id": "s`TQG5t*8R",
+   "lesson": 7,
+   "point": "双宾语动词(2)：给、问、找 · Double objects",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "I want to ask you a question.",
+   "answer": "我想问你一个问题。",
+   "pinyin": "Wǒ xiǎng wèn nǐ yí ge wèntí.",
+   "es": "",
+   "rule": "问 + person + thing.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我想问你一个问题。"
+   ]
+  },
+  {
+   "id": "Ko2.OM*g1%",
+   "lesson": 7,
+   "point": "用疑问代词的问句(3)：怎么 · 怎么 + verb",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "这个汉语"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "说？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "怎么",
+     "hint": ""
+    }
+   ],
+   "answer": "这个汉语怎么说？",
+   "pinyin": "Zhège Hànyǔ zěnme shuō?",
+   "es": "How do you say this in Chinese?",
+   "rule": "怎么 + verb asks about the manner.",
+   "note": ""
+  },
+  {
+   "id": "w]E3i({G/3",
+   "lesson": 7,
+   "point": "用疑问代词的问句(3)：怎么 · 怎么 + verb",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "草莓"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "卖？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "怎么",
+     "hint": ""
+    }
+   ],
+   "answer": "草莓怎么卖？",
+   "pinyin": "Cǎoméi zěnme mài?",
+   "es": "How much are the strawberries?",
+   "rule": "怎么卖？ = how much is it sold for? The object (topic) goes first.",
+   "note": ""
+  },
+  {
+   "id": "y07;aSozFi",
+   "lesson": 7,
+   "point": "Notes L7 · Price per unit",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "How much is a jin (half a kilo) of apples?",
+   "answer": "苹果多少钱一斤？",
+   "pinyin": "Píngguǒ duōshao qián yì jīn?",
+   "es": "",
+   "rule": "Item + 多少钱 + 一 + unit. 斤 = 500 g.",
+   "note": "一斤苹果多少钱？",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "苹果多少钱一斤？",
+    "一斤苹果多少钱？"
+   ]
+  },
+  {
+   "id": "yw.4u*<j#c",
+   "lesson": 7,
+   "point": "Notes L7 · Spoken money",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "5.50 yuan (spoken)",
+   "answer": "五块五（毛）",
+   "pinyin": "Wǔ kuài wǔ (máo)",
+   "es": "",
+   "rule": "Spoken: 块 (元) and 毛 (角). The last unit can be omitted.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "五块五毛",
+    "五块五"
+   ]
+  },
+  {
+   "id": "P&v.6EWT+;",
+   "lesson": 7,
+   "point": "Notes L7 · Adjective + (一)点儿",
+   "type": "Situation",
+   "instruction": "What would you say?",
+   "prompt": "Ask the seller to give it to you cheaper.",
+   "answer": "便宜（一）点儿吧！",
+   "pinyin": "Piányi (yì) diǎnr ba!",
+   "es": "A bit cheaper, please!",
+   "rule": "Adjective + (一)点儿 = \"a bit more…\".",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "便宜一点儿吧！",
+    "便宜点儿吧！"
+   ]
+  },
+  {
+   "id": "j`kCaw^NQ9",
+   "lesson": 7,
+   "point": "双宾语(2)：给 · 给 + person + thing",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "He gives me a book.",
+   "answer": "他给我一本书。",
+   "pinyin": "Tā gěi wǒ yì běn shū.",
+   "es": "",
+   "rule": "给 (give) + person + thing.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他给我一本书。"
+   ]
+  },
+  {
+   "id": "l9|FCR,0MJ",
+   "lesson": 7,
+   "point": "Usage · 怎么 = how come…?",
+   "type": "Choose",
+   "instruction": "Choose and explain",
+   "prompt": "你怎么不去？ Does 怎么 ask \"how\" or \"why\"?",
+   "answer": "Why (with surprise).",
+   "pinyin": "",
+   "es": "How come you're not going?",
+   "rule": "怎么 + 不/没 + V = how come … not…? (surprise). 怎么 + V = how do you do it?",
+   "note": "",
+   "context": "",
+   "mode": "reveal"
+  },
+  {
+   "id": "M?Qiyt][X`",
+   "lesson": 8,
+   "point": "主谓谓语句 · Subject-predicate predicate",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "My head hurts, and my throat hurts too.",
+   "answer": "我头疼，嗓子也疼。",
+   "pinyin": "Wǒ tóu téng, sǎngzi yě téng.",
+   "es": "",
+   "rule": "The predicate is itself a subject + predicate clause (头 + 疼) about the main subject.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我头疼，嗓子也疼。"
+   ]
+  },
+  {
+   "id": "l[$[kMS0q8",
+   "lesson": 8,
+   "point": "主谓谓语句 · Subject-predicate predicate",
+   "type": "Transform",
+   "instruction": "Turn it into a question",
+   "prompt": "你身体好。",
+   "answer": "你身体好不好？",
+   "pinyin": "Nǐ shēntǐ hǎo bu hǎo?",
+   "es": "Are you in good health?",
+   "rule": "不 and the A不A form apply to the inner predicate.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你身体好不好？",
+    "你身体好吗？"
+   ]
+  },
+  {
+   "id": "cRn)=M::dv",
+   "lesson": 8,
+   "point": "选择疑问句 · Questions with 还是",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "现在去"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "下午去？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "还是",
+     "hint": ""
+    }
+   ],
+   "answer": "现在去还是下午去？",
+   "pinyin": "Xiànzài qù háishi xiàwǔ qù?",
+   "es": "Shall we go now or in the afternoon?",
+   "rule": "A 还是 B？ offers two options; you answer by choosing one.",
+   "note": ""
+  },
+  {
+   "id": "Q$]w|{k;Cs",
+   "lesson": 8,
+   "point": "选择疑问句 · Questions with 还是",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Is he British or American?",
+   "answer": "他是英国人还是美国人？",
+   "pinyin": "Tā shì Yīngguó rén háishi Měiguó rén?",
+   "es": "",
+   "rule": "A 还是 B, without 吗.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他是英国人还是美国人？"
+   ]
+  },
+  {
+   "id": "yrMB$u`)kK",
+   "lesson": 8,
+   "point": "连动句(1)：表示目的 · Serial verbs (purpose)",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "prompt": "看病 / 去 / 马大为 / 医院",
+   "answer": "马大为去医院看病。",
+   "pinyin": "Mǎ Dàwéi qù yīyuàn kànbìng.",
+   "es": "Ma Dawei is going to the hospital to see a doctor.",
+   "rule": "Subject + V₁ (+ O₁) + V₂ (+ O₂): V₂ is the purpose of V₁.",
+   "note": "",
+   "context": "Ma Dawei is going to the hospital to see a doctor.",
+   "mode": "tiles",
+   "tiles": [
+    "看病",
+    "去",
+    "马大为",
+    "医院"
+   ],
+   "accepted": [
+    "马大为去医院看病。"
+   ]
+  },
+  {
+   "id": "F4,4tw!3E}",
+   "lesson": 8,
+   "point": "连动句(1)：表示目的 · Serial verbs (purpose)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我去看病医院。",
+   "answer": "我去医院看病。",
+   "pinyin": "Wǒ qù yīyuàn kànbìng.",
+   "es": "I'm going to the hospital to see a doctor.",
+   "rule": "First go + place, then the action to be done.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我去医院看病。"
+   ]
+  },
+  {
+   "id": "z$]5j,f5:p",
+   "lesson": 8,
+   "point": "能愿动词(2)：应该、要、能 · Auxiliaries",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "去医院看病。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "应该",
+     "hint": ""
+    }
+   ],
+   "answer": "你应该去医院看病。",
+   "pinyin": "Nǐ yīnggāi qù yīyuàn kànbìng.",
+   "es": "You should go to the hospital and see a doctor.",
+   "rule": "应该 = should, ought to.",
+   "note": ""
+  },
+  {
+   "id": "i,j23BJ1X2",
+   "lesson": 8,
+   "point": "能愿动词(2)：应该、要、能 · Auxiliaries",
+   "type": "Transform",
+   "instruction": "Make it negative",
+   "prompt": "你要验血。",
+   "answer": "你不用验血。",
+   "pinyin": "Nǐ búyòng yànxuè.",
+   "es": "You don't need to have a blood test.",
+   "rule": "要 (need to) is negated with 不用, not 不要 (不要 = \"don't\").",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你不用验血。"
+   ]
+  },
+  {
+   "id": "q[Jk&Uv(?|",
+   "lesson": 8,
+   "point": "能愿动词(2)：应该、要、能 · Auxiliaries",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "大为明天"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "上课吗？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "能",
+     "hint": ""
+    }
+   ],
+   "answer": "大为明天能上课吗？",
+   "pinyin": "Dàwéi míngtiān néng shàngkè ma?",
+   "es": "Can Dawei go to class tomorrow?",
+   "rule": "能 = can (due to ability or circumstances). Negative: 不能.",
+   "note": ""
+  },
+  {
+   "id": "EBSMX7tRAU",
+   "lesson": 8,
+   "point": "介词结构(2)：在 + place · 在 + place + verb",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "她工作在医院。",
+   "answer": "她在医院工作。",
+   "pinyin": "Tā zài yīyuàn gōngzuò.",
+   "es": "She works at a hospital.",
+   "rule": "在 + place goes before the verb.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "她在医院工作。"
+   ]
+  },
+  {
+   "id": "D5v)4:D(|u",
+   "lesson": 8,
+   "point": "介词结构(2)：在 + place · 在 + place + verb",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "prompt": "在 / 学习 / 我们 / 图书馆 / 不",
+   "answer": "我们不在图书馆学习。",
+   "pinyin": "Wǒmen bú zài túshūguǎn xuéxí.",
+   "es": "We don't study in the library.",
+   "rule": "不 goes before 在.",
+   "note": "",
+   "context": "We don't study in the library.",
+   "mode": "tiles",
+   "tiles": [
+    "在",
+    "学习",
+    "我们",
+    "图书馆",
+    "不"
+   ],
+   "accepted": [
+    "我们不在图书馆学习。"
+   ]
+  },
+  {
+   "id": "j[P#s*ij`u",
+   "lesson": 8,
+   "point": "Notes L8 · 快 + verb",
+   "type": "Situation",
+   "instruction": "What would you say?",
+   "prompt": "Hurry someone up to get out of bed.",
+   "answer": "快起床！",
+   "pinyin": "Kuài qǐchuáng!",
+   "es": "",
+   "rule": "快 + verb = hurry someone up.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "快起床！"
+   ]
+  },
+  {
+   "id": "(x?NFy,U8",
+   "lesson": 8,
+   "point": "Notes L8 · 每……都",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "他每天"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "去图书馆。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "都",
+     "hint": ""
+    }
+   ],
+   "answer": "他每天都去图书馆。",
+   "pinyin": "Tā měitiān dōu qù túshūguǎn.",
+   "es": "He goes to the library every day.",
+   "rule": "每 + (measure word) + noun usually goes with 都.",
+   "note": ""
+  },
+  {
+   "id": "cso;cUbmpx",
+   "lesson": 8,
+   "point": "Notes L8 · 还 = still",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "九点了，他"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "不起床。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "还",
+     "hint": ""
+    }
+   ],
+   "answer": "九点了，他还不起床。",
+   "pinyin": "Jiǔ diǎn le, tā hái bù qǐchuáng.",
+   "es": "It's already nine and he still isn't getting up.",
+   "rule": "还 + verb/adjective = \"still\" (something continues).",
+   "note": ""
+  },
+  {
+   "id": "yB9zzbUs{C",
+   "lesson": 8,
+   "point": "Notes L8 · 有点儿 / 一点儿",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我嗓子"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "疼。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "有点儿",
+     "hint": ""
+    }
+   ],
+   "answer": "我嗓子有点儿疼。",
+   "pinyin": "Wǒ sǎngzi yǒudiǎnr téng.",
+   "es": "My throat hurts a little.",
+   "rule": "有点儿 + adjective/verb: \"a bit\", with a negative or dissatisfied nuance.",
+   "note": ""
+  },
+  {
+   "id": "m9){11*]0)",
+   "lesson": 8,
+   "point": "Notes L8 · 有点儿 / 一点儿",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我想买"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "药。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "一点儿",
+     "hint": "",
+     "alternatives": [
+      "一些",
+      "点儿"
+     ]
+    }
+   ],
+   "answer": "我想买一点儿药。",
+   "pinyin": "Wǒ xiǎng mǎi yìdiǎnr yào.",
+   "es": "I want to buy some medicine.",
+   "rule": "(一)点儿 + noun = \"a little / some\".",
+   "note": ""
+  },
+  {
+   "id": "h{Q#TcQwV~",
+   "lesson": 8,
+   "point": "Notes L8 · 有点儿 / 一点儿",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我一点儿头疼。",
+   "answer": "我有点儿头疼。",
+   "pinyin": "Wǒ yǒudiǎnr tóu téng.",
+   "es": "I have a bit of a headache.",
+   "rule": "Before an adjective/verb use 有点儿, not 一点儿.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我有点儿头疼。"
+   ]
+  },
+  {
+   "id": "uoc/t028xz",
+   "lesson": 8,
+   "point": "Notes L8 · 跟……一起",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "你一起去。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "跟",
+     "hint": "",
+     "alternatives": [
+      "和"
+     ]
+    }
+   ],
+   "answer": "我跟你一起去。",
+   "pinyin": "Wǒ gēn nǐ yìqǐ qù.",
+   "es": "I'll go with you.",
+   "rule": "跟 + person + 一起 + verb = do something with someone.",
+   "note": "和 also works."
+  },
+  {
+   "id": "I39=nd2hss",
+   "lesson": 8,
+   "point": "Notes L8 · 一点儿也不 + adj",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "It's not expensive at all.",
+   "answer": "一点儿也不贵。",
+   "pinyin": "Yìdiǎnr yě bú guì.",
+   "es": "",
+   "rule": "一点儿也/都 + 不 + adj = not at all.",
+   "note": "一点儿都不贵。",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "一点儿也不贵。",
+    "一点儿都不贵。"
+   ]
+  },
+  {
+   "id": "gB;i:2tj8~",
+   "lesson": 9,
+   "point": "句尾“了”(1)：变化 · 了 for change of state",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "天气凉快"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "了",
+     "hint": ""
+    }
+   ],
+   "answer": "天气凉快了。",
+   "pinyin": "Tiānqì liángkuai le.",
+   "es": "The weather has cooled down.",
+   "rule": "Sentence-final 了 = new situation / change.",
+   "note": ""
+  },
+  {
+   "id": "yu?6)b>jP%",
+   "lesson": 9,
+   "point": "句尾“了”(1)：变化 · 了 for change of state",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Now I have time.",
+   "answer": "我现在有时间了。",
+   "pinyin": "Wǒ xiànzài yǒu shíjiān le.",
+   "es": "",
+   "rule": "Final 了 = change compared to before.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我现在有时间了。"
+   ]
+  },
+  {
+   "id": "n[2-g(dJ-T",
+   "lesson": 9,
+   "point": "句尾“了”(1)：变化 · 了 for change of state",
+   "type": "Transform",
+   "instruction": "Make it negative",
+   "prompt": "天气凉快了。",
+   "answer": "天气还没（有）凉快。",
+   "pinyin": "Tiānqì hái méi (yǒu) liángkuai.",
+   "es": "It hasn't cooled down yet.",
+   "rule": "If there's no change yet: 还没(有) + adjective, without 了.",
+   "note": "天气还不凉快。",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "天气还没有凉快。",
+    "天气还没凉快。",
+    "天气还不凉快。"
+   ]
+  },
+  {
+   "id": "P?rUE9T`8N",
+   "lesson": 9,
+   "point": "连动句(2)：表示方式 · Serial verbs (means)",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "prompt": "回家 / 坐 / 他 / 公共汽车 / 每天",
+   "answer": "他每天坐公共汽车回家。",
+   "pinyin": "Tā měitiān zuò gōnggòngqìchē huíjiā.",
+   "es": "He takes the bus home every day.",
+   "rule": "V₁ indicates the means or manner of V₂.",
+   "note": "每天他坐公共汽车回家。",
+   "context": "He takes the bus home every day.",
+   "mode": "tiles",
+   "tiles": [
+    "回家",
+    "坐",
+    "他",
+    "公共汽车",
+    "每天"
+   ],
+   "accepted": [
+    "他每天坐公共汽车回家。",
+    "每天他坐公共汽车回家。"
+   ]
+  },
+  {
+   "id": "I%V!K2VC%p",
+   "lesson": 9,
+   "point": "连动句(2)：表示方式 · Serial verbs (means)",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "We're going to Wangfujing by subway.",
+   "answer": "我们坐地铁去王府井。",
+   "pinyin": "Wǒmen zuò dìtiě qù Wángfǔjǐng.",
+   "es": "",
+   "rule": "坐 + transport + 去 + place.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我们坐地铁去王府井。"
+   ]
+  },
+  {
+   "id": "e^Gic4A`R#",
+   "lesson": 9,
+   "point": "能愿动词(3)：会、可能 · Auxiliaries 会 / 可能",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "宋华不"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "开车。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "会",
+     "hint": ""
+    }
+   ],
+   "answer": "宋华不会开车。",
+   "pinyin": "Sòng Huá bú huì kāichē.",
+   "es": "Song Hua can't drive.",
+   "rule": "会 = know how to do something learned (skill).",
+   "note": ""
+  },
+  {
+   "id": "K#UNj+JW=y",
+   "lesson": 9,
+   "point": "能愿动词(3)：会、可能 · Auxiliaries 会 / 可能",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我今天不舒服，不"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "上课。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "能",
+     "hint": ""
+    }
+   ],
+   "answer": "我今天不舒服，不能上课。",
+   "pinyin": "Wǒ jīntiān bù shūfu, bù néng shàngkè.",
+   "es": "I'm not feeling well today, I can't go to class.",
+   "rule": "能 = can, due to circumstances or physical ability.",
+   "note": ""
+  },
+  {
+   "id": "Ih^Zc>0Z;r",
+   "lesson": 9,
+   "point": "能愿动词(3)：会、可能 · Auxiliaries 会 / 可能",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "打车去"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "很慢。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "可能",
+     "hint": ""
+    }
+   ],
+   "answer": "打车去可能很慢。",
+   "pinyin": "Dǎchē qù kěnéng hěn màn.",
+   "es": "Going by taxi might be very slow.",
+   "rule": "可能 = it's possible (uncertain estimate).",
+   "note": ""
+  },
+  {
+   "id": "J$LTYs}1^7",
+   "lesson": 9,
+   "point": "疑问代词(4)：怎么样 · Suggestions with 怎么样",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我们买一个大蛋糕，"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "怎么样",
+     "hint": ""
+    }
+   ],
+   "answer": "我们买一个大蛋糕，怎么样？",
+   "pinyin": "Wǒmen mǎi yí ge dà dàngāo, zěnmeyàng?",
+   "es": "Let's buy a big cake, how about it?",
+   "rule": "Suggestion + ，怎么样？ = ask for an opinion, like ……，好吗？",
+   "note": ""
+  },
+  {
+   "id": "LV>.EgVAyk",
+   "lesson": 9,
+   "point": "Notes L9 · 太……了",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "机票"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "贵"
+    },
+    {
+     "gap": 1
+    },
+    {
+     "text": "。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "太",
+     "hint": ""
+    },
+    {
+     "answer": "了",
+     "hint": ""
+    }
+   ],
+   "answer": "机票太贵了。",
+   "pinyin": "Jīpiào tài guì le.",
+   "es": "The plane ticket is too expensive.",
+   "rule": "太 + adjective + 了 = too / so (exclamation).",
+   "note": ""
+  },
+  {
+   "id": "oD!trWTzUa",
+   "lesson": 9,
+   "point": "Notes L9 · 快……了",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "It's almost ten o'clock.",
+   "answer": "快十点了。",
+   "pinyin": "Kuài shí diǎn le.",
+   "es": "",
+   "rule": "快 + … + 了 = about to.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "快十点了。"
+   ]
+  },
+  {
+   "id": "Q[s/{II36s",
+   "lesson": 9,
+   "point": "Notes L9 · 最",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Autumn is the best season in Beijing.",
+   "answer": "秋天是北京最好的季节。",
+   "pinyin": "Qiūtiān shì Běijīng zuì hǎo de jìjié.",
+   "es": "",
+   "rule": "最 + adjective = the most…",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "秋天是北京最好的季节。"
+   ]
+  },
+  {
+   "id": "juuO?ZoP5i",
+   "lesson": 9,
+   "point": "Usage · 会 (probability)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "明天"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "下雨吗？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "会",
+     "hint": ""
+    }
+   ],
+   "answer": "明天会下雨吗？",
+   "pinyin": "Míngtiān huì xiàyǔ ma?",
+   "es": "Will it rain tomorrow?",
+   "rule": "会 + verb = likely to / will (prediction). Different from 会 = know how to.",
+   "note": ""
+  },
+  {
+   "id": "CP{L1vV:{1",
+   "lesson": 10,
+   "point": "句尾“了”(2)：已经发生 · 了 for something that has happened",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你去哪儿"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "了",
+     "hint": ""
+    }
+   ],
+   "answer": "你去哪儿了？",
+   "pinyin": "Nǐ qù nǎr le?",
+   "es": "Where did you go?",
+   "rule": "V + O + 了 confirms that something has happened.",
+   "note": ""
+  },
+  {
+   "id": "b$=hyLZEUH",
+   "lesson": 10,
+   "point": "句尾“了”(2)：已经发生 · 了 for something that has happened",
+   "type": "Transform",
+   "instruction": "Make it negative",
+   "prompt": "他去上海了。",
+   "answer": "他没（有）去上海。",
+   "pinyin": "Tā méi (yǒu) qù Shànghǎi.",
+   "es": "He didn't go to Shanghai.",
+   "rule": "Negative: 没(有) + verb, and 了 is dropped (except with duration: 我三天没睡觉了, L13).",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他没有去上海。",
+    "他没去上海。"
+   ]
+  },
+  {
+   "id": "AZ7hKW~JSr",
+   "lesson": 10,
+   "point": "句尾“了”(2)：已经发生 · 了 for something that has happened",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "他没去上海了。",
+   "answer": "他没去上海。",
+   "pinyin": "Tā méi qù Shànghǎi.",
+   "es": "He didn't go to Shanghai.",
+   "rule": "With 没 you don't use 了 (except with duration: 三天没……了).",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他没去上海。"
+   ]
+  },
+  {
+   "id": "EJPkH#o@E1",
+   "lesson": 10,
+   "point": "句尾“了”(2)：已经发生 · 了 for something that has happened",
+   "type": "Transform",
+   "instruction": "Turn it into a question",
+   "prompt": "你买书了。",
+   "answer": "你买书了没有？",
+   "pinyin": "Nǐ mǎi shū le méiyǒu?",
+   "es": "Did you buy any books?",
+   "rule": "Questions: ……了吗？ / ……了没有？ / V没V…？",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你买书了没有？",
+    "你买书了吗？",
+    "你买没买书？"
+   ]
+  },
+  {
+   "id": "b}f%;XdAL`",
+   "lesson": 10,
+   "point": "兼语句 · Pivotal sentences (请 / 让)",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "prompt": "喝 / 让 / 妈妈 / 不 / 她 / 咖啡",
+   "answer": "妈妈不让她喝咖啡。",
+   "pinyin": "Māma bú ràng tā hē kāfēi.",
+   "es": "Her mom doesn't let her drink coffee.",
+   "rule": "The object of 请/让 is the subject of the 2nd verb. 不/没 goes before 让/请.",
+   "note": "",
+   "context": "Her mom doesn't let her drink coffee.",
+   "mode": "tiles",
+   "tiles": [
+    "喝",
+    "让",
+    "妈妈",
+    "不",
+    "她",
+    "咖啡"
+   ],
+   "accepted": [
+    "妈妈不让她喝咖啡。"
+   ]
+  },
+  {
+   "id": "qz3FBI7z?4",
+   "lesson": 10,
+   "point": "兼语句 · Pivotal sentences (请 / 让)",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "They invited him to give a talk.",
+   "answer": "他们请他做报告。",
+   "pinyin": "Tāmen qǐng tā zuò bàogào.",
+   "es": "",
+   "rule": "请 + person + verb = invite/ask (polite).",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他们请他做报告。"
+   ]
+  },
+  {
+   "id": "fT19z&8536",
+   "lesson": 10,
+   "point": "……，是不是？ · Questions with 是不是",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你喜欢中国电影，"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "是不是",
+     "hint": ""
+    }
+   ],
+   "answer": "你喜欢中国电影，是不是？",
+   "pinyin": "Nǐ xǐhuan Zhōngguó diànyǐng, shì bu shì?",
+   "es": "You like Chinese movies, don't you?",
+   "rule": "……，是不是？ checks an assumption.",
+   "note": ""
+  },
+  {
+   "id": "G;Lj>Fkxs2",
+   "lesson": 10,
+   "point": "……，是不是？ · Questions with 是不是",
+   "type": "Transform",
+   "instruction": "Turn it into a question",
+   "prompt": "中国人也过圣诞节。",
+   "answer": "中国人是不是也过圣诞节？",
+   "pinyin": "Zhōngguó rén shì bu shì yě guò Shèngdànjié?",
+   "es": "Do Chinese people celebrate Christmas too?",
+   "rule": "是不是 can also go before the predicate.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "中国人是不是也过圣诞节？",
+    "中国人也过圣诞节吗？",
+    "中国人也过圣诞节，是不是？"
+   ]
+  },
+  {
+   "id": "A7@!#O~a=^",
+   "lesson": 10,
+   "point": "Notes L10 · 问……好",
+   "type": "Situation",
+   "instruction": "What would you say?",
+   "prompt": "Tell someone your mom sends her regards.",
+   "answer": "我妈妈让我问你好。",
+   "pinyin": "Wǒ māma ràng wǒ wèn nǐ hǎo.",
+   "es": "",
+   "rule": "(让我)问 + person + 好 = send regards.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我妈妈让我问你好。"
+   ]
+  },
+  {
+   "id": "coqbuxOfyF",
+   "lesson": 10,
+   "point": "Notes L10 · 会 + 了",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Now I know how to use a Chinese dictionary.",
+   "answer": "我现在会用汉语词典了。",
+   "pinyin": "Wǒ xiànzài huì yòng Hànyǔ cídiǎn le.",
+   "es": "",
+   "rule": "Auxiliary + … + 了 = change: now I know how / can.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我现在会用汉语词典了。"
+   ]
+  },
+  {
+   "id": "Gt|jT@@nqe",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我玩儿"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "非常高兴。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "得",
+     "hint": ""
+    }
+   ],
+   "answer": "我玩儿得非常高兴。",
+   "pinyin": "Wǒ wánr de fēicháng gāoxìng.",
+   "es": "I had a great time.",
+   "rule": "V + 得 + (adverb) + adjective describes or comments on how the action is done.",
+   "note": ""
+  },
+  {
+   "id": "Ne1<fCMnpV",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我玩儿很高兴。",
+   "answer": "我玩儿得很高兴。",
+   "pinyin": "Wǒ wánr de hěn gāoxìng.",
+   "es": "I had a very good time.",
+   "rule": "The modal complement needs 得 between the verb and the adjective.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我玩儿得很高兴。"
+   ]
+  },
+  {
+   "id": "y3|JW51)=^",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "他来得早。 (not comparing with anyone)",
+   "answer": "他来得很早。",
+   "pinyin": "Tā lái de hěn zǎo.",
+   "es": "He arrived early.",
+   "rule": "In the affirmative, the adverb (很, 非常…) isn't omitted; without it, it sounds like a comparison.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他来得很早。"
+   ]
+  },
+  {
+   "id": "sQJ<vQeL-o",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Transform",
+   "instruction": "Make it negative",
+   "prompt": "他睡得很好。",
+   "answer": "他睡得不好。",
+   "pinyin": "Tā shuì de bù hǎo.",
+   "es": "He didn't sleep well.",
+   "rule": "Negative: V + 得 + 不 + adjective (不 goes after 得).",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他睡得不好。",
+    "他睡得不太好。"
+   ]
+  },
+  {
+   "id": "O;Q())wI*T",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Transform",
+   "instruction": "Turn it into a question",
+   "prompt": "他吃得很多。",
+   "answer": "他吃得多不多？",
+   "pinyin": "Tā chī de duō bu duō?",
+   "es": "Does he eat a lot?",
+   "rule": "Question: V + 得 + adj 不 adj？ (or V得怎么样？)",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他吃得多不多？",
+    "他吃得多吗？",
+    "他吃得很多吗？"
+   ]
+  },
+  {
+   "id": "n8YO|nel9`",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "prompt": "得 / 说 / 汉语 / 她 / 很流利 / 说",
+   "answer": "她说汉语说得很流利。",
+   "pinyin": "Tā shuō Hànyǔ shuō de hěn liúlì.",
+   "es": "She speaks Chinese very fluently.",
+   "rule": "With an object the verb is repeated: (V) + O + V + 得 + … The first verb can be omitted: 她汉语说得很流利.",
+   "note": "",
+   "context": "She speaks Chinese very fluently.",
+   "mode": "tiles",
+   "tiles": [
+    "得",
+    "说",
+    "汉语",
+    "她",
+    "很流利",
+    "说"
+   ],
+   "accepted": [
+    "她说汉语说得很流利。"
+   ]
+  },
+  {
+   "id": "t.Cpl!JFMZ",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "他说汉语得很好。",
+   "answer": "他（说）汉语说得很好。",
+   "pinyin": "Tā (shuō) Hànyǔ shuō de hěn hǎo.",
+   "es": "He speaks Chinese very well.",
+   "rule": "得 attaches to the repeated verb: (V) + O + V + 得.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他说汉语说得很好。",
+    "他汉语说得很好。"
+   ]
+  },
+  {
+   "id": "Q{IyY~8O2<",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "他写得汉字很好。",
+   "answer": "他汉字写得很好。",
+   "pinyin": "Tā hànzì xiě de hěn hǎo.",
+   "es": "He writes Chinese characters very well.",
+   "rule": "The object doesn't go after 得: it goes before the repeated verb.",
+   "note": "他写汉字写得很好。",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他汉字写得很好。",
+    "他写汉字写得很好。"
+   ]
+  },
+  {
+   "id": "CMuxrQ`hK/",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "How was your time in Shanghai?",
+   "answer": "你在上海玩儿得怎么样？",
+   "pinyin": "Nǐ zài Shànghǎi wánr de zěnmeyàng?",
+   "es": "",
+   "rule": "V得怎么样？ asks how the action went.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你在上海玩儿得怎么样？"
+   ]
+  },
+  {
+   "id": "B}<p=Bw$5F",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Shanghai is developing very fast.",
+   "answer": "上海发展得非常快。",
+   "pinyin": "Shànghǎi fāzhǎn de fēicháng kuài.",
+   "es": "",
+   "rule": "V + 得 + 很/非常 + adjective.",
+   "note": "上海发展得很快。",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "上海发展得非常快。",
+    "上海发展得很快。"
+   ]
+  },
+  {
+   "id": "rN@byr@n30",
+   "lesson": 11,
+   "point": "动词重叠 · Verb reduplication",
+   "type": "Transform",
+   "instruction": "Soften the request",
+   "prompt": "你给我介绍吧。",
+   "answer": "你给我介绍介绍吧。",
+   "pinyin": "Nǐ gěi wǒ jièshào jièshào ba.",
+   "es": "Tell me a bit about it, go on.",
+   "rule": "AB → ABAB = do something a little / briefly (softens).",
+   "note": "你给我介绍一下吧。",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你给我介绍介绍吧。",
+    "你给我介绍一下吧。"
+   ]
+  },
+  {
+   "id": "wON/6hUh#*",
+   "lesson": 11,
+   "point": "动词重叠 · Verb reduplication",
+   "type": "Transform",
+   "instruction": "Say you thought about it for a bit (it's in the past)",
+   "prompt": "我想这个问题。",
+   "answer": "我想了想这个问题。",
+   "pinyin": "Wǒ xiǎng le xiǎng zhège wèntí.",
+   "es": "I thought about this problem for a bit.",
+   "rule": "One-syllable verb: AA, A一A, and in the past A了A.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我想了想这个问题。",
+    "我想了一下这个问题。"
+   ]
+  },
+  {
+   "id": "mAK:~G>nR2",
+   "lesson": 11,
+   "point": "动词重叠 · Verb reduplication",
+   "type": "Transform",
+   "instruction": "Soften the suggestion: \"let's rest a bit\"",
+   "prompt": "我们休息吧。",
+   "answer": "我们休息休息吧。",
+   "pinyin": "Wǒmen xiūxi xiūxi ba.",
+   "es": "Let's rest a bit.",
+   "rule": "Two-syllable verb: ABAB, with no 一 in between.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我们休息休息吧。",
+    "我们休息一下吧。"
+   ]
+  },
+  {
+   "id": "xksBR/dxLY",
+   "lesson": 11,
+   "point": "动词重叠 · Verb reduplication",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我们休息休息一下吧。",
+   "answer": "我们休息一下吧。（o 我们休息休息吧。）",
+   "pinyin": "Wǒmen xiūxi yíxià ba. (o wǒmen xiūxi xiūxi ba.)",
+   "es": "Let's rest a bit.",
+   "rule": "Don't combine reduplication with 一下: use one or the other.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我们休息一下吧。",
+    "我们休息休息吧。"
+   ]
+  },
+  {
+   "id": "P~yErM<iLa",
+   "lesson": 11,
+   "point": "动词重叠 · Verb reduplication",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我们去博物馆参观一参观吧。",
+   "answer": "我们去博物馆参观参观吧。",
+   "pinyin": "Wǒmen qù bówùguǎn cānguān cānguān ba.",
+   "es": "Let's go visit the museum for a bit.",
+   "rule": "Two-syllable verbs don't take 一 in between.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我们去博物馆参观参观吧。"
+   ]
+  },
+  {
+   "id": "s_muC;`a:j",
+   "lesson": 11,
+   "point": "了 (after the verb) · Completed action",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "她买"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "三条裙子。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "了",
+     "hint": ""
+    }
+   ],
+   "answer": "她买了三条裙子。",
+   "pinyin": "Tā mǎi le sān tiáo qúnzi.",
+   "es": "She bought three skirts.",
+   "rule": "S + V + 了 + quantity/modifier + O: completed action.",
+   "note": ""
+  },
+  {
+   "id": "L0@[qVU#/.",
+   "lesson": 11,
+   "point": "了 (after the verb) · Completed action",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "How many apples did you buy?",
+   "answer": "你买了几个苹果？",
+   "pinyin": "Nǐ mǎi le jǐ ge píngguǒ?",
+   "es": "",
+   "rule": "With 了 = action already done. Without 了 (你买几个苹果？) = how many are you going to buy?",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你买了几个苹果？"
+   ]
+  },
+  {
+   "id": "dWAUAiK-d,",
+   "lesson": 11,
+   "point": "了 (after the verb) · Completed action",
+   "type": "Transform",
+   "instruction": "Make it negative",
+   "prompt": "我换钱了。",
+   "answer": "我没（有）换钱。",
+   "pinyin": "Wǒ méi (yǒu) huànqián.",
+   "es": "I didn't change any money.",
+   "rule": "Negative: 没(有) + V + O, without 了.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我没有换钱。",
+    "我没换钱。"
+   ]
+  },
+  {
+   "id": "QRRR/hQs?w",
+   "lesson": 11,
+   "point": "了 (after the verb) · Completed action",
+   "type": "Transform",
+   "instruction": "Turn it into a question",
+   "prompt": "林娜买毛衣了。",
+   "answer": "林娜买没买毛衣？",
+   "pinyin": "Lín Nà mǎi mei mǎi máoyī?",
+   "es": "Did Lin Na buy the sweater?",
+   "rule": "Also: 林娜买了毛衣没有？",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "林娜买没买毛衣？",
+    "林娜买毛衣了没有？",
+    "林娜买毛衣了吗？"
+   ]
+  },
+  {
+   "id": "c;WK7&9kNJ",
+   "lesson": 11,
+   "point": "Usage L11 · 从……到……",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你刚"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "西安回北京。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "从",
+     "hint": ""
+    }
+   ],
+   "answer": "你刚从西安回北京。",
+   "pinyin": "Nǐ gāng cóng Xī'ān huí Běijīng.",
+   "es": "You've just come back to Beijing from Xi'an.",
+   "rule": "从 + place/time = from. It goes before the verb.",
+   "note": ""
+  },
+  {
+   "id": "t%i(U8r0~S",
+   "lesson": 11,
+   "point": "Usage L11 · 从……到……",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "I have Chinese class from five to ten.",
+   "answer": "我从五点到十点都有汉语课。",
+   "pinyin": "Wǒ cóng wǔ diǎn dào shí diǎn dōu yǒu Hànyǔ kè.",
+   "es": "",
+   "rule": "从 A 到 B = from A to B (time or space).",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我从五点到十点都有汉语课。"
+   ]
+  },
+  {
+   "id": "dkEv?6C5Jw",
+   "lesson": 11,
+   "point": "Usage L11 · 刚 / 刚才",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "来北京两个月。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "刚",
+     "hint": "",
+     "alternatives": [
+      "才"
+     ]
+    }
+   ],
+   "answer": "我刚来北京两个月。",
+   "pinyin": "Wǒ gāng lái Běijīng liǎng ge yuè.",
+   "es": "I've only been in Beijing for two months.",
+   "rule": "刚 (adverb) can take a duration: \"it has only been … since…\".",
+   "note": ""
+  },
+  {
+   "id": "NLiL]knm)?",
+   "lesson": 11,
+   "point": "Usage L11 · 刚 / 刚才",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "刚你说什么？",
+   "answer": "刚才你说什么？",
+   "pinyin": "Gāngcái nǐ shuō shénme?",
+   "es": "What did you say just now?",
+   "rule": "刚才 is a time noun and can go before the subject; 刚 is an adverb and can't.",
+   "note": "你刚才说什么？",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "刚才你说什么？",
+    "你刚才说什么？"
+   ]
+  },
+  {
+   "id": "y~@|-PoJg+",
+   "lesson": 11,
+   "point": "Usage L11 · 又 / 再",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "他昨天来了，今天"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "来了。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "又",
+     "hint": ""
+    }
+   ],
+   "answer": "他昨天来了，今天又来了。",
+   "pinyin": "Tā zuótiān lái le, jīntiān yòu lái le.",
+   "es": "He came yesterday, and today he came again.",
+   "rule": "又 = again, for something that has already happened.",
+   "note": ""
+  },
+  {
+   "id": "wO0j5Vxigm",
+   "lesson": 11,
+   "point": "Usage L11 · 又 / 再",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "请你明天"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "来。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "再",
+     "hint": ""
+    }
+   ],
+   "answer": "请你明天再来。",
+   "pinyin": "Qǐng nǐ míngtiān zài lái.",
+   "es": "Please come back tomorrow.",
+   "rule": "再 = again, for something that hasn't happened yet.",
+   "note": ""
+  },
+  {
+   "id": "mrW:i9IAy3",
+   "lesson": 11,
+   "point": "Usage L11 · 又 / 再",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你刚回北京，"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "要去上海！"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "又",
+     "hint": ""
+    }
+   ],
+   "answer": "你刚回北京，又要去上海！",
+   "pinyin": "Nǐ gāng huí Běijīng, yòu yào qù Shànghǎi!",
+   "es": "You've just got back to Beijing and you're off to Shanghai again!",
+   "rule": "又要 + verb: a future repetition already planned/certain (often with surprise or complaint).",
+   "note": ""
+  },
+  {
+   "id": "Ia!#aY{{gA",
+   "lesson": 11,
+   "point": "Usage L11 · 该……了",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "哦，"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "你了。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "该",
+     "hint": ""
+    }
+   ],
+   "answer": "哦，该你了。",
+   "pinyin": "Ò, gāi nǐ le.",
+   "es": "Oh, it's your turn.",
+   "rule": "该 + person (+ V) + 了 = it's someone's turn / it's time to.",
+   "note": ""
+  },
+  {
+   "id": "dI;uSMapkE",
+   "lesson": 11,
+   "point": "Usage L11 · 该……了",
+   "type": "Situation",
+   "instruction": "What would you say?",
+   "prompt": "Remind them that it's Lin Na's turn to change money.",
+   "answer": "该林娜换钱了。",
+   "pinyin": "Gāi Lín Nà huànqián le.",
+   "es": "",
+   "rule": "该 + person + V + O + 了.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "该林娜换钱了。"
+   ]
+  },
+  {
+   "id": "j]~xnQcQtJ",
+   "lesson": 11,
+   "point": "Usage L11 · 还可以",
+   "type": "Situation",
+   "instruction": "What would you say?",
+   "prompt": "You're asked 吃得好不好？ Answer «it's OK, nothing special».",
+   "answer": "吃得还可以。",
+   "pinyin": "Chī de hái kěyǐ.",
+   "es": "The food's OK, nothing special.",
+   "rule": "还可以 = acceptable, so-so.",
+   "note": "还可以。",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "吃得还可以。",
+    "还可以。"
+   ]
+  },
+  {
+   "id": "d_::<C>bc.",
+   "lesson": 11,
+   "point": "Usage L11 · 这么 / 那么",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "（Pointing at the bags in front of them）你买了"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "多衣服！"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "这么",
+     "hint": ""
+    }
+   ],
+   "answer": "你买了这么多衣服！",
+   "pinyin": "Nǐ mǎi le zhème duō yīfu!",
+   "es": "You've bought so many clothes!",
+   "rule": "这么 + adj/V: degree, surprise; something near or present.",
+   "note": ""
+  },
+  {
+   "id": "Ck5<&Eo3I5",
+   "lesson": 11,
+   "point": "Usage L11 · 这么 / 那么",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "（Recalling what happened yesterday）他昨天为什么"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "生气？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "那么",
+     "hint": ""
+    }
+   ],
+   "answer": "他昨天为什么那么生气？",
+   "pinyin": "Tā zuótiān wèishénme nàme shēngqì?",
+   "es": "Why was he so angry yesterday?",
+   "rule": "那么: something distant, absent or remembered.",
+   "note": ""
+  },
+  {
+   "id": "GBcz:4M@12",
+   "lesson": 11,
+   "point": "Usage L11 · 次",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "这"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "旅行很有意思。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "次",
+     "hint": ""
+    }
+   ],
+   "answer": "这次旅行很有意思。",
+   "pinyin": "Zhè cì lǚxíng hěn yǒuyìsi.",
+   "es": "This trip was very interesting.",
+   "rule": "次: measure word for times / occasions (这次 = this time).",
+   "note": ""
+  },
+  {
+   "id": "mz2n`L0q[P",
+   "lesson": 11,
+   "point": "Usage L11 · 数 shǔ / shù",
+   "type": "Read",
+   "instruction": "Read aloud (pinyin)",
+   "prompt": "请数一数。 / 数学",
+   "answer": "qǐng shǔ yi shǔ / shùxué",
+   "pinyin": "",
+   "es": "",
+   "rule": "数 shǔ = to count (verb); 数 shù = number (数学, 数字).",
+   "note": "",
+   "context": "",
+   "mode": "reveal"
+  },
+  {
+   "id": "zCjdARBe*H",
+   "lesson": 11,
+   "point": "Usage L11 · 排队 (separable verb)",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Which line should I queue in?",
+   "answer": "我应该排哪个队？",
+   "pinyin": "Wǒ yīnggāi pái nǎge duì?",
+   "es": "",
+   "rule": "排队 is a verb-object compound: it can be split (排哪个队).",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我应该排哪个队？"
+   ]
+  },
+  {
+   "id": "nxqmvXB>D4",
+   "lesson": 11,
+   "point": "Usage L11 · Reading amounts of money",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "25.80 yuan (spoken)",
+   "answer": "二十五块八（毛）",
+   "pinyin": "Èrshíwǔ kuài bā (máo)",
+   "es": "",
+   "rule": "元 = 块, 角 = 毛.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "二十五块八毛",
+    "二十五块八"
+   ]
+  },
+  {
+   "id": "K}bti;NX=X",
+   "lesson": 11,
+   "point": "Usage L11 · Reading amounts of money",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "75.6 US dollars",
+   "answer": "七十五点六美元",
+   "pinyin": "Qīshíwǔ diǎn liù měiyuán",
+   "es": "",
+   "rule": "Other currencies: number with 点 + unit.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "七十五点六美元"
+   ]
+  },
+  {
+   "id": "L11n01",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "昨天晚上我睡"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "很晚，今天早上也"
+    },
+    {
+     "gap": 1
+    },
+    {
+     "text": "很晚。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "得",
+     "hint": "",
+     "alternatives": []
+    },
+    {
+     "answer": "起得",
+     "hint": "",
+     "alternatives": [
+      "起床起得"
+     ]
+    }
+   ],
+   "answer": "昨天晚上我睡得很晚，今天早上也起得很晚。",
+   "pinyin": "Zuótiān wǎnshang wǒ shuì de hěn wǎn, jīntiān zǎoshang yě qǐ de hěn wǎn.",
+   "es": "Last night I went to bed very late, and this morning I also got up very late.",
+   "rule": "Each verb that takes a modal complement needs its own 得: V + 得 + adverb + adjective. 也 goes before the verb, not after 得.",
+   "note": ""
+  },
+  {
+   "id": "L11n02",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Transform",
+   "mode": "text",
+   "instruction": "Turn it into a question",
+   "prompt": "上海人衣服做得很好。",
+   "context": "",
+   "accepted": [
+    "上海人做衣服做得好不好？",
+    "上海人做衣服做得好吗？",
+    "上海人做衣服做得怎么样？",
+    "上海人衣服做得好不好？",
+    "上海人衣服做得好吗？",
+    "上海人衣服做得怎么样？"
+   ],
+   "answer": "上海人衣服做得好不好？",
+   "pinyin": "Shànghǎirén yīfu zuò de hǎo bu hǎo?",
+   "es": "Do Shanghai people make clothes well?",
+   "rule": "Question: (V) + O + V + 得 + adj 不 adj？ — the A-not-A goes after 得, not before the verb.",
+   "note": "Also: 上海人衣服做得好吗？ / 做得怎么样？"
+  },
+  {
+   "id": "L11n03",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Transform",
+   "mode": "text",
+   "instruction": "Turn it into a negative",
+   "prompt": "林娜汉字写得很快。",
+   "context": "",
+   "accepted": [
+    "林娜写汉字写得不太快。",
+    "林娜写汉字写得不快。",
+    "林娜汉字写得不太快。",
+    "林娜汉字写得不快。"
+   ],
+   "answer": "林娜汉字写得不快。",
+   "pinyin": "Lín Nà Hànzì xiě de bú kuài.",
+   "es": "Lin Na doesn't write Chinese characters fast.",
+   "rule": "Negative: (V) + O + V + 得 + 不 + adjective; 不 goes after 得, and 很 is dropped.",
+   "note": "Softer: 林娜汉字写得不太快。"
+  },
+  {
+   "id": "L11n04",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Ding Libo doesn't speak Shanghainese very well, but he speaks Mandarin very fluently.",
+   "context": "",
+   "accepted": [
+    "丁力波说上海话说得不太好，可是他说普通话说得很流利。",
+    "丁力波说上海话说得不太好，可是他说普通话说得非常流利。",
+    "丁力波说上海话说得不太好，可是他说普通话说得特别流利。",
+    "丁力波说上海话说得不太好，可是他普通话说得很流利。",
+    "丁力波说上海话说得不太好，可是他普通话说得非常流利。",
+    "丁力波说上海话说得不太好，可是他普通话说得特别流利。",
+    "丁力波说上海话说得不太好，可是说普通话说得很流利。",
+    "丁力波说上海话说得不太好，可是说普通话说得非常流利。",
+    "丁力波说上海话说得不太好，可是说普通话说得特别流利。",
+    "丁力波说上海话说得不太好，可是普通话说得很流利。",
+    "丁力波说上海话说得不太好，可是普通话说得非常流利。",
+    "丁力波说上海话说得不太好，可是普通话说得特别流利。",
+    "丁力波说上海话说得不太好，但是他说普通话说得很流利。",
+    "丁力波说上海话说得不太好，但是他说普通话说得非常流利。",
+    "丁力波说上海话说得不太好，但是他说普通话说得特别流利。",
+    "丁力波说上海话说得不太好，但是他普通话说得很流利。",
+    "丁力波说上海话说得不太好，但是他普通话说得非常流利。",
+    "丁力波说上海话说得不太好，但是他普通话说得特别流利。",
+    "丁力波说上海话说得不太好，但是说普通话说得很流利。",
+    "丁力波说上海话说得不太好，但是说普通话说得非常流利。",
+    "丁力波说上海话说得不太好，但是说普通话说得特别流利。",
+    "丁力波说上海话说得不太好，但是普通话说得很流利。",
+    "丁力波说上海话说得不太好，但是普通话说得非常流利。",
+    "丁力波说上海话说得不太好，但是普通话说得特别流利。",
+    "丁力波说上海话说得不太好，不过他说普通话说得很流利。",
+    "丁力波说上海话说得不太好，不过他说普通话说得非常流利。",
+    "丁力波说上海话说得不太好，不过他说普通话说得特别流利。",
+    "丁力波说上海话说得不太好，不过他普通话说得很流利。",
+    "丁力波说上海话说得不太好，不过他普通话说得非常流利。",
+    "丁力波说上海话说得不太好，不过他普通话说得特别流利。",
+    "丁力波说上海话说得不太好，不过说普通话说得很流利。",
+    "丁力波说上海话说得不太好，不过说普通话说得非常流利。",
+    "丁力波说上海话说得不太好，不过说普通话说得特别流利。",
+    "丁力波说上海话说得不太好，不过普通话说得很流利。",
+    "丁力波说上海话说得不太好，不过普通话说得非常流利。",
+    "丁力波说上海话说得不太好，不过普通话说得特别流利。",
+    "丁力波说上海话说得不太好，可他说普通话说得很流利。",
+    "丁力波说上海话说得不太好，可他说普通话说得非常流利。",
+    "丁力波说上海话说得不太好，可他说普通话说得特别流利。",
+    "丁力波说上海话说得不太好，可他普通话说得很流利。",
+    "丁力波说上海话说得不太好，可他普通话说得非常流利。",
+    "丁力波说上海话说得不太好，可他普通话说得特别流利。",
+    "丁力波说上海话说得不太好，可说普通话说得很流利。",
+    "丁力波说上海话说得不太好，可说普通话说得非常流利。",
+    "丁力波说上海话说得不太好，可说普通话说得特别流利。",
+    "丁力波说上海话说得不太好，可普通话说得很流利。",
+    "丁力波说上海话说得不太好，可普通话说得非常流利。",
+    "丁力波说上海话说得不太好，可普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，可是他说普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，可是他说普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，可是他说普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，可是他普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，可是他普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，可是他普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，可是说普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，可是说普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，可是说普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，可是普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，可是普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，可是普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，但是他说普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，但是他说普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，但是他说普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，但是他普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，但是他普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，但是他普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，但是说普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，但是说普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，但是说普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，但是普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，但是普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，但是普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，不过他说普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，不过他说普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，不过他说普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，不过他普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，不过他普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，不过他普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，不过说普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，不过说普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，不过说普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，不过普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，不过普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，不过普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，可他说普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，可他说普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，可他说普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，可他普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，可他普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，可他普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，可说普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，可说普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，可说普通话说得特别流利。",
+    "丁力波说上海话说得不怎么好，可普通话说得很流利。",
+    "丁力波说上海话说得不怎么好，可普通话说得非常流利。",
+    "丁力波说上海话说得不怎么好，可普通话说得特别流利。",
+    "丁力波上海话说得不太好，可是他说普通话说得很流利。",
+    "丁力波上海话说得不太好，可是他说普通话说得非常流利。",
+    "丁力波上海话说得不太好，可是他说普通话说得特别流利。",
+    "丁力波上海话说得不太好，可是他普通话说得很流利。",
+    "丁力波上海话说得不太好，可是他普通话说得非常流利。",
+    "丁力波上海话说得不太好，可是他普通话说得特别流利。",
+    "丁力波上海话说得不太好，可是说普通话说得很流利。",
+    "丁力波上海话说得不太好，可是说普通话说得非常流利。",
+    "丁力波上海话说得不太好，可是说普通话说得特别流利。",
+    "丁力波上海话说得不太好，可是普通话说得很流利。",
+    "丁力波上海话说得不太好，可是普通话说得非常流利。",
+    "丁力波上海话说得不太好，可是普通话说得特别流利。",
+    "丁力波上海话说得不太好，但是他说普通话说得很流利。",
+    "丁力波上海话说得不太好，但是他说普通话说得非常流利。",
+    "丁力波上海话说得不太好，但是他说普通话说得特别流利。",
+    "丁力波上海话说得不太好，但是他普通话说得很流利。",
+    "丁力波上海话说得不太好，但是他普通话说得非常流利。",
+    "丁力波上海话说得不太好，但是他普通话说得特别流利。",
+    "丁力波上海话说得不太好，但是说普通话说得很流利。",
+    "丁力波上海话说得不太好，但是说普通话说得非常流利。",
+    "丁力波上海话说得不太好，但是说普通话说得特别流利。",
+    "丁力波上海话说得不太好，但是普通话说得很流利。",
+    "丁力波上海话说得不太好，但是普通话说得非常流利。",
+    "丁力波上海话说得不太好，但是普通话说得特别流利。",
+    "丁力波上海话说得不太好，不过他说普通话说得很流利。",
+    "丁力波上海话说得不太好，不过他说普通话说得非常流利。",
+    "丁力波上海话说得不太好，不过他说普通话说得特别流利。",
+    "丁力波上海话说得不太好，不过他普通话说得很流利。",
+    "丁力波上海话说得不太好，不过他普通话说得非常流利。",
+    "丁力波上海话说得不太好，不过他普通话说得特别流利。",
+    "丁力波上海话说得不太好，不过说普通话说得很流利。",
+    "丁力波上海话说得不太好，不过说普通话说得非常流利。",
+    "丁力波上海话说得不太好，不过说普通话说得特别流利。",
+    "丁力波上海话说得不太好，不过普通话说得很流利。",
+    "丁力波上海话说得不太好，不过普通话说得非常流利。",
+    "丁力波上海话说得不太好，不过普通话说得特别流利。",
+    "丁力波上海话说得不太好，可他说普通话说得很流利。",
+    "丁力波上海话说得不太好，可他说普通话说得非常流利。",
+    "丁力波上海话说得不太好，可他说普通话说得特别流利。",
+    "丁力波上海话说得不太好，可他普通话说得很流利。",
+    "丁力波上海话说得不太好，可他普通话说得非常流利。",
+    "丁力波上海话说得不太好，可他普通话说得特别流利。",
+    "丁力波上海话说得不太好，可说普通话说得很流利。",
+    "丁力波上海话说得不太好，可说普通话说得非常流利。",
+    "丁力波上海话说得不太好，可说普通话说得特别流利。",
+    "丁力波上海话说得不太好，可普通话说得很流利。",
+    "丁力波上海话说得不太好，可普通话说得非常流利。",
+    "丁力波上海话说得不太好，可普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，可是他说普通话说得很流利。",
+    "丁力波上海话说得不怎么好，可是他说普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，可是他说普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，可是他普通话说得很流利。",
+    "丁力波上海话说得不怎么好，可是他普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，可是他普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，可是说普通话说得很流利。",
+    "丁力波上海话说得不怎么好，可是说普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，可是说普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，可是普通话说得很流利。",
+    "丁力波上海话说得不怎么好，可是普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，可是普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，但是他说普通话说得很流利。",
+    "丁力波上海话说得不怎么好，但是他说普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，但是他说普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，但是他普通话说得很流利。",
+    "丁力波上海话说得不怎么好，但是他普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，但是他普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，但是说普通话说得很流利。",
+    "丁力波上海话说得不怎么好，但是说普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，但是说普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，但是普通话说得很流利。",
+    "丁力波上海话说得不怎么好，但是普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，但是普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，不过他说普通话说得很流利。",
+    "丁力波上海话说得不怎么好，不过他说普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，不过他说普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，不过他普通话说得很流利。",
+    "丁力波上海话说得不怎么好，不过他普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，不过他普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，不过说普通话说得很流利。",
+    "丁力波上海话说得不怎么好，不过说普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，不过说普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，不过普通话说得很流利。",
+    "丁力波上海话说得不怎么好，不过普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，不过普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，可他说普通话说得很流利。",
+    "丁力波上海话说得不怎么好，可他说普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，可他说普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，可他普通话说得很流利。",
+    "丁力波上海话说得不怎么好，可他普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，可他普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，可说普通话说得很流利。",
+    "丁力波上海话说得不怎么好，可说普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，可说普通话说得特别流利。",
+    "丁力波上海话说得不怎么好，可普通话说得很流利。",
+    "丁力波上海话说得不怎么好，可普通话说得非常流利。",
+    "丁力波上海话说得不怎么好，可普通话说得特别流利。"
+   ],
+   "answer": "丁力波上海话说得不太好，可是他普通话说得很流利。",
+   "pinyin": "Dīng Lìbō Shànghǎihuà shuō de bú tài hǎo, kěshì tā pǔtōnghuà shuō de hěn liúlì.",
+   "es": "Ding Libo doesn't speak Shanghainese very well, but he speaks Mandarin very fluently.",
+   "rule": "With an object: (V) + O + V + 得 + complement; the negative puts 不太 after 得.",
+   "note": "The first 说 can be kept: 他说普通话说得很流利。"
+  },
+  {
+   "id": "L11n05",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "数 / 营业员 / 很快 / 人民币 / 得 / 数",
+   "context": "The bank clerk counts the renminbi very fast.",
+   "tiles": [
+    "数",
+    "营业员",
+    "很快",
+    "人民币",
+    "得",
+    "数"
+   ],
+   "accepted": [
+    "营业员数人民币数得很快。"
+   ],
+   "answer": "营业员数人民币数得很快。",
+   "pinyin": "Yíngyèyuán shǔ rénmínbì shǔ de hěn kuài.",
+   "es": "The bank clerk counts the renminbi very fast.",
+   "rule": "With an object the verb is repeated: V + O + V + 得 + adverb + adjective.",
+   "note": ""
+  },
+  {
+   "id": "L11n06",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "他普通话说不说得流利？",
+   "context": "",
+   "accepted": [
+    "他普通话说得流利不流利？",
+    "他说普通话说得流利不流利？",
+    "他普通话说得流利吗？",
+    "他说普通话说得流利吗？"
+   ],
+   "answer": "他普通话说得流利不流利？",
+   "pinyin": "Tā pǔtōnghuà shuō de liúlì bu liúlì?",
+   "es": "Does he speak Mandarin fluently?",
+   "rule": "In a question the A-not-A goes on the complement after 得 (说得流利不流利), not on the verb.",
+   "note": "Also: 他普通话说得流利吗？"
+  },
+  {
+   "id": "L11n07",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我昨天晚上睡得没好。",
+   "context": "",
+   "accepted": [
+    "我昨天晚上睡得不太好。",
+    "我昨天晚上睡得不好。",
+    "昨天晚上我睡得不太好。",
+    "昨天晚上我睡得不好。"
+   ],
+   "answer": "我昨天晚上睡得不好。",
+   "pinyin": "Wǒ zuótiān wǎnshang shuì de bù hǎo.",
+   "es": "I didn't sleep well last night.",
+   "rule": "The modal complement is negated with 不 after 得, never with 没 — even when talking about the past.",
+   "note": "Also: 睡得不太好。"
+  },
+  {
+   "id": "L11n08",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "She eats very slowly.",
+   "context": "",
+   "options": [
+    "她吃得饭很慢。",
+    "她吃饭得很慢。",
+    "她吃饭吃得很慢。"
+   ],
+   "accepted": [
+    "她吃饭吃得很慢。"
+   ],
+   "answer": "她吃饭吃得很慢。",
+   "pinyin": "Tā chī fàn chī de hěn màn.",
+   "es": "She eats very slowly.",
+   "rule": "得 must follow a verb directly, so with an object the verb is repeated: 吃饭吃得很慢.",
+   "note": "Also: 她饭吃得很慢。"
+  },
+  {
+   "id": "L11n09",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "Lin Na has just come back from Xi'an and is complaining about her small hotel room. Ask her whether she slept well there (a yes/no question).",
+   "context": "",
+   "accepted": [
+    "你在西安睡得好不好？",
+    "你在西安睡得好吗？",
+    "你在西安住得好不好？",
+    "你在西安住得好吗？",
+    "你在西安的宾馆睡得好不好？",
+    "你在西安的宾馆睡得好吗？",
+    "你在西安的宾馆住得好不好？",
+    "你在西安的宾馆住得好吗？",
+    "你在宾馆睡得好不好？",
+    "你在宾馆睡得好吗？",
+    "你在宾馆住得好不好？",
+    "你在宾馆住得好吗？",
+    "你在那儿睡得好不好？",
+    "你在那儿睡得好吗？",
+    "你在那儿住得好不好？",
+    "你在那儿住得好吗？",
+    "你在那个宾馆睡得好不好？",
+    "你在那个宾馆睡得好吗？",
+    "你在那个宾馆住得好不好？",
+    "你在那个宾馆住得好吗？",
+    "你在西安的时候睡得好不好？",
+    "你在西安的时候睡得好吗？",
+    "你在西安的时候住得好不好？",
+    "你在西安的时候住得好吗？",
+    "你睡得好不好？",
+    "你睡得好吗？",
+    "你住得好不好？",
+    "你住得好吗？",
+    "林娜，你在西安睡得好不好？",
+    "林娜，你在西安睡得好吗？",
+    "林娜，你在西安住得好不好？",
+    "林娜，你在西安住得好吗？",
+    "林娜，你在西安的宾馆睡得好不好？",
+    "林娜，你在西安的宾馆睡得好吗？",
+    "林娜，你在西安的宾馆住得好不好？",
+    "林娜，你在西安的宾馆住得好吗？",
+    "林娜，你在宾馆睡得好不好？",
+    "林娜，你在宾馆睡得好吗？",
+    "林娜，你在宾馆住得好不好？",
+    "林娜，你在宾馆住得好吗？",
+    "林娜，你在那儿睡得好不好？",
+    "林娜，你在那儿睡得好吗？",
+    "林娜，你在那儿住得好不好？",
+    "林娜，你在那儿住得好吗？",
+    "林娜，你在那个宾馆睡得好不好？",
+    "林娜，你在那个宾馆睡得好吗？",
+    "林娜，你在那个宾馆住得好不好？",
+    "林娜，你在那个宾馆住得好吗？",
+    "林娜，你在西安的时候睡得好不好？",
+    "林娜，你在西安的时候睡得好吗？",
+    "林娜，你在西安的时候住得好不好？",
+    "林娜，你在西安的时候住得好吗？",
+    "林娜，你睡得好不好？",
+    "林娜，你睡得好吗？",
+    "林娜，你住得好不好？",
+    "林娜，你住得好吗？"
+   ],
+   "answer": "你在西安睡得好不好？",
+   "pinyin": "Nǐ zài Xī'ān shuì de hǎo bu hǎo?",
+   "es": "Did you sleep well in Xi'an?",
+   "rule": "Ask about how an action went with V + 得 + adj 不 adj？ (or V得 + adj + 吗？).",
+   "note": "Also: 你在西安住得好吗？"
+  },
+  {
+   "id": "L11n10",
+   "lesson": 11,
+   "point": "情态补语 · Modal complement (V得)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "The bank clerk speaks too fast — I don't understand.",
+   "context": "",
+   "accepted": [
+    "营业员说话说得太快了，不懂。",
+    "营业员说话说得太快了，听不懂。",
+    "营业员说话说得太快了，没听懂。",
+    "营业员说话说得太快了，我不懂。",
+    "营业员说话说得太快了，我听不懂。",
+    "营业员说话说得太快了，我没听懂。",
+    "营业员说话说得太快，不懂。",
+    "营业员说话说得太快，听不懂。",
+    "营业员说话说得太快，没听懂。",
+    "营业员说话说得太快，我不懂。",
+    "营业员说话说得太快，我听不懂。",
+    "营业员说话说得太快，我没听懂。",
+    "营业员说得太快了，不懂。",
+    "营业员说得太快了，听不懂。",
+    "营业员说得太快了，没听懂。",
+    "营业员说得太快了，我不懂。",
+    "营业员说得太快了，我听不懂。",
+    "营业员说得太快了，我没听懂。",
+    "营业员说得太快，不懂。",
+    "营业员说得太快，听不懂。",
+    "营业员说得太快，没听懂。",
+    "营业员说得太快，我不懂。",
+    "营业员说得太快，我听不懂。",
+    "营业员说得太快，我没听懂。",
+    "这个营业员说话说得太快了，不懂。",
+    "这个营业员说话说得太快了，听不懂。",
+    "这个营业员说话说得太快了，没听懂。",
+    "这个营业员说话说得太快了，我不懂。",
+    "这个营业员说话说得太快了，我听不懂。",
+    "这个营业员说话说得太快了，我没听懂。",
+    "这个营业员说话说得太快，不懂。",
+    "这个营业员说话说得太快，听不懂。",
+    "这个营业员说话说得太快，没听懂。",
+    "这个营业员说话说得太快，我不懂。",
+    "这个营业员说话说得太快，我听不懂。",
+    "这个营业员说话说得太快，我没听懂。",
+    "这个营业员说得太快了，不懂。",
+    "这个营业员说得太快了，听不懂。",
+    "这个营业员说得太快了，没听懂。",
+    "这个营业员说得太快了，我不懂。",
+    "这个营业员说得太快了，我听不懂。",
+    "这个营业员说得太快了，我没听懂。",
+    "这个营业员说得太快，不懂。",
+    "这个营业员说得太快，听不懂。",
+    "这个营业员说得太快，没听懂。",
+    "这个营业员说得太快，我不懂。",
+    "这个营业员说得太快，我听不懂。",
+    "这个营业员说得太快，我没听懂。",
+    "那个营业员说话说得太快了，不懂。",
+    "那个营业员说话说得太快了，听不懂。",
+    "那个营业员说话说得太快了，没听懂。",
+    "那个营业员说话说得太快了，我不懂。",
+    "那个营业员说话说得太快了，我听不懂。",
+    "那个营业员说话说得太快了，我没听懂。",
+    "那个营业员说话说得太快，不懂。",
+    "那个营业员说话说得太快，听不懂。",
+    "那个营业员说话说得太快，没听懂。",
+    "那个营业员说话说得太快，我不懂。",
+    "那个营业员说话说得太快，我听不懂。",
+    "那个营业员说话说得太快，我没听懂。",
+    "那个营业员说得太快了，不懂。",
+    "那个营业员说得太快了，听不懂。",
+    "那个营业员说得太快了，没听懂。",
+    "那个营业员说得太快了，我不懂。",
+    "那个营业员说得太快了，我听不懂。",
+    "那个营业员说得太快了，我没听懂。",
+    "那个营业员说得太快，不懂。",
+    "那个营业员说得太快，听不懂。",
+    "那个营业员说得太快，没听懂。",
+    "那个营业员说得太快，我不懂。",
+    "那个营业员说得太快，我听不懂。",
+    "那个营业员说得太快，我没听懂。",
+    "营业员说话太快了，不懂。",
+    "营业员说话太快了，听不懂。",
+    "营业员说话太快了，没听懂。",
+    "营业员说话太快了，我不懂。",
+    "营业员说话太快了，我听不懂。",
+    "营业员说话太快了，我没听懂。",
+    "这个营业员说话太快了，不懂。",
+    "这个营业员说话太快了，听不懂。",
+    "这个营业员说话太快了，没听懂。",
+    "这个营业员说话太快了，我不懂。",
+    "这个营业员说话太快了，我听不懂。",
+    "这个营业员说话太快了，我没听懂。",
+    "那个营业员说话太快了，不懂。",
+    "那个营业员说话太快了，听不懂。",
+    "那个营业员说话太快了，没听懂。",
+    "那个营业员说话太快了，我不懂。",
+    "那个营业员说话太快了，我听不懂。",
+    "那个营业员说话太快了，我没听懂。"
+   ],
+   "answer": "营业员说得太快了，我不懂。",
+   "pinyin": "Yíngyèyuán shuō de tài kuài le, wǒ bù dǒng.",
+   "es": "The bank clerk speaks too fast — I don't understand.",
+   "rule": "The complement can be 太 + adjective + 了: V + 得 + 太快了.",
+   "note": "Also: 营业员说话太快了，我听不懂。"
+  },
+  {
+   "id": "L11n11",
+   "lesson": 11,
+   "point": "动词重叠 · Verb reduplication",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "这件毛衣很漂亮，你"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "吧。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "试试",
+     "hint": "",
+     "alternatives": [
+      "试一试",
+      "试一下",
+      "穿上试试",
+      "穿上试一试",
+      "穿上试一下"
+     ]
+    }
+   ],
+   "answer": "这件毛衣很漂亮，你试试吧。",
+   "pinyin": "Zhè jiàn máoyī hěn piàoliang, nǐ shìshi ba.",
+   "es": "This sweater is really pretty — why don't you try it on?",
+   "rule": "A one-syllable verb can be reduplicated (AA or A一A, ≈ A一下) to make a suggestion sound softer and more casual.",
+   "note": "Also: 试一试 / 试一下。"
+  },
+  {
+   "id": "L11n12",
+   "lesson": 11,
+   "point": "动词重叠 · Verb reduplication",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Lin Na had a quick look at those postcards.",
+   "context": "",
+   "accepted": [
+    "林娜看了看那些明信片。",
+    "林娜看了看那几张明信片。",
+    "林娜看了一看那些明信片。",
+    "林娜看了一看那几张明信片。",
+    "林娜看了一下那些明信片。",
+    "林娜看了一下那几张明信片。"
+   ],
+   "answer": "林娜看了看那些明信片。",
+   "pinyin": "Lín Nà kàn le kàn nàxiē míngxìnpiàn.",
+   "es": "Lin Na had a quick look at those postcards.",
+   "rule": "For a brief action that has already happened, a one-syllable verb becomes A了A (看了看) or V了一下.",
+   "note": "Also: 看了一下。"
+  },
+  {
+   "id": "L11n13",
+   "lesson": 11,
+   "point": "动词重叠 · Verb reduplication",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我喜欢喜欢这件毛衣。",
+   "context": "",
+   "accepted": [
+    "我很喜欢这件毛衣。",
+    "我非常喜欢这件毛衣。",
+    "我特别喜欢这件毛衣。",
+    "我真喜欢这件毛衣。",
+    "我喜欢这件毛衣。",
+    "这件毛衣我很喜欢。",
+    "这件毛衣我非常喜欢。",
+    "这件毛衣我特别喜欢。",
+    "这件毛衣我真喜欢。",
+    "这件毛衣我喜欢。"
+   ],
+   "answer": "我很喜欢这件毛衣。",
+   "pinyin": "Wǒ hěn xǐhuan zhè jiàn máoyī.",
+   "es": "I really like this sweater.",
+   "rule": "Only action verbs can be reduplicated (看看, 介绍介绍). Verbs of feeling or state such as 喜欢, 是, 有 can't: use 很 + 喜欢 instead.",
+   "note": ""
+  },
+  {
+   "id": "L11n14",
+   "lesson": 11,
+   "point": "动词重叠 · Verb reduplication",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Take a look at these postcards — which one do you like?",
+   "context": "",
+   "accepted": [
+    "你看看这些明信片，你喜欢哪张？",
+    "你看看这些明信片，你喜欢哪一张？",
+    "你看看这些明信片，你喜欢哪个？",
+    "你看看这些明信片，喜欢哪张？",
+    "你看看这些明信片，喜欢哪一张？",
+    "你看看这些明信片，喜欢哪个？",
+    "你看一看这些明信片，你喜欢哪张？",
+    "你看一看这些明信片，你喜欢哪一张？",
+    "你看一看这些明信片，你喜欢哪个？",
+    "你看一看这些明信片，喜欢哪张？",
+    "你看一看这些明信片，喜欢哪一张？",
+    "你看一看这些明信片，喜欢哪个？",
+    "你看一下这些明信片，你喜欢哪张？",
+    "你看一下这些明信片，你喜欢哪一张？",
+    "你看一下这些明信片，你喜欢哪个？",
+    "你看一下这些明信片，喜欢哪张？",
+    "你看一下这些明信片，喜欢哪一张？",
+    "你看一下这些明信片，喜欢哪个？",
+    "看看这些明信片，你喜欢哪张？",
+    "看看这些明信片，你喜欢哪一张？",
+    "看看这些明信片，你喜欢哪个？",
+    "看看这些明信片，喜欢哪张？",
+    "看看这些明信片，喜欢哪一张？",
+    "看看这些明信片，喜欢哪个？",
+    "看一看这些明信片，你喜欢哪张？",
+    "看一看这些明信片，你喜欢哪一张？",
+    "看一看这些明信片，你喜欢哪个？",
+    "看一看这些明信片，喜欢哪张？",
+    "看一看这些明信片，喜欢哪一张？",
+    "看一看这些明信片，喜欢哪个？",
+    "看一下这些明信片，你喜欢哪张？",
+    "看一下这些明信片，你喜欢哪一张？",
+    "看一下这些明信片，你喜欢哪个？",
+    "看一下这些明信片，喜欢哪张？",
+    "看一下这些明信片，喜欢哪一张？",
+    "看一下这些明信片，喜欢哪个？"
+   ],
+   "answer": "你看看这些明信片，你喜欢哪张？",
+   "pinyin": "Nǐ kànkan zhèxiē míngxìnpiàn, nǐ xǐhuan nǎ zhāng?",
+   "es": "Take a look at these postcards — which one do you like?",
+   "rule": "Reduplication (看看 / 看一看) softens a request: “have a look”.",
+   "note": ""
+  },
+  {
+   "id": "L11n15",
+   "lesson": 11,
+   "point": "动词重叠 · Verb reduplication",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "查查 / 一百英镑 / 你 / 多少人民币 / 给我 / 换",
+   "context": "Could you check for me how much renminbi I can get for 100 pounds?",
+   "tiles": [
+    "查查",
+    "一百英镑",
+    "你",
+    "多少人民币",
+    "给我",
+    "换"
+   ],
+   "accepted": [
+    "你给我查查一百英镑换多少人民币。"
+   ],
+   "answer": "你给我查查一百英镑换多少人民币。",
+   "pinyin": "Nǐ gěi wǒ chácha yìbǎi yīngbàng huàn duōshao rénmínbì.",
+   "es": "Could you check for me how much renminbi I can get for 100 pounds?",
+   "rule": "AA (查查) = do something quickly / a little; it makes a request polite. 给我 goes before the verb.",
+   "note": ""
+  },
+  {
+   "id": "L11n16",
+   "lesson": 11,
+   "point": "动词重叠 · Verb reduplication",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "Yesterday I tried on that skirt for a moment.",
+   "context": "",
+   "options": [
+    "昨天我试试了那条裙子。",
+    "昨天我试了试那条裙子。",
+    "昨天我试一试了那条裙子。"
+   ],
+   "accepted": [
+    "昨天我试了试那条裙子。"
+   ],
+   "answer": "昨天我试了试那条裙子。",
+   "pinyin": "Zuótiān wǒ shì le shì nà tiáo qúnzi.",
+   "es": "Yesterday I tried on that skirt for a moment.",
+   "rule": "In the past, a reduplicated one-syllable verb puts 了 in the middle: A了A (试了试), never AA了.",
+   "note": ""
+  },
+  {
+   "id": "L11n17",
+   "lesson": 11,
+   "point": "了 (after the verb) · Completed action",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "上个星期我们在上海"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "世博园，还"
+    },
+    {
+     "gap": 1
+    },
+    {
+     "text": "很多明信片。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "参观了",
+     "hint": "",
+     "alternatives": [
+      "去了"
+     ]
+    },
+    {
+     "answer": "买了",
+     "hint": "",
+     "alternatives": []
+    }
+   ],
+   "answer": "上个星期我们在上海参观了世博园，还买了很多明信片。",
+   "pinyin": "Shàng ge xīngqī wǒmen zài Shànghǎi cānguān le Shìbóyuán, hái mǎi le hěn duō míngxìnpiàn.",
+   "es": "Last week in Shanghai we visited the Expo Park and also bought lots of postcards.",
+   "rule": "V + 了 marks each completed action; it goes right after the verb, before the object.",
+   "note": ""
+  },
+  {
+   "id": "L11n18",
+   "lesson": 11,
+   "point": "了 (after the verb) · Completed action",
+   "type": "Transform",
+   "mode": "text",
+   "instruction": "Turn it into a negative",
+   "prompt": "他昨天去了银行。",
+   "context": "",
+   "accepted": [
+    "他昨天没有去银行。",
+    "他昨天没去银行。",
+    "昨天他没有去银行。",
+    "昨天他没去银行。"
+   ],
+   "answer": "他昨天没去银行。",
+   "pinyin": "Tā zuótiān méi qù yínháng.",
+   "es": "He didn't go to the bank yesterday.",
+   "rule": "Negative of a completed action: 没(有) + V + O — 了 disappears.",
+   "note": "Also: 他昨天没有去银行。"
+  },
+  {
+   "id": "L11n19",
+   "lesson": 11,
+   "point": "了 (after the verb) · Completed action",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "Your friend tells you she spent last weekend in Shanghai. Ask her whether she went to the Bund.",
+   "context": "",
+   "accepted": [
+    "你去没去外滩？",
+    "你去外滩了没有？",
+    "你去了外滩没有？",
+    "你去外滩了吗？",
+    "你去了外滩吗？",
+    "你有没有去外滩？",
+    "你去外滩没有？"
+   ],
+   "answer": "你去没去外滩？",
+   "pinyin": "Nǐ qù mei qù Wàitān?",
+   "es": "Did you go to the Bund?",
+   "rule": "Questions about completed actions: V没V + O？ or V(了) + O + 了没有/了吗？",
+   "note": "Also: 你去外滩了没有？ / 你去外滩了吗？"
+  },
+  {
+   "id": "L11n20",
+   "lesson": 11,
+   "point": "了 (after the verb) · Completed action",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我昨天没有买了毛衣。",
+   "context": "",
+   "accepted": [
+    "我昨天没有买毛衣。",
+    "我昨天没买毛衣。",
+    "昨天我没有买毛衣。",
+    "昨天我没买毛衣。"
+   ],
+   "answer": "我昨天没有买毛衣。",
+   "pinyin": "Wǒ zuótiān méiyǒu mǎi máoyī.",
+   "es": "I didn't buy a sweater yesterday.",
+   "rule": "没(有) and 了 don't go together: the negative of V了 is 没(有) + V.",
+   "note": ""
+  },
+  {
+   "id": "L11n21",
+   "lesson": 11,
+   "point": "了 (after the verb) · Completed action",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "This morning I changed 300 pounds at the bank.",
+   "context": "",
+   "accepted": [
+    "今天上午我在银行换了三百英镑。",
+    "我今天上午在银行换了三百英镑。",
+    "今天早上我在银行换了三百英镑。",
+    "我今天早上在银行换了三百英镑。",
+    "今天上午在银行我换了三百英镑。",
+    "今天早上在银行我换了三百英镑。"
+   ],
+   "answer": "今天上午我在银行换了三百英镑。",
+   "pinyin": "Jīntiān shàngwǔ wǒ zài yínháng huàn le sānbǎi yīngbàng.",
+   "es": "This morning I changed 300 pounds at the bank.",
+   "rule": "S + V + 了 + number + measure/noun object: a completed action with a quantified object.",
+   "note": ""
+  },
+  {
+   "id": "L11n22",
+   "lesson": 11,
+   "point": "了 (after the verb) · Completed action",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "Tomorrow I'm going to buy five postcards.",
+   "context": "",
+   "options": [
+    "我明天买了五张明信片。",
+    "我明天买五张明信片。"
+   ],
+   "accepted": [
+    "我明天买五张明信片。"
+   ],
+   "answer": "我明天买五张明信片。",
+   "pinyin": "Wǒ míngtiān mǎi wǔ zhāng míngxìnpiàn.",
+   "es": "Tomorrow I'm going to buy five postcards.",
+   "rule": "Verb-了 marks a completed action, so it isn't used for something planned for the future.",
+   "note": ""
+  },
+  {
+   "id": "L11n23",
+   "lesson": 11,
+   "point": "Usage L11 · 又 / 再",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "He went to Xi'an last year, and he went again this year.",
+   "context": "",
+   "options": [
+    "他去年去了西安，今年再去了。",
+    "他去年去了西安，今年又去了。"
+   ],
+   "accepted": [
+    "他去年去了西安，今年又去了。"
+   ],
+   "answer": "他去年去了西安，今年又去了。",
+   "pinyin": "Tā qùnián qù le Xī'ān, jīnnián yòu qù le.",
+   "es": "He went to Xi'an last year, and he went again this year.",
+   "rule": "又 = again for something that has already happened; 再 is for a repetition still to come.",
+   "note": ""
+  },
+  {
+   "id": "L11n24",
+   "lesson": 11,
+   "point": "Usage L11 · 又 / 再",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I really like Xi'an — I'll go again next year.",
+   "context": "",
+   "accepted": [
+    "我很喜欢西安，明年再去。",
+    "我很喜欢西安，明年再去西安。",
+    "我很喜欢西安，明年还要去。",
+    "我很喜欢西安，明年还要去西安。",
+    "我很喜欢西安，明年还去。",
+    "我很喜欢西安，明年还去西安。",
+    "我很喜欢西安，明年要再去。",
+    "我很喜欢西安，明年要再去西安。",
+    "我很喜欢西安，明年还要再去。",
+    "我很喜欢西安，明年还要再去西安。",
+    "我很喜欢西安，明年再去一次。",
+    "我很喜欢西安，明年再去一次西安。",
+    "我很喜欢西安，明年还要再去一次。",
+    "我很喜欢西安，明年还要再去一次西安。",
+    "我很喜欢西安，明年我再去。",
+    "我很喜欢西安，明年我再去西安。",
+    "我很喜欢西安，明年我还要去。",
+    "我很喜欢西安，明年我还要去西安。",
+    "我很喜欢西安，明年我还去。",
+    "我很喜欢西安，明年我还去西安。",
+    "我很喜欢西安，明年我要再去。",
+    "我很喜欢西安，明年我要再去西安。",
+    "我很喜欢西安，明年我还要再去。",
+    "我很喜欢西安，明年我还要再去西安。",
+    "我很喜欢西安，明年我再去一次。",
+    "我很喜欢西安，明年我再去一次西安。",
+    "我很喜欢西安，明年我还要再去一次。",
+    "我很喜欢西安，明年我还要再去一次西安。",
+    "我很喜欢西安，我明年再去。",
+    "我很喜欢西安，我明年再去西安。",
+    "我很喜欢西安，我明年还要去。",
+    "我很喜欢西安，我明年还要去西安。",
+    "我很喜欢西安，我明年还去。",
+    "我很喜欢西安，我明年还去西安。",
+    "我很喜欢西安，我明年要再去。",
+    "我很喜欢西安，我明年要再去西安。",
+    "我很喜欢西安，我明年还要再去。",
+    "我很喜欢西安，我明年还要再去西安。",
+    "我很喜欢西安，我明年再去一次。",
+    "我很喜欢西安，我明年再去一次西安。",
+    "我很喜欢西安，我明年还要再去一次。",
+    "我很喜欢西安，我明年还要再去一次西安。",
+    "我非常喜欢西安，明年再去。",
+    "我非常喜欢西安，明年再去西安。",
+    "我非常喜欢西安，明年还要去。",
+    "我非常喜欢西安，明年还要去西安。",
+    "我非常喜欢西安，明年还去。",
+    "我非常喜欢西安，明年还去西安。",
+    "我非常喜欢西安，明年要再去。",
+    "我非常喜欢西安，明年要再去西安。",
+    "我非常喜欢西安，明年还要再去。",
+    "我非常喜欢西安，明年还要再去西安。",
+    "我非常喜欢西安，明年再去一次。",
+    "我非常喜欢西安，明年再去一次西安。",
+    "我非常喜欢西安，明年还要再去一次。",
+    "我非常喜欢西安，明年还要再去一次西安。",
+    "我非常喜欢西安，明年我再去。",
+    "我非常喜欢西安，明年我再去西安。",
+    "我非常喜欢西安，明年我还要去。",
+    "我非常喜欢西安，明年我还要去西安。",
+    "我非常喜欢西安，明年我还去。",
+    "我非常喜欢西安，明年我还去西安。",
+    "我非常喜欢西安，明年我要再去。",
+    "我非常喜欢西安，明年我要再去西安。",
+    "我非常喜欢西安，明年我还要再去。",
+    "我非常喜欢西安，明年我还要再去西安。",
+    "我非常喜欢西安，明年我再去一次。",
+    "我非常喜欢西安，明年我再去一次西安。",
+    "我非常喜欢西安，明年我还要再去一次。",
+    "我非常喜欢西安，明年我还要再去一次西安。",
+    "我非常喜欢西安，我明年再去。",
+    "我非常喜欢西安，我明年再去西安。",
+    "我非常喜欢西安，我明年还要去。",
+    "我非常喜欢西安，我明年还要去西安。",
+    "我非常喜欢西安，我明年还去。",
+    "我非常喜欢西安，我明年还去西安。",
+    "我非常喜欢西安，我明年要再去。",
+    "我非常喜欢西安，我明年要再去西安。",
+    "我非常喜欢西安，我明年还要再去。",
+    "我非常喜欢西安，我明年还要再去西安。",
+    "我非常喜欢西安，我明年再去一次。",
+    "我非常喜欢西安，我明年再去一次西安。",
+    "我非常喜欢西安，我明年还要再去一次。",
+    "我非常喜欢西安，我明年还要再去一次西安。",
+    "我真喜欢西安，明年再去。",
+    "我真喜欢西安，明年再去西安。",
+    "我真喜欢西安，明年还要去。",
+    "我真喜欢西安，明年还要去西安。",
+    "我真喜欢西安，明年还去。",
+    "我真喜欢西安，明年还去西安。",
+    "我真喜欢西安，明年要再去。",
+    "我真喜欢西安，明年要再去西安。",
+    "我真喜欢西安，明年还要再去。",
+    "我真喜欢西安，明年还要再去西安。",
+    "我真喜欢西安，明年再去一次。",
+    "我真喜欢西安，明年再去一次西安。",
+    "我真喜欢西安，明年还要再去一次。",
+    "我真喜欢西安，明年还要再去一次西安。",
+    "我真喜欢西安，明年我再去。",
+    "我真喜欢西安，明年我再去西安。",
+    "我真喜欢西安，明年我还要去。",
+    "我真喜欢西安，明年我还要去西安。",
+    "我真喜欢西安，明年我还去。",
+    "我真喜欢西安，明年我还去西安。",
+    "我真喜欢西安，明年我要再去。",
+    "我真喜欢西安，明年我要再去西安。",
+    "我真喜欢西安，明年我还要再去。",
+    "我真喜欢西安，明年我还要再去西安。",
+    "我真喜欢西安，明年我再去一次。",
+    "我真喜欢西安，明年我再去一次西安。",
+    "我真喜欢西安，明年我还要再去一次。",
+    "我真喜欢西安，明年我还要再去一次西安。",
+    "我真喜欢西安，我明年再去。",
+    "我真喜欢西安，我明年再去西安。",
+    "我真喜欢西安，我明年还要去。",
+    "我真喜欢西安，我明年还要去西安。",
+    "我真喜欢西安，我明年还去。",
+    "我真喜欢西安，我明年还去西安。",
+    "我真喜欢西安，我明年要再去。",
+    "我真喜欢西安，我明年要再去西安。",
+    "我真喜欢西安，我明年还要再去。",
+    "我真喜欢西安，我明年还要再去西安。",
+    "我真喜欢西安，我明年再去一次。",
+    "我真喜欢西安，我明年再去一次西安。",
+    "我真喜欢西安，我明年还要再去一次。",
+    "我真喜欢西安，我明年还要再去一次西安。",
+    "我特别喜欢西安，明年再去。",
+    "我特别喜欢西安，明年再去西安。",
+    "我特别喜欢西安，明年还要去。",
+    "我特别喜欢西安，明年还要去西安。",
+    "我特别喜欢西安，明年还去。",
+    "我特别喜欢西安，明年还去西安。",
+    "我特别喜欢西安，明年要再去。",
+    "我特别喜欢西安，明年要再去西安。",
+    "我特别喜欢西安，明年还要再去。",
+    "我特别喜欢西安，明年还要再去西安。",
+    "我特别喜欢西安，明年再去一次。",
+    "我特别喜欢西安，明年再去一次西安。",
+    "我特别喜欢西安，明年还要再去一次。",
+    "我特别喜欢西安，明年还要再去一次西安。",
+    "我特别喜欢西安，明年我再去。",
+    "我特别喜欢西安，明年我再去西安。",
+    "我特别喜欢西安，明年我还要去。",
+    "我特别喜欢西安，明年我还要去西安。",
+    "我特别喜欢西安，明年我还去。",
+    "我特别喜欢西安，明年我还去西安。",
+    "我特别喜欢西安，明年我要再去。",
+    "我特别喜欢西安，明年我要再去西安。",
+    "我特别喜欢西安，明年我还要再去。",
+    "我特别喜欢西安，明年我还要再去西安。",
+    "我特别喜欢西安，明年我再去一次。",
+    "我特别喜欢西安，明年我再去一次西安。",
+    "我特别喜欢西安，明年我还要再去一次。",
+    "我特别喜欢西安，明年我还要再去一次西安。",
+    "我特别喜欢西安，我明年再去。",
+    "我特别喜欢西安，我明年再去西安。",
+    "我特别喜欢西安，我明年还要去。",
+    "我特别喜欢西安，我明年还要去西安。",
+    "我特别喜欢西安，我明年还去。",
+    "我特别喜欢西安，我明年还去西安。",
+    "我特别喜欢西安，我明年要再去。",
+    "我特别喜欢西安，我明年要再去西安。",
+    "我特别喜欢西安，我明年还要再去。",
+    "我特别喜欢西安，我明年还要再去西安。",
+    "我特别喜欢西安，我明年再去一次。",
+    "我特别喜欢西安，我明年再去一次西安。",
+    "我特别喜欢西安，我明年还要再去一次。",
+    "我特别喜欢西安，我明年还要再去一次西安。"
+   ],
+   "answer": "我很喜欢西安，明年再去。",
+   "pinyin": "Wǒ hěn xǐhuan Xī'ān, míngnián zài qù.",
+   "es": "I really like Xi'an — I'll go again next year.",
+   "rule": "再 = again for a repetition that hasn't happened yet (future); 又 would mean it already happened.",
+   "note": ""
+  },
+  {
+   "id": "L11n25",
+   "lesson": 11,
+   "point": "Usage L11 · 刚 / 刚才",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "gap": 0
+    },
+    {
+     "text": "银行人很少，现在人很多，要排队。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "刚才",
+     "hint": "",
+     "alternatives": [
+      "刚刚"
+     ]
+    }
+   ],
+   "answer": "刚才银行人很少，现在人很多，要排队。",
+   "pinyin": "Gāngcái yínháng rén hěn shǎo, xiànzài rén hěn duō, yào páiduì.",
+   "es": "A moment ago there were few people at the bank; now there are lots, and you have to queue.",
+   "rule": "刚才 is a time noun (“a moment ago”) and can open the sentence; 刚 is an adverb and must go right before a verb.",
+   "note": ""
+  },
+  {
+   "id": "L11n26",
+   "lesson": 11,
+   "point": "Usage L11 · 刚 / 刚才",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "We've only known each other for two weeks.",
+   "context": "",
+   "options": [
+    "我们刚才认识两个星期。",
+    "我们刚认识两个星期。"
+   ],
+   "accepted": [
+    "我们刚认识两个星期。"
+   ],
+   "answer": "我们刚认识两个星期。",
+   "pinyin": "Wǒmen gāng rènshi liǎng ge xīngqī.",
+   "es": "We've only known each other for two weeks.",
+   "rule": "刚 + V + duration = it has only been (that long) since…; 刚才 only means “a moment ago” and can't take a duration.",
+   "note": ""
+  },
+  {
+   "id": "L11n27",
+   "lesson": 11,
+   "point": "Usage L11 · 这么 / 那么",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "快 / 说得 / 不要 / 你 / 这么",
+   "context": "Don't speak so fast!",
+   "tiles": [
+    "快",
+    "说得",
+    "不要",
+    "你",
+    "这么"
+   ],
+   "accepted": [
+    "你不要说得这么快！"
+   ],
+   "answer": "你不要说得这么快！",
+   "pinyin": "Nǐ búyào shuō de zhème kuài!",
+   "es": "Don't speak so fast!",
+   "rule": "这么 + adjective = “so…”, about something happening right here and now; it can sit inside a V得 complement.",
+   "note": ""
+  },
+  {
+   "id": "L11n28",
+   "lesson": 11,
+   "point": "Usage L11 · 从……到……",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "On Saturday I was at the bank from nine to eleven.",
+   "context": "",
+   "accepted": [
+    "星期六我从九点到十一点都在银行。",
+    "星期六我从九点到十一点在银行。",
+    "我星期六从九点到十一点都在银行。",
+    "我星期六从九点到十一点在银行。",
+    "星期六从九点到十一点都在银行。",
+    "星期六从九点到十一点在银行。",
+    "星期六从九点到十一点我都在银行。",
+    "星期六从九点到十一点我在银行。"
+   ],
+   "answer": "星期六我从九点到十一点都在银行。",
+   "pinyin": "Xīngqīliù wǒ cóng jiǔ diǎn dào shíyī diǎn dōu zài yínháng.",
+   "es": "On Saturday I was at the bank from nine to eleven.",
+   "rule": "从 A 到 B goes before the verb; 都 often sums up the whole stretch of time.",
+   "note": ""
+  },
+  {
+   "id": "L11n29",
+   "lesson": 11,
+   "point": "Usage L11 · 该……了",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "It's half past eleven and class is over. Tell your classmates it's time to go and eat.",
+   "context": "",
+   "accepted": [
+    "该吃饭了。",
+    "该去吃饭了。",
+    "我们该吃饭了。",
+    "我们该去吃饭了。",
+    "该吃午饭了。",
+    "该去吃午饭了。",
+    "我们该吃午饭了。",
+    "我们该去吃午饭了。"
+   ],
+   "answer": "我们该去吃饭了。",
+   "pinyin": "Wǒmen gāi qù chīfàn le.",
+   "es": "It's time for us to go and eat.",
+   "rule": "该 + V + O + 了 = it's time to do something.",
+   "note": "Also: 该吃饭了。"
+  },
+  {
+   "id": "L11n30",
+   "lesson": 11,
+   "point": "Usage L11 · 次",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Last year I went to Shanghai twice.",
+   "context": "",
+   "accepted": [
+    "去年我去了两次上海。",
+    "去年我去了上海两次。",
+    "去年我去过两次上海。",
+    "去年我去过上海两次。",
+    "我去年去了两次上海。",
+    "我去年去了上海两次。",
+    "我去年去过两次上海。",
+    "我去年去过上海两次。"
+   ],
+   "answer": "去年我去了两次上海。",
+   "pinyin": "Qùnián wǒ qù le liǎng cì Shànghǎi.",
+   "es": "Last year I went to Shanghai twice.",
+   "rule": "Number + 次 counts how many times an action happens; it goes after the verb (with a place name, before or after it).",
+   "note": "Also: 去年我去了上海两次。"
+  },
+  {
+   "id": "l>Cd]-<_BG",
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "刚才我听"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "了。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "错",
+     "hint": ""
+    }
+   ],
+   "answer": "刚才我听错了。",
+   "pinyin": "Gāngcái wǒ tīngcuò le.",
+   "es": "I misheard just now.",
+   "rule": "V + resultative verb/adjective (听错、听懂、写对、办完…).",
+   "note": ""
+  },
+  {
+   "id": "ux{E@U~ooj",
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我没听"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "清楚",
+     "hint": ""
+    }
+   ],
+   "answer": "我没听清楚。",
+   "pinyin": "Wǒ méi tīng qīngchu.",
+   "es": "I didn't hear it clearly.",
+   "rule": "清楚 as a result: 看清楚、听清楚、说清楚.",
+   "note": ""
+  },
+  {
+   "id": "ytb+79hk41",
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我四点办"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "事就回宿舍来。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "完",
+     "hint": ""
+    }
+   ],
+   "answer": "我四点办完事就回宿舍来。",
+   "pinyin": "Wǒ sì diǎn bànwán shì jiù huí sùshè lai.",
+   "es": "At four, as soon as I finish my errands, I'll come back to the dorm.",
+   "rule": "完 = finish (result).",
+   "note": ""
+  },
+  {
+   "id": "eRXw3SLo4$",
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我听了懂。",
+   "answer": "我听懂了。",
+   "pinyin": "Wǒ tīngdǒng le.",
+   "es": "I understood (what I heard).",
+   "rule": "Nothing can go between the verb and the complement (except 得/不: 听得懂, 听不懂); 了 goes after the complement.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我听懂了。"
+   ]
+  },
+  {
+   "id": "ufV<Yto[-!",
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我没听懂了。",
+   "answer": "我没听懂。",
+   "pinyin": "Wǒ méi tīngdǒng.",
+   "es": "I didn't understand (what I heard).",
+   "rule": "Negative: 没(有) + V + complement, without 了.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我没听懂。"
+   ]
+  },
+  {
+   "id": "v;Nm]7KgF^",
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Transform",
+   "instruction": "Turn it into a question",
+   "prompt": "马大为填完单子了。",
+   "answer": "马大为填完单子了没有？",
+   "pinyin": "Mǎ Dàwéi tián wán dānzi le méiyǒu?",
+   "es": "Has Ma Dawei finished filling in the form?",
+   "rule": "Questions: ……了吗？ / ……了没有？",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "马大为填完单子了没有？",
+    "马大为填完单子了吗？",
+    "马大为填没填完单子？"
+   ]
+  },
+  {
+   "id": "j#C4h+AwC0",
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "prompt": "了 / 我 / 复习 / 完 / 语法",
+   "answer": "我复习完语法了。",
+   "pinyin": "Wǒ fùxí wán yǔfǎ le.",
+   "es": "I've finished reviewing the grammar.",
+   "rule": "S + V + complement + O + 了.",
+   "note": "",
+   "context": "I've finished reviewing the grammar.",
+   "mode": "tiles",
+   "tiles": [
+    "了",
+    "我",
+    "复习",
+    "完",
+    "语法"
+   ],
+   "accepted": [
+    "我复习完语法了。"
+   ]
+  },
+  {
+   "id": "K-Gkq$EF&5",
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "吃完饭"
+    },
+    {
+     "gap": 1
+    },
+    {
+     "text": "。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "还没",
+     "hint": ""
+    },
+    {
+     "answer": "呢",
+     "hint": ""
+    }
+   ],
+   "answer": "我还没吃完饭呢。",
+   "pinyin": "Wǒ hái méi chī wán fàn ne.",
+   "es": "I haven't finished eating yet.",
+   "rule": "还没 + V + … + 呢 = not yet.",
+   "note": ""
+  },
+  {
+   "id": "d%vwDW_ngq",
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "I haven't finished my homework yet.",
+   "answer": "我还没做完作业呢。",
+   "pinyin": "Wǒ hái méi zuò wán zuòyè ne.",
+   "es": "",
+   "rule": "还没 + V + 完 + O + 呢.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我还没做完作业呢。"
+   ]
+  },
+  {
+   "id": "H0k%7u=^hH",
+   "lesson": 12,
+   "point": "V + 在 / 到 + place · Complement of place",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "包裹放"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "这儿吧。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "在",
+     "hint": "",
+     "alternatives": [
+      "到"
+     ]
+    }
+   ],
+   "answer": "包裹放在这儿吧。",
+   "pinyin": "Bāoguǒ fàngzài zhèr ba.",
+   "es": "Leave the package here.",
+   "rule": "V + 在 + place: where something ends up after the action.",
+   "note": "到 is also acceptable."
+  },
+  {
+   "id": "F3_3a*djJd",
+   "lesson": 12,
+   "point": "V + 在 / 到 + place · Complement of place",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "您要寄"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "哪儿？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "到",
+     "hint": ""
+    }
+   ],
+   "answer": "您要寄到哪儿？",
+   "pinyin": "Nín yào jì dào nǎr?",
+   "es": "Where would you like to send it?",
+   "rule": "V + 到 + place: how far the action reaches.",
+   "note": ""
+  },
+  {
+   "id": "Arm2N6m$w4",
+   "lesson": 12,
+   "point": "V + 在 / 到 + place · Complement of place",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "We've already studied up to Lesson 12.",
+   "answer": "我们学习到第十二课了。",
+   "pinyin": "Wǒmen xuéxí dào dì-shí'èr kè le.",
+   "es": "",
+   "rule": "V + 到 + point reached.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我们学习到第十二课了。"
+   ]
+  },
+  {
+   "id": "BPF+|Oq*U8",
+   "lesson": 12,
+   "point": "简单趋向补语 · Directional complement (来 / 去)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "（You're at home）他从书店回"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "了没有？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "来",
+     "hint": ""
+    }
+   ],
+   "answer": "他从书店回来了没有？",
+   "pinyin": "Tā cóng shūdiàn huílai le méiyǒu?",
+   "es": "Has he come back from the bookstore yet?",
+   "rule": "来 = toward the speaker.",
+   "note": ""
+  },
+  {
+   "id": "qVf6DR/nnz",
+   "lesson": 12,
+   "point": "简单趋向补语 · Directional complement (来 / 去)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "张小姐不在，她上课"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "了。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "去",
+     "hint": ""
+    }
+   ],
+   "answer": "张小姐不在，她上课去了。",
+   "pinyin": "Zhāng xiǎojie bú zài, tā shàngkè qu le.",
+   "es": "Miss Zhang isn't here; she's gone to class.",
+   "rule": "去 = away from the speaker.",
+   "note": ""
+  },
+  {
+   "id": "kcFZb}&y-Y",
+   "lesson": 12,
+   "point": "简单趋向补语 · Directional complement (来 / 去)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "他们上去楼了。",
+   "answer": "他们上楼去了。",
+   "pinyin": "Tāmen shànglóu qu le.",
+   "es": "They've gone upstairs.",
+   "rule": "The place goes between the verb and 来/去: V + place + 来/去.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他们上楼去了。"
+   ]
+  },
+  {
+   "id": "p!{_w_6>MT",
+   "lesson": 12,
+   "point": "简单趋向补语 · Directional complement (来 / 去)",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "I sent a package to my friend.",
+   "answer": "我给朋友寄去了一个包裹。",
+   "pinyin": "Wǒ gěi péngyou jì qu le yí ge bāoguǒ.",
+   "es": "",
+   "rule": "With a thing as the object: V + 来/去 + 了 + O.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我给朋友寄去了一个包裹。",
+    "我给朋友寄了一个包裹。"
+   ]
+  },
+  {
+   "id": "y,_Sk7EGY(",
+   "lesson": 12,
+   "point": "简单趋向补语 · Directional complement (来 / 去)",
+   "type": "Situation",
+   "instruction": "What would you say?",
+   "prompt": "You're upstairs, calling to someone downstairs: «Come up!»",
+   "answer": "上来！",
+   "pinyin": "Shànglai!",
+   "es": "",
+   "rule": "上来 = come up toward me; 上去 = go up away from me.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "上来！"
+   ]
+  },
+  {
+   "id": "z.*&E5>%iw",
+   "lesson": 12,
+   "point": "副词“就” · 就 = right away",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我下课"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "去吃饭。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "就",
+     "hint": ""
+    }
+   ],
+   "answer": "我下课就去吃饭。",
+   "pinyin": "Wǒ xiàkè jiù qù chīfàn.",
+   "es": "I'll go eat right after class.",
+   "rule": "就: one action happens right after another.",
+   "note": ""
+  },
+  {
+   "id": "yiPPP7hYAP",
+   "lesson": 12,
+   "point": "副词“就” · 就 = right away",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我听了一遍"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "懂了。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "就",
+     "hint": ""
+    }
+   ],
+   "answer": "我听了一遍就懂了。",
+   "pinyin": "Wǒ tīng le yí biàn jiù dǒng le.",
+   "es": "I understood it after hearing it just once.",
+   "rule": "就: quickness / ease.",
+   "note": ""
+  },
+  {
+   "id": "ETj~&<)O9%",
+   "lesson": 12,
+   "point": "副词“就” · 就 = right away",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "I'll go right now.",
+   "answer": "我现在就去。",
+   "pinyin": "Wǒ xiànzài jiù qù.",
+   "es": "",
+   "rule": "就 = right away, at once.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我现在就去。"
+   ]
+  },
+  {
+   "id": "M:19auG?wE",
+   "lesson": 12,
+   "point": "……以后 / ……以前",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我吃了饭"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "去公园散步。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "以后",
+     "hint": ""
+    }
+   ],
+   "answer": "我吃了饭以后去公园散步。",
+   "pinyin": "Wǒ chī le fàn yǐhòu qù gōngyuán sànbù.",
+   "es": "After eating I'll go for a walk in the park.",
+   "rule": "Time / clause + 以后 = after…",
+   "note": ""
+  },
+  {
+   "id": "NZj4j2mbEs",
+   "lesson": 12,
+   "point": "……以后 / ……以前",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "以后吃饭我们去散步。",
+   "answer": "吃饭以后我们去散步。",
+   "pinyin": "Chīfàn yǐhòu wǒmen qù sànbù.",
+   "es": "After eating, we'll go for a walk.",
+   "rule": "以后/以前 go after the time expression, the opposite of English.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "吃饭以后我们去散步。"
+   ]
+  },
+  {
+   "id": "k|cN;uEH}P",
+   "lesson": 12,
+   "point": "……以后 / ……以前",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "I can collect it for you before five.",
+   "answer": "五点以前我可以替你收。",
+   "pinyin": "Wǔ diǎn yǐqián wǒ kěyǐ tì nǐ shōu.",
+   "es": "",
+   "rule": "Time + 以前 = before…; 替 + person = in someone's place.",
+   "note": "我五点以前可以替你收。 / 帮你收",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "五点以前我可以替你收。",
+    "我五点以前可以替你收。",
+    "我五点以前可以帮你收。",
+    "五点以前我可以帮你收。"
+   ]
+  },
+  {
+   "id": "rOqTO0EtZ[",
+   "lesson": 12,
+   "point": "Usage L12 · 左右",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "寄航空要一个星期"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "左右",
+     "hint": ""
+    }
+   ],
+   "answer": "寄航空要一个星期左右。",
+   "pinyin": "Jì hángkōng yào yí ge xīngqī zuǒyòu.",
+   "es": "By airmail it takes about a week.",
+   "rule": "Number + 左右 = approximately (placed after).",
+   "note": ""
+  },
+  {
+   "id": "Dx{N$d!C@p",
+   "lesson": 12,
+   "point": "Usage L12 · 左右",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "左右三百块",
+   "answer": "三百块左右",
+   "pinyin": "Sānbǎi kuài zuǒyòu",
+   "es": "about three hundred yuan",
+   "rule": "左右 goes after the quantity.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "三百块左右"
+   ]
+  },
+  {
+   "id": "iod%]Y)&DH",
+   "lesson": 12,
+   "point": "Usage L12 · 一般 / 常常",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "十点起床。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "一般",
+     "hint": "",
+     "alternatives": [
+      "通常"
+     ]
+    }
+   ],
+   "answer": "我一般十点起床。",
+   "pinyin": "Wǒ yìbān shí diǎn qǐchuáng.",
+   "es": "I usually get up at ten.",
+   "rule": "一般 = usually, as a habit.",
+   "note": ""
+  },
+  {
+   "id": "ix*lPrn,,@",
+   "lesson": 12,
+   "point": "Usage L12 · 一般 / 常常",
+   "type": "Choose",
+   "instruction": "Say it in Chinese",
+   "prompt": "He's often late.",
+   "answer": "他常常迟到。",
+   "pinyin": "Tā chángcháng chídào.",
+   "es": "He's often late.",
+   "rule": "一般 = generally (a norm or schedule: 我一般十点起床); for «often» use 常常.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "他常常迟到。",
+    "他经常迟到。"
+   ]
+  },
+  {
+   "id": ";$G|vH9($",
+   "lesson": 12,
+   "point": "Usage L12 · 得 děi",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "最后，您还"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "签个字。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "得",
+     "hint": "",
+     "alternatives": [
+      "要"
+     ]
+    }
+   ],
+   "answer": "最后，您还得签个字。",
+   "pinyin": "Zuìhòu, nín hái děi qiān ge zì.",
+   "es": "Finally, you still need to sign.",
+   "rule": "得 děi = have to (auxiliary). Not to be confused with 得 de (complement marker) or 得 dé (to obtain).",
+   "note": ""
+  },
+  {
+   "id": "p5#Xi^3Nh7",
+   "lesson": 12,
+   "point": "Usage L12 · 称",
+   "type": "Read",
+   "instruction": "Read aloud (pinyin)",
+   "prompt": "称一下 / 怎么称呼 / 称心",
+   "answer": "chēng yíxià / zěnme chēnghu / chènxīn",
+   "pinyin": "",
+   "es": "",
+   "rule": "chēng = to weigh / to call; chèn = suitable.",
+   "note": "",
+   "context": "",
+   "mode": "reveal"
+  },
+  {
+   "id": "csDbT*J5S+",
+   "lesson": 12,
+   "point": "Usage L12 · 遍 / 次",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "请你再说一"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "遍",
+     "hint": "",
+     "alternatives": [
+      "次"
+     ]
+    }
+   ],
+   "answer": "请你再说一遍。",
+   "pinyin": "Qǐng nǐ zài shuō yí biàn.",
+   "es": "Please say it again.",
+   "rule": "遍 = one time through, from start to finish (saying, reading, listening…).",
+   "note": "In speech you also hear 次; 遍 is more precise."
+  },
+  {
+   "id": "ePolTCz(Jc",
+   "lesson": 12,
+   "point": "Usage L12 · 遍 / 次",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "这个月我去了三"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "图书馆。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "次",
+     "hint": ""
+    }
+   ],
+   "answer": "这个月我去了三次图书馆。",
+   "pinyin": "Zhège yuè wǒ qù le sān cì túshūguǎn.",
+   "es": "This month I've been to the library three times.",
+   "rule": "次 = number of times / occasions.",
+   "note": ""
+  },
+  {
+   "id": "zBTeY/YHcy",
+   "lesson": 12,
+   "point": "Usage L12 · 以为",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "是三层呢。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "以为",
+     "hint": ""
+    }
+   ],
+   "answer": "我以为是三层呢。",
+   "pinyin": "Wǒ yǐwéi shì sān céng ne.",
+   "es": "I thought it was the third floor (but it wasn't).",
+   "rule": "以为 = to think (mistakenly).",
+   "note": ""
+  },
+  {
+   "id": "E&a{5ieSg*",
+   "lesson": 12,
+   "point": "Usage L12 · 以为",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "I thought you were 25!",
+   "answer": "我以为你二十五岁！",
+   "pinyin": "Wǒ yǐwéi nǐ èrshíwǔ suì!",
+   "es": "",
+   "rule": "以为: the belief turned out to be false.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我以为你二十五岁！"
+   ]
+  },
+  {
+   "id": "or}K`BKzJY",
+   "lesson": 12,
+   "point": "Usage L12 · 替",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "我收一下快递吧。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "替",
+     "hint": "",
+     "alternatives": [
+      "帮"
+     ]
+    }
+   ],
+   "answer": "你替我收一下快递吧。",
+   "pinyin": "Nǐ tì wǒ shōu yíxià kuàidì ba.",
+   "es": "Pick up the package for me, will you?",
+   "rule": "替 + person + V = to do something in someone's place.",
+   "note": ""
+  },
+  {
+   "id": "re:q$C0(]4",
+   "lesson": 12,
+   "point": "Usage L12 · 专门",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "来看你。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "专门",
+     "hint": ""
+    }
+   ],
+   "answer": "我专门来看你。",
+   "pinyin": "Wǒ zhuānmén lái kàn nǐ.",
+   "es": "I've come specially to see you.",
+   "rule": "专门 + V = specially, for that sole purpose.",
+   "note": ""
+  },
+  {
+   "id": "medI3cRQ1?",
+   "lesson": 12,
+   "point": "Usage L12 · 一定 / 不一定",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你爸爸"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "会喜欢这套书。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "一定",
+     "hint": ""
+    }
+   ],
+   "answer": "你爸爸一定会喜欢这套书。",
+   "pinyin": "Nǐ bàba yídìng huì xǐhuan zhè tào shū.",
+   "es": "Your dad will definitely like this set of books.",
+   "rule": "一定 = certainly / without fail.",
+   "note": ""
+  },
+  {
+   "id": "GzQcZ|9KJV",
+   "lesson": 12,
+   "point": "Usage L12 · 一定 / 不一定",
+   "type": "Situation",
+   "instruction": "What would you say?",
+   "prompt": "Answer «not necessarily / it depends».",
+   "answer": "不一定。",
+   "pinyin": "Bù yídìng.",
+   "es": "",
+   "rule": "不一定 = not necessarily.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "不一定。"
+   ]
+  },
+  {
+   "id": "E&cg?L59=T",
+   "lesson": 12,
+   "point": "Usage L12 · Suffix 员",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "(bank/shop) clerk / courier / civil servant",
+   "answer": "营业员 / 快递员 / 公务员",
+   "pinyin": "Yíngyèyuán / kuàidìyuán / gōngwùyuán",
+   "es": "",
+   "rule": "员 = occupational suffix (like -er, -ist, -or).",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "营业员 / 快递员 / 公务员"
+   ]
+  },
+  {
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Fill in",
+   "instruction": "Complete the sentence",
+   "answer": "快递员记错了我的房间号。",
+   "pinyin": "Kuàidìyuán jìcuò le wǒ de fángjiān hào.",
+   "es": "The courier got my room number wrong.",
+   "rule": "V + 错 = do something wrongly; 了 goes after the complement, before the object.",
+   "note": "",
+   "mode": "cloze",
+   "segments": [
+    {
+     "text": "（The courier knocked on the wrong door）快递员记"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "了我的房间号。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "错",
+     "hint": "",
+     "alternatives": []
+    }
+   ],
+   "id": "L12n01"
+  },
+  {
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Transform",
+   "instruction": "Turn it into a question",
+   "answer": "你找到你的手机了没有？",
+   "pinyin": "Nǐ zhǎodào nǐ de shǒujī le méiyǒu?",
+   "es": "Have you found your phone?",
+   "rule": "Yes/no questions with a result complement: V + complement + O + 了没有？ (or 了吗？).",
+   "note": "Also: 你找到你的手机了吗？",
+   "mode": "text",
+   "prompt": "你找到你的手机了。",
+   "context": "",
+   "accepted": [
+    "你找到你的手机了没有？",
+    "你找到你的手机了吗？",
+    "你找到你的手机没有？",
+    "你找到手机了没有？",
+    "你找到手机了吗？",
+    "你找到手机没有？",
+    "你的手机你找到了没有？",
+    "你的手机你找到了吗？",
+    "你的手机你找到没有？",
+    "手机你找到了没有？",
+    "手机你找到了吗？",
+    "手机你找到没有？",
+    "你手机找到了没有？",
+    "你手机找到了吗？",
+    "你手机找到没有？",
+    "你找没找到你的手机？",
+    "你找没找到手机？"
+   ],
+   "id": "L12n02"
+  },
+  {
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Transform",
+   "instruction": "Turn it into a negative",
+   "answer": "我没听懂老师的话。",
+   "pinyin": "Wǒ méi tīngdǒng lǎoshī de huà.",
+   "es": "I didn't understand what the teacher said.",
+   "rule": "The negative uses 没(有) before the verb, and 了 disappears.",
+   "note": "不 is not used here: *我不听懂.",
+   "mode": "text",
+   "prompt": "我听懂老师的话了。",
+   "context": "",
+   "accepted": [
+    "我没听懂老师的话。",
+    "我没有听懂老师的话。"
+   ],
+   "id": "L12n03"
+  },
+  {
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "answer": "我没写错那个汉字。",
+   "pinyin": "Wǒ méi xiěcuò nà ge Hànzì.",
+   "es": "I didn't write that character wrong.",
+   "rule": "After 没(有) + V + complement, there is no 了.",
+   "note": "",
+   "mode": "text",
+   "prompt": "我没写错了那个汉字。",
+   "context": "",
+   "accepted": [
+    "我没写错那个汉字。",
+    "我没有写错那个汉字。"
+   ],
+   "id": "L12n04"
+  },
+  {
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "answer": "这个汉字我写错了。",
+   "pinyin": "Zhège Hànzì wǒ xiěcuò le.",
+   "es": "I wrote this character wrong.",
+   "rule": "错 here is a result complement and attaches directly to the verb (写错); 得 is only for the modal complement that describes how an action is done.",
+   "note": "",
+   "mode": "text",
+   "prompt": "这个汉字我写得错了。",
+   "context": "",
+   "accepted": [
+    "这个汉字我写错了。",
+    "我写错了这个汉字。",
+    "我把这个汉字写错了。"
+   ],
+   "id": "L12n05"
+  },
+  {
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "answer": "你填完包裹单了没有？",
+   "pinyin": "Nǐ tiánwán bāoguǒdān le méiyǒu?",
+   "es": "Have you finished filling in the parcel form?",
+   "rule": "填完 = finish filling in; question: V完 + O + 了没有/了吗？",
+   "note": "",
+   "mode": "text",
+   "prompt": "Have you finished filling in the parcel form?",
+   "context": "",
+   "accepted": [
+    "你填完包裹单了没有？",
+    "你填完包裹单了吗？",
+    "你填完包裹单没有？",
+    "你填完单子了没有？",
+    "你填完单子了吗？",
+    "你填完单子没有？",
+    "你包裹单填完了没有？",
+    "你包裹单填完了吗？",
+    "你包裹单填完没有？",
+    "包裹单你填完了没有？",
+    "包裹单你填完了吗？",
+    "包裹单你填完没有？",
+    "你单子填完了没有？",
+    "你单子填完了吗？",
+    "你单子填完没有？",
+    "单子你填完了没有？",
+    "单子你填完了吗？",
+    "单子你填完没有？"
+   ],
+   "id": "L12n06"
+  },
+  {
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "answer": "我还没看完那本书呢。",
+   "pinyin": "Wǒ hái méi kànwán nà běn shū ne.",
+   "es": "I haven't finished reading that book yet.",
+   "rule": "«Not yet»: 还没(有) + V + complement + O + 呢 (no 了).",
+   "note": "",
+   "mode": "text",
+   "prompt": "I haven't finished reading that book yet.",
+   "context": "",
+   "accepted": [
+    "我还没看完那本书呢。",
+    "我还没看完那本书。",
+    "我还没读完那本书呢。",
+    "我还没读完那本书。",
+    "我还没有看完那本书呢。",
+    "我还没有看完那本书。",
+    "我还没有读完那本书呢。",
+    "我还没有读完那本书。",
+    "那本书我还没看完呢。",
+    "那本书我还没看完。",
+    "那本书我还没读完呢。",
+    "那本书我还没读完。",
+    "那本书我还没有看完呢。",
+    "那本书我还没有看完。",
+    "那本书我还没有读完呢。",
+    "那本书我还没有读完。"
+   ],
+   "id": "L12n07"
+  },
+  {
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "answer": "你看懂这个单子了没有？",
+   "pinyin": "Nǐ kàndǒng zhège dānzi le méiyǒu?",
+   "es": "Did you understand this form (when you read it)?",
+   "rule": "看懂 = understand by reading; question form V懂 + O + 了没有？",
+   "note": "",
+   "mode": "tiles",
+   "prompt": "了 / 没有 / 你 / 看 / 懂 / 这个 / 单子",
+   "tiles": [
+    "了",
+    "没有",
+    "你",
+    "看",
+    "懂",
+    "这个",
+    "单子"
+   ],
+   "context": "Did you understand this form (when you read it)?",
+   "accepted": [
+    "你看懂这个单子了没有？",
+    "这个单子你看懂了没有？",
+    "你这个单子看懂了没有？"
+   ],
+   "id": "L12n08"
+  },
+  {
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Fill in",
+   "instruction": "Complete the sentence",
+   "answer": "这个汉字你写对了，很好。",
+   "pinyin": "Zhège Hànzì nǐ xiěduì le, hěn hǎo.",
+   "es": "You wrote this character correctly — well done.",
+   "rule": "V + 对 = do something correctly (opposite of V + 错).",
+   "note": "",
+   "mode": "cloze",
+   "segments": [
+    {
+     "text": "这个汉字你写"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "了，很好。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "对",
+     "hint": "",
+     "alternatives": []
+    }
+   ],
+   "id": "L12n09"
+  },
+  {
+   "lesson": 12,
+   "point": "结果补语 · Complement of result",
+   "type": "Choose",
+   "instruction": "Choose the correct sentence",
+   "answer": "她写完汉字了。",
+   "pinyin": "Tā xiěwán Hànzì le.",
+   "es": "She has finished writing the characters.",
+   "rule": "The complement 完 follows the verb directly; the object comes after it: 写完汉字.",
+   "note": "",
+   "mode": "choice",
+   "prompt": "She has finished writing the characters.",
+   "context": "",
+   "options": [
+    "她写汉字完了。",
+    "她写完汉字了。",
+    "她完写汉字了。"
+   ],
+   "accepted": [
+    "她写完汉字了。"
+   ],
+   "id": "L12n10"
+  },
+  {
+   "lesson": 12,
+   "point": "简单趋向补语 · Directional complement (来 / 去)",
+   "type": "Fill in",
+   "instruction": "Complete the sentence",
+   "answer": "我妈妈从英国给我寄来了两本书。",
+   "pinyin": "Wǒ māma cóng Yīngguó gěi wǒ jì lai le liǎng běn shū.",
+   "es": "My mom sent me two books from Britain.",
+   "rule": "来 = movement toward the speaker; a thing as object can follow: 寄来了两本书.",
+   "note": "",
+   "mode": "cloze",
+   "segments": [
+    {
+     "text": "（You're in your dorm in Beijing）我妈妈从英国给我寄"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "了两本书。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "来",
+     "hint": "",
+     "alternatives": []
+    }
+   ],
+   "id": "L12n11"
+  },
+  {
+   "lesson": 12,
+   "point": "简单趋向补语 · Directional complement (来 / 去)",
+   "type": "Fill in",
+   "instruction": "Complete the sentence",
+   "answer": "快进来吧！",
+   "pinyin": "Kuài jìnlai ba!",
+   "es": "(To a friend at your door) Come on in!",
+   "rule": "进来 = come in (toward me); 进去 = go in (away from me).",
+   "note": "",
+   "mode": "cloze",
+   "segments": [
+    {
+     "text": "（You're inside; your friend is at the door）快进"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "吧！"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "来",
+     "hint": "",
+     "alternatives": []
+    }
+   ],
+   "id": "L12n12"
+  },
+  {
+   "lesson": 12,
+   "point": "简单趋向补语 · Directional complement (来 / 去)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "answer": "你上楼来吧！",
+   "pinyin": "Nǐ shànglóu lai ba!",
+   "es": "(I'm upstairs, you're downstairs) Come on up!",
+   "rule": "来 = movement toward the speaker. You are coming up to where I am, so it's 上楼来; 上楼去 would mean going up away from me.",
+   "note": "",
+   "mode": "text",
+   "prompt": "（我在楼上，你在楼下）你上楼去吧！",
+   "context": "",
+   "accepted": [
+    "你上楼来吧！",
+    "上楼来吧！",
+    "你上来吧！",
+    "上来吧！"
+   ],
+   "id": "L12n13"
+  },
+  {
+   "lesson": 12,
+   "point": "简单趋向补语 · Directional complement (来 / 去)",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "answer": "你明天拿书来吗？",
+   "pinyin": "Nǐ míngtiān ná shū lai ma?",
+   "es": "Will you bring the book tomorrow?",
+   "rule": "拿 + O + 来: bring something here (toward the speaker).",
+   "note": "Also: 你明天带书来吗？",
+   "mode": "text",
+   "prompt": "(We're in class) Will you bring the book tomorrow?",
+   "context": "",
+   "accepted": [
+    "你明天拿书来吗？",
+    "你明天拿那本书来吗？",
+    "你明天带书来吗？",
+    "你明天带那本书来吗？",
+    "明天你拿书来吗？",
+    "明天你拿那本书来吗？",
+    "明天你带书来吗？",
+    "明天你带那本书来吗？",
+    "你明天拿不拿书来？",
+    "你明天拿不拿那本书来？",
+    "你明天带不带书来？",
+    "你明天带不带那本书来？",
+    "明天你拿不拿书来？",
+    "明天你拿不拿那本书来？",
+    "明天你带不带书来？",
+    "明天你带不带那本书来？"
+   ],
+   "id": "L12n14"
+  },
+  {
+   "lesson": 12,
+   "point": "简单趋向补语 · Directional complement (来 / 去)",
+   "type": "Choose",
+   "instruction": "Choose the correct sentence",
+   "answer": "丁力波回宿舍去了。",
+   "pinyin": "Dīng Lìbō huí sùshè qu le.",
+   "es": "Ding Libo has gone back to the dorm.",
+   "rule": "Place object between verb and 去; 去 because he moved away from the speaker.",
+   "note": "",
+   "mode": "choice",
+   "prompt": "(You're in the classroom) Ding Libo isn't here — he's gone back to the dorm.",
+   "context": "",
+   "options": [
+    "丁力波回去宿舍了。",
+    "丁力波回宿舍来了。",
+    "丁力波回宿舍去了。"
+   ],
+   "accepted": [
+    "丁力波回宿舍去了。"
+   ],
+   "id": "L12n15"
+  },
+  {
+   "lesson": 12,
+   "point": "简单趋向补语 · Directional complement (来 / 去)",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "answer": "他还没回宿舍来呢。",
+   "pinyin": "Tā hái méi huí sùshè lai ne.",
+   "es": "(You're in the dorm) He hasn't come back to the dorm yet.",
+   "rule": "还没 + V + place + 来/去 + 呢 = not yet; the place goes before 来/去.",
+   "note": "",
+   "mode": "tiles",
+   "prompt": "他 / 还 / 没 / 回 / 宿舍 / 来 / 呢",
+   "tiles": [
+    "他",
+    "还",
+    "没",
+    "回",
+    "宿舍",
+    "来",
+    "呢"
+   ],
+   "context": "(You're in the dorm) He hasn't come back to the dorm yet.",
+   "accepted": [
+    "他还没回宿舍来呢。"
+   ],
+   "id": "L12n16"
+  },
+  {
+   "lesson": 12,
+   "point": "V + 在 / 到 + place · Complement of place",
+   "type": "Fill in",
+   "instruction": "Complete the sentence",
+   "answer": "包裹送到丁力波的宿舍了没有？",
+   "pinyin": "Bāoguǒ sòngdào Dīng Lìbō de sùshè le méiyǒu?",
+   "es": "Has the package been delivered to Ding Libo's dorm?",
+   "rule": "V + 到 + place = the thing reaches that place as a result of the action.",
+   "note": "",
+   "mode": "cloze",
+   "segments": [
+    {
+     "text": "包裹送"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "丁力波的宿舍了没有？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "到",
+     "hint": "",
+     "alternatives": []
+    }
+   ],
+   "id": "L12n17"
+  },
+  {
+   "lesson": 12,
+   "point": "V + 在 / 到 + place · Complement of place",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "answer": "手机我放在桌子上了。",
+   "pinyin": "Shǒujī wǒ fàng zài zhuōzi shang le.",
+   "es": "I put the phone on the table.",
+   "rule": "The place phrase comes right after the verb (放在桌子上), so the object moves to the front.",
+   "note": "Also: 我把手机放在桌子上了。",
+   "mode": "text",
+   "prompt": "我放手机在桌子上了。",
+   "context": "",
+   "accepted": [
+    "手机我放在桌子上了。",
+    "我把手机放在桌子上了。",
+    "我的手机放在桌子上了。",
+    "我手机放在桌子上了。",
+    "手机我放桌子上了。"
+   ],
+   "id": "L12n18"
+  },
+  {
+   "lesson": 12,
+   "point": "V + 在 / 到 + place · Complement of place",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "answer": "这个包裹我要寄到英国。",
+   "pinyin": "Zhège bāoguǒ wǒ yào jìdào Yīngguó.",
+   "es": "I want to send this package to Britain.",
+   "rule": "寄到 + place: the object is moved to the front, because the place must follow 到.",
+   "note": "",
+   "mode": "tiles",
+   "prompt": "这个 / 包裹 / 我 / 要 / 寄 / 到 / 英国",
+   "tiles": [
+    "这个",
+    "包裹",
+    "我",
+    "要",
+    "寄",
+    "到",
+    "英国"
+   ],
+   "context": "I want to send this package to Britain.",
+   "accepted": [
+    "这个包裹我要寄到英国。",
+    "我这个包裹要寄到英国。"
+   ],
+   "id": "L12n19"
+  },
+  {
+   "lesson": 12,
+   "point": "副词“就” · 就 = right away",
+   "type": "Fill in",
+   "instruction": "Complete the sentence",
+   "answer": "刚两点，快递员就来了。",
+   "pinyin": "Gāng liǎng diǎn, kuàidìyuán jiù lái le.",
+   "es": "It was only just two o'clock and the courier was here — earlier than I expected.",
+   "rule": "就 stresses that something happens early or quickly.",
+   "note": "",
+   "mode": "cloze",
+   "segments": [
+    {
+     "text": "（The courier said he'd come in the afternoon）刚两点，快递员"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "来了。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "就",
+     "hint": "",
+     "alternatives": [
+      "已经",
+      "就已经"
+     ]
+    }
+   ],
+   "id": "L12n20"
+  },
+  {
+   "lesson": 12,
+   "point": "副词“就” · 就 = right away",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "answer": "我收到包裹就给你打电话。",
+   "pinyin": "Wǒ shōudào bāoguǒ jiù gěi nǐ dǎ diànhuà.",
+   "es": "I'll call you as soon as I get the package.",
+   "rule": "A + 就 + B = B happens right after A; 就 goes before the second verb.",
+   "note": "",
+   "mode": "text",
+   "prompt": "I'll call you as soon as I get the package.",
+   "context": "",
+   "accepted": [
+    "我收到包裹就给你打电话。",
+    "我收到包裹以后就给你打电话。",
+    "我收到了包裹就给你打电话。",
+    "我收到了包裹以后就给你打电话。",
+    "我一收到包裹就给你打电话。",
+    "收到包裹我就给你打电话。",
+    "收到包裹以后我就给你打电话。",
+    "收到了包裹我就给你打电话。",
+    "收到了包裹以后我就给你打电话。"
+   ],
+   "id": "L12n21"
+  },
+  {
+   "lesson": 12,
+   "point": "副词“就” · 就 = right away",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "answer": "她说了一遍我就明白了。",
+   "pinyin": "Tā shuō le yí biàn wǒ jiù míngbai le.",
+   "es": "She only said it once and I understood.",
+   "rule": "就 comes after the subject of the second clause (我就…), never before it.",
+   "note": "",
+   "mode": "tiles",
+   "prompt": "她 / 一遍 / 说了 / 就 / 我 / 明白了",
+   "tiles": [
+    "她",
+    "一遍",
+    "说了",
+    "就",
+    "我",
+    "明白了"
+   ],
+   "context": "She only said it once and I understood.",
+   "accepted": [
+    "她说了一遍我就明白了。"
+   ],
+   "id": "L12n22"
+  },
+  {
+   "lesson": 12,
+   "point": "……以后 / ……以前",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "answer": "来中国以前，我学了一年汉语。",
+   "pinyin": "Lái Zhōngguó yǐqián, wǒ xué le yì nián Hànyǔ.",
+   "es": "Before coming to China, I studied Chinese for a year.",
+   "rule": "以前 goes at the END of the time clause: 来中国以前 (not *以前来中国).",
+   "note": "",
+   "mode": "text",
+   "prompt": "Before coming to China, I studied Chinese for a year.",
+   "context": "",
+   "accepted": [
+    "来中国以前，我学了一年汉语。",
+    "来中国以前，我学了一年的汉语。",
+    "来中国以前，我学汉语学了一年。",
+    "来中国以前我学了一年汉语。",
+    "来中国以前我学了一年的汉语。",
+    "来中国以前我学汉语学了一年。",
+    "我来中国以前学了一年汉语。",
+    "我来中国以前学了一年的汉语。",
+    "我来中国以前学汉语学了一年。",
+    "我来中国以前，学了一年汉语。",
+    "我来中国以前，学了一年的汉语。",
+    "我来中国以前，学汉语学了一年。"
+   ],
+   "id": "L12n23"
+  },
+  {
+   "lesson": 12,
+   "point": "……以后 / ……以前",
+   "type": "Fill in",
+   "instruction": "Complete the sentence",
+   "answer": "寄包裹以前，你得先填一张包裹单。",
+   "pinyin": "Jì bāoguǒ yǐqián, nǐ děi xiān tián yì zhāng bāoguǒdān.",
+   "es": "Before you send a package, you have to fill in a parcel form first.",
+   "rule": "……以前 = before doing something; 以前 closes the time clause: 寄包裹以前 (not *以前寄包裹).",
+   "note": "",
+   "mode": "cloze",
+   "segments": [
+    {
+     "text": "寄包裹"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "，你得先填一张包裹单。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "以前",
+     "hint": "",
+     "alternatives": [
+      "之前"
+     ]
+    }
+   ],
+   "id": "L12n24"
+  },
+  {
+   "lesson": 12,
+   "point": "Usage L12 · 左右",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "answer": "我一般六点半左右起床。",
+   "pinyin": "Wǒ yìbān liù diǎn bàn zuǒyòu qǐchuáng.",
+   "es": "I usually get up at around half past six.",
+   "rule": "左右 follows the number or clock time (六点半左右), and the whole time phrase goes before the verb.",
+   "note": "",
+   "mode": "text",
+   "prompt": "I usually get up at around half past six.",
+   "context": "",
+   "accepted": [
+    "我一般六点半左右起床。",
+    "我一般早上六点半左右起床。",
+    "一般我六点半左右起床。",
+    "一般我早上六点半左右起床。",
+    "我平时六点半左右起床。",
+    "我平时早上六点半左右起床。",
+    "我通常六点半左右起床。",
+    "我通常早上六点半左右起床。",
+    "我常常六点半左右起床。",
+    "我常常早上六点半左右起床。"
+   ],
+   "id": "L12n25"
+  },
+  {
+   "lesson": 12,
+   "point": "Usage L12 · 一般 / 常常",
+   "type": "Choose",
+   "instruction": "Choose the correct sentence",
+   "answer": "我常常听错。",
+   "pinyin": "Wǒ chángcháng tīngcuò.",
+   "es": "I often mishear things.",
+   "rule": "常常 = often (how frequently something happens); 一般 = usually, as a rule (what you normally do), so it sounds odd with an accidental event like mishearing.",
+   "note": "",
+   "mode": "choice",
+   "prompt": "I often mishear things.",
+   "context": "",
+   "options": [
+    "我一般听错。",
+    "我常常听错。"
+   ],
+   "accepted": [
+    "我常常听错。"
+   ],
+   "id": "L12n26"
+  },
+  {
+   "lesson": 12,
+   "point": "Usage L12 · 遍 / 次",
+   "type": "Fill in",
+   "instruction": "Complete the sentence",
+   "answer": "这课课文我读了两遍，还没读懂。",
+   "pinyin": "Zhè kè kèwén wǒ dúle liǎng biàn, hái méi dúdǒng.",
+   "es": "I've read this lesson's text all the way through twice and still don't understand it.",
+   "rule": "遍 counts an action done from beginning to end; 次 just counts occurrences.",
+   "note": "次 would only count occasions; for going through a whole text, 遍 is the natural choice.",
+   "mode": "cloze",
+   "segments": [
+    {
+     "text": "这课课文我读了两"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "，还没读懂。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "遍",
+     "hint": "",
+     "alternatives": []
+    }
+   ],
+   "id": "L12n27"
+  },
+  {
+   "lesson": 12,
+   "point": "Usage L12 · 以为",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "answer": "我以为你回宿舍去了！",
+   "pinyin": "Wǒ yǐwéi nǐ huí sùshè qu le!",
+   "es": "I thought you had gone back to the dorm!",
+   "rule": "以为 = thought (wrongly): what you believed turned out not to be true.",
+   "note": "",
+   "mode": "text",
+   "prompt": "(Surprised to see your friend) I thought you had gone back to the dorm!",
+   "context": "",
+   "accepted": [
+    "我以为你回宿舍去了！",
+    "我以为你回宿舍去了。",
+    "我以为你回宿舍了！",
+    "我以为你回宿舍了。",
+    "我以为你已经回宿舍去了！",
+    "我以为你已经回宿舍去了。",
+    "我以为你已经回宿舍了！",
+    "我以为你已经回宿舍了。",
+    "我还以为你回宿舍去了！",
+    "我还以为你回宿舍去了。",
+    "我还以为你回宿舍了！",
+    "我还以为你回宿舍了。",
+    "我还以为你已经回宿舍去了！",
+    "我还以为你已经回宿舍去了。",
+    "我还以为你已经回宿舍了！",
+    "我还以为你已经回宿舍了。"
+   ],
+   "id": "L12n28"
+  },
+  {
+   "lesson": 12,
+   "point": "Usage L12 · 替",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "answer": "你能不能替我寄这个包裹？",
+   "pinyin": "Nǐ néng bu néng tì wǒ jì zhège bāoguǒ?",
+   "es": "Could you send this package for me?",
+   "rule": "A + 替 + B + V = A does something in B's place; 能不能 comes before 替.",
+   "note": "",
+   "mode": "tiles",
+   "prompt": "替 / 我 / 你 / 能不能 / 寄 / 包裹 / 这个",
+   "tiles": [
+    "替",
+    "我",
+    "你",
+    "能不能",
+    "寄",
+    "包裹",
+    "这个"
+   ],
+   "context": "Could you send this package for me?",
+   "accepted": [
+    "你能不能替我寄这个包裹？",
+    "这个包裹你能不能替我寄？"
+   ],
+   "id": "L12n29"
+  },
+  {
+   "lesson": 12,
+   "point": "Usage L12 · 一定 / 不一定",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "answer": "你一定得填这张单子。",
+   "pinyin": "Nǐ yídìng děi tián zhè zhāng dānzi.",
+   "es": "You must fill in this form.",
+   "rule": "一定得 / 一定要 + V = must, without fail.",
+   "note": "",
+   "mode": "text",
+   "prompt": "You must fill in this form — no exceptions.",
+   "context": "",
+   "accepted": [
+    "你一定得填这张单子。",
+    "你一定得填这个单子。",
+    "你一定要填这张单子。",
+    "你一定要填这个单子。",
+    "你必须填这张单子。",
+    "你必须填这个单子。",
+    "这张单子你一定得填。",
+    "这张单子你一定要填。",
+    "这张单子你必须填。",
+    "这个单子你一定得填。",
+    "这个单子你一定要填。",
+    "这个单子你必须填。"
+   ],
+   "id": "L12n30"
+  },
+  {
+   "id": "DcoU#1BLd|",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "prompt": "把 / 写 / 请 / 在这儿 / 姓名 / 您",
+   "answer": "请您把姓名写在这儿。",
+   "pinyin": "Qǐng nín bǎ xìngmíng xiě zài zhèr.",
+   "es": "Please write your name here.",
+   "rule": "S + 把 + O + V + other element (在/到/给 + …, result…).",
+   "note": "",
+   "context": "Please write your name here.",
+   "mode": "tiles",
+   "tiles": [
+    "把",
+    "写",
+    "请",
+    "在这儿",
+    "姓名",
+    "您"
+   ],
+   "accepted": [
+    "请您把姓名写在这儿。"
+   ]
+  },
+  {
+   "id": "zsakS}R5H|",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我放包裹在桌子上。",
+   "answer": "我把包裹放在桌子上。",
+   "pinyin": "Wǒ bǎ bāoguǒ fàngzài zhuōzi shàng.",
+   "es": "I'm putting the package on the table.",
+   "rule": "To say where a specific object ends up, use 把 + O + V + 在 + place.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我把包裹放在桌子上。"
+   ]
+  },
+  {
+   "id": "O{D4%K_]ju",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Please hand me your driver's license.",
+   "answer": "请把驾照交给我。",
+   "pinyin": "Qǐng bǎ jiàzhào jiāogěi wǒ.",
+   "es": "",
+   "rule": "把 + O + V + 给 + person.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "请把驾照交给我。"
+   ]
+  },
+  {
+   "id": "HE-{w/.y#T",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我把书看。",
+   "answer": "我把书看完了。",
+   "pinyin": "Wǒ bǎ shū kàn wán le.",
+   "es": "I've finished the book.",
+   "rule": "With 把, the verb can't stand alone: it needs a result, a place, 了…",
+   "note": "我把书看了。",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我把书看完了。",
+    "我把书看了。"
+   ]
+  },
+  {
+   "id": "IODmkE,p4b",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我把护照没带来。",
+   "answer": "我没把护照带来。",
+   "pinyin": "Wǒ méi bǎ hùzhào dàilai.",
+   "es": "I didn't bring my passport.",
+   "rule": "The negative (没/不) goes before 把.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我没把护照带来。"
+   ]
+  },
+  {
+   "id": "hCEn(~<BTB",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "他们两个星期以后"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "把护照还给我。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "才",
+     "hint": ""
+    }
+   ],
+   "answer": "他们两个星期以后才把护照还给我。",
+   "pinyin": "Tāmen liǎng ge xīngqī yǐhòu cái bǎ hùzhào huángěi wǒ.",
+   "es": "They didn't give my passport back until two weeks later.",
+   "rule": "才 = «not until», later than expected (without 了).",
+   "note": ""
+  },
+  {
+   "id": "r*Rs=9{w`P",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "他八点"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "起床，上课迟到了。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "才",
+     "hint": ""
+    }
+   ],
+   "answer": "他八点才起床，上课迟到了。",
+   "pinyin": "Tā bā diǎn cái qǐchuáng, shàngkè chídào le.",
+   "es": "He didn't get up until eight and was late for class.",
+   "rule": "才: late / difficult.",
+   "note": ""
+  },
+  {
+   "id": "g5v<?4Wmo2",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "他六点"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "起床了。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "就",
+     "hint": ""
+    }
+   ],
+   "answer": "他六点就起床了。",
+   "pinyin": "Tā liù diǎn jiù qǐchuáng le.",
+   "es": "He got up as early as six (very early).",
+   "rule": "就: early / easy (usually with 了).",
+   "note": ""
+  },
+  {
+   "id": "HA$_2vdEh4",
+   "lesson": 13,
+   "point": "时量补语 · Complement of duration (inferred)",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "How long were you on the train today?",
+   "answer": "你今天坐火车坐了多长时间？",
+   "pinyin": "Nǐ jīntiān zuò huǒchē zuò le duō cháng shíjiān?",
+   "es": "",
+   "rule": "With an object: V + O + V + 了 + duration, or V + 了 + duration + (的) + O.",
+   "note": "你今天坐了多长时间（的）火车？",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你今天坐火车坐了多长时间？",
+    "你今天坐了多长时间的火车？",
+    "你今天坐了多长时间火车？"
+   ]
+  },
+  {
+   "id": "pEKsl(Q@*y",
+   "lesson": 13,
+   "point": "时量补语 · Complement of duration (inferred)",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "prompt": "觉 / 两个小时 / 睡了 / 我",
+   "answer": "我睡了两个小时觉。",
+   "pinyin": "Wǒ shuì le liǎng ge xiǎoshí jiào.",
+   "es": "I slept for two hours.",
+   "rule": "In separable verbs the duration goes in the middle: 睡 + 了 + duration + 觉.",
+   "note": "",
+   "context": "I slept for two hours.",
+   "mode": "tiles",
+   "tiles": [
+    "觉",
+    "两个小时",
+    "睡了",
+    "我"
+   ],
+   "accepted": [
+    "我睡了两个小时觉。"
+   ]
+  },
+  {
+   "id": "J81iuBxOG`",
+   "lesson": 13,
+   "point": "时量补语 · Complement of duration (inferred)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我两个小时睡觉了。",
+   "answer": "我睡了两个小时（的）觉。",
+   "pinyin": "Wǒ shuì le liǎng ge xiǎoshí (de) jiào.",
+   "es": "I slept for two hours.",
+   "rule": "The duration goes after the verb, not before.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我睡了两个小时的觉。",
+    "我睡了两个小时觉。"
+   ]
+  },
+  {
+   "id": "BhtJ3.|#lE",
+   "lesson": 13,
+   "point": "时量补语 · Complement of duration (inferred)",
+   "type": "Transform",
+   "instruction": "Add the duration: fifty minutes",
+   "prompt": "我等了你。",
+   "answer": "我等了你五十分钟。",
+   "pinyin": "Wǒ děng le nǐ wǔshí fēnzhōng.",
+   "es": "I waited for you for fifty minutes.",
+   "rule": "If the object is a pronoun, the duration goes after it: V + 了 + pronoun + duration.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我等了你五十分钟。"
+   ]
+  },
+  {
+   "id": "9f6NoSdX]",
+   "lesson": 13,
+   "point": "一会儿 · A little while (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我听了"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "音乐。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "一会儿",
+     "hint": ""
+    }
+   ],
+   "answer": "我听了一会儿音乐。",
+   "pinyin": "Wǒ tīng le yíhuìr yīnyuè.",
+   "es": "I listened to music for a while.",
+   "rule": "一会儿 = a little while (short duration).",
+   "note": ""
+  },
+  {
+   "id": "IU~Uvtk?<`",
+   "lesson": 13,
+   "point": "又……又…… (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "现在坐高铁"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "快"
+    },
+    {
+     "gap": 1
+    },
+    {
+     "text": "舒服。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "又",
+     "hint": ""
+    },
+    {
+     "answer": "又",
+     "hint": ""
+    }
+   ],
+   "answer": "现在坐高铁又快又舒服。",
+   "pinyin": "Xiànzài zuò gāotiě yòu kuài yòu shūfu.",
+   "es": "Taking the high-speed train is now both fast and comfortable.",
+   "rule": "又 A 又 B = both A and B.",
+   "note": ""
+  },
+  {
+   "id": "iUk}y*z$vW",
+   "lesson": 13,
+   "point": "Duration + 了 … 了 (inferred)",
+   "type": "Choose",
+   "instruction": "Choose and explain",
+   "prompt": "我学了两年汉语。 / 我学了两年汉语了。 Which one says you're still studying?",
+   "answer": "我学了两年汉语了。",
+   "pinyin": "Wǒ xué le liǎng nián Hànyǔ le.",
+   "es": "I've been studying Chinese for two years.",
+   "rule": "With a final 了 the action continues up to now; without it, it may have ended.",
+   "note": "",
+   "context": "",
+   "mode": "choice",
+   "options": [
+    "我学了两年汉语。",
+    "我学了两年汉语了。"
+   ],
+   "accepted": [
+    "我学了两年汉语了。"
+   ]
+  },
+  {
+   "id": "m4R70zaWZk",
+   "lesson": 13,
+   "point": "Duration + 了 … 了 (inferred)",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "I haven't slept well for three days.",
+   "answer": "我三天没睡好了。",
+   "pinyin": "Wǒ sān tiān méi shuì hǎo le.",
+   "es": "",
+   "rule": "Duration + 没 + V + 了 = to have gone a period of time without doing something (here 了 is used).",
+   "note": "我三天没睡好觉了。",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我三天没睡好了。",
+    "我三天没睡好觉了。"
+   ]
+  },
+  {
+   "id": "Fz?N45(y<e",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我把一本书看完了。",
+   "answer": "我把那本书看完了。",
+   "pinyin": "Wǒ bǎ nà běn shū kàn wán le.",
+   "es": "I've finished that book.",
+   "rule": "The object of 把 must be something specific/known.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我把那本书看完了。"
+   ]
+  },
+  {
+   "id": "oFkbIuTM^o",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我把这个电影喜欢。",
+   "answer": "我喜欢这个电影。",
+   "pinyin": "Wǒ xǐhuan zhège diànyǐng.",
+   "es": "I like this movie.",
+   "rule": "把 isn't used with verbs that don't act on the object: 是、有、在、喜欢、知道、觉得….",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我喜欢这个电影。"
+   ]
+  },
+  {
+   "id": "nU$=W?g-cu",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "I gave the book back to Lin Na.",
+   "answer": "我把书还给林娜了。",
+   "pinyin": "Wǒ bǎ shū huángěi Lín Nà le.",
+   "es": "",
+   "rule": "把 + O + V + 给 + person: 给 goes after the verb with verbs of transfer.",
+   "note": "我把书还给了林娜。",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我把书还给林娜了。",
+    "我把书还给了林娜。"
+   ]
+  },
+  {
+   "id": "Kf]nKozeNy",
+   "lesson": 14,
+   "point": "“比”字句 · Comparison with 比 (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "今天"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "昨天暖和。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "比",
+     "hint": ""
+    }
+   ],
+   "answer": "今天比昨天暖和。",
+   "pinyin": "Jīntiān bǐ zuótiān nuǎnhuo.",
+   "es": "Today is warmer than yesterday.",
+   "rule": "A 比 B + adjective.",
+   "note": ""
+  },
+  {
+   "id": "i2O#,fkAz>",
+   "lesson": 14,
+   "point": "“比”字句 · Comparison with 比 (inferred)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "今天比昨天很暖和。",
+   "answer": "今天比昨天暖和（多了）。",
+   "pinyin": "Jīntiān bǐ zuótiān nuǎnhuo (duō le).",
+   "es": "Today is (much) warmer than yesterday.",
+   "rule": "With 比 you don't use 很/非常/真; you can use 更 or 还 (今天比昨天更暖和). The difference goes after (多了、一点儿…).",
+   "note": "今天比昨天更暖和。",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "今天比昨天暖和多了。",
+    "今天比昨天暖和。",
+    "今天比昨天更暖和。"
+   ]
+  },
+  {
+   "id": "dTY~Wk@hH6",
+   "lesson": 14,
+   "point": "“比”字句 · Comparison with 比 (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "租的比买的便宜"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "多了",
+     "hint": "",
+     "alternatives": [
+      "得多"
+     ]
+    }
+   ],
+   "answer": "租的比买的便宜多了。",
+   "pinyin": "Zū de bǐ mǎi de piányi duō le.",
+   "es": "Renting is much cheaper than buying.",
+   "rule": "A 比 B + adj + 多了 = much more.",
+   "note": "得多 is also acceptable."
+  },
+  {
+   "id": "dAc6~ITyQ",
+   "lesson": 14,
+   "point": "“比”字句 · Comparison with 比 (inferred)",
+   "type": "Order",
+   "instruction": "Put the words in order",
+   "prompt": "两公分 / 比 / 这件 / 那件 / 长",
+   "answer": "这件比那件长两公分。",
+   "pinyin": "Zhè jiàn bǐ nà jiàn cháng liǎng gōngfēn.",
+   "es": "This one is two centimeters longer than that one.",
+   "rule": "The specific difference goes at the end: A 比 B + adj + amount.",
+   "note": "",
+   "context": "This one is two centimeters longer than that one.",
+   "mode": "tiles",
+   "tiles": [
+    "两公分",
+    "比",
+    "这件",
+    "那件",
+    "长"
+   ],
+   "accepted": [
+    "这件比那件长两公分。"
+   ]
+  },
+  {
+   "id": "eTuVpEQdqV",
+   "lesson": 14,
+   "point": "“比”字句 · Comparison with 比 (inferred)",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Your Chinese is better than mine.",
+   "answer": "你的汉语比我（的）好。",
+   "pinyin": "Nǐ de Hànyǔ bǐ wǒ (de) hǎo.",
+   "es": "",
+   "rule": "A 比 B + adj.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "你的汉语比我的好。",
+    "你的汉语比我好。"
+   ]
+  },
+  {
+   "id": "NBq|#kECWq",
+   "lesson": 14,
+   "point": "“比”字句 · Comparison with 比 (inferred)",
+   "type": "Question",
+   "instruction": "Answer",
+   "prompt": "What does 红的不比绿的漂亮 mean?",
+   "answer": "The red one isn't any prettier than the green one (they're about the same).",
+   "pinyin": "",
+   "es": "",
+   "rule": "A 不比 B + adj = A is no more… than B; it usually contradicts what someone has said.",
+   "note": "",
+   "context": "",
+   "mode": "reveal"
+  },
+  {
+   "id": "I+IU@#>X)j",
+   "lesson": 14,
+   "point": "的字结构 · Nominalizing 的 (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "她的那件是短"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "，我想要一件长的。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "的",
+     "hint": ""
+    }
+   ],
+   "answer": "她的那件是短的，我想要一件长的。",
+   "pinyin": "Tā de nà jiàn shì duǎn de, wǒ xiǎng yào yí jiàn cháng de.",
+   "es": "Hers is a short one; I want a long one.",
+   "rule": "Adjective/verb + 的 = «the one that…» (replaces the noun).",
+   "note": ""
+  },
+  {
+   "id": "zJZzrN&%|T",
+   "lesson": 14,
+   "point": "的字结构 · Nominalizing 的 (inferred)",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "The new ones are more expensive than the old ones.",
+   "answer": "新的比旧的贵。",
+   "pinyin": "Xīn de bǐ jiù de guì.",
+   "es": "",
+   "rule": "Adjective + 的 = «the one(s) that are…».",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "新的比旧的贵。"
+   ]
+  },
+  {
+   "id": "Ad*>2He!dQ",
+   "lesson": 14,
+   "point": "Adj + 一点儿 / 有点儿 + Adj (inferred)",
+   "type": "Correct",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我想要一点儿浅的。",
+   "answer": "我想要浅一点儿的。",
+   "pinyin": "Wǒ xiǎng yào qiǎn yìdiǎnr de.",
+   "es": "I'd like one that's a bit lighter.",
+   "rule": "To compare: adjective + 一点儿 (after).",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "我想要浅一点儿的。"
+   ]
+  },
+  {
+   "id": "B/vk~*XRHV",
+   "lesson": 14,
+   "point": "Adj + 一点儿 / 有点儿 + Adj (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "这件颜色"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "深。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "有点儿",
+     "hint": ""
+    }
+   ],
+   "answer": "这件颜色有点儿深。",
+   "pinyin": "Zhè jiàn yánsè yǒudiǎnr shēn.",
+   "es": "The color of this one is a bit dark.",
+   "rule": "有点儿 + adj = a bit (too), a complaint.",
+   "note": ""
+  },
+  {
+   "id": "K[&N}3@=`E",
+   "lesson": 14,
+   "point": "Adj + 一点儿 / 有点儿 + Adj (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "有没有短"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "的？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "一点儿",
+     "hint": "",
+     "alternatives": [
+      "一些",
+      "点儿"
+     ]
+    }
+   ],
+   "answer": "有没有短一点儿的？",
+   "pinyin": "Yǒu mei yǒu duǎn yìdiǎnr de?",
+   "es": "Do you have one that's a bit shorter?",
+   "rule": "Adj + 一点儿 = a bit more (comparison).",
+   "note": ""
+  },
+  {
+   "id": "bAB&:Nb3-$",
+   "lesson": 14,
+   "point": "或者 / 还是 (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你们可以跳舞"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "表演太极拳。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "或者",
+     "hint": ""
+    }
+   ],
+   "answer": "你们可以跳舞或者表演太极拳。",
+   "pinyin": "Nǐmen kěyǐ tiàowǔ huòzhě biǎoyǎn tàijíquán.",
+   "es": "You guys can dance or do a tai chi demonstration.",
+   "rule": "或者 = or (in statements).",
+   "note": ""
+  },
+  {
+   "id": "G9XYy-Yw$!",
+   "lesson": 14,
+   "point": "或者 / 还是 (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你要白的"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "黑的？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "还是",
+     "hint": ""
+    }
+   ],
+   "answer": "你要白的还是黑的？",
+   "pinyin": "Nǐ yào bái de háishi hēi de?",
+   "es": "Do you want the white one or the black one?",
+   "rule": "还是 = or (in alternative questions).",
+   "note": ""
+  },
+  {
+   "id": "jf}C@}/,_z",
+   "lesson": 14,
+   "point": "Comparison with 没有 (inferred)",
+   "type": "Translate",
+   "instruction": "Say it in Chinese",
+   "prompt": "Today isn't as cold as yesterday.",
+   "answer": "今天没有昨天（那么）冷。",
+   "pinyin": "Jīntiān méiyǒu zuótiān (nàme) lěng.",
+   "es": "",
+   "rule": "A 没有 B (那么) + adj = A is not as… as B. It's the usual negative of 比.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "今天没有昨天那么冷。",
+    "今天没有昨天冷。"
+   ]
+  },
+  {
+   "id": "f#F$5u1lCp",
+   "lesson": 14,
+   "point": "Comparison with 没有 (inferred)",
+   "type": "Transform",
+   "instruction": "Make it negative",
+   "prompt": "今天比昨天冷。",
+   "answer": "今天没有昨天冷。",
+   "pinyin": "Jīntiān méiyǒu zuótiān lěng.",
+   "es": "Today isn't as cold as yesterday.",
+   "rule": "The negative of 比 is usually formed with 没有, not 不比.",
+   "note": "",
+   "context": "",
+   "mode": "text",
+   "accepted": [
+    "今天没有昨天冷。",
+    "今天没有昨天那么冷。",
+    "今天不比昨天冷。"
+   ]
+  }
+ ]
+}
