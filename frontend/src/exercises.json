@@ -9709,6 +9709,2217 @@
    "es": "How much RMB do you get for 100 euros?",
    "rule": "Amount + currency + 换 + 多少 + other currency.",
    "note": ""
+  },
+  {
+   "id": "L12n31",
+   "lesson": 12,
+   "point": "V + 在 / 到 + place · Complement of place",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Where did you put my book?",
+   "context": "",
+   "accepted": [
+    "我的书你放在哪儿了？",
+    "我的书你放哪儿了？",
+    "你把我的书放在哪儿了？",
+    "你把我的书放哪儿了？",
+    "我的书你放在哪里了？",
+    "你把我的书放在哪里了？"
+   ],
+   "answer": "我的书你放在哪儿了？",
+   "pinyin": "Wǒ de shū nǐ fàng zài nǎr le?",
+   "es": "Where did you put my book?",
+   "rule": "V + 在 + place: where something ends up.",
+   "note": ""
+  },
+  {
+   "id": "L12n32",
+   "lesson": 12,
+   "point": "V + 在 / 到 + place · Complement of place",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I want to send this postcard to Chile.",
+   "context": "",
+   "accepted": [
+    "这张明信片我要寄到智利。",
+    "这张明信片我想寄到智利。",
+    "我把这张明信片要寄到智利。",
+    "我把这张明信片想寄到智利。"
+   ],
+   "answer": "这张明信片我要寄到智利。",
+   "pinyin": "Zhè zhāng míngxìnpiàn wǒ yào jì dào Zhìlì.",
+   "es": "I want to send this postcard to Chile.",
+   "rule": "V + 到 + place: where the thing arrives. The object goes first (topic), not after 到.",
+   "note": ""
+  },
+  {
+   "id": "L12n33",
+   "lesson": 12,
+   "point": "V + 在 / 到 + place · Complement of place",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "你的包裹送了到宿舍。",
+   "context": "",
+   "accepted": [
+    "你的包裹送到宿舍了。",
+    "你的包裹送到宿舍去了。"
+   ],
+   "answer": "你的包裹送到宿舍了。",
+   "pinyin": "Nǐ de bāoguǒ sòng dào sùshè le.",
+   "es": "Your package has been delivered to the dorm.",
+   "rule": "到 sticks to the verb; 了 goes after the place, not between V and 到.",
+   "note": ""
+  },
+  {
+   "id": "L12n34",
+   "lesson": 12,
+   "point": "V + 在 / 到 + place · Complement of place",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "在 / 毛衣 / 放 / 宿舍里 / 我 / 了",
+   "context": "I've left my sweater in the dorm.",
+   "tiles": [
+    "在",
+    "毛衣",
+    "放",
+    "宿舍里",
+    "我",
+    "了"
+   ],
+   "accepted": [
+    "毛衣我放在宿舍里了。",
+    "我毛衣放在宿舍里了。"
+   ],
+   "answer": "毛衣我放在宿舍里了。",
+   "pinyin": "Máoyī wǒ fàng zài sùshè li le.",
+   "es": "I've left my sweater in the dorm.",
+   "rule": "Object as topic, then V + 在 + place + 了.",
+   "note": ""
+  },
+  {
+   "id": "L12n35",
+   "lesson": 12,
+   "point": "副词“就” · 就 = right away",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "It was only seven and he was already here.",
+   "context": "",
+   "accepted": [
+    "刚七点，他就来了。",
+    "刚七点，他就到了。",
+    "刚七点他就来了。",
+    "刚七点他就到了。",
+    "才七点，他就来了。",
+    "才七点，他就到了。",
+    "才七点他就来了。",
+    "才七点他就到了。",
+    "刚刚七点，他就来了。",
+    "刚刚七点，他就到了。",
+    "刚刚七点他就来了。",
+    "刚刚七点他就到了。"
+   ],
+   "answer": "刚七点，他就来了。",
+   "pinyin": "Gāng qī diǎn, tā jiù lái le.",
+   "es": "It was only seven and he was already here.",
+   "rule": "就 shows something happened sooner than expected.",
+   "note": ""
+  },
+  {
+   "id": "L12n36",
+   "lesson": 12,
+   "point": "副词“就” · 就 = right away",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Let's go and borrow the books right now.",
+   "context": "",
+   "accepted": [
+    "我们现在就去借书吧。",
+    "我们现在就去借书。"
+   ],
+   "answer": "我们现在就去借书吧。",
+   "pinyin": "Wǒmen xiànzài jiù qù jiè shū ba.",
+   "es": "Let's go and borrow the books right now.",
+   "rule": "现在 + 就 + verb = right now, immediately.",
+   "note": ""
+  },
+  {
+   "id": "L12n37",
+   "lesson": 12,
+   "point": "副词“就” · 就 = right away",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我下课去就吃饭。",
+   "context": "",
+   "accepted": [
+    "我下课就去吃饭。",
+    "我下课以后就去吃饭。",
+    "下课以后我就去吃饭。",
+    "下了课我就去吃饭。",
+    "我下了课就去吃饭。"
+   ],
+   "answer": "我下课就去吃饭。",
+   "pinyin": "Wǒ xià kè jiù qù chī fàn.",
+   "es": "I'll go and eat right after class.",
+   "rule": "就 goes right before the verb phrase it introduces: 就去吃饭.",
+   "note": ""
+  },
+  {
+   "id": "L12n38",
+   "lesson": 12,
+   "point": "副词“就” · 就 = right away",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "Your friend asks when you'll send the package. Say you'll go right now.",
+   "context": "",
+   "accepted": [
+    "我现在就去。",
+    "我现在就去吧。",
+    "我马上就去。",
+    "我马上就去吧。",
+    "我现在就去寄。",
+    "我现在就去寄吧。",
+    "我马上就去寄。",
+    "我马上就去寄吧。",
+    "现在就去。",
+    "现在就去吧。",
+    "马上就去。",
+    "马上就去吧。",
+    "现在就去寄。",
+    "现在就去寄吧。",
+    "马上就去寄。",
+    "马上就去寄吧。"
+   ],
+   "answer": "我现在就去。",
+   "pinyin": "Wǒ xiànzài jiù qù.",
+   "es": "I'll go right now.",
+   "rule": "现在就 + verb: right now.",
+   "note": ""
+  },
+  {
+   "id": "L12n39",
+   "lesson": 12,
+   "point": "……以后 / ……以前",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "What do you do after class?",
+   "context": "",
+   "accepted": [
+    "你下课以后做什么？",
+    "你们下课以后做什么？",
+    "下课以后你做什么？",
+    "下课以后你们做什么？",
+    "你下了课以后做什么？",
+    "你们下了课以后做什么？"
+   ],
+   "answer": "你下课以后做什么？",
+   "pinyin": "Nǐ xià kè yǐhòu zuò shénme?",
+   "es": "What do you do after class?",
+   "rule": "Event + 以后 = after the event; it goes before the main verb.",
+   "note": ""
+  },
+  {
+   "id": "L12n40",
+   "lesson": 12,
+   "point": "……以后 / ……以前",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "We have dinner after eight.",
+   "context": "",
+   "accepted": [
+    "我们八点以后吃晚饭。",
+    "我们八点以后吃饭。",
+    "八点以后我们吃晚饭。",
+    "八点以后我们吃饭。"
+   ],
+   "answer": "我们八点以后吃晚饭。",
+   "pinyin": "Wǒmen bā diǎn yǐhòu chī wǎnfàn.",
+   "es": "We have dinner after eight.",
+   "rule": "Time + 以后 comes before the verb, like any time word.",
+   "note": ""
+  },
+  {
+   "id": "L12n41",
+   "lesson": 12,
+   "point": "……以后 / ……以前",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Please come before ten tomorrow.",
+   "context": "",
+   "accepted": [
+    "请你明天十点以前来。",
+    "请您明天十点以前来。",
+    "请明天十点以前来。",
+    "明天十点以前请你来。",
+    "明天十点以前请您来。",
+    "明天十点以前请来。"
+   ],
+   "answer": "请你明天十点以前来。",
+   "pinyin": "Qǐng nǐ míngtiān shí diǎn yǐqián lái.",
+   "es": "Please come before ten tomorrow.",
+   "rule": "Time + 以前 = before that time.",
+   "note": ""
+  },
+  {
+   "id": "L12n42",
+   "lesson": 12,
+   "point": "……以后 / ……以前",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "以后 / 了 / 吃 / 饭 / 我 / 去 / 散步",
+   "context": "After I've eaten I'll go for a walk.",
+   "tiles": [
+    "以后",
+    "了",
+    "吃",
+    "饭",
+    "我",
+    "去",
+    "散步"
+   ],
+   "accepted": [
+    "我吃了饭以后去散步。",
+    "吃了饭以后我去散步。"
+   ],
+   "answer": "我吃了饭以后去散步。",
+   "pinyin": "Wǒ chī le fàn yǐhòu qù sànbù.",
+   "es": "After I've eaten I'll go for a walk.",
+   "rule": "V + 了 + O + 以后, then the next action.",
+   "note": ""
+  },
+  {
+   "id": "L12n43",
+   "lesson": 12,
+   "point": "……以后 / ……以前",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "来中国"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "，我不会说汉语。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "以前",
+     "hint": ""
+    }
+   ],
+   "answer": "来中国以前，我不会说汉语。",
+   "pinyin": "Lái Zhōngguó yǐqián, wǒ bú huì shuō Hànyǔ.",
+   "es": "Before I came to China I couldn't speak Chinese.",
+   "rule": "Event + 以前 = before the event.",
+   "note": ""
+  },
+  {
+   "id": "L12n44",
+   "lesson": 12,
+   "point": "Usage L12 · 左右",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Sending it by sea takes about two months.",
+   "context": "",
+   "accepted": [
+    "寄海运要两个月左右。",
+    "寄海运得两个月左右。",
+    "寄海运两个月左右。",
+    "海运要两个月左右。",
+    "海运得两个月左右。",
+    "海运两个月左右。"
+   ],
+   "answer": "寄海运要两个月左右。",
+   "pinyin": "Jì hǎiyùn yào liǎng ge yuè zuǒyòu.",
+   "es": "Sending it by sea takes about two months.",
+   "rule": "Number + measure word + 左右 = about.",
+   "note": ""
+  },
+  {
+   "id": "L12n45",
+   "lesson": 12,
+   "point": "Usage L12 · 左右",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "The postage is about three hundred kuai.",
+   "context": "",
+   "accepted": [
+    "邮费三百块左右。",
+    "邮费三百块钱左右。",
+    "邮费是三百块左右。",
+    "邮费是三百块钱左右。",
+    "邮费要三百块左右。",
+    "邮费要三百块钱左右。"
+   ],
+   "answer": "邮费三百块左右。",
+   "pinyin": "Yóufèi sānbǎi kuài zuǒyòu.",
+   "es": "The postage is about three hundred kuai.",
+   "rule": "左右 follows the whole amount: 三百块左右.",
+   "note": ""
+  },
+  {
+   "id": "L12n46",
+   "lesson": 12,
+   "point": "Usage L12 · 左右",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I'll be back at around eight.",
+   "context": "",
+   "accepted": [
+    "我八点左右回来。",
+    "八点左右我回来。"
+   ],
+   "answer": "我八点左右回来。",
+   "pinyin": "Wǒ bā diǎn zuǒyòu huílai.",
+   "es": "I'll be back at around eight.",
+   "rule": "Clock time + 左右 = around that time.",
+   "note": ""
+  },
+  {
+   "id": "L12n47",
+   "lesson": 12,
+   "point": "Usage L12 · 左右",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "这个包裹有两公斤"
+    },
+    {
+     "gap": 0
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "左右",
+     "hint": ""
+    }
+   ],
+   "answer": "这个包裹有两公斤左右",
+   "pinyin": "Zhège bāoguǒ yǒu liǎng gōngjīn zuǒyòu.",
+   "es": "This package weighs about two kilos.",
+   "rule": "Number + measure + 左右.",
+   "note": ""
+  },
+  {
+   "id": "L12n48",
+   "lesson": 12,
+   "point": "Usage L12 · 左右",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "他左右二十岁。",
+   "context": "",
+   "accepted": [
+    "他二十岁左右。"
+   ],
+   "answer": "他二十岁左右。",
+   "pinyin": "Tā èrshí suì zuǒyòu.",
+   "es": "He's about twenty.",
+   "rule": "左右 comes after the number, not before it.",
+   "note": ""
+  },
+  {
+   "id": "L12n49",
+   "lesson": 12,
+   "point": "Usage L12 · 左右",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "左右 / 我 / 一个星期 / 在 / 上海 / 住了",
+   "context": "I stayed in Shanghai for about a week.",
+   "tiles": [
+    "左右",
+    "我",
+    "一个星期",
+    "在",
+    "上海",
+    "住了"
+   ],
+   "accepted": [
+    "我在上海住了一个星期左右。"
+   ],
+   "answer": "我在上海住了一个星期左右。",
+   "pinyin": "Wǒ zài Shànghǎi zhù le yí ge xīngqī zuǒyòu.",
+   "es": "I stayed in Shanghai for about a week.",
+   "rule": "Duration + 左右 after the verb.",
+   "note": ""
+  },
+  {
+   "id": "L12n50",
+   "lesson": 12,
+   "point": "Usage L12 · 左右",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "about twenty",
+   "context": "",
+   "options": [
+    "二十个左右",
+    "左右二十个",
+    "二十左右个"
+   ],
+   "accepted": [
+    "二十个左右"
+   ],
+   "answer": "二十个左右",
+   "pinyin": "èrshí ge zuǒyòu",
+   "es": "about twenty",
+   "rule": "左右 follows number + measure word.",
+   "note": ""
+  },
+  {
+   "id": "L12n51",
+   "lesson": 12,
+   "point": "Usage L12 · 一般 / 常常",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I usually drink tea, not coffee.",
+   "context": "",
+   "accepted": [
+    "我一般喝茶，不喝咖啡。"
+   ],
+   "answer": "我一般喝茶，不喝咖啡。",
+   "pinyin": "Wǒ yìbān hē chá, bù hē kāfēi.",
+   "es": "I usually drink tea, not coffee.",
+   "rule": "一般 describes what you normally do (habit).",
+   "note": ""
+  },
+  {
+   "id": "L12n52",
+   "lesson": 12,
+   "point": "Usage L12 · 一般 / 常常",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "He often goes to the library to read.",
+   "context": "",
+   "accepted": [
+    "他常常去图书馆看书。",
+    "他经常去图书馆看书。",
+    "他常去图书馆看书。"
+   ],
+   "answer": "他常常去图书馆看书。",
+   "pinyin": "Tā chángcháng qù túshūguǎn kàn shū.",
+   "es": "He often goes to the library to read.",
+   "rule": "常常 = often (frequency).",
+   "note": ""
+  },
+  {
+   "id": "L12n53",
+   "lesson": 12,
+   "point": "Usage L12 · 一般 / 常常",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "This shirt is just so-so.",
+   "context": "",
+   "accepted": [
+    "这件衬衫很一般。",
+    "这件衬衫很一般吧。",
+    "这件衬衫一般。",
+    "这件衬衫一般吧。",
+    "这件衬衫一般般。",
+    "这件衬衫一般般吧。",
+    "这件衬衫很一般般。",
+    "这件衬衫很一般般吧。"
+   ],
+   "answer": "这件衬衫很一般。",
+   "pinyin": "Zhè jiàn chènshān hěn yìbān.",
+   "es": "This shirt is just so-so.",
+   "rule": "一般 as an adjective: so-so, ordinary.",
+   "note": ""
+  },
+  {
+   "id": "L12n54",
+   "lesson": 12,
+   "point": "Usage L12 · 一般 / 常常",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "He's often ill.",
+   "context": "",
+   "options": [
+    "他一般生病。",
+    "他常常生病。"
+   ],
+   "accepted": [
+    "他常常生病。"
+   ],
+   "answer": "他常常生病。",
+   "pinyin": "Tā chángcháng shēngbìng.",
+   "es": "He's often ill.",
+   "rule": "Frequent things that aren't a chosen habit take 常常, not 一般.",
+   "note": ""
+  },
+  {
+   "id": "L12n55",
+   "lesson": 12,
+   "point": "Usage L12 · 一般 / 常常",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "从上海到圣地亚哥，"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "要坐三十个小时飞机。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "一般",
+     "hint": ""
+    }
+   ],
+   "answer": "从上海到圣地亚哥，一般要坐三十个小时飞机。",
+   "pinyin": "Cóng Shànghǎi dào Shèngdìyàgē, yìbān yào zuò sānshí ge xiǎoshí fēijī.",
+   "es": "From Shanghai to Santiago it usually takes thirty hours by plane.",
+   "rule": "一般 = usually, as a rule.",
+   "note": ""
+  },
+  {
+   "id": "L12n56",
+   "lesson": 12,
+   "point": "Usage L12 · 一般 / 常常",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "A friend asks what you think of the new textbook. Say it's nothing special.",
+   "context": "",
+   "accepted": [
+    "很一般。",
+    "很一般吧。",
+    "一般。",
+    "一般吧。",
+    "一般般。",
+    "一般般吧。",
+    "这本课本很一般。",
+    "这本课本很一般吧。",
+    "这本课本一般。",
+    "这本课本一般吧。",
+    "这本课本一般般。",
+    "这本课本一般般吧。",
+    "这本书很一般。",
+    "这本书很一般吧。",
+    "这本书一般。",
+    "这本书一般吧。",
+    "这本书一般般。",
+    "这本书一般般吧。"
+   ],
+   "answer": "很一般。",
+   "pinyin": "Hěn yìbān.",
+   "es": "It's nothing special.",
+   "rule": "一般 / 很一般 = nothing special.",
+   "note": ""
+  },
+  {
+   "id": "L12n57",
+   "lesson": 12,
+   "point": "Usage L12 · 一般 / 常常",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "What time do you usually get up?",
+   "context": "",
+   "accepted": [
+    "你一般几点起床？",
+    "您一般几点起床？"
+   ],
+   "answer": "你一般几点起床？",
+   "pinyin": "Nǐ yìbān jǐ diǎn qǐchuáng?",
+   "es": "What time do you usually get up?",
+   "rule": "一般 + verb asks about someone's habit.",
+   "note": ""
+  },
+  {
+   "id": "L12n58",
+   "lesson": 12,
+   "point": "Usage L12 · 得 děi",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I have to go now.",
+   "context": "",
+   "accepted": [
+    "我现在得走了。",
+    "我现在该走了。",
+    "我得走了。",
+    "我该走了。"
+   ],
+   "answer": "我现在得走了。",
+   "pinyin": "Wǒ děi zǒu le.",
+   "es": "I have to go now.",
+   "rule": "得 děi + verb = have to.",
+   "note": ""
+  },
+  {
+   "id": "L12n59",
+   "lesson": 12,
+   "point": "Usage L12 · 得 děi",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "It's twelve o'clock — I have to go and have lunch.",
+   "context": "",
+   "accepted": [
+    "十二点了，我得去吃午饭了。",
+    "十二点了，我得去吃饭了。",
+    "十二点了，我得吃午饭了。",
+    "十二点了，我得吃饭了。"
+   ],
+   "answer": "十二点了，我得去吃午饭了。",
+   "pinyin": "Shí'èr diǎn le, wǒ děi qù chī wǔfàn le.",
+   "es": "It's twelve o'clock — I have to go and have lunch.",
+   "rule": "得 děi + verb = have to.",
+   "note": ""
+  },
+  {
+   "id": "L12n60",
+   "lesson": 12,
+   "point": "Usage L12 · 得 děi",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "You have to write the recipient's name here.",
+   "context": "",
+   "accepted": [
+    "你得在这儿写收件人的姓名。",
+    "你得在这儿写收件人的名字。",
+    "你得在这里写收件人的姓名。",
+    "你得在这里写收件人的名字。",
+    "您得在这儿写收件人的姓名。",
+    "您得在这儿写收件人的名字。",
+    "您得在这里写收件人的姓名。",
+    "您得在这里写收件人的名字。",
+    "在这儿写收件人的姓名。",
+    "在这儿写收件人的名字。",
+    "在这里写收件人的姓名。",
+    "在这里写收件人的名字。"
+   ],
+   "answer": "你得在这儿写收件人的姓名。",
+   "pinyin": "Nǐ děi zài zhèr xiě shōujiànrén de xìngmíng.",
+   "es": "You have to write the recipient's name here.",
+   "rule": "得 děi goes before the verb phrase (and before 在 + place).",
+   "note": ""
+  },
+  {
+   "id": "L12n61",
+   "lesson": 12,
+   "point": "Usage L12 · 得 děi",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "It's raining — you have to take an umbrella.",
+   "context": "",
+   "accepted": [
+    "下雨了，你得带伞。",
+    "下雨了，你得带伞出门。",
+    "下雨了，你得带雨伞。",
+    "下雨了，你得带雨伞出门。"
+   ],
+   "answer": "下雨了，你得带伞。",
+   "pinyin": "Xià yǔ le, nǐ děi dài sǎn.",
+   "es": "It's raining — you have to take an umbrella.",
+   "rule": "得 děi + verb = have to.",
+   "note": ""
+  },
+  {
+   "id": "L12n62",
+   "lesson": 12,
+   "point": "Usage L12 · 得 děi",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct reading",
+   "prompt": "我得走了。 How is 得 read?",
+   "context": "",
+   "options": [
+    "de",
+    "děi",
+    "dé"
+   ],
+   "accepted": [
+    "děi"
+   ],
+   "answer": "děi",
+   "pinyin": "Wǒ děi zǒu le.",
+   "es": "I have to go.",
+   "rule": "得 before a verb meaning \"must\" is děi.",
+   "note": ""
+  },
+  {
+   "id": "L12n63",
+   "lesson": 12,
+   "point": "Usage L12 · 得 děi",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct reading",
+   "prompt": "他汉语说得很流利。 How is 得 read?",
+   "context": "",
+   "options": [
+    "de",
+    "děi",
+    "dé"
+   ],
+   "accepted": [
+    "de"
+   ],
+   "answer": "de",
+   "pinyin": "Tā Hànyǔ shuō de hěn liúlì.",
+   "es": "He speaks Chinese fluently.",
+   "rule": "得 after a verb, before a comment on it, is neutral-tone de.",
+   "note": ""
+  },
+  {
+   "id": "L12n64",
+   "lesson": 12,
+   "point": "Usage L12 · 得 děi",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct reading",
+   "prompt": "他考试得了A。 How is 得 read?",
+   "context": "",
+   "options": [
+    "de",
+    "děi",
+    "dé"
+   ],
+   "accepted": [
+    "dé"
+   ],
+   "answer": "dé",
+   "pinyin": "Tā kǎoshì dé le A.",
+   "es": "He got an A in the exam.",
+   "rule": "得 meaning \"to get, obtain\" is dé.",
+   "note": ""
+  },
+  {
+   "id": "L12n65",
+   "lesson": 12,
+   "point": "Usage L12 · 得 děi",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "明天有考试，我"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "复习语法。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "得",
+     "hint": "",
+     "alternatives": [
+      "要",
+      "应该",
+      "必须"
+     ]
+    }
+   ],
+   "answer": "明天有考试，我得复习语法。",
+   "pinyin": "Míngtiān yǒu kǎoshì, wǒ děi fùxí yǔfǎ.",
+   "es": "There's an exam tomorrow; I have to review the grammar.",
+   "rule": "得 děi + verb = have to.",
+   "note": ""
+  },
+  {
+   "id": "L12n66",
+   "lesson": 12,
+   "point": "Usage L12 · 得 děi",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "你得不填这张单子。",
+   "context": "",
+   "accepted": [
+    "你不用填这张单子。"
+   ],
+   "answer": "你不用填这张单子。",
+   "pinyin": "Nǐ búyòng tián zhè zhāng dānzi.",
+   "es": "You don't have to fill in this form.",
+   "rule": "得 děi is not negated with 不; \"don't have to\" is 不用.",
+   "note": ""
+  },
+  {
+   "id": "L12n67",
+   "lesson": 12,
+   "point": "Usage L12 · 称",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct reading",
+   "prompt": "称一下这个包裹 (weigh this parcel): how is 称 read?",
+   "context": "",
+   "options": [
+    "chēng",
+    "chèng",
+    "chèn"
+   ],
+   "accepted": [
+    "chēng"
+   ],
+   "answer": "chēng",
+   "pinyin": "chēng yíxià",
+   "es": "to weigh",
+   "rule": "称 chēng = to weigh / to call.",
+   "note": ""
+  },
+  {
+   "id": "L12n68",
+   "lesson": 12,
+   "point": "Usage L12 · 称",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct reading",
+   "prompt": "称心 (to one's liking): how is 称 read?",
+   "context": "",
+   "options": [
+    "chēng",
+    "chèng",
+    "chèn"
+   ],
+   "accepted": [
+    "chèn"
+   ],
+   "answer": "chèn",
+   "pinyin": "chènxīn",
+   "es": "to one's liking, satisfying",
+   "rule": "称 chèn = to suit, to fit (称心).",
+   "note": ""
+  },
+  {
+   "id": "L12n69",
+   "lesson": 12,
+   "point": "Usage L12 · 称",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct reading",
+   "prompt": "请问您怎么称呼？ How is 称 read?",
+   "context": "",
+   "options": [
+    "chēng",
+    "chèng",
+    "chèn"
+   ],
+   "accepted": [
+    "chēng"
+   ],
+   "answer": "chēng",
+   "pinyin": "Qǐngwèn nín zěnme chēnghu?",
+   "es": "May I ask how to address you?",
+   "rule": "称呼 chēnghu = to call, to address.",
+   "note": ""
+  },
+  {
+   "id": "L12n70",
+   "lesson": 12,
+   "point": "Usage L12 · 称",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct reading",
+   "prompt": "称 meaning \"a scale\" (also written 秤): how is it read?",
+   "context": "",
+   "options": [
+    "chēng",
+    "chèng",
+    "chèn"
+   ],
+   "accepted": [
+    "chèng"
+   ],
+   "answer": "chèng",
+   "pinyin": "chèng",
+   "es": "scale, balance",
+   "rule": "称 chèng (秤) = a scale.",
+   "note": ""
+  },
+  {
+   "id": "L12n71",
+   "lesson": 12,
+   "point": "Usage L12 · 称",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Could you weigh this parcel, please?",
+   "context": "",
+   "accepted": [
+    "请称一下这个包裹。",
+    "请帮我称一下这个包裹。",
+    "请你称一下这个包裹。",
+    "请你帮我称一下这个包裹。",
+    "请您称一下这个包裹。",
+    "请您帮我称一下这个包裹。",
+    "你能称一下这个包裹吗？",
+    "你能帮我称一下这个包裹吗？",
+    "你可以称一下这个包裹吗？",
+    "你可以帮我称一下这个包裹吗？",
+    "您能称一下这个包裹吗？",
+    "您能帮我称一下这个包裹吗？",
+    "您可以称一下这个包裹吗？",
+    "您可以帮我称一下这个包裹吗？"
+   ],
+   "answer": "请称一下这个包裹。",
+   "pinyin": "Qǐng nín chēng yíxià zhège bāoguǒ.",
+   "es": "Could you weigh this parcel, please?",
+   "rule": "称 chēng = to weigh.",
+   "note": ""
+  },
+  {
+   "id": "L12n72",
+   "lesson": 12,
+   "point": "Usage L12 · 称",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "May I ask how I should address you?",
+   "context": "",
+   "accepted": [
+    "请问您怎么称呼？",
+    "请问怎么称呼您？",
+    "请问怎么称呼？"
+   ],
+   "answer": "请问您怎么称呼？",
+   "pinyin": "Qǐngwèn nín zěnme chēnghu?",
+   "es": "May I ask how I should address you?",
+   "rule": "称呼 chēnghu: a polite way to ask someone's name.",
+   "note": ""
+  },
+  {
+   "id": "L12n73",
+   "lesson": 12,
+   "point": "Usage L12 · 称",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "At the market, ask the seller to weigh you a kilo of strawberries.",
+   "context": "",
+   "accepted": [
+    "我想称一公斤草莓。",
+    "我想称一公斤的草莓。",
+    "我要称一公斤草莓。",
+    "我要称一公斤的草莓。",
+    "请称一公斤草莓。",
+    "请称一公斤的草莓。",
+    "请给我称一公斤草莓。",
+    "请给我称一公斤的草莓。",
+    "请你给我称一公斤草莓。",
+    "请你给我称一公斤的草莓。",
+    "我想买称一公斤草莓。",
+    "我想买称一公斤的草莓。"
+   ],
+   "answer": "我想称一公斤草莓。",
+   "pinyin": "Wǒ xiǎng chēng yì gōngjīn cǎoméi.",
+   "es": "I'd like a kilo of strawberries, please.",
+   "rule": "称 chēng = to weigh (out).",
+   "note": ""
+  },
+  {
+   "id": "L12n74",
+   "lesson": 12,
+   "point": "Usage L12 · 称",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "营业员"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "了一下包裹，说邮费八十块。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "称",
+     "hint": ""
+    }
+   ],
+   "answer": "营业员称了一下包裹，说邮费八十块。",
+   "pinyin": "Yíngyèyuán chēng le yíxià bāoguǒ, shuō yóufèi bāshí kuài.",
+   "es": "The clerk weighed the parcel and said the postage was eighty kuai.",
+   "rule": "称 chēng = to weigh.",
+   "note": ""
+  },
+  {
+   "id": "L12n75",
+   "lesson": 12,
+   "point": "Usage L12 · 称",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Let me weigh it.",
+   "context": "",
+   "accepted": [
+    "我称一下。",
+    "我称一下吧。",
+    "我称称。",
+    "我称称吧。",
+    "我称一称。",
+    "我称一称吧。",
+    "我来称一下。",
+    "我来称一下吧。",
+    "我来称称。",
+    "我来称称吧。",
+    "我来称一称。",
+    "我来称一称吧。",
+    "让我称一下。",
+    "让我称一下吧。",
+    "让我称称。",
+    "让我称称吧。",
+    "让我称一称。",
+    "让我称一称吧。"
+   ],
+   "answer": "我称一下。",
+   "pinyin": "Wǒ chēng yíxià.",
+   "es": "Let me weigh it.",
+   "rule": "称 chēng = to weigh.",
+   "note": ""
+  },
+  {
+   "id": "L12n76",
+   "lesson": 12,
+   "point": "Usage L12 · 遍 / 次",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Please read the text through once.",
+   "context": "",
+   "accepted": [
+    "请读一遍课文。",
+    "请你读一遍课文。",
+    "请您读一遍课文。",
+    "请把课文读一遍。",
+    "请你把课文读一遍。",
+    "请您把课文读一遍。"
+   ],
+   "answer": "请读一遍课文。",
+   "pinyin": "Qǐng dú yí biàn kèwén.",
+   "es": "Please read the text through once.",
+   "rule": "遍 = one time through, from beginning to end.",
+   "note": ""
+  },
+  {
+   "id": "L12n77",
+   "lesson": 12,
+   "point": "Usage L12 · 遍 / 次",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I didn't hear clearly — please say it again.",
+   "context": "",
+   "accepted": [
+    "我没听清楚，请你再说一遍。",
+    "我没听清楚，请您再说一遍。",
+    "我没听清楚，请再说一遍。",
+    "我没听清，请你再说一遍。",
+    "我没听清，请您再说一遍。",
+    "我没听清，请再说一遍。"
+   ],
+   "answer": "我没听清楚，请你再说一遍。",
+   "pinyin": "Wǒ méi tīng qīngchu, qǐng nǐ zài shuō yí biàn.",
+   "es": "I didn't hear clearly — please say it again.",
+   "rule": "再说一遍 = say the whole thing again.",
+   "note": ""
+  },
+  {
+   "id": "L12n78",
+   "lesson": 12,
+   "point": "Usage L12 · 遍 / 次",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I've been to that post office twice.",
+   "context": "",
+   "accepted": [
+    "我去过两次那个邮局。",
+    "我去过那个邮局两次。"
+   ],
+   "answer": "我去过两次那个邮局。",
+   "pinyin": "Wǒ qù guo liǎng cì nàge yóujú.",
+   "es": "I've been to that post office twice.",
+   "rule": "次 counts occurrences (visits).",
+   "note": ""
+  },
+  {
+   "id": "L12n79",
+   "lesson": 12,
+   "point": "Usage L12 · 遍 / 次",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "I went to the bank three times today.",
+   "context": "",
+   "options": [
+    "今天我去了三遍银行。",
+    "今天我去了三次银行。"
+   ],
+   "accepted": [
+    "今天我去了三次银行。"
+   ],
+   "answer": "今天我去了三次银行。",
+   "pinyin": "Jīntiān wǒ qù le sān cì yínháng.",
+   "es": "I went to the bank three times today.",
+   "rule": "Visits are counted with 次; 遍 is for doing something from start to finish.",
+   "note": ""
+  },
+  {
+   "id": "L12n80",
+   "lesson": 12,
+   "point": "Usage L12 · 遍 / 次",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "上"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "我们一起去了邮局。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "次",
+     "hint": ""
+    }
+   ],
+   "answer": "上次我们一起去了邮局。",
+   "pinyin": "Shàng cì wǒmen yìqǐ qù le yóujú.",
+   "es": "Last time we went to the post office together.",
+   "rule": "上次 = last time; 遍 can't be used this way.",
+   "note": ""
+  },
+  {
+   "id": "L12n81",
+   "lesson": 12,
+   "point": "Usage L12 · 遍 / 次",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我去了邮局两遍。",
+   "context": "",
+   "accepted": [
+    "我去了两次邮局。",
+    "我去了邮局两次。"
+   ],
+   "answer": "我去了两次邮局。",
+   "pinyin": "Wǒ qù le liǎng cì yóujú.",
+   "es": "I went to the post office twice.",
+   "rule": "Trips are counted with 次, not 遍.",
+   "note": ""
+  },
+  {
+   "id": "L12n82",
+   "lesson": 12,
+   "point": "Usage L12 · 遍 / 次",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "遍 / 两 / 课文 / 我 / 读了",
+   "context": "I read the text through twice.",
+   "tiles": [
+    "遍",
+    "两",
+    "课文",
+    "我",
+    "读了"
+   ],
+   "accepted": [
+    "我读了两遍课文。",
+    "课文我读了两遍。"
+   ],
+   "answer": "我读了两遍课文。",
+   "pinyin": "Wǒ dú le liǎng biàn kèwén.",
+   "es": "I read the text through twice.",
+   "rule": "V + 了 + number + 遍 + object.",
+   "note": ""
+  },
+  {
+   "id": "L12n83",
+   "lesson": 12,
+   "point": "Usage L12 · 以为",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Oh, it's you — I thought it was Dawei.",
+   "context": "",
+   "accepted": [
+    "是你啊，我以为是大为呢。",
+    "是你啊，我以为是大为。",
+    "是你呀，我以为是大为呢。",
+    "是你呀，我以为是大为。",
+    "是你，我以为是大为呢。",
+    "是你，我以为是大为。"
+   ],
+   "answer": "是你啊，我以为是大为呢。",
+   "pinyin": "Shì nǐ a, wǒ yǐwéi shì Dàwéi ne.",
+   "es": "Oh, it's you — I thought it was Dawei.",
+   "rule": "以为 = thought (wrongly).",
+   "note": ""
+  },
+  {
+   "id": "L12n84",
+   "lesson": 12,
+   "point": "Usage L12 · 以为",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I thought you were Chilean!",
+   "context": "",
+   "accepted": [
+    "我以为你是智利人！",
+    "我以为你是智利人呢！"
+   ],
+   "answer": "我以为你是智利人！",
+   "pinyin": "Wǒ yǐwéi nǐ shì Zhìlìrén!",
+   "es": "I thought you were Chilean!",
+   "rule": "以为: what you believed turned out to be wrong.",
+   "note": ""
+  },
+  {
+   "id": "L12n85",
+   "lesson": 12,
+   "point": "Usage L12 · 以为",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I thought he wouldn't come, but he did.",
+   "context": "",
+   "accepted": [
+    "我以为他不会来，但是他来了。",
+    "我以为他不会来，可是他来了。",
+    "我以为他不会来，但他来了。",
+    "我以为他不会来，没想到他来了。",
+    "我以为他不会来，其实他来了。"
+   ],
+   "answer": "我以为他不会来，但是他来了。",
+   "pinyin": "Wǒ yǐwéi tā bú huì lái, dànshì tā lái le.",
+   "es": "I thought he wouldn't come, but he did.",
+   "rule": "我以为…, 但是… = I thought…, but in fact…",
+   "note": ""
+  },
+  {
+   "id": "L12n86",
+   "lesson": 12,
+   "point": "Usage L12 · 以为",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I thought the postage would be very expensive.",
+   "context": "",
+   "accepted": [
+    "我以为邮费很贵。",
+    "我以为邮费很贵呢。",
+    "我以为邮费非常贵。",
+    "我以为邮费非常贵呢。",
+    "我以为邮费特别贵。",
+    "我以为邮费特别贵呢。",
+    "我以为邮费会很贵。",
+    "我以为邮费会很贵呢。",
+    "我以为邮费会非常贵。",
+    "我以为邮费会非常贵呢。"
+   ],
+   "answer": "我以为邮费很贵。",
+   "pinyin": "Wǒ yǐwéi yóufèi hěn guì.",
+   "es": "I thought the postage would be very expensive.",
+   "rule": "以为 = thought (and it turned out not to be so).",
+   "note": ""
+  },
+  {
+   "id": "L12n87",
+   "lesson": 12,
+   "point": "Usage L12 · 以为",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "I thought you were Brazilian — sorry, you're Chilean!",
+   "context": "",
+   "options": [
+    "我觉得你是巴西人，对不起，你是智利人！",
+    "我以为你是巴西人，对不起，你是智利人！"
+   ],
+   "accepted": [
+    "我以为你是巴西人，对不起，你是智利人！"
+   ],
+   "answer": "我以为你是巴西人，对不起，你是智利人！",
+   "pinyin": "Wǒ yǐwéi nǐ shì Bāxīrén, duìbuqǐ, nǐ shì Zhìlìrén!",
+   "es": "I thought you were Brazilian — sorry, you're Chilean!",
+   "rule": "以为 for a belief that turned out wrong; 觉得 is just an opinion.",
+   "note": ""
+  },
+  {
+   "id": "L12n88",
+   "lesson": 12,
+   "point": "Usage L12 · 以为",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "你回家去了，你怎么还在这儿？"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "以为",
+     "hint": ""
+    }
+   ],
+   "answer": "我以为你回家去了，你怎么还在这儿？",
+   "pinyin": "Wǒ yǐwéi nǐ huí jiā qu le, nǐ zěnme hái zài zhèr?",
+   "es": "I thought you'd gone home — why are you still here?",
+   "rule": "以为 = thought (wrongly).",
+   "note": ""
+  },
+  {
+   "id": "L12n89",
+   "lesson": 12,
+   "point": "Usage L12 · 以为",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "You open the door expecting the courier, but it's your friend. Say: oh, it's you — I thought it was the courier.",
+   "context": "",
+   "accepted": [
+    "是你啊，我以为是快递员呢。",
+    "是你啊，我以为是快递员。",
+    "是你呀，我以为是快递员呢。",
+    "是你呀，我以为是快递员。",
+    "是你，我以为是快递员呢。",
+    "是你，我以为是快递员。"
+   ],
+   "answer": "是你啊，我以为是快递员呢。",
+   "pinyin": "Shì nǐ a, wǒ yǐwéi shì kuàidìyuán ne.",
+   "es": "Oh, it's you — I thought it was the courier.",
+   "rule": "以为 = thought (wrongly).",
+   "note": ""
+  },
+  {
+   "id": "L12n90",
+   "lesson": 12,
+   "point": "Usage L12 · 替",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Can you collect the package for me?",
+   "context": "",
+   "accepted": [
+    "你能替我收一下包裹吗？",
+    "你能替我收一下快递吗？",
+    "你能帮我收一下包裹吗？",
+    "你能帮我收一下快递吗？",
+    "你可以替我收一下包裹吗？",
+    "你可以替我收一下快递吗？",
+    "你可以帮我收一下包裹吗？",
+    "你可以帮我收一下快递吗？",
+    "你能不能替我收一下包裹？",
+    "你能不能替我收一下快递？",
+    "你能不能帮我收一下包裹？",
+    "你能不能帮我收一下快递？",
+    "你可不可以替我收一下包裹？",
+    "你可不可以替我收一下快递？",
+    "你可不可以帮我收一下包裹？",
+    "你可不可以帮我收一下快递？"
+   ],
+   "answer": "你能替我收一下包裹吗？",
+   "pinyin": "Nǐ néng tì wǒ shōu yíxià bāoguǒ ma?",
+   "es": "Can you collect the package for me?",
+   "rule": "A + 替 + B + verb = A does it for B.",
+   "note": ""
+  },
+  {
+   "id": "L12n91",
+   "lesson": 12,
+   "point": "Usage L12 · 替",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I'll fill in the form for you.",
+   "context": "",
+   "accepted": [
+    "我替你填单子吧。",
+    "我替你填这张单子吧。",
+    "我帮你填单子吧。",
+    "我帮你填这张单子吧。"
+   ],
+   "answer": "我替你填单子吧。",
+   "pinyin": "Wǒ tì nǐ tián dānzi ba.",
+   "es": "I'll fill in the form for you.",
+   "rule": "替 + person goes before the verb.",
+   "note": ""
+  },
+  {
+   "id": "L12n92",
+   "lesson": 12,
+   "point": "Usage L12 · 替",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I'm ill — please tell the teacher for me.",
+   "context": "",
+   "accepted": [
+    "我生病了，请你替我跟老师说一下。",
+    "我生病了，请你替我和老师说一下。",
+    "我生病了，请你替我对老师说一下。",
+    "我生病了，请你帮我跟老师说一下。",
+    "我生病了，请你帮我和老师说一下。",
+    "我生病了，请你帮我对老师说一下。",
+    "我生病了，请替我跟老师说一下。",
+    "我生病了，请替我和老师说一下。",
+    "我生病了，请替我对老师说一下。",
+    "我生病了，请帮我跟老师说一下。",
+    "我生病了，请帮我和老师说一下。",
+    "我生病了，请帮我对老师说一下。",
+    "我生病了，你替我跟老师说一下。",
+    "我生病了，你替我和老师说一下。",
+    "我生病了，你替我对老师说一下。",
+    "我生病了，你帮我跟老师说一下。",
+    "我生病了，你帮我和老师说一下。",
+    "我生病了，你帮我对老师说一下。"
+   ],
+   "answer": "我生病了，请你替我跟老师说一下。",
+   "pinyin": "Wǒ shēngbìng le, qǐng nǐ tì wǒ gēn lǎoshī shuō yíxià.",
+   "es": "I'm ill — please tell the teacher for me.",
+   "rule": "替 + person before the verb phrase.",
+   "note": ""
+  },
+  {
+   "id": "L12n93",
+   "lesson": 12,
+   "point": "Usage L12 · 替",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Could you go to class for me this afternoon?",
+   "context": "",
+   "accepted": [
+    "今天下午你能不能替我上课？",
+    "今天下午你能替我上课吗？",
+    "今天下午你可以替我上课吗？",
+    "你今天下午能不能替我上课？",
+    "你今天下午能替我上课吗？",
+    "你今天下午可以替我上课吗？"
+   ],
+   "answer": "今天下午你能不能替我上课？",
+   "pinyin": "Jīntiān xiàwǔ nǐ néng bu néng tì wǒ shàng kè?",
+   "es": "Could you go to class for me this afternoon?",
+   "rule": "替 = in someone's place.",
+   "note": ""
+  },
+  {
+   "id": "L12n94",
+   "lesson": 12,
+   "point": "Usage L12 · 替",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "替 / 我 / 他 / 邮局 / 去 / 了",
+   "context": "He went to the post office for me.",
+   "tiles": [
+    "替",
+    "我",
+    "他",
+    "邮局",
+    "去",
+    "了"
+   ],
+   "accepted": [
+    "他替我去邮局了。",
+    "他替我去了邮局。"
+   ],
+   "answer": "他替我去邮局了。",
+   "pinyin": "Tā tì wǒ qù yóujú le.",
+   "es": "He went to the post office for me.",
+   "rule": "Subject + 替 + person + verb.",
+   "note": ""
+  },
+  {
+   "id": "L12n95",
+   "lesson": 12,
+   "point": "Usage L12 · 替",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "你今天下午不在家吗？我"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "你收快递吧。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "替",
+     "hint": "",
+     "alternatives": [
+      "帮"
+     ]
+    }
+   ],
+   "answer": "你今天下午不在家吗？我替你收快递吧。",
+   "pinyin": "Nǐ jīntiān xiàwǔ bú zài jiā ma? Wǒ tì nǐ shōu kuàidì ba.",
+   "es": "You won't be home this afternoon? I'll take in the delivery for you.",
+   "rule": "替 + person + verb.",
+   "note": ""
+  },
+  {
+   "id": "L12n96",
+   "lesson": 12,
+   "point": "Usage L12 · 替",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我写作业替你吧。",
+   "context": "",
+   "accepted": [
+    "我替你写作业吧。",
+    "我帮你写作业吧。"
+   ],
+   "answer": "我替你写作业吧。",
+   "pinyin": "Wǒ tì nǐ xiě zuòyè ba.",
+   "es": "I'll do the homework for you.",
+   "rule": "替 + person comes before the verb, not after it.",
+   "note": ""
+  },
+  {
+   "id": "L12n97",
+   "lesson": 12,
+   "point": "Usage L12 · 替",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "Your friend is too busy to go to the bank. Offer to go for them.",
+   "context": "",
+   "accepted": [
+    "我替你去银行吧。",
+    "我替你去银行。",
+    "我替你去吧。",
+    "我替你去。",
+    "我帮你去银行吧。",
+    "我帮你去银行。",
+    "我帮你去吧。",
+    "我帮你去。"
+   ],
+   "answer": "我替你去银行吧。",
+   "pinyin": "Wǒ tì nǐ qù yínháng ba.",
+   "es": "I'll go to the bank for you.",
+   "rule": "替 + person + verb: offering to do it for them.",
+   "note": ""
+  },
+  {
+   "id": "L12n98",
+   "lesson": 12,
+   "point": "Usage L12 · 专门",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I came specially to tell you.",
+   "context": "",
+   "accepted": [
+    "我专门来告诉你。",
+    "我是专门来告诉你的。",
+    "我专门跑来告诉你。"
+   ],
+   "answer": "我专门来告诉你。",
+   "pinyin": "Wǒ zhuānmén lái gàosu nǐ.",
+   "es": "I came specially to tell you.",
+   "rule": "专门 + verb = specially, just for this.",
+   "note": ""
+  },
+  {
+   "id": "L12n99",
+   "lesson": 12,
+   "point": "Usage L12 · 专门",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "This is a postcard I bought specially for you.",
+   "context": "",
+   "accepted": [
+    "这是我专门给你买的明信片。",
+    "这是我专门为你买的明信片。"
+   ],
+   "answer": "这是我专门给你买的明信片。",
+   "pinyin": "Zhè shì wǒ zhuānmén gěi nǐ mǎi de míngxìnpiàn.",
+   "es": "This is a postcard I bought specially for you.",
+   "rule": "专门 goes before 给你 + verb.",
+   "note": ""
+  },
+  {
+   "id": "L12n100",
+   "lesson": 12,
+   "point": "Usage L12 · 专门",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Thanks for coming over specially to tell me.",
+   "context": "",
+   "accepted": [
+    "谢谢你专门跑来告诉我。",
+    "谢谢你专门来告诉我。",
+    "谢谢您专门跑来告诉我。",
+    "谢谢您专门来告诉我。"
+   ],
+   "answer": "谢谢你专门跑来告诉我。",
+   "pinyin": "Xièxie nǐ zhuānmén pǎo lái gàosu wǒ.",
+   "es": "Thanks for coming over specially to tell me.",
+   "rule": "专门 + 跑来/来 + purpose.",
+   "note": ""
+  },
+  {
+   "id": "L12n101",
+   "lesson": 12,
+   "point": "Usage L12 · 专门",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "He went to Beijing specially to study Chinese.",
+   "context": "",
+   "accepted": [
+    "他专门去北京学汉语。",
+    "他专门去北京学汉语的。",
+    "他专门去北京学习汉语。",
+    "他专门去北京学习汉语的。",
+    "他是专门去北京学汉语。",
+    "他是专门去北京学汉语的。",
+    "他是专门去北京学习汉语。",
+    "他是专门去北京学习汉语的。"
+   ],
+   "answer": "他专门去北京学汉语。",
+   "pinyin": "Tā zhuānmén qù Běijīng xué Hànyǔ.",
+   "es": "He went to Beijing specially to study Chinese.",
+   "rule": "专门 + 去 + place + purpose.",
+   "note": ""
+  },
+  {
+   "id": "L12n102",
+   "lesson": 12,
+   "point": "Usage L12 · 专门",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "专门 / 我 / 了 / 买 / 你喜欢的 / 鱼",
+   "context": "I specially bought the fish you like.",
+   "tiles": [
+    "专门",
+    "我",
+    "了",
+    "买",
+    "你喜欢的",
+    "鱼"
+   ],
+   "accepted": [
+    "我专门买了你喜欢的鱼。"
+   ],
+   "answer": "我专门买了你喜欢的鱼。",
+   "pinyin": "Wǒ zhuānmén mǎi le nǐ xǐhuan de yú.",
+   "es": "I specially bought the fish you like.",
+   "rule": "专门 comes before the verb.",
+   "note": ""
+  },
+  {
+   "id": "L12n103",
+   "lesson": 12,
+   "point": "Usage L12 · 专门",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "妈妈"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "去邮局给我寄了一个包裹。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "专门",
+     "hint": ""
+    }
+   ],
+   "answer": "妈妈专门去邮局给我寄了一个包裹。",
+   "pinyin": "Māma zhuānmén qù yóujú gěi wǒ jì le yí ge bāoguǒ.",
+   "es": "Mom went to the post office specially to send me a package.",
+   "rule": "专门 + verb = specially.",
+   "note": ""
+  },
+  {
+   "id": "L12n104",
+   "lesson": 12,
+   "point": "Usage L12 · 专门",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "他买专门了一套邮票。",
+   "context": "",
+   "accepted": [
+    "他专门买了一套邮票。"
+   ],
+   "answer": "他专门买了一套邮票。",
+   "pinyin": "Tā zhuānmén mǎi le yí tào yóupiào.",
+   "es": "He specially bought a set of stamps.",
+   "rule": "专门 is an adverb: it goes before the verb.",
+   "note": ""
+  },
+  {
+   "id": "L12n105",
+   "lesson": 12,
+   "point": "Usage L12 · 专门",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "Your friend says they \"happened to be passing by\". Ask whether they came specially.",
+   "context": "",
+   "accepted": [
+    "你是专门来的吗？",
+    "你专门来的吗？",
+    "你是不是专门来的？",
+    "你是专门来看我的吗？",
+    "你专门来看我吗？"
+   ],
+   "answer": "你是专门来的吗？",
+   "pinyin": "Nǐ shì zhuānmén lái de ma?",
+   "es": "Did you come specially?",
+   "rule": "专门 + 来 = came specially.",
+   "note": ""
+  },
+  {
+   "id": "L12n106",
+   "lesson": 12,
+   "point": "Usage L12 · 专门",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "I went to the post office specially to buy stamps.",
+   "context": "",
+   "options": [
+    "我去专门邮局买邮票。",
+    "我专门去邮局买邮票。",
+    "专门我去邮局买邮票。"
+   ],
+   "accepted": [
+    "我专门去邮局买邮票。"
+   ],
+   "answer": "我专门去邮局买邮票。",
+   "pinyin": "Wǒ zhuānmén qù yóujú mǎi yóupiào.",
+   "es": "I went to the post office specially to buy stamps.",
+   "rule": "专门 goes after the subject, right before the verb.",
+   "note": ""
+  },
+  {
+   "id": "L12n107",
+   "lesson": 12,
+   "point": "Usage L12 · 一定 / 不一定",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Your mom will definitely like such a pretty gift.",
+   "context": "",
+   "accepted": [
+    "这么漂亮的礼物，你妈妈一定喜欢。",
+    "这么漂亮的礼物，你妈妈一定会喜欢。",
+    "你妈妈一定喜欢这么漂亮的礼物。",
+    "你妈妈一定会喜欢这么漂亮的礼物。"
+   ],
+   "answer": "这么漂亮的礼物，你妈妈一定喜欢。",
+   "pinyin": "Zhème piàoliang de lǐwù, nǐ māma yídìng xǐhuan.",
+   "es": "Your mom will definitely like such a pretty gift.",
+   "rule": "一定 = surely, certainly.",
+   "note": ""
+  },
+  {
+   "id": "L12n108",
+   "lesson": 12,
+   "point": "Usage L12 · 一定 / 不一定",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I'll definitely come tomorrow.",
+   "context": "",
+   "accepted": [
+    "我明天一定来。",
+    "我明天一定会来。",
+    "我明天一定要来。",
+    "明天我一定来。",
+    "明天我一定会来。",
+    "明天我一定要来。"
+   ],
+   "answer": "我明天一定来。",
+   "pinyin": "Wǒ míngtiān yídìng lái.",
+   "es": "I'll definitely come tomorrow.",
+   "rule": "一定 + verb = without fail.",
+   "note": ""
+  },
+  {
+   "id": "L12n109",
+   "lesson": 12,
+   "point": "Usage L12 · 一定 / 不一定",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "There must be something good in this package.",
+   "context": "",
+   "accepted": [
+    "这个包裹里一定是好东西。",
+    "这个包裹里一定有好东西。"
+   ],
+   "answer": "这个包裹里一定是好东西。",
+   "pinyin": "Zhège bāoguǒ li yídìng shì hǎo dōngxi.",
+   "es": "There must be something good in this package.",
+   "rule": "一定 = must be (a confident guess).",
+   "note": ""
+  },
+  {
+   "id": "L12n110",
+   "lesson": 12,
+   "point": "Usage L12 · 一定 / 不一定",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "That film is great — you must go and see it.",
+   "context": "",
+   "accepted": [
+    "那部电影太好看了，你一定得去看看。",
+    "那部电影太好看了，你一定得去看。",
+    "那部电影太好看了，你一定要去看看。",
+    "那部电影太好看了，你一定要去看。",
+    "那部电影很好看，你一定得去看看。",
+    "那部电影很好看，你一定得去看。",
+    "那部电影很好看，你一定要去看看。",
+    "那部电影很好看，你一定要去看。",
+    "那部电影非常好看，你一定得去看看。",
+    "那部电影非常好看，你一定得去看。",
+    "那部电影非常好看，你一定要去看看。",
+    "那部电影非常好看，你一定要去看。",
+    "那部电影真好看，你一定得去看看。",
+    "那部电影真好看，你一定得去看。",
+    "那部电影真好看，你一定要去看看。",
+    "那部电影真好看，你一定要去看。"
+   ],
+   "answer": "那部电影太好看了，你一定得去看看。",
+   "pinyin": "Nà bù diànyǐng tài hǎokàn le, nǐ yídìng děi qù kànkan.",
+   "es": "That film is great — you must go and see it.",
+   "rule": "一定得 / 一定要 + verb = must, no matter what.",
+   "note": ""
+  },
+  {
+   "id": "L12n111",
+   "lesson": 12,
+   "point": "Usage L12 · 一定 / 不一定",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "You're asked if you'll send it by airmail. Say: not necessarily, you might send it by sea.",
+   "context": "",
+   "accepted": [
+    "不一定，我也可能寄海运。",
+    "不一定，我也可能海运。",
+    "不一定，我可能寄海运。",
+    "不一定，我可能海运。",
+    "不一定，也可能寄海运。",
+    "不一定，也可能海运。",
+    "不一定，可能寄海运。",
+    "不一定，可能海运。"
+   ],
+   "answer": "不一定，我也可能寄海运。",
+   "pinyin": "Bù yídìng, wǒ yě kěnéng jì hǎiyùn.",
+   "es": "Not necessarily — I might send it by sea.",
+   "rule": "不一定 = not necessarily, it depends.",
+   "note": ""
+  },
+  {
+   "id": "L12n112",
+   "lesson": 12,
+   "point": "Usage L12 · 一定 / 不一定",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "他"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "知道包裹里是什么。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "一定",
+     "hint": ""
+    }
+   ],
+   "answer": "他一定知道包裹里是什么。",
+   "pinyin": "Tā yídìng zhīdào bāoguǒ li shì shénme.",
+   "es": "He must know what's in the package.",
+   "rule": "一定 = surely, must.",
+   "note": ""
+  },
+  {
+   "id": "L12n113",
+   "lesson": 12,
+   "point": "Usage L12 · 一定 / 不一定",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "He won't necessarily come.",
+   "context": "",
+   "options": [
+    "他一定不来。",
+    "他不一定来。"
+   ],
+   "accepted": [
+    "他不一定来。"
+   ],
+   "answer": "他不一定来。",
+   "pinyin": "Tā bù yídìng lái.",
+   "es": "He won't necessarily come.",
+   "rule": "不一定 = not necessarily; 一定不 = definitely not.",
+   "note": ""
+  },
+  {
+   "id": "L12n114",
+   "lesson": 12,
+   "point": "Usage L12 · Suffix 员",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "My father is a civil servant.",
+   "context": "",
+   "accepted": [
+    "我爸爸是公务员。",
+    "我的爸爸是公务员。"
+   ],
+   "answer": "我爸爸是公务员。",
+   "pinyin": "Wǒ bàba shì gōngwùyuán.",
+   "es": "My father is a civil servant.",
+   "rule": "公务 (public affairs) + 员 = civil servant.",
+   "note": ""
+  },
+  {
+   "id": "L12n115",
+   "lesson": 12,
+   "point": "Usage L12 · Suffix 员",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "The courier is here.",
+   "context": "",
+   "accepted": [
+    "快递员来了。",
+    "快递员到了。"
+   ],
+   "answer": "快递员来了。",
+   "pinyin": "Kuàidìyuán lái le.",
+   "es": "The courier is here.",
+   "rule": "快递 (express delivery) + 员 = courier.",
+   "note": ""
+  },
+  {
+   "id": "L12n116",
+   "lesson": 12,
+   "point": "Usage L12 · Suffix 员",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Waiter, could I have the menu, please?",
+   "context": "",
+   "accepted": [
+    "服务员，请给我菜单。",
+    "服务员，请给我菜单好吗。",
+    "服务员，请给我一张菜单。",
+    "服务员，请给我一张菜单好吗。",
+    "服务员，给我菜单。",
+    "服务员，给我菜单好吗。",
+    "服务员，给我一张菜单。",
+    "服务员，给我一张菜单好吗。"
+   ],
+   "answer": "服务员，请给我菜单。",
+   "pinyin": "Fúwùyuán, qǐng gěi wǒ yì zhāng càidān.",
+   "es": "Waiter, could I have the menu, please?",
+   "rule": "服务 (service) + 员 = waiter.",
+   "note": ""
+  },
+  {
+   "id": "L12n117",
+   "lesson": 12,
+   "point": "Usage L12 · Suffix 员",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "You can ask the clerk at window 3.",
+   "context": "",
+   "accepted": [
+    "你可以问三号窗口的营业员。",
+    "你可以问一下三号窗口的营业员。"
+   ],
+   "answer": "你可以问三号窗口的营业员。",
+   "pinyin": "Nǐ kěyǐ wèn sān hào chuāngkǒu de yíngyèyuán.",
+   "es": "You can ask the clerk at window 3.",
+   "rule": "营业 (business) + 员 = clerk, shop assistant.",
+   "note": ""
+  },
+  {
+   "id": "L12n118",
+   "lesson": 12,
+   "point": "Usage L12 · Suffix 员",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "She's an athlete.",
+   "context": "",
+   "accepted": [
+    "她是运动员。",
+    "她是一个运动员。",
+    "她是一位运动员。"
+   ],
+   "answer": "她是运动员。",
+   "pinyin": "Tā shì yùndòngyuán.",
+   "es": "She's an athlete.",
+   "rule": "运动 (sport) + 员 = athlete.",
+   "note": ""
+  },
+  {
+   "id": "L12n119",
+   "lesson": 12,
+   "point": "Usage L12 · Suffix 员",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "邮递"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "每天上午来送信。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "员",
+     "hint": ""
+    }
+   ],
+   "answer": "邮递员每天上午来送信。",
+   "pinyin": "Yóudìyuán měitiān shàngwǔ lái sòng xìn.",
+   "es": "The postman comes every morning to deliver the mail.",
+   "rule": "邮递 (deliver mail) + 员 = postman.",
+   "note": ""
+  },
+  {
+   "id": "L12n120",
+   "lesson": 12,
+   "point": "Usage L12 · Suffix 员",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct word",
+   "prompt": "Which word means \"cashier\"?",
+   "context": "",
+   "options": [
+    "收银员",
+    "营业员",
+    "服务员"
+   ],
+   "accepted": [
+    "收银员"
+   ],
+   "answer": "收银员",
+   "pinyin": "shōuyínyuán",
+   "es": "cashier",
+   "rule": "收银 (take in money) + 员 = cashier.",
+   "note": ""
+  },
+  {
+   "id": "L12n121",
+   "lesson": 12,
+   "point": "Usage L12 · Suffix 员",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "You're at a restaurant and want to call the waiter over.",
+   "context": "",
+   "accepted": [
+    "服务员！",
+    "服务员，你好！"
+   ],
+   "answer": "服务员！",
+   "pinyin": "Fúwùyuán!",
+   "es": "Waiter!",
+   "rule": "服务员 is how you call a waiter.",
+   "note": ""
+  },
+  {
+   "id": "L12n122",
+   "lesson": 12,
+   "point": "Usage L12 · Suffix 员",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "She's the shop assistant here.",
+   "context": "",
+   "accepted": [
+    "她是这儿的营业员。",
+    "她是这里的营业员。"
+   ],
+   "answer": "她是这儿的营业员。",
+   "pinyin": "Tā shì zhèr de yíngyèyuán.",
+   "es": "She's the shop assistant here.",
+   "rule": "营业员 = shop assistant / counter clerk.",
+   "note": ""
   }
  ]
 }

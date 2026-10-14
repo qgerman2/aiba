@@ -4,18 +4,18 @@ Reference for the grammar exercises in the **Exercises** tab (`src/exercises.tsx
 `src/exercises.json`, explanations in `src/grammar.json`). Use it when writing new exercises
 so they keep the current difficulty level.
 
-The deck has 379 exercises over NPCR lessons 1–14. **"Say it in Chinese" is the type to favour**:
+The deck has 471 exercises over NPCR lessons 1–14. **"Say it in Chinese" is the type to favour**:
 it is the most challenging and the most rewarding (see below).
 
 | Type | Instruction shown | Mode | Count | The learner… |
 |---|---|---|---|---|
-| **Translate** | **Say it in Chinese** | `text` | 107 | **types the whole Chinese sentence for an English one** |
-| Situation | What would you say? | `text` | 18 | says what fits a described situation |
-| Fill in | Complete the sentence | `cloze` | 117 | types the missing word(s) in a Chinese sentence |
+| **Translate** | **Say it in Chinese** | `text` | 153 | **types the whole Chinese sentence for an English one** |
+| Situation | What would you say? | `text` | 26 | says what fits a described situation |
+| Fill in | Complete the sentence | `cloze` | 128 | types the missing word(s) in a Chinese sentence |
 | Transform | Turn it into a question / Make it negative / … | `text` | 28 | changes a Chinese sentence's form |
-| Correct | The sentence has a mistake. Correct it. | `text` | 56 | rewrites a Chinese sentence that has one mistake |
-| Order | Put the words in order | `tiles` | 28 | taps word tiles to build the sentence |
-| Choose | Choose the correct sentence / reading | `choice` / `text` | 19 | picks (or writes) the right option of a contrast |
+| Correct | The sentence has a mistake. Correct it. | `text` | 63 | rewrites a Chinese sentence that has one mistake |
+| Order | Put the words in order | `tiles` | 34 | taps word tiles to build the sentence |
+| Choose | Choose the correct sentence / reading / word | `choice` / `text` | 33 | picks (or writes) the right option of a contrast |
 | Read | Read aloud (pinyin) | `reveal` | 5 | reads a word with several readings, then self-grades |
 | Question | Answer | `reveal` | 1 | answers a meaning question, then self-grades |
 
@@ -27,7 +27,7 @@ to lean on. That is exactly what speaking and writing require, so these are the 
 most useful exercises. Every other type is a step towards them: Fill in, Order and Choose train
 recognition and single decisions; Transform and Correct train one change at a time.
 
-Today they are a bit under a third of the deck (109 of 379, counting the two Choose items that
+Today they are about a third of the deck (155 of 471, counting the two Choose items that
 use the same instruction). When adding exercises, give them priority:
 
 - aim for about **40%** of each lesson to be "Say it in Chinese";
