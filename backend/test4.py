@@ -45,6 +45,9 @@ DEFAULT_DB_DSN = "postgresql://myuser:mypass@localhost:5432/postgres"
 ASR_MODEL = "Qwen/Qwen3-ASR-0.6B"
 ALIGNER_MODEL = "Qwen/Qwen3-ForcedAligner-0.6B"
 OLLAMA_MODEL = "qwen3:4b-instruct"
+PHRASE_PUNCTUATION = "。，？！；"
+PHRASE_TARGET_CHARS = 30
+PHRASE_MAX_CHARS = 45
 LONG_AUDIO_SECONDS = 180
 
 
@@ -310,7 +313,7 @@ def write_chunks_manifest(chunks, output_dir, base_name):
 
 
 def split_with_ollama(text, model=OLLAMA_MODEL):
-    prompt = f"""Split the following Chinese text into natural phrases. Each phrase should be about 30 characters long. Only split at punctuation marks （。，）. Do not add, remove, or change any characters. Output one phrase per line. You must include every single character from the input.
+    prompt = f"""Split the following Chinese text into natural phrases. Each phrase should be about 30 characters long. Only split at punctuation marks （。，？！；）. Do not add, remove, or change any characters. Output one phrase per line. You must include every single character from the input.
 
 Text:
 {text}
@@ -339,9 +342,27 @@ def parse_phrases(output):
     return cleaned
 
 
-def split_with_regex(text):
-    parts = re.split(r"(?<=[。，])", text)
-    return [p.strip() for p in parts if p.strip()]
+def split_with_regex(text, target_chars=PHRASE_TARGET_CHARS):
+    parts = [p.strip() for p in re.split(f"(?<=[{PHRASE_PUNCTUATION}])", text) if p.strip()]
+    phrases = []
+    current = ""
+    for part in parts:
+        if current and len(current) + len(part) > target_chars:
+            phrases.append(current)
+            current = ""
+        current += part
+    if current:
+        phrases.append(current)
+    return phrases
+
+
+def phrases_split_cleanly(phrases, max_chars=PHRASE_MAX_CHARS):
+    for index, phrase in enumerate(phrases):
+        if index < len(phrases) - 1 and phrase[-1] not in PHRASE_PUNCTUATION:
+            return False
+        if len(phrase) > max_chars and re.search(f"[{PHRASE_PUNCTUATION}].", phrase):
+            return False
+    return True
 
 
 def split_text_for_phrase_model(text, max_chars):
@@ -389,6 +410,9 @@ def split_phrases(text, max_chars):
 
         if "".join(segment_phrases) != segment:
             log(f"WARNING: Ollama output incomplete for segment {index + 1}. Falling back to regex.")
+            segment_phrases = split_with_regex(segment)
+        elif not phrases_split_cleanly(segment_phrases):
+            log(f"WARNING: Ollama split segment {index + 1} mid-clause or too long. Falling back to regex.")
             segment_phrases = split_with_regex(segment)
 
         phrases.extend(segment_phrases)
@@ -778,7 +802,7 @@ def run_pipeline(args):
             ASR_MODEL,
             dtype=torch.bfloat16,
             device_map="cuda:0",
-            max_new_tokens=256,
+            max_new_tokens=1024,
         )
         try:
             transcript_parts = []
