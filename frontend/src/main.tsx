@@ -267,7 +267,7 @@ type CachedPlayerEntry = {
 };
 
 const apiBaseUrl =
-  import.meta.env.VITE_API_BASE_URL ?? "https://backend.java-kokanue.ts.net:443";
+  import.meta.env.VITE_API_BASE_URL ?? "https://aiba.taila23a65.ts.net";
 const githubRepoUrl = "https://github.com/qgerman2/aiba";
 const playerCacheKey = "aiba.playerCache.v1";
 const playerSettingsKey = "aiba.playerSettings.v1";
