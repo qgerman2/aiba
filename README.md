@@ -117,9 +117,3 @@ npm run export:static   # pull fresh data from Postgres
 npm run deploy:docs     # build and copy into docs/
 ```
 
-Without Node on the host, run the build with Docker instead of `npm run deploy:docs`:
-
-```bash
-docker run --rm --user "$(id -u):$(id -g)" -e HOME=/tmp -v "$PWD/..":/repo -w /repo/frontend \
-  node:24-bookworm-slim sh -c "npm ci && npm run deploy:docs"
-```
