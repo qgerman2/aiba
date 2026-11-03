@@ -7551,6 +7551,1461 @@
    ]
   },
   {
+   "id": "L13n001",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "请把学生证放在桌子上。",
+   "pinyin": "Qǐng bǎ xuéshēngzhèng fàng zài zhuōzi shàng.",
+   "es": "Please put your student ID on the table.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "Please put your student ID on the table.",
+   "context": "",
+   "accepted": [
+    "请把学生证放在桌子上。",
+    "请你把学生证放在桌子上。",
+    "请您把学生证放在桌子上。",
+    "请把学生证放到桌子上。",
+    "请你把学生证放到桌子上。",
+    "请您把学生证放到桌子上。",
+    "请把你的学生证放在桌子上。",
+    "请把您的学生证放在桌子上。",
+    "请把你的学生证放到桌子上。",
+    "请把您的学生证放到桌子上。"
+   ]
+  },
+  {
+   "id": "L13n002",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "我昨天把护照送到大使馆了。",
+   "pinyin": "Wǒ zuótiān bǎ hùzhào sòng dào dàshǐguǎn le.",
+   "es": "I took my passport to the embassy yesterday.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "I took my passport to the embassy yesterday.",
+   "context": "",
+   "accepted": [
+    "我昨天把护照送到大使馆了。",
+    "昨天我把护照送到大使馆了。",
+    "我昨天把护照带到大使馆了。",
+    "昨天我把护照带到大使馆了。",
+    "我昨天把护照送到了大使馆。",
+    "昨天我把护照送到了大使馆。",
+    "我昨天把护照带到了大使馆。",
+    "昨天我把护照带到了大使馆。"
+   ]
+  },
+  {
+   "id": "L13n003",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "你把我的护照放在哪儿了？",
+   "pinyin": "Nǐ bǎ wǒ de hùzhào fàng zài nǎr le?",
+   "es": "Where did you put my passport?",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "Where did you put my passport?",
+   "context": "",
+   "accepted": [
+    "你把我的护照放在哪儿了？",
+    "你把我的护照放在哪里了？",
+    "你把我的护照放哪儿了？",
+    "你把我的护照放哪里了？",
+    "你把我的护照放到哪儿了？",
+    "你把我的护照放到哪里了？",
+    "我的护照你放在哪儿了？",
+    "我的护照你放在哪里了？"
+   ]
+  },
+  {
+   "id": "L13n004",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "我还没把照片寄给朋友。",
+   "pinyin": "Wǒ hái méi bǎ zhàopiàn jì gěi péngyou.",
+   "es": "I haven't sent the photo to my friend yet.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "I haven't sent the photo to my friend yet.",
+   "context": "",
+   "accepted": [
+    "我还没把照片寄给朋友。",
+    "我还没有把照片寄给朋友。",
+    "我还没把照片寄给我的朋友。",
+    "我还没有把照片寄给我的朋友。",
+    "我还没给朋友寄照片。",
+    "我还没有给朋友寄照片。",
+    "我还没把照片寄给朋友呢。",
+    "我还没有把照片寄给朋友呢。"
+   ]
+  },
+  {
+   "id": "L13n005",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "你把礼物送给谁了？",
+   "pinyin": "Nǐ bǎ lǐwù sòng gěi shéi le?",
+   "es": "Who did you give the gift to?",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "Who did you give the gift to?",
+   "context": "",
+   "accepted": [
+    "你把礼物送给谁了？",
+    "你把礼物送给了谁？",
+    "你把礼物给谁了？",
+    "你把礼物给了谁？",
+    "你送给谁礼物了？",
+    "你把礼物送给谁啦？"
+   ]
+  },
+  {
+   "id": "L13n006",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "请把手机卡装在手机上。",
+   "pinyin": "Qǐng bǎ shǒujīkǎ zhuāng zài shǒujī shàng.",
+   "es": "Please install the SIM card in your phone.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "Please install the SIM card in your phone.",
+   "context": "",
+   "accepted": [
+    "请把手机卡装在手机上。",
+    "请把手机卡装到手机上。",
+    "请把手机卡装进手机里。",
+    "请把手机卡装在手机里。",
+    "请你把手机卡装在手机上。",
+    "请您把手机卡装在手机上。",
+    "请把手机卡装到手机里。"
+   ]
+  },
+  {
+   "id": "L13n007",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "别把护照放在这儿。",
+   "pinyin": "Bié bǎ hùzhào fàng zài zhèr.",
+   "es": "Don't leave your passport here.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "Don't leave your passport here.",
+   "context": "",
+   "accepted": [
+    "别把护照放在这儿。",
+    "不要把护照放在这儿。",
+    "别把护照放在这里。",
+    "不要把护照放在这里。",
+    "别把你的护照放在这儿。",
+    "不要把你的护照放在这里。",
+    "别把护照留在这儿。",
+    "不要把护照留在这里。",
+    "别把护照留在这里。",
+    "不要把护照留在这儿。"
+   ]
+  },
+  {
+   "id": "L13n008",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "你把作业交给老师了吗？",
+   "pinyin": "Nǐ bǎ zuòyè jiāo gěi lǎoshī le ma?",
+   "es": "Have you handed in your homework to the teacher?",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "Have you handed in your homework to the teacher?",
+   "context": "",
+   "accepted": [
+    "你把作业交给老师了吗？",
+    "你把作业交给老师了没有？",
+    "你有没有把作业交给老师？",
+    "你给老师交作业了吗？",
+    "你把作业交给老师没有？",
+    "你把作业交给了老师吗？",
+    "你把作业交给老师了没？"
+   ]
+  },
+  {
+   "id": "L13n009",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "我把火车票放在家里了。",
+   "pinyin": "Wǒ bǎ huǒchēpiào fàng zài jiā li le.",
+   "es": "I left the train ticket at home.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "I left the train ticket at home.",
+   "context": "",
+   "accepted": [
+    "我把火车票放在家里了。",
+    "我把火车票留在家里了。",
+    "我把火车票忘在家里了。",
+    "我把火车票落在家里了。",
+    "我把火车票放家里了。"
+   ]
+  },
+  {
+   "id": "L13n010",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "我今天得把这本书还给你。",
+   "pinyin": "Wǒ jīntiān děi bǎ zhè běn shū huán gěi nǐ.",
+   "es": "I must give this book back to you today.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "I must give this book back to you today.",
+   "context": "",
+   "accepted": [
+    "我今天得把这本书还给你。",
+    "今天我得把这本书还给你。",
+    "我今天必须把这本书还给你。",
+    "今天我必须把这本书还给你。",
+    "我今天一定要把这本书还给你。",
+    "今天我一定要把这本书还给你。",
+    "我今天得还给你这本书。"
+   ]
+  },
+  {
+   "id": "L13n011",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "我把作业做完了。",
+   "pinyin": "Wǒ bǎ zuòyè zuò wán le.",
+   "es": "I've finished my homework.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "I've finished my homework.",
+   "context": "",
+   "accepted": [
+    "我把作业做完了。",
+    "我做完作业了。",
+    "我的作业做完了。",
+    "我已经把作业做完了。",
+    "我已经做完作业了。",
+    "我作业做完了。",
+    "我作业已经做完了。",
+    "我已经完成作业了。",
+    "我已经完成了作业。",
+    "我做完了作业。",
+    "我已经做完了作业。"
+   ]
+  },
+  {
+   "id": "L13n012",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "请把手机号写在这儿。",
+   "pinyin": "Qǐng bǎ shǒujīhào xiě zài zhèr.",
+   "es": "Please write your mobile number here.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "Please write your mobile number here.",
+   "context": "",
+   "accepted": [
+    "请把手机号写在这儿。",
+    "请把手机号写在这里。",
+    "请您把手机号写在这儿。",
+    "请你把手机号写在这儿。",
+    "请把手机号码写在这里。",
+    "请把手机号码写在这儿。",
+    "请把你的手机号写在这儿。",
+    "请把您的手机号写在这里。"
+   ]
+  },
+  {
+   "id": "L13n013",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Transform",
+   "mode": "text",
+   "instruction": "Make it negative",
+   "answer": "他没把车停在学校旁边。",
+   "pinyin": "Tā méi bǎ chē tíng zài xuéxiào pángbiān.",
+   "es": "He didn't park the car beside the school.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "他把车停在学校旁边了。",
+   "context": "",
+   "accepted": [
+    "他没把车停在学校旁边。",
+    "他没有把车停在学校旁边。"
+   ]
+  },
+  {
+   "id": "L13n014",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Transform",
+   "mode": "text",
+   "instruction": "Turn it into a question",
+   "answer": "你把学生证交给老师了吗？",
+   "pinyin": "Nǐ bǎ xuéshēngzhèng jiāo gěi lǎoshī le ma?",
+   "es": "Have you handed your student ID to the teacher?",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "你把学生证交给老师了。",
+   "context": "",
+   "accepted": [
+    "你把学生证交给老师了吗？",
+    "你把学生证交给老师了没有？",
+    "你有没有把学生证交给老师？",
+    "你把学生证交给老师没有？"
+   ]
+  },
+  {
+   "id": "L13n015",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Transform",
+   "mode": "text",
+   "instruction": "Make it negative",
+   "answer": "我没把礼物带到朋友家。",
+   "pinyin": "Wǒ méi bǎ lǐwù dài dào péngyou jiā.",
+   "es": "I didn't take the gift to my friend's home.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "我把礼物带到朋友家了。",
+   "context": "",
+   "accepted": [
+    "我没把礼物带到朋友家。",
+    "我没有把礼物带到朋友家。"
+   ]
+  },
+  {
+   "id": "L13n016",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Transform",
+   "mode": "text",
+   "instruction": "Make the request more polite",
+   "answer": "请把包裹送到办公室。",
+   "pinyin": "Qǐng bǎ bāoguǒ sòng dào bàngōngshì.",
+   "es": "Please take the package to the office.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "把包裹送到办公室。",
+   "context": "",
+   "accepted": [
+    "请把包裹送到办公室。",
+    "请你把包裹送到办公室。",
+    "请您把包裹送到办公室。",
+    "麻烦你把包裹送到办公室。",
+    "请把包裹送到办公室吧。",
+    "把包裹送到办公室吧。"
+   ]
+  },
+  {
+   "id": "L13n017",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "answer": "他没有把学生证带来。",
+   "pinyin": "Tā méiyǒu bǎ xuéshēngzhèng dài lái.",
+   "es": "He didn't bring his student ID.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "他把学生证没有带来。",
+   "context": "",
+   "accepted": [
+    "他没有把学生证带来。",
+    "他没把学生证带来。"
+   ]
+  },
+  {
+   "id": "L13n018",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "answer": "你可以把卡装在手机上。",
+   "pinyin": "Nǐ kěyǐ bǎ kǎ zhuāng zài shǒujī shàng.",
+   "es": "You can install the card in your phone.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "你把可以卡装在手机上。",
+   "context": "",
+   "accepted": [
+    "你可以把卡装在手机上。"
+   ]
+  },
+  {
+   "id": "L13n019",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "answer": "她把护照交给营业员了。",
+   "pinyin": "Tā bǎ hùzhào jiāo gěi yíngyèyuán le.",
+   "es": "She handed her passport to the shop assistant.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "她把护照交在营业员了。",
+   "context": "",
+   "accepted": [
+    "她把护照交给营业员了。",
+    "她把护照交给了营业员。"
+   ]
+  },
+  {
+   "id": "L13n020",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "answer": "我们要把这些书还给老师。",
+   "pinyin": "Wǒmen yào bǎ zhèxiē shū huán gěi lǎoshī.",
+   "es": "We need to return these books to the teacher.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "我们把要这些书还给老师。",
+   "context": "",
+   "accepted": [
+    "我们要把这些书还给老师。"
+   ]
+  },
+  {
+   "id": "L13n021",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "answer": "请你把名字写在这儿。",
+   "pinyin": "Qǐng nǐ bǎ míngzi xiě zài zhèr.",
+   "es": "Please write your name here.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "segments": [
+    {
+     "text": "请你把名字写"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "这儿。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "在",
+     "hint": ""
+    }
+   ]
+  },
+  {
+   "id": "L13n022",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "answer": "他把钱还给我了。",
+   "pinyin": "Tā bǎ qián huán gěi wǒ le.",
+   "es": "He gave me my money back.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "segments": [
+    {
+     "text": "他把钱还"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "我了。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "给",
+     "hint": ""
+    }
+   ]
+  },
+  {
+   "id": "L13n023",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "answer": "他把帽子放到箱子里了。",
+   "pinyin": "Tā bǎ màozi fàng dào xiāngzi li le.",
+   "es": "He put the hat in the suitcase.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "把 / 箱子里 / 他 / 了 / 放到 / 帽子",
+   "context": "He put the hat in the suitcase.",
+   "accepted": [
+    "他把帽子放到箱子里了。",
+    "他把帽子放到了箱子里。"
+   ],
+   "tiles": [
+    "把",
+    "箱子里",
+    "他",
+    "了",
+    "放到",
+    "帽子"
+   ]
+  },
+  {
+   "id": "L13n024",
+   "lesson": 13,
+   "point": "“把”字句 · 把 sentences (inferred)",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "answer": "我把明信片寄到上海了。",
+   "pinyin": "Wǒ bǎ míngxìnpiàn jì dào Shànghǎi le.",
+   "es": "I mailed the postcard to Shanghai.",
+   "rule": "Put the known object after 把, then say where it ends up or who receives it; negatives and modal verbs come before 把.",
+   "note": "",
+   "prompt": "明信片 / 上海 / 我 / 到 / 了 / 把 / 寄",
+   "context": "I mailed the postcard to Shanghai.",
+   "accepted": [
+    "我把明信片寄到上海了。",
+    "我把明信片寄到了上海。"
+   ],
+   "tiles": [
+    "明信片",
+    "上海",
+    "我",
+    "到",
+    "了",
+    "把",
+    "寄"
+   ]
+  },
+  {
+   "id": "L13n025",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "我昨晚十点才回家。",
+   "pinyin": "Wǒ zuówǎn shí diǎn cái huí jiā.",
+   "es": "I didn't get home until ten last night.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "prompt": "I didn't get home until ten last night.",
+   "context": "",
+   "accepted": [
+    "我昨晚十点才回家。",
+    "我昨天晚上十点才回家。",
+    "昨天晚上我十点才回家。",
+    "昨晚我十点才回家。",
+    "我昨晚十点才到家。",
+    "我昨天晚上十点才到家。",
+    "昨天晚上我十点才到家。",
+    "昨晚我十点才到家。"
+   ]
+  },
+  {
+   "id": "L13n026",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "她七点就到学校了。",
+   "pinyin": "Tā qī diǎn jiù dào xuéxiào le.",
+   "es": "She got to school as early as seven.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "prompt": "She got to school as early as seven.",
+   "context": "",
+   "accepted": [
+    "她七点就到学校了。",
+    "她七点就到了学校。",
+    "她七点就已经到学校了。"
+   ]
+  },
+  {
+   "id": "L13n027",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "我等了一个小时他才来。",
+   "pinyin": "Wǒ děng le yí ge xiǎoshí tā cái lái.",
+   "es": "He didn't come until I had waited for an hour.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "prompt": "He didn't come until I had waited for an hour.",
+   "context": "",
+   "accepted": [
+    "我等了一个小时他才来。",
+    "我等了一个小时，他才来。",
+    "我等了他一个小时他才来。",
+    "我等了一个小时他才到。",
+    "我等了一个小时他才来了。"
+   ]
+  },
+  {
+   "id": "L13n028",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "我二十分钟就到了。",
+   "pinyin": "Wǒ èrshí fēnzhōng jiù dào le.",
+   "es": "I got there in just twenty minutes.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "prompt": "I got there in just twenty minutes.",
+   "context": "",
+   "accepted": [
+    "我二十分钟就到了。",
+    "我只用了二十分钟就到了。",
+    "我只用二十分钟就到了。",
+    "我用了二十分钟就到了。",
+    "我二十分钟就到那儿了。",
+    "我二十分钟就到那里了。"
+   ]
+  },
+  {
+   "id": "L13n029",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "才来了三个人。",
+   "pinyin": "Cái lái le sān ge rén.",
+   "es": "Only three people came.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "prompt": "Only three people came.",
+   "context": "",
+   "accepted": [
+    "才来了三个人。",
+    "只来了三个人。",
+    "来了才三个人。",
+    "来的人才三个。",
+    "只有三个人来了。",
+    "只有三个人来。",
+    "才来三个人。",
+    "就来了三个人。"
+   ]
+  },
+  {
+   "id": "L13n030",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "三个人就够了。",
+   "pinyin": "Sān ge rén jiù gòu le.",
+   "es": "Three people are enough.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "prompt": "Three people are enough.",
+   "context": "",
+   "accepted": [
+    "三个人就够了。",
+    "有三个人就够了。",
+    "三个人就够。",
+    "三个人够了。",
+    "三个人就可以了。",
+    "三个人就行了。",
+    "有三个人就行了。",
+    "只要三个人就够了。"
+   ]
+  },
+  {
+   "id": "L13n031",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "这本书我看了三遍才看懂。",
+   "pinyin": "Zhè běn shū wǒ kàn le sān biàn cái kàn dǒng.",
+   "es": "I didn't understand this book until I had read it three times.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "prompt": "I didn't understand this book until I had read it three times.",
+   "context": "",
+   "accepted": [
+    "这本书我看了三遍才看懂。",
+    "我看了三遍这本书才看懂。",
+    "我把这本书看了三遍才看懂。",
+    "这本书我读了三遍才读懂。",
+    "这本书我读了三遍才看懂。",
+    "我读了三遍这本书才读懂。",
+    "这本书我看了三遍才看懂了。"
+   ]
+  },
+  {
+   "id": "L13n032",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "我昨天才看了十页。",
+   "pinyin": "Wǒ zuótiān cái kàn le shí yè.",
+   "es": "I only read ten pages yesterday.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "prompt": "I only read ten pages yesterday.",
+   "context": "",
+   "accepted": [
+    "我昨天才看了十页。",
+    "昨天我才看了十页。",
+    "我昨天只看了十页。",
+    "昨天我只看了十页。",
+    "我昨天才读了十页。",
+    "昨天我才读了十页。",
+    "我昨天只读了十页。",
+    "昨天我只读了十页。"
+   ]
+  },
+  {
+   "id": "L13n033",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Transform",
+   "mode": "text",
+   "instruction": "Show that nine is later than expected",
+   "answer": "他九点才到。",
+   "pinyin": "Tā jiǔ diǎn cái dào.",
+   "es": "He won't arrive until nine.",
+   "rule": "才 goes before the verb to present an arrival time as late.",
+   "note": "",
+   "prompt": "他九点到。",
+   "context": "",
+   "accepted": [
+    "他九点才到。"
+   ]
+  },
+  {
+   "id": "L13n034",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Transform",
+   "mode": "text",
+   "instruction": "Show that five minutes was quicker than expected",
+   "answer": "我五分钟就到了。",
+   "pinyin": "Wǒ wǔ fēnzhōng jiù dào le.",
+   "es": "I got there in just five minutes.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "prompt": "我五分钟到了。",
+   "context": "",
+   "accepted": [
+    "我五分钟就到了。"
+   ]
+  },
+  {
+   "id": "L13n035",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "answer": "他昨天才把护照还给我。",
+   "pinyin": "Tā zuótiān cái bǎ hùzhào huán gěi wǒ.",
+   "es": "He didn't return my passport until yesterday.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "prompt": "他才昨天把护照还给我。",
+   "context": "",
+   "accepted": [
+    "他昨天才把护照还给我。",
+    "昨天他才把护照还给我。"
+   ]
+  },
+  {
+   "id": "L13n036",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "answer": "我六点就到学校了。",
+   "pinyin": "Wǒ liù diǎn jiù dào xuéxiào le.",
+   "es": "I got to school as early as six.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "prompt": "我就六点到学校了。",
+   "context": "",
+   "accepted": [
+    "我六点就到学校了。",
+    "我六点就到了学校。"
+   ]
+  },
+  {
+   "id": "L13n037",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "answer": "他十一点才到。",
+   "pinyin": "Tā shíyī diǎn cái dào.",
+   "es": "He didn't arrive until eleven.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "segments": [
+    {
+     "text": "（He arrived much later than we expected）他十一点"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "到。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "才",
+     "hint": ""
+    }
+   ]
+  },
+  {
+   "id": "L13n038",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "answer": "三个人就够了。",
+   "pinyin": "Sān ge rén jiù gòu le.",
+   "es": "Just three people are enough.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "segments": [
+    {
+     "text": "（We thought we would need five people）三个人"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "够了。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "就",
+     "hint": ""
+    }
+   ]
+  },
+  {
+   "id": "L13n039",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "answer": "今天才来了两个人。",
+   "pinyin": "Jīntiān cái lái le liǎng ge rén.",
+   "es": "Only two people came today.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "segments": [
+    {
+     "text": "（We expected ten people）今天"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "来了两个人。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "才",
+     "hint": ""
+    }
+   ]
+  },
+  {
+   "id": "L13n040",
+   "lesson": 13,
+   "point": "才 / 就 · Late / early (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "answer": "她今天五点就起床了。",
+   "pinyin": "Tā jīntiān wǔ diǎn jiù qǐchuáng le.",
+   "es": "She got up as early as five today.",
+   "rule": "才 presents a time as late or an amount as small; 就 presents a time as early or an amount as already sufficient.",
+   "note": "",
+   "segments": [
+    {
+     "text": "（She got up much earlier than usual）她今天五点"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "起床了。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "就",
+     "hint": ""
+    }
+   ]
+  },
+  {
+   "id": "L13n041",
+   "lesson": 13,
+   "point": "时量补语 · Complement of duration (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "我昨天看了一个小时电视。",
+   "pinyin": "Wǒ zuótiān kàn le yí ge xiǎoshí diànshì.",
+   "es": "I watched TV for an hour yesterday.",
+   "rule": "A duration follows the verb; with an object, repeat the verb or place the duration between the verb and the object.",
+   "note": "",
+   "prompt": "I watched TV for an hour yesterday.",
+   "context": "",
+   "accepted": [
+    "我昨天看了一个小时电视。",
+    "昨天我看了一个小时电视。",
+    "我昨天看了一个小时的电视。",
+    "昨天我看了一个小时的电视。",
+    "我昨天看电视看了一个小时。",
+    "昨天我看电视看了一个小时。"
+   ]
+  },
+  {
+   "id": "L13n042",
+   "lesson": 13,
+   "point": "时量补语 · Complement of duration (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "我们等了他二十分钟。",
+   "pinyin": "Wǒmen děng le tā èrshí fēnzhōng.",
+   "es": "We waited for him for twenty minutes.",
+   "rule": "A duration follows the verb; with an object, repeat the verb or place the duration between the verb and the object.",
+   "note": "",
+   "prompt": "We waited for him for twenty minutes.",
+   "context": "",
+   "accepted": [
+    "我们等了他二十分钟。",
+    "我们等他等了二十分钟。"
+   ]
+  },
+  {
+   "id": "L13n043",
+   "lesson": 13,
+   "point": "时量补语 · Complement of duration (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "你昨天晚上睡了多长时间？",
+   "pinyin": "Nǐ zuótiān wǎnshang shuì le duō cháng shíjiān?",
+   "es": "How long did you sleep last night?",
+   "rule": "A duration follows the verb; with an object, repeat the verb or place the duration between the verb and the object.",
+   "note": "",
+   "prompt": "How long did you sleep last night?",
+   "context": "",
+   "accepted": [
+    "你昨天晚上睡了多长时间？",
+    "你昨晚睡了多长时间？",
+    "昨天晚上你睡了多长时间？",
+    "你昨天晚上睡了多久？",
+    "你昨晚睡了多久？",
+    "昨晚你睡了多久？",
+    "你昨晚睡觉睡了多长时间？",
+    "你昨天晚上睡了几个小时？",
+    "你昨晚睡了几个小时？"
+   ]
+  },
+  {
+   "id": "L13n044",
+   "lesson": 13,
+   "point": "时量补语 · Complement of duration (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "她听了半个小时音乐。",
+   "pinyin": "Tā tīng le bàn ge xiǎoshí yīnyuè.",
+   "es": "She listened to music for half an hour.",
+   "rule": "A duration follows the verb; with an object, repeat the verb or place the duration between the verb and the object.",
+   "note": "",
+   "prompt": "She listened to music for half an hour.",
+   "context": "",
+   "accepted": [
+    "她听了半个小时音乐。",
+    "她听了半个小时的音乐。",
+    "她听音乐听了半个小时。",
+    "她听了半小时音乐。",
+    "她听了半小时的音乐。",
+    "她听音乐听了半小时。",
+    "她听了三十分钟音乐。",
+    "她听了三十分钟的音乐。"
+   ]
+  },
+  {
+   "id": "L13n045",
+   "lesson": 13,
+   "point": "时量补语 · Complement of duration (inferred)",
+   "type": "Transform",
+   "mode": "text",
+   "instruction": "Add the duration: ten minutes",
+   "answer": "他看了十分钟报。",
+   "pinyin": "Tā kàn le shí fēnzhōng bào.",
+   "es": "He read the newspaper for ten minutes.",
+   "rule": "A duration follows the verb; with an object, repeat the verb or place the duration between the verb and the object.",
+   "note": "",
+   "prompt": "他看了报。",
+   "context": "",
+   "accepted": [
+    "他看了十分钟报。",
+    "他看了十分钟的报。",
+    "他看报看了十分钟。"
+   ]
+  },
+  {
+   "id": "L13n046",
+   "lesson": 13,
+   "point": "时量补语 · Complement of duration (inferred)",
+   "type": "Transform",
+   "mode": "text",
+   "instruction": "Add the duration: half an hour",
+   "answer": "我等了你半个小时。",
+   "pinyin": "Wǒ děng le nǐ bàn ge xiǎoshí.",
+   "es": "I waited for you for half an hour.",
+   "rule": "A duration follows the verb; with an object, repeat the verb or place the duration between the verb and the object.",
+   "note": "",
+   "prompt": "我等了你。",
+   "context": "",
+   "accepted": [
+    "我等了你半个小时。",
+    "我等你等了半个小时。",
+    "我等了你半小时。",
+    "我等你等了半小时。",
+    "我等了你三十分钟。",
+    "我等你等了三十分钟。"
+   ]
+  },
+  {
+   "id": "L13n047",
+   "lesson": 13,
+   "point": "时量补语 · Complement of duration (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "answer": "我学汉语学了两个小时。",
+   "pinyin": "Wǒ xué Hànyǔ xué le liǎng ge xiǎoshí.",
+   "es": "I studied Chinese for two hours.",
+   "rule": "Repeat the verb after its object, then add 了 and the duration.",
+   "note": "",
+   "segments": [
+    {
+     "text": "我学汉语"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "了两个小时。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "学",
+     "hint": ""
+    }
+   ]
+  },
+  {
+   "id": "L13n048",
+   "lesson": 13,
+   "point": "时量补语 · Complement of duration (inferred)",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "answer": "我们等了他三十分钟。",
+   "pinyin": "Wǒmen děng le tā sānshí fēnzhōng.",
+   "es": "We waited for him for thirty minutes.",
+   "rule": "A duration follows the verb; with an object, repeat the verb or place the duration between the verb and the object.",
+   "note": "",
+   "prompt": "三十分钟 / 了 / 我们 / 他 / 等",
+   "context": "We waited for him for thirty minutes.",
+   "accepted": [
+    "我们等了他三十分钟。"
+   ],
+   "tiles": [
+    "三十分钟",
+    "了",
+    "我们",
+    "他",
+    "等"
+   ]
+  },
+  {
+   "id": "L13n049",
+   "lesson": 13,
+   "point": "一会儿 · A little while (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "请等一会儿。",
+   "pinyin": "Qǐng děng yíhuìr.",
+   "es": "Please wait a moment.",
+   "rule": "一会儿 expresses a short duration after a verb, or a short wait before something happens.",
+   "note": "",
+   "prompt": "Please wait a moment.",
+   "context": "",
+   "accepted": [
+    "请等一会儿。",
+    "请你等一会儿。",
+    "请您等一会儿。",
+    "请等一下。",
+    "请稍等。",
+    "请稍等一会儿。",
+    "请等一会。",
+    "等一会儿吧。",
+    "请等一等。",
+    "请等一下儿。",
+    "麻烦你等一会儿。",
+    "麻烦您等一会儿。"
+   ]
+  },
+  {
+   "id": "L13n050",
+   "lesson": 13,
+   "point": "一会儿 · A little while (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "我想看一会儿书。",
+   "pinyin": "Wǒ xiǎng kàn yíhuìr shū.",
+   "es": "I want to read for a little while.",
+   "rule": "一会儿 expresses a short duration after a verb, or a short wait before something happens.",
+   "note": "",
+   "prompt": "I want to read for a little while.",
+   "context": "",
+   "accepted": [
+    "我想看一会儿书。",
+    "我想看一会儿的书。",
+    "我想看书看一会儿。",
+    "我想读一会儿书。",
+    "我想读一会儿的书。",
+    "我想读书读一会儿。",
+    "我想看一会书。"
+   ]
+  },
+  {
+   "id": "L13n051",
+   "lesson": 13,
+   "point": "一会儿 · A little while (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "answer": "他休息了一会儿就走了。",
+   "pinyin": "Tā xiūxi le yíhuìr jiù zǒu le.",
+   "es": "He rested for a little while and then left.",
+   "rule": "一会儿 expresses a short duration after a verb, or a short wait before something happens.",
+   "note": "",
+   "segments": [
+    {
+     "text": "他休息了"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "就走了。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "一会儿",
+     "hint": "",
+     "alternatives": [
+      "一会"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L13n052",
+   "lesson": 13,
+   "point": "一会儿 · A little while (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "她看了一会儿电视。",
+   "pinyin": "Tā kàn le yíhuìr diànshì.",
+   "es": "She watched TV for a little while.",
+   "rule": "一会儿 expresses a short duration after a verb, or a short wait before something happens.",
+   "note": "",
+   "prompt": "She watched TV for a little while.",
+   "context": "",
+   "accepted": [
+    "她看了一会儿电视。",
+    "她看了一会儿的电视。",
+    "她看电视看了一会儿。",
+    "她看了一会电视。"
+   ]
+  },
+  {
+   "id": "L13n053",
+   "lesson": 13,
+   "point": "又……又…… (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "这个手机又便宜又好用。",
+   "pinyin": "Zhège shǒujī yòu piányi yòu hǎoyòng.",
+   "es": "This phone is both cheap and easy to use.",
+   "rule": "又 + adjective + 又 + adjective describes two qualities of the same thing.",
+   "note": "",
+   "prompt": "This phone is both cheap and easy to use.",
+   "context": "",
+   "accepted": [
+    "这个手机又便宜又好用。",
+    "这个手机又好用又便宜。",
+    "这部手机又便宜又好用。",
+    "这部手机又好用又便宜。",
+    "这个手机既便宜又好用。",
+    "这部手机既便宜又好用。",
+    "这个手机既便宜也好用。"
+   ]
+  },
+  {
+   "id": "L13n054",
+   "lesson": 13,
+   "point": "又……又…… (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "这家商店的衣服又漂亮又便宜。",
+   "pinyin": "Zhè jiā shāngdiàn de yīfu yòu piàoliang yòu piányi.",
+   "es": "The clothes in this shop are both pretty and cheap.",
+   "rule": "又 + adjective + 又 + adjective describes two qualities of the same thing.",
+   "note": "",
+   "prompt": "The clothes in this shop are both pretty and cheap.",
+   "context": "",
+   "accepted": [
+    "这家商店的衣服又漂亮又便宜。",
+    "这家商店的衣服又便宜又漂亮。",
+    "这个商店的衣服又漂亮又便宜。",
+    "这个商店的衣服又便宜又漂亮。",
+    "这家店的衣服又漂亮又便宜。",
+    "这家店的衣服又便宜又漂亮。",
+    "这家商店的衣服既漂亮又便宜。",
+    "这个商店的衣服既漂亮又便宜。",
+    "这家店的衣服既漂亮又便宜。"
+   ]
+  },
+  {
+   "id": "L13n055",
+   "lesson": 13,
+   "point": "又……又…… (inferred)",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "answer": "今天又冷又下雨。",
+   "pinyin": "Jīntiān yòu lěng yòu xià yǔ.",
+   "es": "It's cold and rainy today.",
+   "rule": "又…又… can join two predicates describing the same situation, including a weather verb.",
+   "note": "",
+   "segments": [
+    {
+     "text": "今天"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "冷"
+    },
+    {
+     "gap": 1
+    },
+    {
+     "text": "下雨。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "又",
+     "hint": ""
+    },
+    {
+     "answer": "又",
+     "hint": ""
+    }
+   ]
+  },
+  {
+   "id": "L13n056",
+   "lesson": 13,
+   "point": "又……又…… (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "这个教室又大又亮。",
+   "pinyin": "Zhège jiàoshì yòu dà yòu liàng.",
+   "es": "This classroom is both big and bright.",
+   "rule": "又 + adjective + 又 + adjective describes two qualities of the same thing.",
+   "note": "",
+   "prompt": "This classroom is both big and bright.",
+   "context": "",
+   "accepted": [
+    "这个教室又大又亮。",
+    "这个教室又亮又大。",
+    "这个教室既大又亮。",
+    "这间教室又大又亮。",
+    "这间教室又亮又大。",
+    "这间教室既大又亮。",
+    "这个教室很大，也很亮。"
+   ]
+  },
+  {
+   "id": "L13n057",
+   "lesson": 13,
+   "point": "Duration + 了 … 了 (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "我学汉语学了一年了。",
+   "pinyin": "Wǒ xué Hànyǔ xué le yì nián le.",
+   "es": "I've been studying Chinese for a year now.",
+   "rule": "A final 了 with a duration connects the situation to now; duration + 没 + verb + 了 describes how long something has not happened.",
+   "note": "",
+   "prompt": "I've been studying Chinese for a year now.",
+   "context": "",
+   "accepted": [
+    "我学汉语学了一年了。",
+    "我学了一年汉语了。",
+    "我学了一年的汉语了。",
+    "我学习汉语学了一年了。",
+    "我学习了一年汉语了。",
+    "我学汉语一年了。",
+    "我学习汉语一年了。"
+   ]
+  },
+  {
+   "id": "L13n058",
+   "lesson": 13,
+   "point": "Duration + 了 … 了 (inferred)",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "answer": "我两天没用手机了。",
+   "pinyin": "Wǒ liǎng tiān méi yòng shǒujī le.",
+   "es": "I haven't used my phone for two days.",
+   "rule": "A final 了 with a duration connects the situation to now; duration + 没 + verb + 了 describes how long something has not happened.",
+   "note": "",
+   "prompt": "I haven't used my phone for two days.",
+   "context": "",
+   "accepted": [
+    "我两天没用手机了。",
+    "我两天没有用手机了。",
+    "我已经两天没用手机了。",
+    "我已经两天没有用手机了。",
+    "我有两天没用手机了。",
+    "我有两天没有用手机了。"
+   ]
+  },
+  {
+   "id": "L13n059",
+   "lesson": 13,
+   "point": "Duration + 了 … 了 (inferred)",
+   "type": "Transform",
+   "mode": "text",
+   "instruction": "Show that you still live there",
+   "answer": "我在北京住了三年了。",
+   "pinyin": "Wǒ zài Běijīng zhù le sān nián le.",
+   "es": "I've been living in Beijing for three years now.",
+   "rule": "A final 了 with a duration connects the situation to now; duration + 没 + verb + 了 describes how long something has not happened.",
+   "note": "",
+   "prompt": "我在北京住了三年。",
+   "context": "",
+   "accepted": [
+    "我在北京住了三年了。",
+    "我在北京已经住了三年了。",
+    "我在北京住三年了。"
+   ]
+  },
+  {
+   "id": "L13n060",
+   "lesson": 13,
+   "point": "Duration + 了 … 了 (inferred)",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "answer": "我一个星期没见他了。",
+   "pinyin": "Wǒ yí ge xīngqī méi jiàn tā le.",
+   "es": "I haven't seen him for a week.",
+   "rule": "A duration before 没见…了 measures the time since the last meeting, up to now.",
+   "note": "",
+   "prompt": "I haven't seen him for a week.",
+   "context": "",
+   "accepted": [
+    "我一个星期没见他了。"
+   ],
+   "options": [
+    "我没见他了一个星期。",
+    "我一个星期没见他了。",
+    "我一个星期不见他了。"
+   ]
+  },
+  {
    "id": "Kf]nKozeNy",
    "lesson": 14,
    "point": "“比”字句 · Comparison with 比 (inferred)",
