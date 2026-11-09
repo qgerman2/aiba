@@ -2214,8 +2214,8 @@
    "id": "l9|FCR,0MJ",
    "lesson": 7,
    "point": "Usage · 怎么 = how come…?",
-   "type": "Choose",
-   "instruction": "Choose and explain",
+   "type": "Question",
+   "instruction": "Answer",
    "prompt": "你怎么不去？ Does 怎么 ask \"how\" or \"why\"?",
    "answer": "Why (with surprise).",
    "pinyin": "",
@@ -3510,11 +3510,11 @@
    "type": "Correct",
    "instruction": "The sentence has a mistake. Correct it.",
    "prompt": "我们休息休息一下吧。",
-   "answer": "我们休息一下吧。（o 我们休息休息吧。）",
-   "pinyin": "Wǒmen xiūxi yíxià ba. (o wǒmen xiūxi xiūxi ba.)",
+   "answer": "我们休息一下吧。",
+   "pinyin": "Wǒmen xiūxi yíxià ba.",
    "es": "Let's rest a bit.",
    "rule": "Don't combine reduplication with 一下: use one or the other.",
-   "note": "",
+   "note": "Also: 我们休息休息吧。",
    "context": "",
    "mode": "text",
    "accepted": [
@@ -6899,15 +6899,9 @@
     "来中国以前，我学了一年汉语。",
     "来中国以前，我学了一年的汉语。",
     "来中国以前，我学汉语学了一年。",
-    "来中国以前我学了一年汉语。",
-    "来中国以前我学了一年的汉语。",
-    "来中国以前我学汉语学了一年。",
     "我来中国以前学了一年汉语。",
     "我来中国以前学了一年的汉语。",
-    "我来中国以前学汉语学了一年。",
-    "我来中国以前，学了一年汉语。",
-    "我来中国以前，学了一年的汉语。",
-    "我来中国以前，学汉语学了一年。"
+    "我来中国以前学汉语学了一年。"
    ],
    "id": "L12n23"
   },
@@ -7039,21 +7033,13 @@
    "context": "",
    "accepted": [
     "我以为你回宿舍去了！",
-    "我以为你回宿舍去了。",
     "我以为你回宿舍了！",
-    "我以为你回宿舍了。",
     "我以为你已经回宿舍去了！",
-    "我以为你已经回宿舍去了。",
     "我以为你已经回宿舍了！",
-    "我以为你已经回宿舍了。",
     "我还以为你回宿舍去了！",
-    "我还以为你回宿舍去了。",
     "我还以为你回宿舍了！",
-    "我还以为你回宿舍了。",
     "我还以为你已经回宿舍去了！",
-    "我还以为你已经回宿舍去了。",
-    "我还以为你已经回宿舍了！",
-    "我还以为你已经回宿舍了。"
+    "我还以为你已经回宿舍了！"
    ],
    "id": "L12n28"
   },
@@ -8181,7 +8167,6 @@
    "context": "",
    "accepted": [
     "我等了一个小时他才来。",
-    "我等了一个小时，他才来。",
     "我等了他一个小时他才来。",
     "我等了一个小时他才到。",
     "我等了一个小时他才来了。"
@@ -8623,20 +8608,23 @@
    "type": "Transform",
    "mode": "text",
    "instruction": "Add the duration: half an hour",
-   "answer": "我等了你半个小时。",
-   "pinyin": "Wǒ děng le nǐ bàn ge xiǎoshí.",
-   "es": "I waited for you for half an hour.",
+   "answer": "他打了半个小时电话。",
+   "pinyin": "Tā dǎ le bàn ge xiǎoshí diànhuà.",
+   "es": "He was on the phone for half an hour.",
    "rule": "A duration follows the verb; with an object, repeat the verb or place the duration between the verb and the object.",
    "note": "",
-   "prompt": "我等了你。",
+   "prompt": "他打了电话。",
    "context": "",
    "accepted": [
-    "我等了你半个小时。",
-    "我等你等了半个小时。",
-    "我等了你半小时。",
-    "我等你等了半小时。",
-    "我等了你三十分钟。",
-    "我等你等了三十分钟。"
+    "他打了半个小时电话。",
+    "他打了半个小时的电话。",
+    "他打了半小时电话。",
+    "他打了半小时的电话。",
+    "他打了三十分钟电话。",
+    "他打了三十分钟的电话。",
+    "他打电话打了半个小时。",
+    "他打电话打了半小时。",
+    "他打电话打了三十分钟。"
    ]
   },
   {
@@ -11267,16 +11255,10 @@
    "accepted": [
     "刚七点，他就来了。",
     "刚七点，他就到了。",
-    "刚七点他就来了。",
-    "刚七点他就到了。",
     "才七点，他就来了。",
     "才七点，他就到了。",
-    "才七点他就来了。",
-    "才七点他就到了。",
     "刚刚七点，他就来了。",
-    "刚刚七点，他就到了。",
-    "刚刚七点他就来了。",
-    "刚刚七点他就到了。"
+    "刚刚七点，他就到了。"
    ],
    "answer": "刚七点，他就来了。",
    "pinyin": "Gāng qī diǎn, tā jiù lái le.",
@@ -13374,6 +13356,1359 @@
    "pinyin": "Tā shì zhèr de yíngyèyuán.",
    "es": "She's the shop assistant here.",
    "rule": "营业员 = shop assistant / counter clerk.",
+   "note": ""
+  },
+  {
+   "id": "L13n061",
+   "lesson": 13,
+   "point": "Usage L13 · 后来 / 以后",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "他以前住在北京，"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "搬到了上海。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "后来",
+     "hint": ""
+    }
+   ],
+   "answer": "他以前住在北京，后来搬到了上海。",
+   "pinyin": "Tā yǐqián zhù zài Běijīng, hòulái bāndào le Shànghǎi.",
+   "es": "He used to live in Beijing; later he moved to Shanghai.",
+   "rule": "后来 = later on, after that, telling what happened in the past.",
+   "note": ""
+  },
+  {
+   "id": "L13n062",
+   "lesson": 13,
+   "point": "Usage L13 · 后来 / 以后",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "毕业"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "，我想去旅行。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "以后",
+     "hint": "",
+     "alternatives": [
+      "后"
+     ]
+    }
+   ],
+   "answer": "毕业以后，我想去旅行。",
+   "pinyin": "Bìyè yǐhòu, wǒ xiǎng qù lǚxíng.",
+   "es": "After I graduate, I want to travel.",
+   "rule": "以后 can follow a word or phrase (毕业以后, 五点以后); 后来 always stands alone.",
+   "note": ""
+  },
+  {
+   "id": "L13n063",
+   "lesson": 13,
+   "point": "Usage L13 · 后来 / 以后",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "Sea mail is too slow; from now on I'll send things by air.",
+   "context": "",
+   "options": [
+    "海运太慢，后来我要寄航空。",
+    "海运太慢，以后我要寄航空。"
+   ],
+   "accepted": [
+    "海运太慢，以后我要寄航空。"
+   ],
+   "answer": "海运太慢，以后我要寄航空。",
+   "pinyin": "Hǎiyùn tài màn, yǐhòu wǒ yào jì hángkōng.",
+   "es": "Sea mail is too slow; from now on I'll send things by air.",
+   "rule": "后来 only refers to the past; for the future (from now on) use 以后.",
+   "note": ""
+  },
+  {
+   "id": "L13n064",
+   "lesson": 13,
+   "point": "Usage L13 · 后来 / 以后",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "五点后来我去找你。",
+   "context": "",
+   "accepted": [
+    "五点以后我去找你。",
+    "五点后我去找你。"
+   ],
+   "answer": "五点以后我去找你。",
+   "pinyin": "Wǔ diǎn yǐhòu wǒ qù zhǎo nǐ.",
+   "es": "I'll come and see you after five.",
+   "rule": "后来 can't follow a time word: say 五点以后, never *五点后来.",
+   "note": ""
+  },
+  {
+   "id": "L13n065",
+   "lesson": 13,
+   "point": "Usage L13 · 后来 / 以后",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "They used to be classmates; later they became good friends.",
+   "context": "",
+   "accepted": [
+    "他们以前是同学，后来成了好朋友。",
+    "他们以前是同学，后来成为了好朋友。",
+    "他们以前是同学，后来成为好朋友。",
+    "他们以前是同学，后来变成了好朋友。",
+    "他们以前是同学，后来他们成了好朋友。",
+    "他们以前是同学，后来他们成为了好朋友。",
+    "他们以前是同学，后来他们成为好朋友。",
+    "他们以前是同学，后来他们变成了好朋友。"
+   ],
+   "answer": "他们以前是同学，后来成了好朋友。",
+   "pinyin": "Tāmen yǐqián shì tóngxué, hòulái chéng le hǎo péngyou.",
+   "es": "They used to be classmates; later they became good friends.",
+   "rule": "后来 introduces what happened later in a past story.",
+   "note": ""
+  },
+  {
+   "id": "L13n066",
+   "lesson": 13,
+   "point": "Usage L13 · 后来 / 以后",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I heard he went to China to study. What happened after that?",
+   "context": "",
+   "accepted": [
+    "听说他去中国学习了。后来呢？",
+    "听说他去中国学习了。后来怎么样了？",
+    "听说他去中国学习了。后来怎么样？",
+    "听说他去中国留学了。后来呢？",
+    "听说他去中国留学了。后来怎么样了？",
+    "听说他去中国留学了。后来怎么样？"
+   ],
+   "answer": "听说他去中国学习了。后来呢？",
+   "pinyin": "Tīngshuō tā qù Zhōngguó xuéxí le. Hòulái ne?",
+   "es": "I heard he went to China to study. What happened after that?",
+   "rule": "后来呢？ / 后来怎么样了？ asks how a past story went on.",
+   "note": ""
+  },
+  {
+   "id": "L13n067",
+   "lesson": 13,
+   "point": "Usage L13 · 后来 / 以后",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "In the future I want to be a teacher.",
+   "context": "",
+   "accepted": [
+    "以后我想当老师。",
+    "以后我想当一名老师。",
+    "以后我想当一个老师。",
+    "以后我要当老师。",
+    "以后我要当一名老师。",
+    "以后我要当一个老师。",
+    "我以后想当老师。",
+    "我以后想当一名老师。",
+    "我以后想当一个老师。",
+    "我以后要当老师。",
+    "我以后要当一名老师。",
+    "我以后要当一个老师。"
+   ],
+   "answer": "以后我想当老师。",
+   "pinyin": "Yǐhòu wǒ xiǎng dāng lǎoshī.",
+   "es": "In the future I want to be a teacher.",
+   "rule": "For the future use 以后; 后来 only tells what happened in the past.",
+   "note": ""
+  },
+  {
+   "id": "L13n068",
+   "lesson": 13,
+   "point": "Usage L13 · 穿 / 戴",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "今天很冷，他"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "了一顶帽子。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "戴",
+     "hint": ""
+    }
+   ],
+   "answer": "今天很冷，他戴了一顶帽子。",
+   "pinyin": "Jīntiān hěn lěng, tā dài le yì dǐng màozi.",
+   "es": "It's cold today, so he's wearing a hat.",
+   "rule": "戴 is for accessories: 帽子, 眼镜, 手表. 顶 is the measure word for hats.",
+   "note": ""
+  },
+  {
+   "id": "L13n069",
+   "lesson": 13,
+   "point": "Usage L13 · 穿 / 戴",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "她今天"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "了一件很漂亮的衣服。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "穿",
+     "hint": ""
+    }
+   ],
+   "answer": "她今天穿了一件很漂亮的衣服。",
+   "pinyin": "Tā jīntiān chuān le yí jiàn hěn piàoliang de yīfu.",
+   "es": "She's wearing a very pretty outfit today.",
+   "rule": "穿 is for clothes that cover the body: 衣服, 裤子, 裙子, 鞋, 外套.",
+   "note": ""
+  },
+  {
+   "id": "L13n070",
+   "lesson": 13,
+   "point": "Usage L13 · 穿 / 戴",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "He wears glasses.",
+   "context": "",
+   "options": [
+    "他穿眼镜。",
+    "他戴眼镜。"
+   ],
+   "accepted": [
+    "他戴眼镜。"
+   ],
+   "answer": "他戴眼镜。",
+   "pinyin": "Tā dài yǎnjìng.",
+   "es": "He wears glasses.",
+   "rule": "Glasses are an accessory, so they take 戴, not 穿.",
+   "note": ""
+  },
+  {
+   "id": "L13n071",
+   "lesson": 13,
+   "point": "Usage L13 · 穿 / 戴",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我今天戴了新鞋。",
+   "context": "",
+   "accepted": [
+    "我今天穿了新鞋。",
+    "我今天穿了新鞋子。"
+   ],
+   "answer": "我今天穿了新鞋。",
+   "pinyin": "Wǒ jīntiān chuān le xīn xié.",
+   "es": "I'm wearing new shoes today.",
+   "rule": "Shoes are clothing (穿), not an accessory (戴).",
+   "note": ""
+  },
+  {
+   "id": "L13n072",
+   "lesson": 13,
+   "point": "Usage L13 · 穿 / 戴",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "My dad wears a watch every day.",
+   "context": "",
+   "accepted": [
+    "我爸爸每天都戴手表。",
+    "我爸爸每天都戴表。",
+    "我爸爸每天戴手表。",
+    "我爸爸每天戴表。",
+    "我爸每天都戴手表。",
+    "我爸每天都戴表。",
+    "我爸每天戴手表。",
+    "我爸每天戴表。",
+    "我父亲每天都戴手表。",
+    "我父亲每天都戴表。",
+    "我父亲每天戴手表。",
+    "我父亲每天戴表。"
+   ],
+   "answer": "我爸爸每天都戴手表。",
+   "pinyin": "Wǒ bàba měi tiān dōu dài shǒubiǎo.",
+   "es": "My dad wears a watch every day.",
+   "rule": "手表 is an accessory, so it takes 戴.",
+   "note": ""
+  },
+  {
+   "id": "L13n073",
+   "lesson": 13,
+   "point": "Usage L13 · 穿 / 戴",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "What are you going to wear tomorrow?",
+   "context": "",
+   "accepted": [
+    "你明天穿什么？",
+    "你明天穿什么衣服？",
+    "你明天要穿什么？",
+    "你明天要穿什么衣服？",
+    "明天你穿什么？",
+    "明天你穿什么衣服？",
+    "明天你要穿什么？",
+    "明天你要穿什么衣服？"
+   ],
+   "answer": "你明天穿什么？",
+   "pinyin": "Nǐ míngtiān chuān shénme?",
+   "es": "What are you going to wear tomorrow?",
+   "rule": "穿 is the general verb for wearing clothes.",
+   "note": ""
+  },
+  {
+   "id": "L13n074",
+   "lesson": 13,
+   "point": "Usage L13 · 趟",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我明天要去一"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "上海。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "趟",
+     "hint": "",
+     "alternatives": [
+      "次"
+     ]
+    }
+   ],
+   "answer": "我明天要去一趟上海。",
+   "pinyin": "Wǒ míngtiān yào qù yí tàng Shànghǎi.",
+   "es": "I have to make a trip to Shanghai tomorrow.",
+   "rule": "趟 counts trips (going and coming back): 去一趟 + place.",
+   "note": "Also: 去上海一趟 (the place can come before 一趟)."
+  },
+  {
+   "id": "L13n075",
+   "lesson": 13,
+   "point": "Usage L13 · 趟",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "每天有十三"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "高铁从上海到北京。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "趟",
+     "hint": "",
+     "alternatives": [
+      "班"
+     ]
+    }
+   ],
+   "answer": "每天有十三趟高铁从上海到北京。",
+   "pinyin": "Měi tiān yǒu shísān tàng gāotiě cóng Shànghǎi dào Běijīng.",
+   "es": "There are thirteen high-speed trains from Shanghai to Beijing every day.",
+   "rule": "趟 is also the measure word for scheduled train runs.",
+   "note": ""
+  },
+  {
+   "id": "L13n076",
+   "lesson": 13,
+   "point": "Usage L13 · 趟",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I need to make a trip to the bank this afternoon.",
+   "context": "",
+   "accepted": [
+    "我今天下午得去一趟银行。",
+    "我今天下午得去一次银行。",
+    "我今天下午要去一趟银行。",
+    "我今天下午要去一次银行。",
+    "今天下午我得去一趟银行。",
+    "今天下午我得去一次银行。",
+    "今天下午我要去一趟银行。",
+    "今天下午我要去一次银行。",
+    "我下午得去一趟银行。",
+    "我下午得去一次银行。",
+    "我下午要去一趟银行。",
+    "我下午要去一次银行。",
+    "下午我得去一趟银行。",
+    "下午我得去一次银行。",
+    "下午我要去一趟银行。",
+    "下午我要去一次银行。",
+    "我今天下午得去银行一趟。",
+    "我今天下午得去银行一次。",
+    "我今天下午要去银行一趟。",
+    "我今天下午要去银行一次。",
+    "今天下午我得去银行一趟。",
+    "今天下午我得去银行一次。",
+    "今天下午我要去银行一趟。",
+    "今天下午我要去银行一次。",
+    "我下午得去银行一趟。",
+    "我下午得去银行一次。",
+    "我下午要去银行一趟。",
+    "我下午要去银行一次。",
+    "下午我得去银行一趟。",
+    "下午我得去银行一次。",
+    "下午我要去银行一趟。",
+    "下午我要去银行一次。"
+   ],
+   "answer": "我今天下午得去一趟银行。",
+   "pinyin": "Wǒ jīntiān xiàwǔ děi qù yí tàng yínháng.",
+   "es": "I need to make a trip to the bank this afternoon.",
+   "rule": "去一趟 + place (or 去 + place + 一趟) = make a trip somewhere and come back.",
+   "note": ""
+  },
+  {
+   "id": "L13n077",
+   "lesson": 13,
+   "point": "Usage L13 · 趟",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "去 / 一趟 / 我 / 明天 / 要 / 机场",
+   "context": "I have to make a trip to the airport tomorrow.",
+   "tiles": [
+    "去",
+    "一趟",
+    "我",
+    "明天",
+    "要",
+    "机场"
+   ],
+   "accepted": [
+    "我明天要去一趟机场。",
+    "明天我要去一趟机场。",
+    "我明天要去机场一趟。",
+    "明天我要去机场一趟。"
+   ],
+   "answer": "我明天要去一趟机场。",
+   "pinyin": "Wǒ míngtiān yào qù yí tàng jīchǎng.",
+   "es": "I have to make a trip to the airport tomorrow.",
+   "rule": "一趟 goes after 去, before or after the place.",
+   "note": ""
+  },
+  {
+   "id": "L13n078",
+   "lesson": 13,
+   "point": "Usage L13 · 聊天儿",
+   "type": "Order",
+   "mode": "tiles",
+   "instruction": "Put the words in order",
+   "prompt": "聊 / 吧 / 天儿 / 我们 / 一会儿",
+   "context": "Let's chat for a bit.",
+   "tiles": [
+    "聊",
+    "吧",
+    "天儿",
+    "我们",
+    "一会儿"
+   ],
+   "accepted": [
+    "我们聊一会儿天儿吧。"
+   ],
+   "answer": "我们聊一会儿天儿吧。",
+   "pinyin": "Wǒmen liáo yíhuìr tiānr ba.",
+   "es": "Let's chat for a bit.",
+   "rule": "聊天儿 is a verb + object: the duration goes in the middle (聊一会儿天儿).",
+   "note": ""
+  },
+  {
+   "id": "L13n079",
+   "lesson": 13,
+   "point": "Usage L13 · 聊天儿",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "我们聊天儿一会儿吧。",
+   "context": "",
+   "accepted": [
+    "我们聊一会儿天儿吧。",
+    "我们聊一会儿吧。"
+   ],
+   "answer": "我们聊一会儿天儿吧。",
+   "pinyin": "Wǒmen liáo yíhuìr tiānr ba.",
+   "es": "Let's chat for a bit.",
+   "rule": "聊天儿 splits: 聊 + 一会儿 + 天儿, not *聊天儿一会儿.",
+   "note": ""
+  },
+  {
+   "id": "L13n080",
+   "lesson": 13,
+   "point": "Usage L13 · 聊天儿",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "On weekends I like to listen to some music and chat with friends.",
+   "context": "",
+   "accepted": [
+    "周末我喜欢听听音乐，跟朋友聊聊天儿。",
+    "周末我喜欢听听音乐，跟朋友聊天儿。",
+    "周末我喜欢听听音乐，跟朋友聊聊天。",
+    "周末我喜欢听听音乐，跟朋友聊天。",
+    "周末我喜欢听听音乐，和朋友聊聊天儿。",
+    "周末我喜欢听听音乐，和朋友聊天儿。",
+    "周末我喜欢听听音乐，和朋友聊聊天。",
+    "周末我喜欢听听音乐，和朋友聊天。",
+    "周末我喜欢听音乐，跟朋友聊聊天儿。",
+    "周末我喜欢听音乐，跟朋友聊天儿。",
+    "周末我喜欢听音乐，跟朋友聊聊天。",
+    "周末我喜欢听音乐，跟朋友聊天。",
+    "周末我喜欢听音乐，和朋友聊聊天儿。",
+    "周末我喜欢听音乐，和朋友聊天儿。",
+    "周末我喜欢听音乐，和朋友聊聊天。",
+    "周末我喜欢听音乐，和朋友聊天。",
+    "我周末喜欢听听音乐，跟朋友聊聊天儿。",
+    "我周末喜欢听听音乐，跟朋友聊天儿。",
+    "我周末喜欢听听音乐，跟朋友聊聊天。",
+    "我周末喜欢听听音乐，跟朋友聊天。",
+    "我周末喜欢听听音乐，和朋友聊聊天儿。",
+    "我周末喜欢听听音乐，和朋友聊天儿。",
+    "我周末喜欢听听音乐，和朋友聊聊天。",
+    "我周末喜欢听听音乐，和朋友聊天。",
+    "我周末喜欢听音乐，跟朋友聊聊天儿。",
+    "我周末喜欢听音乐，跟朋友聊天儿。",
+    "我周末喜欢听音乐，跟朋友聊聊天。",
+    "我周末喜欢听音乐，跟朋友聊天。",
+    "我周末喜欢听音乐，和朋友聊聊天儿。",
+    "我周末喜欢听音乐，和朋友聊天儿。",
+    "我周末喜欢听音乐，和朋友聊聊天。",
+    "我周末喜欢听音乐，和朋友聊天。"
+   ],
+   "answer": "周末我喜欢听听音乐，跟朋友聊聊天儿。",
+   "pinyin": "Zhōumò wǒ xǐhuan tīngting yīnyuè, gēn péngyou liáoliao tiānr.",
+   "es": "On weekends I like to listen to some music and chat with friends.",
+   "rule": "Reduplicating 聊 gives 聊聊天儿, a relaxed «chat a bit»; 跟 + person + 聊天儿.",
+   "note": ""
+  },
+  {
+   "id": "L13n081",
+   "lesson": 13,
+   "point": "Usage L13 · 聊天儿",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "What are you guys chatting about?",
+   "context": "",
+   "accepted": [
+    "你们在聊什么？",
+    "你们在聊什么呢？",
+    "你们聊什么？",
+    "你们聊什么呢？"
+   ],
+   "answer": "你们在聊什么？",
+   "pinyin": "Nǐmen zài liáo shénme?",
+   "es": "What are you guys chatting about?",
+   "rule": "With an object, use 聊 alone: 聊什么, 聊电影 (not *聊天儿什么).",
+   "note": ""
+  },
+  {
+   "id": "L13n082",
+   "lesson": 13,
+   "point": "Usage L13 · 总是",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "You always know what I'm thinking.",
+   "context": "",
+   "accepted": [
+    "你总是知道我在想什么。",
+    "你总是知道我想什么。",
+    "你总知道我在想什么。",
+    "你总知道我想什么。"
+   ],
+   "answer": "你总是知道我在想什么。",
+   "pinyin": "Nǐ zǒngshì zhīdào wǒ zài xiǎng shénme.",
+   "es": "You always know what I'm thinking.",
+   "rule": "总是 (always) goes before the verb.",
+   "note": ""
+  },
+  {
+   "id": "L13n083",
+   "lesson": 13,
+   "point": "Usage L13 · 总是",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "He's always so busy.",
+   "context": "",
+   "accepted": [
+    "他总是这么忙。",
+    "他总是那么忙。",
+    "他总是很忙。",
+    "他总这么忙。",
+    "他总那么忙。",
+    "他总很忙。"
+   ],
+   "answer": "他总是这么忙。",
+   "pinyin": "Tā zǒngshì zhème máng.",
+   "es": "He's always so busy.",
+   "rule": "总是 can also come before an adjective: 总是这么忙, 总是很饿.",
+   "note": ""
+  },
+  {
+   "id": "L13n084",
+   "lesson": 13,
+   "point": "Usage L13 · 总是",
+   "type": "Correct",
+   "mode": "text",
+   "instruction": "The sentence has a mistake. Correct it.",
+   "prompt": "总是他不写作业。",
+   "context": "",
+   "accepted": [
+    "他总是不写作业。",
+    "他总不写作业。"
+   ],
+   "answer": "他总是不写作业。",
+   "pinyin": "Tā zǒngshì bù xiě zuòyè.",
+   "es": "He never does his homework.",
+   "rule": "总是 is an adverb: it goes after the subject, before the verb.",
+   "note": ""
+  },
+  {
+   "id": "L13n085",
+   "lesson": 13,
+   "point": "Usage L13 · 遇到 / 遇见",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Yesterday I ran into a friend at the subway station.",
+   "context": "",
+   "accepted": [
+    "昨天我在地铁站遇到了一个朋友。",
+    "昨天我在地铁站遇到了一位朋友。",
+    "昨天我在地铁站遇见了一个朋友。",
+    "昨天我在地铁站遇见了一位朋友。",
+    "昨天我在地铁站碰到了一个朋友。",
+    "昨天我在地铁站碰到了一位朋友。",
+    "昨天我在地铁站碰见了一个朋友。",
+    "昨天我在地铁站碰见了一位朋友。",
+    "我昨天在地铁站遇到了一个朋友。",
+    "我昨天在地铁站遇到了一位朋友。",
+    "我昨天在地铁站遇见了一个朋友。",
+    "我昨天在地铁站遇见了一位朋友。",
+    "我昨天在地铁站碰到了一个朋友。",
+    "我昨天在地铁站碰到了一位朋友。",
+    "我昨天在地铁站碰见了一个朋友。",
+    "我昨天在地铁站碰见了一位朋友。"
+   ],
+   "answer": "昨天我在地铁站遇到了一个朋友。",
+   "pinyin": "Zuótiān wǒ zài dìtiězhàn yùdào le yí ge péngyou.",
+   "es": "Yesterday I ran into a friend at the subway station.",
+   "rule": "遇到 / 遇见 = run into someone by chance.",
+   "note": ""
+  },
+  {
+   "id": "L13n086",
+   "lesson": 13,
+   "point": "Usage L13 · 遇到 / 遇见",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I ran into a lot of problems today.",
+   "context": "",
+   "accepted": [
+    "我今天遇到了很多问题。",
+    "我今天遇到了很多麻烦。",
+    "我今天遇到了好多问题。",
+    "我今天遇到了好多麻烦。",
+    "我今天遇到了不少问题。",
+    "我今天遇到了不少麻烦。",
+    "今天我遇到了很多问题。",
+    "今天我遇到了很多麻烦。",
+    "今天我遇到了好多问题。",
+    "今天我遇到了好多麻烦。",
+    "今天我遇到了不少问题。",
+    "今天我遇到了不少麻烦。"
+   ],
+   "answer": "我今天遇到了很多问题。",
+   "pinyin": "Wǒ jīntiān yùdào le hěn duō wèntí.",
+   "es": "I ran into a lot of problems today.",
+   "rule": "遇到 (not 遇见) is used for problems and difficulties.",
+   "note": ""
+  },
+  {
+   "id": "L13n087",
+   "lesson": 13,
+   "point": "Usage L13 · 遇到 / 遇见",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我在路上"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "了林娜。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "遇到",
+     "hint": "",
+     "alternatives": [
+      "遇见",
+      "碰到",
+      "碰见"
+     ]
+    }
+   ],
+   "answer": "我在路上遇到了林娜。",
+   "pinyin": "Wǒ zài lù shang yùdào le Lín Nà.",
+   "es": "I ran into Lin Na on the way.",
+   "rule": "遇到 / 遇见 + person = meet by chance.",
+   "note": ""
+  },
+  {
+   "id": "L13n088",
+   "lesson": 13,
+   "point": "Usage L13 · 大概",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I get up at about eight.",
+   "context": "",
+   "accepted": [
+    "我大概八点起床。",
+    "我一般大概八点起床。",
+    "我八点左右起床。",
+    "我一般八点左右起床。",
+    "我大概八点左右起床。",
+    "我一般大概八点左右起床。"
+   ],
+   "answer": "我大概八点起床。",
+   "pinyin": "Wǒ dàgài bā diǎn qǐchuáng.",
+   "es": "I get up at about eight.",
+   "rule": "大概 goes before the number: 大概八点 = 八点左右.",
+   "note": ""
+  },
+  {
+   "id": "L13n089",
+   "lesson": 13,
+   "point": "Usage L13 · 大概",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "A friend asks when you'll be home. Say: probably in about an hour.",
+   "context": "",
+   "accepted": [
+    "大概一个小时以后吧。",
+    "大概一个小时以后。",
+    "大概一个小时后吧。",
+    "大概一个小时后。",
+    "一个小时左右吧。",
+    "我大概一个小时以后回家吧。",
+    "我大概一个小时以后回家。",
+    "我大概一个小时以后回来吧。",
+    "我大概一个小时以后回来。",
+    "我大概一个小时以后到家吧。",
+    "我大概一个小时以后到家。",
+    "我大概一个小时后回家吧。",
+    "我大概一个小时后回家。",
+    "我大概一个小时后回来吧。",
+    "我大概一个小时后回来。",
+    "我大概一个小时后到家吧。",
+    "我大概一个小时后到家。"
+   ],
+   "answer": "大概一个小时以后吧。",
+   "pinyin": "Dàgài yí ge xiǎoshí yǐhòu ba.",
+   "es": "Probably in about an hour.",
+   "rule": "大概 + time = about, probably; 吧 softens the guess.",
+   "note": ""
+  },
+  {
+   "id": "L13n090",
+   "lesson": 13,
+   "point": "Usage L13 · 大概",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "从北京到上海坐高铁"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "要五个小时。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "大概",
+     "hint": ""
+    }
+   ],
+   "answer": "从北京到上海坐高铁大概要五个小时。",
+   "pinyin": "Cóng Běijīng dào Shànghǎi zuò gāotiě dàgài yào wǔ ge xiǎoshí.",
+   "es": "It takes about five hours by high-speed train from Beijing to Shanghai.",
+   "rule": "大概 = about, roughly (before the verb or the number).",
+   "note": ""
+  },
+  {
+   "id": "L13n091",
+   "lesson": 13,
+   "point": "Usage L13 · 方便",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "I'd like to treat you to dinner. Are you free tomorrow?",
+   "context": "",
+   "accepted": [
+    "我想请你吃饭，你明天方便吗？",
+    "我想请你吃饭，你明天方便不方便？",
+    "我想请你吃饭，你明天有空吗？",
+    "我想请你吃饭，你明天有没有空？",
+    "我想请你吃饭，你明天有时间吗？",
+    "我想请你吃饭，明天你方便吗？",
+    "我想请你吃饭，明天你方便不方便？",
+    "我想请你吃饭，明天你有空吗？",
+    "我想请你吃饭，明天你有没有空？",
+    "我想请你吃饭，明天你有时间吗？"
+   ],
+   "answer": "我想请你吃饭，你明天方便吗？",
+   "pinyin": "Wǒ xiǎng qǐng nǐ chī fàn, nǐ míngtiān fāngbiàn ma?",
+   "es": "I'd like to treat you to dinner. Are you free tomorrow?",
+   "rule": "你方便吗？ politely asks if a time suits someone (are you free?).",
+   "note": ""
+  },
+  {
+   "id": "L13n092",
+   "lesson": 13,
+   "point": "Usage L13 · 方便",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "火车站里有卫生间，很"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "方便",
+     "hint": ""
+    }
+   ],
+   "answer": "火车站里有卫生间，很方便。",
+   "pinyin": "Huǒchēzhàn li yǒu wèishēngjiān, hěn fāngbiàn.",
+   "es": "There are restrooms in the train station, which is very convenient.",
+   "rule": "方便 = convenient.",
+   "note": ""
+  },
+  {
+   "id": "L13n093",
+   "lesson": 13,
+   "point": "Usage L13 · 方便",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "When it's convenient for you, could you help me?",
+   "context": "",
+   "accepted": [
+    "你方便的时候，能帮我一下吗？",
+    "你方便的时候，能帮帮我吗？",
+    "你方便的时候，能帮我吗？",
+    "你方便的时候，可以帮我一下吗？",
+    "你方便的时候，可以帮帮我吗？",
+    "你方便的时候，可以帮我吗？"
+   ],
+   "answer": "你方便的时候，能帮我一下吗？",
+   "pinyin": "Nǐ fāngbiàn de shíhou, néng bāng wǒ yíxià ma?",
+   "es": "When it's convenient for you, could you help me?",
+   "rule": "你方便的时候 = whenever it suits you, a polite way to ask a favour.",
+   "note": ""
+  },
+  {
+   "id": "L13n094",
+   "lesson": 13,
+   "point": "Usage L13 · 方便",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "It's very convenient to get online here.",
+   "context": "",
+   "accepted": [
+    "在这儿上网很方便。",
+    "在这里上网很方便。",
+    "这儿上网很方便。",
+    "这里上网很方便。",
+    "在这儿上网非常方便。",
+    "在这里上网非常方便。",
+    "这儿上网非常方便。",
+    "这里上网非常方便。"
+   ],
+   "answer": "在这儿上网很方便。",
+   "pinyin": "Zài zhèr shàng wǎng hěn fāngbiàn.",
+   "es": "It's very convenient to get online here.",
+   "rule": "Activity + 很方便 = it's convenient to do it.",
+   "note": ""
+  },
+  {
+   "id": "L13n095",
+   "lesson": 13,
+   "point": "Usage L13 · 坏 / 断",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "My computer is broken; I want to buy a new one.",
+   "context": "",
+   "accepted": [
+    "我的电脑坏了，我想买一台新的。",
+    "我的电脑坏了，我想买一台新的电脑。",
+    "我的电脑坏了，我想买一个新的。",
+    "我的电脑坏了，我想买一个新的电脑。",
+    "我的电脑坏了，我想买个新的。",
+    "我的电脑坏了，我想买个新的电脑。",
+    "我的电脑坏了，我想买台新的。",
+    "我的电脑坏了，我想买台新的电脑。",
+    "我电脑坏了，我想买一台新的。",
+    "我电脑坏了，我想买一台新的电脑。",
+    "我电脑坏了，我想买一个新的。",
+    "我电脑坏了，我想买一个新的电脑。",
+    "我电脑坏了，我想买个新的。",
+    "我电脑坏了，我想买个新的电脑。",
+    "我电脑坏了，我想买台新的。",
+    "我电脑坏了，我想买台新的电脑。"
+   ],
+   "answer": "我的电脑坏了，我想买一台新的。",
+   "pinyin": "Wǒ de diànnǎo huài le, wǒ xiǎng mǎi yì tái xīn de.",
+   "es": "My computer is broken; I want to buy a new one.",
+   "rule": "坏了 = broken, out of order (or gone bad).",
+   "note": ""
+  },
+  {
+   "id": "L13n096",
+   "lesson": 13,
+   "point": "Usage L13 · 坏 / 断",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "The internet at home is down, so I can't get online.",
+   "context": "",
+   "accepted": [
+    "我家断网了，我不能上网。",
+    "我家断网了，我上不了网。",
+    "我家断网了，不能上网。",
+    "我家断网了，上不了网。",
+    "我家网络断了，我不能上网。",
+    "我家网络断了，我上不了网。",
+    "我家网络断了，不能上网。",
+    "我家网络断了，上不了网。",
+    "我家的网络断了，我不能上网。",
+    "我家的网络断了，我上不了网。",
+    "我家的网络断了，不能上网。",
+    "我家的网络断了，上不了网。",
+    "我家网断了，我不能上网。",
+    "我家网断了，我上不了网。",
+    "我家网断了，不能上网。",
+    "我家网断了，上不了网。",
+    "家里断网了，我不能上网。",
+    "家里断网了，我上不了网。",
+    "家里断网了，不能上网。",
+    "家里断网了，上不了网。",
+    "家里网络断了，我不能上网。",
+    "家里网络断了，我上不了网。",
+    "家里网络断了，不能上网。",
+    "家里网络断了，上不了网。",
+    "家里的网络断了，我不能上网。",
+    "家里的网络断了，我上不了网。",
+    "家里的网络断了，不能上网。",
+    "家里的网络断了，上不了网。",
+    "家里网断了，我不能上网。",
+    "家里网断了，我上不了网。",
+    "家里网断了，不能上网。",
+    "家里网断了，上不了网。",
+    "我家里断网了，我不能上网。",
+    "我家里断网了，我上不了网。",
+    "我家里断网了，不能上网。",
+    "我家里断网了，上不了网。",
+    "我家里网络断了，我不能上网。",
+    "我家里网络断了，我上不了网。",
+    "我家里网络断了，不能上网。",
+    "我家里网络断了，上不了网。",
+    "我家里的网络断了，我不能上网。",
+    "我家里的网络断了，我上不了网。",
+    "我家里的网络断了，不能上网。",
+    "我家里的网络断了，上不了网。",
+    "我家里网断了，我不能上网。",
+    "我家里网断了，我上不了网。",
+    "我家里网断了，不能上网。",
+    "我家里网断了，上不了网。"
+   ],
+   "answer": "我家断网了，我不能上网。",
+   "pinyin": "Wǒ jiā duàn wǎng le, wǒ bù néng shàng wǎng.",
+   "es": "The internet at home is down, so I can't get online.",
+   "rule": "断 = cut off: 断网了 / 网络断了 = the connection is down.",
+   "note": ""
+  },
+  {
+   "id": "L13n097",
+   "lesson": 13,
+   "point": "Usage L13 · 坏 / 断",
+   "type": "Choose",
+   "mode": "choice",
+   "instruction": "Choose the correct sentence",
+   "prompt": "The call got cut off.",
+   "context": "",
+   "options": [
+    "电话坏了。",
+    "电话断了。"
+   ],
+   "accepted": [
+    "电话断了。"
+   ],
+   "answer": "电话断了。",
+   "pinyin": "Diànhuà duàn le.",
+   "es": "The call got cut off.",
+   "rule": "断了 = the connection was cut; 坏了 would mean the phone itself is broken.",
+   "note": ""
+  },
+  {
+   "id": "L13n098",
+   "lesson": 13,
+   "point": "Usage L13 · 坏 / 断",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "这个苹果"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "了，别吃了。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "坏",
+     "hint": ""
+    }
+   ],
+   "answer": "这个苹果坏了，别吃了。",
+   "pinyin": "Zhège píngguǒ huài le, bié chī le.",
+   "es": "This apple has gone bad; don't eat it.",
+   "rule": "坏了 is also used for food that has gone off.",
+   "note": ""
+  },
+  {
+   "id": "L13n099",
+   "lesson": 13,
+   "point": "Usage L13 · 接",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Tomorrow I'm going to the airport to pick up my mom.",
+   "context": "",
+   "accepted": [
+    "我明天要去机场接我妈妈。",
+    "我明天要去机场接我的妈妈。",
+    "我明天要去机场接妈妈。",
+    "我明天要去机场接我妈。",
+    "我明天去机场接我妈妈。",
+    "我明天去机场接我的妈妈。",
+    "我明天去机场接妈妈。",
+    "我明天去机场接我妈。",
+    "明天我要去机场接我妈妈。",
+    "明天我要去机场接我的妈妈。",
+    "明天我要去机场接妈妈。",
+    "明天我要去机场接我妈。",
+    "明天我去机场接我妈妈。",
+    "明天我去机场接我的妈妈。",
+    "明天我去机场接妈妈。",
+    "明天我去机场接我妈。"
+   ],
+   "answer": "我明天要去机场接我妈妈。",
+   "pinyin": "Wǒ míngtiān yào qù jīchǎng jiē wǒ māma.",
+   "es": "Tomorrow I'm going to the airport to pick up my mom.",
+   "rule": "去 + place + 接 + person = go somewhere to pick someone up.",
+   "note": ""
+  },
+  {
+   "id": "L13n100",
+   "lesson": 13,
+   "point": "Usage L13 · 接",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Why didn't you answer the phone yesterday afternoon?",
+   "context": "",
+   "accepted": [
+    "你昨天下午为什么没接电话？",
+    "你昨天下午为什么没接我的电话？",
+    "你昨天下午为什么没有接电话？",
+    "你昨天下午为什么没有接我的电话？",
+    "你昨天下午怎么没接电话？",
+    "你昨天下午怎么没接我的电话？",
+    "你昨天下午怎么没有接电话？",
+    "你昨天下午怎么没有接我的电话？",
+    "昨天下午你为什么没接电话？",
+    "昨天下午你为什么没接我的电话？",
+    "昨天下午你为什么没有接电话？",
+    "昨天下午你为什么没有接我的电话？",
+    "昨天下午你怎么没接电话？",
+    "昨天下午你怎么没接我的电话？",
+    "昨天下午你怎么没有接电话？",
+    "昨天下午你怎么没有接我的电话？"
+   ],
+   "answer": "你昨天下午为什么没接电话？",
+   "pinyin": "Nǐ zuótiān xiàwǔ wèishénme méi jiē diànhuà?",
+   "es": "Why didn't you answer the phone yesterday afternoon?",
+   "rule": "接电话 = answer the phone.",
+   "note": ""
+  },
+  {
+   "id": "L13n101",
+   "lesson": 13,
+   "point": "Usage L13 · 接",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "我每天五点半去"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "孩子。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "接",
+     "hint": ""
+    }
+   ],
+   "answer": "我每天五点半去接孩子。",
+   "pinyin": "Wǒ měi tiān wǔ diǎn bàn qù jiē háizi.",
+   "es": "I pick up the kids at five thirty every day.",
+   "rule": "接 + person = pick someone up.",
+   "note": ""
+  },
+  {
+   "id": "L13n102",
+   "lesson": 13,
+   "point": "Usage L13 · 无聊",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Without my phone I'm so bored!",
+   "context": "",
+   "accepted": [
+    "没有手机，我好无聊！",
+    "没有手机，我很无聊！",
+    "没有手机，我真无聊！",
+    "没手机，我好无聊！",
+    "没手机，我很无聊！",
+    "没手机，我真无聊！",
+    "没有手机，我太无聊了！",
+    "没手机，我太无聊了！"
+   ],
+   "answer": "没有手机，我好无聊！",
+   "pinyin": "Méiyǒu shǒujī, wǒ hǎo wúliáo!",
+   "es": "Without my phone I'm so bored!",
+   "rule": "无聊 = bored / boring; 好 + adj. is an exclamation (so…!).",
+   "note": ""
+  },
+  {
+   "id": "L13n103",
+   "lesson": 13,
+   "point": "Usage L13 · 无聊",
+   "type": "Fill in",
+   "mode": "cloze",
+   "instruction": "Complete the sentence",
+   "segments": [
+    {
+     "text": "这真是个"
+    },
+    {
+     "gap": 0
+    },
+    {
+     "text": "的问题。"
+    }
+   ],
+   "gaps": [
+    {
+     "answer": "无聊",
+     "hint": ""
+    }
+   ],
+   "answer": "这真是个无聊的问题。",
+   "pinyin": "Zhè zhēn shì ge wúliáo de wèntí.",
+   "es": "This really is a pointless question.",
+   "rule": "无聊 + 的 + noun = a boring / pointless …",
+   "note": ""
+  },
+  {
+   "id": "L13n104",
+   "lesson": 13,
+   "point": "Usage L13 · 顺利",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "A friend starts a new job tomorrow. Wish them well.",
+   "context": "",
+   "accepted": [
+    "祝你工作顺利！",
+    "祝你新工作顺利！",
+    "祝你一切顺利！"
+   ],
+   "answer": "祝你工作顺利！",
+   "pinyin": "Zhù nǐ gōngzuò shùnlì!",
+   "es": "Hope the new job goes well!",
+   "rule": "祝你 + … + 顺利 is a set wish: may it go smoothly.",
+   "note": ""
+  },
+  {
+   "id": "L13n105",
+   "lesson": 13,
+   "point": "Usage L13 · 顺利",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "Getting the phone card went very smoothly.",
+   "context": "",
+   "accepted": [
+    "电话卡办得很顺利。",
+    "电话卡办得非常顺利。",
+    "办电话卡办得很顺利。",
+    "办电话卡办得非常顺利。",
+    "办电话卡很顺利。",
+    "办电话卡非常顺利。"
+   ],
+   "answer": "电话卡办得很顺利。",
+   "pinyin": "Diànhuàkǎ bàn de hěn shùnlì.",
+   "es": "Getting the phone card went very smoothly.",
+   "rule": "V + 得 + 很顺利 = something went smoothly.",
+   "note": ""
+  },
+  {
+   "id": "L13n106",
+   "lesson": 13,
+   "point": "Usage L13 · 走",
+   "type": "Situation",
+   "mode": "text",
+   "instruction": "What would you say?",
+   "prompt": "A guest is leaving your home. See them off politely.",
+   "context": "",
+   "accepted": [
+    "您慢走！",
+    "您慢走，欢迎再来！",
+    "您慢走，欢迎您再来！",
+    "你慢走！",
+    "你慢走，欢迎再来！",
+    "你慢走，欢迎您再来！",
+    "慢走！",
+    "慢走，欢迎再来！",
+    "慢走，欢迎您再来！"
+   ],
+   "answer": "您慢走！",
+   "pinyin": "Nín màn zǒu!",
+   "es": "Take care!",
+   "rule": "慢走 is said to someone leaving: take care, mind how you go.",
+   "note": ""
+  },
+  {
+   "id": "L13n107",
+   "lesson": 13,
+   "point": "Usage L13 · 走",
+   "type": "Translate",
+   "mode": "text",
+   "instruction": "Say it in Chinese",
+   "prompt": "After dinner I like to go for a walk in the park.",
+   "context": "",
+   "accepted": [
+    "吃完饭以后，我喜欢去公园走一走。",
+    "吃完饭以后，我喜欢去公园走走。",
+    "吃完饭以后，我喜欢去公园散步。",
+    "吃完饭以后，我喜欢去公园散散步。",
+    "吃完饭，我喜欢去公园走一走。",
+    "吃完饭，我喜欢去公园走走。",
+    "吃完饭，我喜欢去公园散步。",
+    "吃完饭，我喜欢去公园散散步。",
+    "吃了饭以后，我喜欢去公园走一走。",
+    "吃了饭以后，我喜欢去公园走走。",
+    "吃了饭以后，我喜欢去公园散步。",
+    "吃了饭以后，我喜欢去公园散散步。",
+    "吃饭以后，我喜欢去公园走一走。",
+    "吃饭以后，我喜欢去公园走走。",
+    "吃饭以后，我喜欢去公园散步。",
+    "吃饭以后，我喜欢去公园散散步。",
+    "吃完饭后，我喜欢去公园走一走。",
+    "吃完饭后，我喜欢去公园走走。",
+    "吃完饭后，我喜欢去公园散步。",
+    "吃完饭后，我喜欢去公园散散步。"
+   ],
+   "answer": "吃完饭以后，我喜欢去公园走一走。",
+   "pinyin": "Chīwán fàn yǐhòu, wǒ xǐhuan qù gōngyuán zǒu yi zǒu.",
+   "es": "After dinner I like to go for a walk in the park.",
+   "rule": "走一走 / 走走 = take a short walk.",
    "note": ""
   }
  ]

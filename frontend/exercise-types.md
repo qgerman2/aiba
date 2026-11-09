@@ -4,20 +4,20 @@ Reference for the grammar exercises in the **Exercises** tab (`src/exercises.tsx
 `src/exercises.json`, explanations in `src/grammar.json`). Use it when writing new exercises
 so they keep the current difficulty level.
 
-The deck has 531 exercises over NPCR lessons 1–14. **"Say it in Chinese" is the type to favour**:
+The deck has 578 exercises over NPCR lessons 1–14. **"Say it in Chinese" is the type to favour**:
 it is the most challenging and the most rewarding (see below).
 
 | Type | Instruction shown | Mode | Count | The learner… |
 |---|---|---|---|---|
-| **Translate** | **Say it in Chinese** | `text` | 185 | **types the whole Chinese sentence for an English one** |
-| Situation | What would you say? | `text` | 26 | says what fits a described situation |
-| Fill in | Complete the sentence | `cloze` | 137 | types the missing word(s) in a Chinese sentence |
+| **Translate** | **Say it in Chinese** | `text` | 208 | **types the whole Chinese sentence for an English one** |
+| Situation | What would you say? | `text` | 29 | says what fits a described situation |
+| Fill in | Complete the sentence | `cloze` | 149 | types the missing word(s) in a Chinese sentence |
 | Transform | Turn it into a question / Make it negative / … | `text` | 37 | changes a Chinese sentence's form |
-| Correct | The sentence has a mistake. Correct it. | `text` | 69 | rewrites a Chinese sentence that has one mistake |
-| Order | Put the words in order | `tiles` | 37 | taps word tiles to build the sentence |
-| Choose | Choose the correct sentence / reading / word | `choice` / `text` | 34 | picks (or writes) the right option of a contrast |
+| Correct | The sentence has a mistake. Correct it. | `text` | 73 | rewrites a Chinese sentence that has one mistake |
+| Order | Put the words in order | `tiles` | 39 | taps word tiles to build the sentence |
+| Choose | Choose the correct sentence / reading / word | `choice` / `text` | 36 | picks (or writes) the right option of a contrast |
 | Read | Read aloud (pinyin) | `reveal` | 5 | reads a word with several readings, then self-grades |
-| Question | Answer | `reveal` | 1 | answers a meaning question, then self-grades |
+| Question | Answer | `reveal` | 2 | answers a meaning question, then self-grades |
 
 ## "Say it in Chinese" comes first
 
@@ -27,7 +27,7 @@ to lean on. That is exactly what speaking and writing require, so these are the 
 most useful exercises. Every other type is a step towards them: Fill in, Order and Choose train
 recognition and single decisions; Transform and Correct train one change at a time.
 
-Today they are about a third of the deck (187 of 531, counting the two Choose items that
+Today they are about a third of the deck (210 of 578, counting the two Choose items that
 use the same instruction). When adding exercises, give them priority:
 
 - aim for about **40%** of each lesson to be "Say it in Chinese";
@@ -50,10 +50,13 @@ Writing good ones:
   placement, 吗 vs A-not-A vs 了没有 when the English question allows them.
 - **One sentence, everyday length** (roughly 6–15 characters), using the lesson's situations.
 
-Lesson 13 now has 79 exercises, including 36 "Say it in Chinese" items (46%). Its latest
-60 additions emphasize the lesson slides (`../../chino/leccion13.pdf`): 24 on 把 and 16 on
-才/就, with 20 more covering the other four grammar points already in the lesson. Existing
-exercise IDs stay unchanged so saved study sessions remain valid.
+Lesson 13 now has 126 exercises, including 59 "Say it in Chinese" items (47%). 60 of them
+emphasize the grammar slides (`../../chino/leccion13.pdf`): 24 on 把 and 16 on 才/就, with 20
+more covering the other four grammar points already in the lesson. Another 47, in 13
+"Usage L13 · …" points, come from the vocabulary slides (`../../chino/13-b1 (1).pdf`):
+后来 vs 以后, 穿 vs 戴, 趟, 聊天儿, 总是, 遇到/遇见, 大概, 方便, 坏/断, 接, 无聊, 顺利 and 走
+(23 of them "Say it in Chinese"). Existing exercise IDs stay unchanged so saved study sessions
+remain valid.
 
 ## The types
 

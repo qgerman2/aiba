@@ -6794,6 +6794,527 @@
   "missing": false
  },
  {
+  "point": "Usage L13 · 后来 / 以后",
+  "lesson": 13,
+  "title": "后来 hòulái n. / 后来 vs 以后",
+  "source": "Lesson 13 B1 (slides), p. 10–12",
+  "explanation": [
+   "后来: later on, afterwards, after that.",
+   "后来 and 以后 are used differently. 以后 can be used alone or after another time expression, such as 五点以后, while 后来 can only be used alone. We can't say *五点后来.",
+   "后来 only refers to the past, never the future. We can't say *海运太慢，后来我要寄航空。"
+  ],
+  "patterns": [
+   {
+    "label": "后来 (past only, used alone)",
+    "formula": "…，后来 + what happened",
+    "examples": [
+     "后来，他们成了好朋友。",
+     "他们以前相爱，但是后来分手了。",
+     "听说他去中国学习了。后来呢？后来怎么样了？"
+    ]
+   },
+   {
+    "label": "以后 (alone or after a time word; past or future)",
+    "formula": "time / event + 以后  ·  以后 + future",
+    "examples": [
+     "力波昨天下午四点以后回宿舍了。",
+     "海运太慢，以后我要寄航空。"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "zh": "我以后想当一名老师。",
+    "pinyin": "Wǒ yǐhòu xiǎng dāng yì míng lǎoshī.",
+    "es": "In the future I want to be a teacher."
+   },
+   {
+    "zh": "毕业以后，我想去旅行。",
+    "pinyin": "Bìyè yǐhòu, wǒ xiǎng qù lǚxíng.",
+    "es": "After I graduate, I want to travel."
+   },
+   {
+    "zh": "我以前不喜欢中文，后来发现中文很有意思，以后我想继续学中文。",
+    "pinyin": "",
+    "es": "I didn't use to like Chinese; later I found it very interesting, and in the future I want to keep studying it."
+   },
+   {
+    "zh": "他以前住在北京，后来搬到了上海。",
+    "pinyin": "Tā yǐqián zhù zài Běijīng, hòulái bāndào le Shànghǎi.",
+    "es": "He used to live in Beijing; later he moved to Shanghai."
+   }
+  ],
+  "notes": [
+   "Vocabulary: 后来的事, 后来呢, 后来买到了. Related: 互相 hùxiāng (mutual), 相爱 (love each other)."
+  ],
+  "missing": false
+ },
+ {
+  "point": "Usage L13 · 穿 / 戴",
+  "lesson": 13,
+  "title": "穿 chuān / 戴 dài v.",
+  "source": "Lesson 13 B1 (slides), p. 20–21",
+  "explanation": [
+   "穿 (clothes): the clothing that covers the body: 衣服, 裤子, 裙子, 鞋, 外套.",
+   "戴 (accessories): accessories or objects worn on some part of the body: 帽子, 眼镜, 手表, 耳环, 戒指, 项链."
+  ],
+  "patterns": [
+   {
+    "label": "Clothes",
+    "formula": "穿 + 衣服 / 裤子 / 裙子 / 鞋 / 外套",
+    "examples": [
+     "她今天穿了一件很漂亮的衣服。"
+    ]
+   },
+   {
+    "label": "Accessories",
+    "formula": "戴 + 帽子 / 眼镜 / 手表 / 耳环 / 戒指 / 项链",
+    "examples": [
+     "这只狗戴了一顶帽子。"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "zh": "这只狗戴了一顶帽子。",
+    "pinyin": "Zhè zhī gǒu dài le yì dǐng màozi.",
+    "es": "This dog is wearing a hat."
+   }
+  ],
+  "notes": [
+   "帽子 màozi (hat, cap) takes the measure word 顶 dǐng: 一顶帽子. Vocabulary: 新帽子, 漂亮的帽子, 暖和的帽子.",
+   "戴绿帽子 «to wear a green hat» means to be cheated on by your partner."
+  ],
+  "missing": false
+ },
+ {
+  "point": "Usage L13 · 趟",
+  "lesson": 13,
+  "title": "趟 tàng m.",
+  "source": "Lesson 13 B1 (slides), p. 6, 9",
+  "explanation": [
+   "A measure word for trips: the number of journeys, or of round trips (going and coming back).",
+   "It is also used for scheduled runs of a train."
+  ],
+  "patterns": [
+   {
+    "label": "Make a trip",
+    "formula": "去 + 一趟 + place  ·  去 + place + 一趟",
+    "examples": [
+     "我明天要去一趟上海。"
+    ]
+   },
+   {
+    "label": "Train runs",
+    "formula": "number + 趟 + 车 / 高铁",
+    "examples": [
+     "每天有十三趟高铁从上海到北京。"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "zh": "我明天要去一趟上海。",
+    "pinyin": "Wǒ míngtiān yào qù yí tàng Shànghǎi.",
+    "es": "I have to make a trip to Shanghai tomorrow."
+   },
+   {
+    "zh": "每天有十三趟高铁从上海到北京。",
+    "pinyin": "Měi tiān yǒu shísān tàng gāotiě cóng Shànghǎi dào Běijīng.",
+    "es": "There are thirteen high-speed trains from Shanghai to Beijing every day."
+   }
+  ],
+  "notes": [
+   "Vocabulary: 这趟车, 坐这趟, 去一趟."
+  ],
+  "missing": false
+ },
+ {
+  "point": "Usage L13 · 聊天儿",
+  "lesson": 13,
+  "title": "聊天儿 liáo tiānr v.",
+  "source": "Lesson 13 B1 (slides), p. 13, 18",
+  "explanation": [
+   "聊天儿: to chat. 聊: to talk.",
+   "聊天儿 is verb + object, so a duration goes in the middle (聊一会儿天儿) and reduplication doubles only 聊 (聊聊天儿). With another object, use 聊 alone: 聊电影."
+  ],
+  "patterns": [
+   {
+    "label": "Chat with someone",
+    "formula": "和 / 跟 + person + 聊天儿",
+    "examples": [
+     "你喜欢和谁聊天儿？"
+    ]
+   },
+   {
+    "label": "Split verb",
+    "formula": "聊 + 一会儿 + 天儿  ·  聊聊天儿",
+    "examples": [
+     "我们聊一会儿天儿吧。",
+     "周末我喜欢听听音乐，和朋友聊聊天儿。"
+    ]
+   },
+   {
+    "label": "聊 + topic",
+    "formula": "聊 + noun",
+    "examples": [
+     "你们在聊什么？",
+     "我们在聊电影。"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "zh": "我们聊一会儿天儿吧。",
+    "pinyin": "Wǒmen liáo yíhuìr tiānr ba.",
+    "es": "Let's chat for a bit."
+   },
+   {
+    "zh": "我们在聊电影。",
+    "pinyin": "Wǒmen zài liáo diànyǐng.",
+    "es": "We're talking about films."
+   }
+  ],
+  "notes": [
+   "Vocabulary: 聊一会儿天, 聊天儿的人."
+  ],
+  "missing": false
+ },
+ {
+  "point": "Usage L13 · 总是",
+  "lesson": 13,
+  "title": "总是 zǒngshì adv.",
+  "source": "Lesson 13 B1 (slides), p. 15, 18",
+  "explanation": [
+   "总是: always. It goes after the subject, before the verb or adjective."
+  ],
+  "patterns": [
+   {
+    "label": "Always",
+    "formula": "S + 总是 + V / Adj",
+    "examples": [
+     "你总是不写作业。",
+     "她总是这么漂亮。",
+     "你总是知道我在想什么。",
+     "每天晚上她总是很饿。"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "zh": "你总是知道我在想什么。",
+    "pinyin": "Nǐ zǒngshì zhīdào wǒ zài xiǎng shénme.",
+    "es": "You always know what I'm thinking."
+   }
+  ],
+  "notes": [
+   "Vocabulary: 总是睡觉, 总是工作, 总是很辛苦."
+  ],
+  "missing": false
+ },
+ {
+  "point": "Usage L13 · 遇到 / 遇见",
+  "lesson": 13,
+  "title": "遇 yù v. · 遇到 / 遇见",
+  "source": "Lesson 13 B1 (slides), p. 16, 18",
+  "explanation": [
+   "遇到 yùdào / 遇见 yùjiàn: to meet, to run into (someone or something).",
+   "For problems and difficulties, use 遇到."
+  ],
+  "patterns": [
+   {
+    "label": "Run into someone",
+    "formula": "S + 遇到 / 遇见 + person",
+    "examples": [
+     "昨天我在地铁站遇见/遇到了一个朋友。"
+    ]
+   },
+   {
+    "label": "Run into problems",
+    "formula": "S + 遇到 + 问题",
+    "examples": [
+     "力波今天工作不顺利，因为他遇到了很多问题。"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "zh": "昨天我在地铁站遇到了一个朋友。",
+    "pinyin": "Zuótiān wǒ zài dìtiězhàn yùdào le yí ge péngyou.",
+    "es": "Yesterday I ran into a friend at the subway station."
+   }
+  ],
+  "notes": [
+   "偶遇 ǒuyù: to meet by chance. Vocabulary: 遇见一个朋友, 总是能遇到."
+  ],
+  "missing": false
+ },
+ {
+  "point": "Usage L13 · 大概",
+  "lesson": 13,
+  "title": "大概 dàgài adv.",
+  "source": "Lesson 13 B1 (slides), p. 22, 25",
+  "explanation": [
+   "大概: approximately, more or less, around. 大概八点 = 八点左右."
+  ],
+  "patterns": [
+   {
+    "label": "About (before the number)",
+    "formula": "大概 + number / time",
+    "examples": [
+     "大概八点",
+     "大概五个小时"
+    ]
+   },
+   {
+    "label": "Compare 左右 (after the number)",
+    "formula": "number + 左右",
+    "examples": [
+     "八点左右"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "zh": "你什么时候回家？——大概一个小时以后吧。",
+    "pinyin": "",
+    "es": "When are you going home? — Probably in about an hour."
+   },
+   {
+    "zh": "你几点起床？——我大概八点起床。",
+    "pinyin": "",
+    "es": "What time do you get up? — I get up at about eight."
+   }
+  ],
+  "notes": [],
+  "missing": false
+ },
+ {
+  "point": "Usage L13 · 方便",
+  "lesson": 13,
+  "title": "方便 fāngbiàn adj.",
+  "source": "Lesson 13 B1 (slides), p. 26, 30",
+  "explanation": [
+   "方便: convenient; (of a person) available, free at a given time."
+  ],
+  "patterns": [
+   {
+    "label": "Convenient",
+    "formula": "… 很方便",
+    "examples": [
+     "火车站里有卫生间，很方便。"
+    ]
+   },
+   {
+    "label": "Available (polite)",
+    "formula": "你 + time + 方便吗？ · 你方便的时候……",
+    "examples": [
+     "我想请你吃饭，明天你方便吗？",
+     "你方便的时候，能帮我一下吗？"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "zh": "我想请你吃饭，明天你方便吗？",
+    "pinyin": "Wǒ xiǎng qǐng nǐ chī fàn, míngtiān nǐ fāngbiàn ma?",
+    "es": "I'd like to treat you to dinner. Are you free tomorrow?"
+   }
+  ],
+  "notes": [
+   "方便面: instant noodles. Vocabulary: 上网很方便, 不太方便."
+  ],
+  "missing": false
+ },
+ {
+  "point": "Usage L13 · 坏 / 断",
+  "lesson": 13,
+  "title": "坏 huài / 断 duàn",
+  "source": "Lesson 13 B1 (slides), p. 27–28, 30",
+  "explanation": [
+   "坏: bad; broken, out of order (坏了).",
+   "断: to cut off, to break off, to disconnect: 绳子断了 (the rope snapped), 网络断了 (the connection is down)."
+  ],
+  "patterns": [
+   {
+    "label": "Broken",
+    "formula": "N + 坏了",
+    "examples": [
+     "我的电脑坏了，我想买一台新的电脑。"
+    ]
+   },
+   {
+    "label": "Bad",
+    "formula": "坏 + N",
+    "examples": [
+     "他是个坏人，我们不和他玩。"
+    ]
+   },
+   {
+    "label": "Cut off",
+    "formula": "N + 断了 · 断网了",
+    "examples": [
+     "我的手机网络断了。",
+     "我家断网了，我不能上网。"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "zh": "我家断网了，我不能上网。",
+    "pinyin": "Wǒ jiā duàn wǎng le, wǒ bù néng shàng wǎng.",
+    "es": "The internet at home is down, so I can't get online."
+   }
+  ],
+  "notes": [
+   "Vocabulary: 手机坏了, 坏苹果, 网络断了, 电话断了. Related: 网络 wǎngluò (internet), 无线网 (Wi-Fi), 上网, 网课."
+  ],
+  "missing": false
+ },
+ {
+  "point": "Usage L13 · 接",
+  "lesson": 13,
+  "title": "接 jiē v.",
+  "source": "Lesson 13 B1 (slides), p. 29, 30",
+  "explanation": [
+   "接: to receive; to pick someone up; 接电话 = to answer the phone."
+  ],
+  "patterns": [
+   {
+    "label": "Pick someone up",
+    "formula": "去 + place + 接 + person",
+    "examples": [
+     "我明天要去机场接我的妈妈。",
+     "我每天五点半去接孩子。"
+    ]
+   },
+   {
+    "label": "Answer the phone",
+    "formula": "接电话",
+    "examples": [
+     "你昨天下午在做什么？为什么没有接电话？"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "zh": "我明天要去机场接我的妈妈。",
+    "pinyin": "Wǒ míngtiān yào qù jīchǎng jiē wǒ de māma.",
+    "es": "Tomorrow I'm going to the airport to pick up my mom."
+   }
+  ],
+  "notes": [
+   "Vocabulary: 接朋友, 接同学, 去接外婆."
+  ],
+  "missing": false
+ },
+ {
+  "point": "Usage L13 · 无聊",
+  "lesson": 13,
+  "title": "无聊 wúliáo adj.",
+  "source": "Lesson 13 B1 (slides), p. 14, 30",
+  "explanation": [
+   "无聊: bored; boring, pointless."
+  ],
+  "patterns": [
+   {
+    "label": "Bored / boring",
+    "formula": "S + 好 / 很 / 太 + 无聊",
+    "examples": [
+     "生活好无聊。",
+     "没有手机，我好无聊！",
+     "这真是个无聊的问题。"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "zh": "没有手机，我好无聊！",
+    "pinyin": "Méiyǒu shǒujī, wǒ hǎo wúliáo!",
+    "es": "Without my phone I'm so bored!"
+   }
+  ],
+  "notes": [
+   "Vocabulary: 太无聊了, 觉得很无聊."
+  ],
+  "missing": false
+ },
+ {
+  "point": "Usage L13 · 顺利",
+  "lesson": 13,
+  "title": "顺利 shùnlì adj.",
+  "source": "Lesson 13 B1 (slides), p. 8, 9",
+  "explanation": [
+   "顺利: smooth, without problems; to go well."
+  ],
+  "patterns": [
+   {
+    "label": "Wish",
+    "formula": "祝你 + … + 顺利！",
+    "examples": [
+     "祝你工作顺利！"
+    ]
+   },
+   {
+    "label": "It went smoothly",
+    "formula": "V + 得 + 很顺利",
+    "examples": [
+     "力波电话卡办得很顺利。"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "zh": "祝你工作顺利！",
+    "pinyin": "Zhù nǐ gōngzuò shùnlì!",
+    "es": "Hope work goes well!"
+   }
+  ],
+  "notes": [
+   "一帆风顺 yì fān fēng shùn: may everything go smoothly. Vocabulary: 很顺利, 工作顺利, 事情办得很顺利."
+  ],
+  "missing": false
+ },
+ {
+  "point": "Usage L13 · 走",
+  "lesson": 13,
+  "title": "走 zǒu v.",
+  "source": "Lesson 13 B1 (slides), p. 17, 18",
+  "explanation": [
+   "走: to walk; to leave, to go away. 走路: to walk (on foot)."
+  ],
+  "patterns": [
+   {
+    "label": "Leave",
+    "formula": "走 · 慢走",
+    "examples": [
+     "走，我们走。",
+     "您慢走，欢迎您再来。"
+    ]
+   },
+   {
+    "label": "Walk",
+    "formula": "走一走 · 走路",
+    "examples": [
+     "吃完饭以后，我喜欢去公园走一走。",
+     "我每天都走路上学。",
+     "我喜欢走路，每天都走十公里。"
+    ]
+   }
+  ],
+  "examples": [
+   {
+    "zh": "您慢走，欢迎您再来。",
+    "pinyin": "Nín màn zǒu, huānyíng nín zài lái.",
+    "es": "Take care, and please come again."
+   }
+  ],
+  "notes": [
+   "Vocabulary: 走路, 走一走, 慢走."
+  ],
+  "missing": false
+ },
+ {
   "point": "“比”字句 · Comparison with 比 (inferred)",
   "lesson": 14,
   "title": "比 · Comparisons (“more … than”)",
