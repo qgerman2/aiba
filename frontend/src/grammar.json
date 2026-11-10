@@ -1,6 +1,7 @@
 [
  {
   "point": "用“吗”的是非问句 · Yes/no questions with 吗",
+  "name": "Yes/no questions",
   "lesson": 1,
   "title": "1. 用“吗”的是非问句 Yes-no questions with “ma 吗”",
   "source": "Básico 1 textbook, PDF p. 51",
@@ -55,6 +56,7 @@
  },
  {
   "point": "形容词谓语句 · Adjectival predicate",
+  "name": "Adjectives as predicates",
   "lesson": 1,
   "title": "2. 形容词谓语句 Sentences with an adjectival predicate",
   "source": "Básico 1 textbook, PDF p. 52",
@@ -98,6 +100,7 @@
  },
  {
   "point": "副词“也”的位置 · Position of 也",
+  "name": "Position of “also”",
   "lesson": 1,
   "title": "3. 副词“也”的位置 The position of the adverb “yě 也” (also)",
   "source": "Básico 1 textbook, PDF p. 53–54",
@@ -157,6 +160,7 @@
  },
  {
   "point": "汉语的语序 · Word order",
+  "name": "Word order",
   "lesson": 1,
   "title": "4. 汉语的语序 Word order in Chinese",
   "source": "Básico 1 textbook, PDF p. 54–55",
@@ -190,6 +194,7 @@
  },
  {
   "point": "Notes L1 · 请 + verb",
+  "name": "Polite requests",
   "lesson": 1,
   "title": "② Qǐng jìn. Please come in.",
   "source": "Básico 1 textbook, PDF p. 50",
@@ -219,6 +224,7 @@
  },
  {
   "point": "Notes L1 · ……怎么样？",
+  "name": "Asking how things are",
   "lesson": 1,
   "title": "③ Nǐ zuìjìn zěnmeyàng? How have you been?",
   "source": "Básico 1 textbook, PDF p. 50",
@@ -258,6 +264,7 @@
  },
  {
   "point": "Tones of 一 and 不",
+  "name": "Tone changes of “one” and “not”",
   "lesson": 1,
   "title": "1. Tone change of “yī 一” (one) / (3) Tone change of “bù 不” (not)",
   "source": "Básico 1 textbook, PDF p. 14, 16, 30",
@@ -340,6 +347,7 @@
  },
  {
   "point": "“是”字句(1) · Sentences with 是",
+  "name": "Sentences with “to be”",
   "lesson": 2,
   "title": "1. “是”字句（1） Sentences with “shì 是” (to be) (1)",
   "source": "Básico 1 textbook, PDF p. 73",
@@ -399,6 +407,7 @@
  },
  {
   "point": "用疑问代词的问句(1)：什么、哪 · Question words 什么 / 哪",
+  "name": "Asking “what” and “which”",
   "lesson": 2,
   "title": "2. 用疑问代词的问句（1）：什么、哪 Questions with interrogative pronouns (1): “shénme 什么” (what) or “nǎ 哪” (which)",
   "source": "Básico 1 textbook, PDF p. 74–75",
@@ -453,6 +462,7 @@
  },
  {
   "point": "连词“和” · The conjunction 和",
+  "name": "Joining nouns with “and”",
   "lesson": 2,
   "title": "3. 连词“和” The conjunction “hé 和” (and)",
   "source": "Básico 1 textbook, PDF p. 76",
@@ -497,6 +507,7 @@
  },
  {
   "point": "副词“都”的位置 · Position of 都",
+  "name": "Position of “all / both”",
   "lesson": 2,
   "title": "4. 副词“都”的位置 The position of the adverb “dōu 都” (all; both)",
   "source": "Básico 1 textbook, PDF p. 76–77",
@@ -554,6 +565,7 @@
  },
  {
   "point": "Notes L2 · 您贵姓",
+  "name": "Asking someone's surname",
   "lesson": 2,
   "title": "⑤ Nín guìxìng? Wǒ xìng Chén. May I ask your surname? My surname is Chen.",
   "source": "Básico 1 textbook, PDF p. 69",
@@ -596,6 +608,7 @@
  },
  {
   "point": "Notes L2 · Country + 人",
+  "name": "Saying your nationality",
   "lesson": 2,
   "title": "⑦ Wǒ shì Měiguórén. I'm American.",
   "source": "Básico 1 textbook, PDF p. 69",
@@ -645,6 +658,7 @@
  },
  {
   "point": "“有”字句 · Sentences with 有",
+  "name": "Sentences with “to have”",
   "lesson": 3,
   "title": "1. “有”字句 Sentences with “yǒu 有” (to have)",
   "source": "Básico 1 textbook, PDF p. 97–98",
@@ -722,6 +736,7 @@
  },
  {
   "point": "表领属关系的定语 · Possessive modifier with 的",
+  "name": "Possession",
   "lesson": 3,
   "title": "2. 表领属关系的定语 Attributives expressing possession",
   "source": "Básico 1 textbook, PDF p. 99",
@@ -788,6 +803,7 @@
  },
  {
   "point": "数量词做定语 · Number + measure word",
+  "name": "Numbers with measure words",
   "lesson": 3,
   "title": "3. 数量词做定语 “Numeral + measure word” as a noun modifier",
   "source": "Básico 1 textbook, PDF p. 100–101",
@@ -865,6 +881,7 @@
  },
  {
   "point": "用疑问代词的问句(2)：谁、几 · Question words 谁 / 几",
+  "name": "Asking “who” and “how many”",
   "lesson": 3,
   "title": "4. 用疑问代词的问句（2）：谁、几 Questions with interrogative pronouns (2): “shéi 谁” (who) or “jǐ 几” (how many)",
   "source": "Básico 1 textbook, PDF p. 102",
@@ -943,6 +960,7 @@
  },
  {
   "point": "还(1)：表示补充 · 还 = also, in addition",
+  "name": "“Also, in addition”",
   "lesson": 3,
   "title": "5. 还（1）：表示补充、追加 The adverb “hái 还” (1): Indicating “in addition”",
   "source": "Básico 1 textbook, PDF p. 103",
@@ -984,6 +1002,7 @@
  },
  {
   "point": "Notes L3 · 真 + adjective",
+  "name": "“Really” + adjective",
   "lesson": 3,
   "title": "① Nǐmen jiā zhēn piàoliang! Your home is really beautiful!",
   "source": "Básico 1 textbook, PDF p. 96",
@@ -1019,6 +1038,7 @@
  },
  {
   "point": "称数法 · 几 and 多少",
+  "name": "Asking how many",
   "lesson": 4,
   "title": "1. 11～100 的称数法 Numbers from 11 to 100",
   "source": "Básico 2, PDF p. 8–9 (Note ② p. 8)",
@@ -1077,6 +1097,7 @@
  },
  {
   "point": "钟点读法 · Telling the time",
+  "name": "Telling the time",
   "lesson": 4,
   "title": "2. 钟点读法 Telling the time",
   "source": "Básico 2, PDF p. 9",
@@ -1118,6 +1139,7 @@
  },
  {
   "point": "表时间的词语做状语 · Time expressions",
+  "name": "Time expressions",
   "lesson": 4,
   "title": "3. 表时间的词语做状语 Time expressions used as adverbials",
   "source": "Básico 2, PDF p. 10–11",
@@ -1198,6 +1220,7 @@
  },
  {
   "point": "正反疑问句 · Affirmative-negative questions (V不V)",
+  "name": "A-not-A questions",
   "lesson": 4,
   "title": "4. 正反疑问句 Affirmative-negative questions: verb/adjective-not-verb/adjective (A-not-A questions)",
   "source": "Básico 2, PDF p. 11–12",
@@ -1256,6 +1279,7 @@
  },
  {
   "point": "用“呢”构成的省略问句 · Questions with 呢",
+  "name": "Elliptical “and you?” questions",
   "lesson": 4,
   "title": "6. 用“呢”构成的省略问句 Elliptical questions ending in “ne 呢”",
   "source": "Básico 2, PDF p. 14",
@@ -1295,6 +1319,7 @@
  },
  {
   "point": "Notes L4 · 吧 (suggestion)",
+  "name": "Making suggestions",
   "lesson": 4,
   "title": "④ 我们一起去吧。 Let's go together.",
   "source": "Básico 2, PDF p. 5",
@@ -1316,6 +1341,7 @@
  },
  {
   "point": "Notes L4 · 恐怕不行",
+  "name": "Saying “I'm afraid not”",
   "lesson": 4,
   "title": "⑤ 恐怕不行。 I'm afraid not.",
   "source": "Básico 2, PDF p. 5",
@@ -1337,6 +1363,7 @@
  },
  {
   "point": "Notes L4 · 对了",
+  "name": "“By the way”",
   "lesson": 4,
   "title": "③ 对了，你明天晚上有没有时间？ By the way, do you have time tomorrow evening?",
   "source": "Básico 2, PDF p. 5",
@@ -1358,6 +1385,7 @@
  },
  {
   "point": "Notes L4 · 吧 (assumption)",
+  "name": "Guessing: “…, right?”",
   "lesson": 4,
   "title": "吧 · Guessing: “…, right?”",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Suggestions with \"ba\"” and “Softening speech with \"ba\"” — not from the textbook",
@@ -1444,6 +1472,7 @@
  },
  {
   "point": "年、月、日和星期 · Dates",
+  "name": "Dates and days of the week",
   "lesson": 5,
   "title": "1. 年、月、日和星期的读法 Expressing dates and the days of the week",
   "source": "Básico 2, PDF p. 34–35",
@@ -1533,6 +1562,7 @@
  },
  {
   "point": "名词谓语句 · Nominal predicate",
+  "name": "Nouns as predicates",
   "lesson": 5,
   "title": "2. 名词谓语句 Sentences with a nominal predicate",
   "source": "Básico 2, PDF p. 36–37",
@@ -1580,6 +1610,7 @@
  },
  {
   "point": "双宾语动词谓语句(1)：送、教 · Double objects",
+  "name": "Giving and teaching (two objects)",
   "lesson": 5,
   "title": "3. 双宾语动词谓语句（1）：送、教 Sentences with a double-object verbal predicate (1): “sòng 送” (to give as a gift) or “jiāo 教” (to teach)",
   "source": "Básico 2, PDF p. 37",
@@ -1622,6 +1653,7 @@
  },
  {
   "point": "“就”(1)：表示强调 · Emphatic 就",
+  "name": "Emphasis: “precisely”",
   "lesson": 5,
   "title": "4. “就”（1）：表示强调 The adverb “jiù 就” (1): Expressing emphasis",
   "source": "Básico 2, PDF p. 38",
@@ -1646,6 +1678,7 @@
  },
  {
   "point": "疑问语调句 · Intonation questions",
+  "name": "Questions by intonation",
   "lesson": 5,
   "title": "5. 疑问语调句 Questions with rising intonation",
   "source": "Básico 2, PDF p. 39",
@@ -1675,6 +1708,7 @@
  },
  {
   "point": "Notes L5 · 多大 / 几岁",
+  "name": "Asking someone's age",
   "lesson": 5,
   "title": "② 你哥哥今年多大？ How old is your older brother?",
   "source": "Básico 2, PDF p. 30",
@@ -1694,6 +1728,7 @@
  },
  {
   "point": "Notes L5 · 咱们 / 我们",
+  "name": "Inclusive “we”",
   "lesson": 5,
   "title": "⑤ 咱们 we",
   "source": "Básico 2, PDF p. 34",
@@ -1715,6 +1750,7 @@
  },
  {
   "point": "Notes L5 · V + 一下",
+  "name": "Doing something briefly",
   "lesson": 5,
   "title": "③ 我来介绍一下。 Let me introduce (you).",
   "source": "Básico 2, PDF p. 33",
@@ -1744,6 +1780,7 @@
  },
  {
   "point": "Notes L5 · 祝",
+  "name": "Wishing someone well",
   "lesson": 5,
   "title": "② 祝你生日快乐！ Happy birthday!",
   "source": "Básico 2, PDF p. 33",
@@ -1788,6 +1825,7 @@
  },
  {
   "point": "方位词 · Location words",
+  "name": "Location words",
   "lesson": 6,
   "title": "1. 方位词 Locative nouns (nouns of locality)",
   "source": "Básico 2, PDF p. 57–58",
@@ -1821,6 +1859,7 @@
  },
  {
   "point": "用“在”表方位 · Location with 在",
+  "name": "Saying where something is",
   "lesson": 6,
   "title": "2. 用“在”表方位的句子 Sentences with “zài 在” (to be at/in) indicating location",
   "source": "Básico 2, PDF p. 59",
@@ -1860,6 +1899,7 @@
  },
  {
   "point": "用“有”“是”表存在 · Existence with 有 / 是",
+  "name": "Saying what is somewhere",
   "lesson": 6,
   "title": "3. 用“有”“是”表存在的句子 Sentences with “yǒu 有” (there is) or “shì 是” (to be) indicating existence",
   "source": "Básico 2, PDF p. 60",
@@ -1911,6 +1951,7 @@
  },
  {
   "point": "介词结构(1)：跟 / 给 · 跟 and 给",
+  "name": "“With” and “to / for”",
   "lesson": 6,
   "title": "4. 介词结构（1）：跟 / 给 + 代词 / 名词 Prepositional constructions (1): “gēn 跟” (with) / “gěi 给” (to; for) + Pronoun/Noun",
   "source": "Básico 2, PDF p. 61–62",
@@ -1977,6 +2018,7 @@
  },
  {
   "point": "……，好吗？ / ……，对吗？",
+  "name": "Tag questions: “OK?” / “right?”",
   "lesson": 6,
   "title": "5. 用“……，好吗？”“……，对吗？”提问 Questions with “……, hǎo ma 好吗?” or “……, duì ma 对吗?”",
   "source": "Básico 2, PDF p. 62–63",
@@ -2028,6 +2070,7 @@
  },
  {
   "point": "Notes L6 · 别 + verb",
+  "name": "Telling someone not to do something",
   "lesson": 6,
   "title": "① 别着急，林小姐。 Don't worry, Miss Lin.",
   "source": "Básico 2, PDF p. 56",
@@ -2060,6 +2103,7 @@
  },
  {
   "point": "百、千的称数法 · Numbers up to 9999",
+  "name": "Numbers up to 9,999",
   "lesson": 7,
   "title": "百、千的称数法 · Numbers from 100 to 9,999",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Structure of numbers” and “Comparing \"er\" and \"liang\"” — explanation not from the textbook (number table from Básico 2, PDF p. 81)",
@@ -2183,6 +2227,7 @@
  },
  {
   "point": "能愿动词(1)：想、可以 · Auxiliaries 想 / 可以",
+  "name": "“Would like to” and “may”",
   "lesson": 7,
   "title": "2. 能愿动词谓语句（1）：想、可以 Sentences with modal verbs (1): “xiǎng 想” (would like to) or “kěyǐ 可以” (can, may)",
   "source": "Básico 2, PDF p. 82–83",
@@ -2241,6 +2286,7 @@
  },
  {
   "point": "双宾语动词(2)：给、问、找 · Double objects",
+  "name": "Verbs with two objects",
   "lesson": 7,
   "title": "3. 双宾语动词谓语句（2）：给、问、找 Sentences with a double-object verbal predicate (2): “gěi 给” (to give), “wèn 问” (to ask), and “zhǎo 找” (to give change)",
   "source": "Básico 2, PDF p. 83–84",
@@ -2304,6 +2350,7 @@
  },
  {
   "point": "用疑问代词的问句(3)：怎么 · 怎么 + verb",
+  "name": "Asking how to do something",
   "lesson": 7,
   "title": "4. 用疑问代词的问句（3）：怎么 Questions with interrogative pronouns (3): “zěnme 怎么” (how)",
   "source": "Básico 2, PDF p. 85",
@@ -2357,6 +2404,7 @@
  },
  {
   "point": "Notes L7 · Price per unit",
+  "name": "Price per unit",
   "lesson": 7,
   "title": "③ 苹果多少钱一斤？ How much is half a kilo of apples?",
   "source": "Básico 2, PDF p. 76",
@@ -2391,6 +2439,7 @@
  },
  {
   "point": "Notes L7 · Spoken money",
+  "name": "Saying prices",
   "lesson": 7,
   "title": "④ 五块五一斤。 Five kuai (yuan) fifty a jin.",
   "source": "Básico 2, PDF p. 76",
@@ -2438,6 +2487,7 @@
  },
  {
   "point": "Notes L7 · Adjective + (一)点儿",
+  "name": "“A bit more …”",
   "lesson": 7,
   "title": "形容词 + (一)点儿 · “a bit more …”",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Comparing \"youdian\" and \"yidian\"” — not from the textbook",
@@ -2517,6 +2567,7 @@
  },
  {
   "point": "双宾语(2)：给 · 给 + person + thing",
+  "name": "Giving something to someone",
   "lesson": 7,
   "title": "3. 双宾语动词谓语句（2）：给、问、找 Sentences with a double-object verbal predicate (2): “gěi 给” (to give), “wèn 问” (to ask), and “zhǎo 找” (to give change)",
   "source": "Básico 2, PDF p. 83–84",
@@ -2580,6 +2631,7 @@
  },
  {
   "point": "Usage · 怎么 = how come…?",
+  "name": "“How come…?”",
   "lesson": 7,
   "title": "怎么 · “How come…?”",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Asking why with \"zenme\"” — not from the textbook",
@@ -2660,6 +2712,7 @@
  },
  {
   "point": "主谓谓语句 · Subject-predicate predicate",
+  "name": "Topic + comment sentences",
   "lesson": 8,
   "title": "1. 主谓谓语句 Sentences with a subject-predicate phrase as predicate",
   "source": "Textbook units 8–10, PDF p. 10–11",
@@ -2720,6 +2773,7 @@
  },
  {
   "point": "选择疑问句 · Questions with 还是",
+  "name": "Either-or questions",
   "lesson": 8,
   "title": "2. 选择疑问句 Alternative questions",
   "source": "Textbook units 8–10, PDF p. 11",
@@ -2787,6 +2841,7 @@
  },
  {
   "point": "连动句(1)：表示目的 · Serial verbs (purpose)",
+  "name": "Going somewhere to do something",
   "lesson": 8,
   "title": "3. 连动句（1）：表示目的 Serial verb sentences (1): Expressing purpose",
   "source": "Textbook units 8–10, PDF p. 12",
@@ -2847,6 +2902,7 @@
  },
  {
   "point": "能愿动词(2)：应该、要、能 · Auxiliaries",
+  "name": "“Should”, “need” and “can”",
   "lesson": 8,
   "title": "4. 能愿动词谓语句（2）：应该、要、能 Sentences with modal verbs (2): “yīnggāi 应该” (should), “yào 要” (need; want), and “néng 能” (can; be able to)",
   "source": "Textbook units 8–10, PDF p. 13–15",
@@ -2939,6 +2995,7 @@
  },
  {
   "point": "介词结构(2)：在 + place · 在 + place + verb",
+  "name": "Doing something at a place",
   "lesson": 8,
   "title": "5. 介词结构（2）：在 + 代词/名词 Prepositional constructions (2): “zài 在” (in, at) + Pronoun/Noun",
   "source": "Textbook units 8–10, PDF p. 16",
@@ -2991,6 +3048,7 @@
  },
  {
   "point": "Notes L8 · 快 + verb",
+  "name": "Urging: “hurry up and…”",
   "lesson": 8,
   "title": "① 快起床！ Get up, quick!",
   "source": "Textbook units 8–10, PDF p. 4",
@@ -3030,6 +3088,7 @@
  },
  {
   "point": "Notes L8 · 每……都",
+  "name": "“Every …”",
   "lesson": 8,
   "title": "② 你每天早上都六点去运动。 You go exercise at six o'clock every morning.",
   "source": "Textbook units 8–10, PDF p. 4–5",
@@ -3066,6 +3125,7 @@
  },
  {
   "point": "Notes L8 · 还 = still",
+  "name": "“Still”",
   "lesson": 8,
   "title": "③ 今天为什么九点还不起床？ It's already nine; why haven't you gotten up yet today?",
   "source": "Textbook units 8–10, PDF p. 5",
@@ -3114,6 +3174,7 @@
  },
  {
   "point": "Notes L8 · 有点儿 / 一点儿",
+  "name": "“A bit” vs. “a little”",
   "lesson": 8,
   "title": "⑤ 我嗓子也有点儿疼。 My throat also hurts a little.",
   "source": "Textbook units 8–10, PDF p. 6",
@@ -3167,6 +3228,7 @@
  },
  {
   "point": "Notes L8 · 跟……一起",
+  "name": "Doing something together",
   "lesson": 8,
   "title": "⑦ 我跟你一起去。 I'll go with you.",
   "source": "Textbook units 8–10, PDF p. 6",
@@ -3201,6 +3263,7 @@
  },
  {
   "point": "Notes L8 · 一点儿也不 + adj",
+  "name": "“Not … at all”",
   "lesson": 8,
   "title": "一点儿也不 + 形容词 · “not … at all”",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Expressing \"not at all\" with \"yidianr ye bu\"” — not from the textbook",
@@ -3285,6 +3348,7 @@
  },
  {
   "point": "句尾“了”(1)：变化 · 了 for change of state",
+  "name": "Change of state",
   "lesson": 9,
   "title": "1. 助词“了”在句尾（1）：表示情况的变化 The particle “le 了” at the end of a sentence (1): Expressing a change of state",
   "source": "Textbook units 8–10, PDF p. 36",
@@ -3393,6 +3457,7 @@
  },
  {
   "point": "连动句(2)：表示方式 · Serial verbs (means)",
+  "name": "How something is done",
   "lesson": 9,
   "title": "2. 连动句（2）：表示方式 Sentences with serial verb phrases (2): Expressing means or manner",
   "source": "Textbook units 8–10, PDF p. 38",
@@ -3435,6 +3500,7 @@
  },
  {
   "point": "能愿动词(3)：会、可能 · Auxiliaries 会 / 可能",
+  "name": "“Can” and “might”",
   "lesson": 9,
   "title": "3. 能愿动词谓语句（3）：会、可能 Sentences with auxiliary verbs (3): “huì 会” (can; to be able to) and “kěnéng 可能” (to be possible)",
   "source": "Textbook units 8–10, PDF p. 39",
@@ -3528,6 +3594,7 @@
  },
  {
   "point": "疑问代词(4)：怎么样 · Suggestions with 怎么样",
+  "name": "Making suggestions: “how about…?”",
   "lesson": 9,
   "title": "4. 用疑问代词的问句（4）：怎么样 Questions with an interrogative pronoun (4): “zěnmeyàng 怎么样” (What is it/are they like...? / How about...?)",
   "source": "Textbook units 8–10, PDF p. 40",
@@ -3564,6 +3631,7 @@
  },
  {
   "point": "Notes L9 · 太……了",
+  "name": "“Too …!”",
   "lesson": 9,
   "title": "④ 可是（飞）机票太贵了。 But the plane ticket is too expensive.",
   "source": "Textbook units 8–10, PDF p. 31",
@@ -3614,6 +3682,7 @@
  },
  {
   "point": "Notes L9 · 快……了",
+  "name": "“About to …”",
   "lesson": 9,
   "title": "快……了 · “almost / about to”",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Expressing \"about to happen\" with \"le\"” — not from the textbook",
@@ -3698,6 +3767,7 @@
  },
  {
   "point": "Notes L9 · 最",
+  "name": "Superlatives: “the most”",
   "lesson": 9,
   "title": "② 秋天是北京最好的季节。 Autumn is the best season in Beijing.",
   "source": "Textbook units 8–10, PDF p. 31",
@@ -3755,6 +3825,7 @@
  },
  {
   "point": "Usage · 会 (probability)",
+  "name": "“Will / be likely to”",
   "lesson": 9,
   "title": "会 · “will / be likely to”",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Expressing \"will\" with \"hui\"” — not from the textbook",
@@ -3840,6 +3911,7 @@
  },
  {
   "point": "句尾“了”(2)：已经发生 · 了 for something that has happened",
+  "name": "Something that has happened",
   "lesson": 10,
   "title": "1. 助词“了”在句尾（2）：肯定事情的发生或实现 The particle “le 了” at the end of a sentence (2): Confirming that something has happened",
   "source": "Textbook units 8–10, PDF p. 61–62",
@@ -3963,6 +4035,7 @@
  },
  {
   "point": "兼语句 · Pivotal sentences (请 / 让)",
+  "name": "Asking or letting someone do something",
   "lesson": 10,
   "title": "2. 兼语句 Pivotal sentences",
   "source": "Textbook units 8–10, PDF p. 63–64",
@@ -4040,6 +4113,7 @@
  },
  {
   "point": "……，是不是？ · Questions with 是不是",
+  "name": "Checking: “…, isn't it?”",
   "lesson": 10,
   "title": "3. 用“……，是不是？”提问 Questions with “……, shì bu shì 是不是？”",
   "source": "Textbook units 8–10, PDF p. 65–66",
@@ -4100,6 +4174,7 @@
  },
  {
   "point": "Notes L10 · 问……好",
+  "name": "Sending regards",
   "lesson": 10,
   "title": "② 她让我问你们好。 She asked me to send you her regards.",
   "source": "Textbook units 8–10, PDF p. 60",
@@ -4133,6 +4208,7 @@
  },
  {
   "point": "Notes L10 · 会 + 了",
+  "name": "New abilities",
   "lesson": 10,
   "title": "③ 我现在会用汉语词典了，也会上中文网了。 Now I can use a Chinese dictionary and read web pages in Chinese.",
   "source": "Textbook units 8–10, PDF p. 60",
@@ -4188,6 +4264,7 @@
  },
  {
   "point": "情态补语 · Modal complement (V得)",
+  "name": "Describing how an action is done",
   "lesson": 11,
   "title": "1.情态补语（1）The modal complement",
   "source": "Lesson 11 A (slides), p. 33–47",
@@ -4337,6 +4414,7 @@
  },
  {
   "point": "动词重叠 · Verb reduplication",
+  "name": "Doing something a little",
   "lesson": 11,
   "title": "2.动词重叠 Verb reduplication",
   "source": "Lesson 11 A (slides), p. 48–52",
@@ -4453,6 +4531,7 @@
  },
  {
   "point": "了 (after the verb) · Completed action",
+  "name": "Completed action",
   "lesson": 11,
   "title": "Particle “了” (after the verb)",
   "source": "Lesson 11 B (slides), p. 29–33",
@@ -4538,6 +4617,7 @@
  },
  {
   "point": "Usage L11 · 从……到……",
+  "name": "“From … to …”",
   "lesson": 11,
   "title": "从 cóng From",
   "source": "Lesson 11 A (slides), p. 13, 60",
@@ -4610,6 +4690,7 @@
  },
  {
   "point": "Usage L11 · 刚 / 刚才",
+  "name": "“Just” vs. “just now”",
   "lesson": 11,
   "title": "刚 / 刚才 · “just” vs. “just now”",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Comparing 刚 and 刚才” — not from the textbook",
@@ -4689,6 +4770,7 @@
  },
  {
   "point": "Usage L11 · 又 / 再",
+  "name": "“Again”: past vs. future",
   "lesson": 11,
   "title": "又 adv. again / once more　又… 了",
   "source": "Lesson 11 A (slides), p. 53, 61",
@@ -4754,6 +4836,7 @@
  },
  {
   "point": "Usage L11 · 该……了",
+  "name": "“It's time / someone's turn to…”",
   "lesson": 11,
   "title": "该……了 It's your turn",
   "source": "Lesson 11 A (slides), p. 54, 65",
@@ -4800,6 +4883,7 @@
  },
  {
   "point": "Usage L11 · 还可以",
+  "name": "“Not bad”",
   "lesson": 11,
   "title": "（我）吃得还可以。",
   "source": "Lesson 11 A (slides), p. 62",
@@ -4829,6 +4913,7 @@
  },
  {
   "point": "Usage L11 · 这么 / 那么",
+  "name": "“So …, such …”",
   "lesson": 11,
   "title": "这么 zhème so, such, so much",
   "source": "Lesson 11 B (slides), p. 13–15, 39",
@@ -4912,6 +4997,7 @@
  },
  {
   "point": "Usage L11 · 次",
+  "name": "Counting times",
   "lesson": 11,
   "title": "次 · Counting how many times (verbal measure word)",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Measure words for verbs” and “Comparing \"bian\" and \"ci\"” (AllSet Vocabulary Wiki) — not from the textbook",
@@ -5018,6 +5104,7 @@
  },
  {
   "point": "Usage L11 · 数 shǔ / shù",
+  "name": "Two readings of “count / number”",
   "lesson": 11,
   "title": "数 shǔ/shù",
   "source": "Lesson 11 A (slides), p. 25–26",
@@ -5068,6 +5155,7 @@
  },
  {
   "point": "Usage L11 · 离合词 · Separable verbs",
+  "name": "Separable verbs",
   "lesson": 11,
   "title": "离合词 · Separable verbs (排队, 睡觉, 换钱…)",
   "source": "Lesson 11 A (slides), p. 8 (排队); general rules from the Chinese Grammar Wiki (AllSet Learning), “Separable verb” — not from the textbook",
@@ -5156,6 +5244,7 @@
  },
  {
   "point": "Usage L11 · Reading amounts of money",
+  "name": "Reading amounts of money",
   "lesson": 11,
   "title": "如何读“钱”？",
   "source": "Lesson 11 A (slides), p. 67–68",
@@ -5201,6 +5290,7 @@
  },
  {
   "point": "结果补语 · Complement of result",
+  "name": "Result of an action",
   "lesson": 12,
   "title": "1.结果补语 The resultative complement",
   "source": "Lesson 12 A (slides), p. 34–41",
@@ -5358,6 +5448,7 @@
  },
  {
   "point": "V + 在 / 到 + place · Complement of place",
+  "name": "Where an action ends up",
   "lesson": 12,
   "title": "方位补语 · 动作 + 位置 + 方向",
   "source": "Lesson 12 B (slides), p. 29; Lesson 12 A, p. 34–35, 39",
@@ -5414,6 +5505,7 @@
  },
  {
   "point": "简单趋向补语 · Directional complement (来 / 去)",
+  "name": "Coming and going (direction)",
   "lesson": 12,
   "title": "The simple directional complement",
   "source": "Lesson 12 B (slides), p. 30–37",
@@ -5525,6 +5617,7 @@
  },
  {
   "point": "副词“就” · 就 = right away",
+  "name": "“Right away”",
   "lesson": 12,
   "title": "The adverb “就”",
   "source": "Lesson 12 B (slides), p. 41–42",
@@ -5606,6 +5699,7 @@
  },
  {
   "point": "……以后 / ……以前",
+  "name": "“After …” / “before …”",
   "lesson": 12,
   "title": "time word / a phrase + 以后/以前",
   "source": "Lesson 12 A (slides), p. 17",
@@ -5650,6 +5744,7 @@
  },
  {
   "point": "Usage L12 · 左右",
+  "name": "“About, around” (after a number)",
   "lesson": 12,
   "title": "左右 zuǒ yòu · Numeral-measure word compound + 左右",
   "source": "Lesson 12 A (slides), p. 15–16",
@@ -5716,6 +5811,7 @@
  },
  {
   "point": "Usage L12 · 一般 / 常常",
+  "name": "“Usually” vs. “often”",
   "lesson": 12,
   "title": "一般 yībān adj./adv.",
   "source": "Lesson 12 A (slides), p. 19–20",
@@ -5796,6 +5892,7 @@
  },
  {
   "point": "Usage L12 · 得 děi",
+  "name": "“Must, have to”",
   "lesson": 12,
   "title": "得 děi must aux.v.",
   "source": "Lesson 12 A (slides), p. 26; Lesson 12 B, p. 8",
@@ -5860,6 +5957,7 @@
  },
  {
   "point": "Usage L12 · 称",
+  "name": "Weighing and calling",
   "lesson": 12,
   "title": "称 chēng/chèng/chèn V./N.",
   "source": "Lesson 12 A (slides), p. 21",
@@ -5906,6 +6004,7 @@
  },
  {
   "point": "Usage L12 · 遍 / 次",
+  "name": "Counting times: whole run-throughs",
   "lesson": 12,
   "title": "遍 biàn m.w.",
   "source": "Lesson 12 A (slides), p. 14",
@@ -5952,6 +6051,7 @@
  },
  {
   "point": "Usage L12 · 以为",
+  "name": "“I thought (wrongly)…”",
   "lesson": 12,
   "title": "以为 yǐwéi “to believe that” “to think that”",
   "source": "Lesson 12 B (slides), p. 19–20",
@@ -6005,6 +6105,7 @@
  },
  {
   "point": "Usage L12 · 替",
+  "name": "“For, instead of”",
   "lesson": 12,
   "title": "替 tì for/instead of",
   "source": "Lesson 12 B (slides), p. 12",
@@ -6048,6 +6149,7 @@
  },
  {
   "point": "Usage L12 · 专门",
+  "name": "“Specially, on purpose”",
   "lesson": 12,
   "title": "专门 zhuānmén Adv.",
   "source": "Lesson 12 B (slides), p. 2",
@@ -6089,6 +6191,7 @@
  },
  {
   "point": "Usage L12 · 一定 / 不一定",
+  "name": "“Definitely” / “not necessarily”",
   "lesson": 12,
   "title": "一定 yīdìng",
   "source": "Lesson 12 B (slides), p. 5",
@@ -6160,6 +6263,7 @@
  },
  {
   "point": "Usage L12 · Suffix 员",
+  "name": "Job suffix (-er, -ist)",
   "lesson": 12,
   "title": "员 yuán personal “affix” employee",
   "source": "Lesson 12 B (slides), p. 10–11",
@@ -6237,6 +6341,7 @@
  },
  {
   "point": "“把”字句 · 把 sentences (inferred)",
+  "name": "Doing something to an object",
   "lesson": 13,
   "title": "把 · The 把 construction",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Using \"ba\" sentences” — not from the textbook",
@@ -6350,6 +6455,7 @@
  },
  {
   "point": "才 / 就 · Late / early (inferred)",
+  "name": "Later / earlier than expected",
   "lesson": 13,
   "title": "才 / 就 · Later vs. earlier than expected",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Comparing \"cai\" and \"jiu\"” (also “Expressing lateness with \"cai\"” and “Expressing earliness with \"jiu\"”) — not from the textbook",
@@ -6445,6 +6551,7 @@
  },
  {
   "point": "时量补语 · Complement of duration (inferred)",
+  "name": "How long an action lasts",
   "lesson": 13,
   "title": "时量补语 · How long an action lasts (duration complement)",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Expressing duration with \"le\"” (also “Separable verb” and “Expressing duration”) — not from the textbook",
@@ -6560,6 +6667,7 @@
  },
  {
   "point": "一会儿 · A little while (inferred)",
+  "name": "A little while",
   "lesson": 13,
   "title": "一会儿 · A little while",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Expressing duration with \"le\"” (also “Expressing \"again\" in the future with \"zai\"” and “Expressing earliness with \"jiu\"”) — not from the textbook",
@@ -6642,6 +6750,7 @@
  },
  {
   "point": "又……又…… (inferred)",
+  "name": "“Both … and …”",
   "lesson": 13,
   "title": "又……又…… · Both … and …",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Expressing \"both A and B\" with \"you\"” — not from the textbook",
@@ -6707,6 +6816,7 @@
  },
  {
   "point": "Duration + 了 … 了 (inferred)",
+  "name": "“Have been … for (so far)”",
   "lesson": 13,
   "title": "了…了 · Ongoing duration (“have been … for”)",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Expressing ongoing duration with double \"le\"” — not from the textbook",
@@ -6795,6 +6905,7 @@
  },
  {
   "point": "Usage L13 · 后来 / 以后",
+  "name": "“Later on” vs. “after”",
   "lesson": 13,
   "title": "后来 hòulái n. / 后来 vs 以后",
   "source": "Lesson 13 B1 (slides), p. 10–12",
@@ -6851,6 +6962,7 @@
  },
  {
   "point": "Usage L13 · 穿 / 戴",
+  "name": "Wearing clothes and accessories",
   "lesson": 13,
   "title": "穿 chuān / 戴 dài v.",
   "source": "Lesson 13 B1 (slides), p. 20–21",
@@ -6889,6 +7001,7 @@
  },
  {
   "point": "Usage L13 · 趟",
+  "name": "Counting trips",
   "lesson": 13,
   "title": "趟 tàng m.",
   "source": "Lesson 13 B1 (slides), p. 6, 9",
@@ -6931,6 +7044,7 @@
  },
  {
   "point": "Usage L13 · 聊天儿",
+  "name": "Chatting",
   "lesson": 13,
   "title": "聊天儿 liáo tiānr v.",
   "source": "Lesson 13 B1 (slides), p. 13, 18",
@@ -6982,6 +7096,7 @@
  },
  {
   "point": "Usage L13 · 总是",
+  "name": "“Always”",
   "lesson": 13,
   "title": "总是 zǒngshì adv.",
   "source": "Lesson 13 B1 (slides), p. 15, 18",
@@ -7014,6 +7129,7 @@
  },
  {
   "point": "Usage L13 · 遇到 / 遇见",
+  "name": "Running into someone",
   "lesson": 13,
   "title": "遇 yù v. · 遇到 / 遇见",
   "source": "Lesson 13 B1 (slides), p. 16, 18",
@@ -7051,6 +7167,7 @@
  },
  {
   "point": "Usage L13 · 大概",
+  "name": "“About, probably”",
   "lesson": 13,
   "title": "大概 dàgài adv.",
   "source": "Lesson 13 B1 (slides), p. 22, 25",
@@ -7091,6 +7208,7 @@
  },
  {
   "point": "Usage L13 · 方便",
+  "name": "Convenient / available",
   "lesson": 13,
   "title": "方便 fāngbiàn adj.",
   "source": "Lesson 13 B1 (slides), p. 26, 30",
@@ -7128,6 +7246,7 @@
  },
  {
   "point": "Usage L13 · 坏 / 断",
+  "name": "Broken vs. cut off",
   "lesson": 13,
   "title": "坏 huài / 断 duàn",
   "source": "Lesson 13 B1 (slides), p. 27–28, 30",
@@ -7173,6 +7292,7 @@
  },
  {
   "point": "Usage L13 · 接",
+  "name": "Picking up, answering",
   "lesson": 13,
   "title": "接 jiē v.",
   "source": "Lesson 13 B1 (slides), p. 29, 30",
@@ -7210,6 +7330,7 @@
  },
  {
   "point": "Usage L13 · 无聊",
+  "name": "Bored, boring",
   "lesson": 13,
   "title": "无聊 wúliáo adj.",
   "source": "Lesson 13 B1 (slides), p. 14, 30",
@@ -7241,6 +7362,7 @@
  },
  {
   "point": "Usage L13 · 顺利",
+  "name": "Going smoothly",
   "lesson": 13,
   "title": "顺利 shùnlì adj.",
   "source": "Lesson 13 B1 (slides), p. 8, 9",
@@ -7277,6 +7399,7 @@
  },
  {
   "point": "Usage L13 · 走",
+  "name": "Walking and leaving",
   "lesson": 13,
   "title": "走 zǒu v.",
   "source": "Lesson 13 B1 (slides), p. 17, 18",
@@ -7316,6 +7439,7 @@
  },
  {
   "point": "“比”字句 · Comparison with 比 (inferred)",
+  "name": "Comparisons: “more … than”",
   "lesson": 14,
   "title": "比 · Comparisons (“more … than”)",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Basic comparisons with \"bi\"” — not from the textbook",
@@ -7417,6 +7541,7 @@
  },
  {
   "point": "的字结构 · Nominalizing 的 (inferred)",
+  "name": "“The … one”",
   "lesson": 14,
   "title": "的字结构 · “The … one” (的 without a noun)",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Modifying nouns with adjective + \"de\"” — not from the textbook",
@@ -7489,6 +7614,7 @@
  },
  {
   "point": "Adj + 一点儿 / 有点儿 + Adj (inferred)",
+  "name": "“A bit more” vs. “a bit too”",
   "lesson": 14,
   "title": "一点儿 / 有点儿 · “a bit more” vs. “a bit too”",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Comparing \"youdian\" and \"yidian\"” — not from the textbook",
@@ -7568,6 +7694,7 @@
  },
  {
   "point": "或者 / 还是 (inferred)",
+  "name": "Two ways to say “or”",
   "lesson": 14,
   "title": "或者 / 还是 · Two ways to say “or”",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Comparing \"haishi\" and \"huozhe\"” — not from the textbook",
@@ -7645,6 +7772,7 @@
  },
  {
   "point": "Comparison with 没有 (inferred)",
+  "name": "“Not as … as”",
   "lesson": 14,
   "title": "没有 (那么) · “not as … as”",
   "source": "Chinese Grammar Wiki (AllSet Learning), “Basic comparisons with \"meiyou\"” — not from the textbook",

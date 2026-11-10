@@ -161,6 +161,7 @@ type GrammarPattern = { label: string; formula: string; examples: string[] };
 type GrammarExample = { zh: string; pinyin: string; es: string };
 type GrammarEntry = {
   point: string;
+  name?: string;
   lesson: number;
   missing?: boolean;
   reason?: string;
@@ -177,6 +178,11 @@ type GrammarEntry = {
 const grammarByPoint = new Map(
   (grammarData as GrammarEntry[]).map((entry) => [`${entry.lesson}|${entry.point}`, entry])
 );
+
+// English name shown while practising, so the Chinese point name doesn't give the answer away.
+function pointName(lesson: number, point: string) {
+  return grammarByPoint.get(`${lesson}|${point}`)?.name ?? point;
+}
 
 function shuffled<T>(items: T[]): T[] {
   const copy = [...items];
@@ -636,7 +642,7 @@ function LessonDetail({
                   className="ghostButton"
                   onClick={() =>
                     onStart(
-                      { kind: "point", lesson, point, label: point },
+                      { kind: "point", lesson, point, label: pointName(lesson, point) },
                       pointExercises.map((exercise) => exercise.id)
                     )
                   }
@@ -926,7 +932,7 @@ function ExerciseCard({
         .join(" ")}
     >
       <div className="phraseRowHeader">
-        <span className="entryTag exercisePointTag" title={exercise.point}>{exercise.point}</span>
+        <span className="entryTag exercisePointTag">{pointName(exercise.lesson, exercise.point)}</span>
         <span className="phraseCount">{lessonLabel(exercise.lesson)}</span>
       </div>
       <div className="exerciseInstructionRow">

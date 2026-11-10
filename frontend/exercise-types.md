@@ -103,9 +103,9 @@ them rare.
 These are what make the level feel right; keep them for new exercises.
 
 - **Say what to do, never which form to use.** "Turn it into a question", not
-  "Make a V不V question"; "Say it in Chinese", not "Use 把". The grammar point is shown on the
-  card, and its explanation is one click away, so the learner knows the topic but still has to
-  produce the form.
+  "Make a V不V question"; "Say it in Chinese", not "Use 把". The grammar point's English
+  name is shown on the card, and its explanation is one click away, so the learner knows the
+  topic but still has to produce the form.
 - **No hints in gaps.** Gaps have no placeholder hint and no answer buttons, and every gap has
   the same width, so its size doesn't give away the answer's length.
 - **No tips in prompts** such as "(use 差)" or "(with a directional complement)". If a prompt
@@ -240,6 +240,9 @@ One entry per `lesson` + `point`, shown by the card's **Show grammar** button:
   Learning), in our own words, with `sourceUrl` / `sourceUrls` linking the articles used. Any
   entry using AllSet content must link to it.
 - A new grammar point needs a `grammar.json` entry, or the panel says there is no explanation.
+- Every entry has a `name`: a short English name with no Chinese, shown on the exercise card
+  and as the label of a point session instead of `point`, so it can't give the answer away
+  ("Convenient / available", not "方便"). Describe the meaning or function, never the word.
 
 ## Checklist for new exercises
 
