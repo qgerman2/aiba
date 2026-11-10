@@ -108,7 +108,7 @@ python3 -m venv backend/venv
 backend/venv/bin/pip install "psycopg[binary]" soundfile
 ```
 
-Regenerate the static bundle (`docs/`, used by GitHub Pages). Export replaces the bundle with what's in Postgres, so on a fresh database import first:
+Regenerate the static bundle (`docs/`, used by GitHub Pages). Export replaces the bundle with what's in Postgres, so on a fresh database import first. Export converts WAV audio to MP3 to keep the bundle small, and import decodes it back to WAV:
 
 ```bash
 cd frontend

@@ -9,6 +9,7 @@ from pathlib import Path
 from uuid import UUID
 
 import psycopg
+import soundfile as sf
 from psycopg.rows import dict_row
 
 
@@ -47,9 +48,15 @@ def copy_static_file(run_id: str, file_record: dict) -> dict:
 
     destination_dir = ASSET_DIR / run_id
     destination_dir.mkdir(parents=True, exist_ok=True)
-    suffix = source.suffix or ".bin"
-    destination = destination_dir / f"{file_record['file_kind']}{suffix}"
-    shutil.copy2(source, destination)
+    suffix = source.suffix.lower() or ".bin"
+    if file_record["file_kind"] == "audio" and suffix == ".wav":
+        # WAV is ~10x larger than MP3; the bundle only needs it for playback.
+        destination = destination_dir / "audio.mp3"
+        data, samplerate = sf.read(source, dtype="int16")
+        sf.write(destination, data, samplerate, format="MP3", subtype="MPEG_LAYER_III")
+    else:
+        destination = destination_dir / f"{file_record['file_kind']}{suffix}"
+        shutil.copy2(source, destination)
 
     return {
         **file_record,

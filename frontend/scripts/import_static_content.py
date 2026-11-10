@@ -33,6 +33,16 @@ def restore_media_file(run_id: str, file_record: dict) -> bool:
 
     if destination.exists():
         return True
+
+    # The export ships WAV audio as MP3; decode it back so the backend gets the WAV it expects.
+    transcoded = static_dir / "audio.mp3"
+    if not source.is_file() and file_record["file_kind"] == "audio" and suffix.lower() == ".wav":
+        if transcoded.is_file():
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            data, samplerate = sf.read(transcoded, dtype="int16")
+            sf.write(destination, data, samplerate, format="WAV", subtype="PCM_16")
+            return True
+
     if not source.is_file():
         print(f"  WARNING: missing static asset for {run_id} ({file_record['file_kind']})")
         return False
