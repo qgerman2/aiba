@@ -220,6 +220,9 @@ These are what make the level feel right; keep them for new exercises.
   来/去, 朋友's 友…) may be toneless. A wrong tone or fully toneless answer is still wrong.
 - **Try again**: after a miss the learner can edit and re-check. The first attempt is the
   score; retries are logged (`retries`, `retryCorrect`, `retryResponse`).
+- **Previous**: during a session the learner can step back through earlier exercises. They are
+  shown read-only, as answered (response, verdict, retry), and can't be re-answered, so the
+  logged results never change.
 - **"My answer was also right"** (text mode) marks a miss as correct and logs `overridden`.
   If learners use it often on an exercise, its `accepted` list is missing variants.
 

@@ -697,6 +697,12 @@ function SessionRunner({
   const shownIndex = feedback || retrying ? index - 1 : index;
   const exercise = exerciseById.get(session.exerciseIds[shownIndex]) ?? null;
   const shownAtRef = useRef(Date.now());
+  // Going back shows an already answered exercise read-only; the live card stays mounted underneath.
+  const [reviewIndex, setReviewIndex] = useState<number | null>(null);
+  const reviewStartedAtRef = useRef(0);
+  const position = reviewIndex ?? shownIndex;
+  const reviewResult = reviewIndex === null ? null : session.results[reviewIndex];
+  const reviewExercise = reviewResult ? exerciseById.get(reviewResult.exerciseId) ?? null : null;
   const total = session.exerciseIds.length;
   const correct = correctCount(session);
 
@@ -724,6 +730,23 @@ function SessionRunner({
     setFeedback(result);
   }
 
+  function back() {
+    if (position === 0) return;
+    if (reviewIndex === null) reviewStartedAtRef.current = Date.now();
+    setReviewIndex(position - 1);
+  }
+
+  function reviewNext() {
+    if (reviewIndex === null) return;
+    if (reviewIndex + 1 < shownIndex) {
+      setReviewIndex(reviewIndex + 1);
+      return;
+    }
+    // Back on the live card: time spent reviewing doesn't count towards its answer time.
+    shownAtRef.current += Date.now() - reviewStartedAtRef.current;
+    setReviewIndex(null);
+  }
+
   function next() {
     setFeedback(null);
     setRetrying(false);
@@ -736,8 +759,11 @@ function SessionRunner({
       <div className="pageHeader">
         <div>
           <p className="label">{session.scope.label}</p>
-          <h1>Exercise {shownIndex + 1} of {total}</h1>
+          <h1>Exercise {position + 1} of {total}</h1>
         </div>
+        <button type="button" className="ghostButton" onClick={back} disabled={position === 0}>
+          Previous
+        </button>
       </div>
 
       <div className="progressTrack" aria-hidden="true">
@@ -748,22 +774,39 @@ function SessionRunner({
         <span>{index - correct} missed</span>
       </div>
 
-      <ExerciseCard
-        key={`${exercise.id}-${shownIndex}`}
-        exercise={exercise}
-        feedback={feedback}
-        onSubmit={submit}
-        onOverride={() => {
-          onOverride();
-          setFeedback((current) => (current ? { ...current, correct: true } : current));
-        }}
-        onNext={next}
-        onRetry={() => {
-          setRetrying(true);
-          setFeedback(null);
-        }}
-        readAloud={readAloud}
-      />
+      {reviewResult && reviewExercise && (
+        <ExerciseCard
+          key={`review-${reviewIndex}`}
+          exercise={reviewExercise}
+          review={reviewResult}
+          feedback={{ correct: reviewResult.correct, response: reviewResult.response }}
+          onSubmit={() => {}}
+          onOverride={() => {}}
+          onNext={reviewNext}
+          onRetry={() => {}}
+          readAloud={false}
+        />
+      )}
+
+      <div hidden={reviewIndex !== null}>
+        <ExerciseCard
+          key={`${exercise.id}-${shownIndex}`}
+          exercise={exercise}
+          active={reviewIndex === null}
+          feedback={feedback}
+          onSubmit={submit}
+          onOverride={() => {
+            onOverride();
+            setFeedback((current) => (current ? { ...current, correct: true } : current));
+          }}
+          onNext={next}
+          onRetry={() => {
+            setRetrying(true);
+            setFeedback(null);
+          }}
+          readAloud={readAloud}
+        />
+      </div>
 
       <div className="playerHeaderActions playerBottomActions">
         <label className="switchControl" title="Read the sentence aloud after checking">
@@ -785,8 +828,26 @@ function SessionRunner({
   );
 }
 
+// Tile indices that spell out a saved tiles response, so a reviewed card shows it as built.
+function placedFromResponse(tiles: string[], response: string): number[] {
+  const placed: number[] = [];
+  let position = 0;
+  while (position < response.length) {
+    const match = tiles
+      .map((tile, index) => ({ tile, index }))
+      .filter(({ tile, index }) => !placed.includes(index) && response.startsWith(tile, position))
+      .sort((a, b) => b.tile.length - a.tile.length)[0];
+    if (!match) return [];
+    placed.push(match.index);
+    position += match.tile.length;
+  }
+  return placed;
+}
+
 function ExerciseCard({
   exercise,
+  review,
+  active = true,
   feedback,
   onSubmit,
   onOverride,
@@ -795,6 +856,10 @@ function ExerciseCard({
   readAloud
 }: {
   exercise: Exercise;
+  // A result from earlier in the session: the card is shown read-only, as it was answered.
+  review?: SessionResult;
+  // False while hidden behind a reviewed card, so it ignores the keyboard.
+  active?: boolean;
   feedback: Feedback | null;
   onSubmit: (result: Feedback & { revealed?: boolean }) => void;
   onOverride: () => void;
@@ -802,14 +867,19 @@ function ExerciseCard({
   onRetry: () => void;
   readAloud: boolean;
 }) {
-  const [gapValues, setGapValues] = useState<string[]>(() =>
-    exercise.mode === "cloze" ? exercise.gaps.map(() => "") : []
+  const saved = review && !review.revealed ? review.response : "";
+  const [gapValues, setGapValues] = useState<string[]>(() => {
+    if (exercise.mode !== "cloze") return [];
+    const values = saved ? saved.split(" / ") : [];
+    return exercise.gaps.map((_, index) => values[index] ?? "");
+  });
+  const [text, setText] = useState(exercise.mode === "text" ? saved : "");
+  const [placed, setPlaced] = useState<number[]>(() =>
+    exercise.mode === "tiles" && saved ? placedFromResponse(exercise.tiles, saved) : []
   );
-  const [text, setText] = useState("");
-  const [placed, setPlaced] = useState<number[]>([]);
-  const [choice, setChoice] = useState<string | null>(null);
-  const [revealed, setRevealed] = useState(false);
-  const [overridden, setOverridden] = useState(false);
+  const [choice, setChoice] = useState<string | null>(exercise.mode === "choice" && saved ? saved : null);
+  const [revealed, setRevealed] = useState(Boolean(review && exercise.mode === "reveal"));
+  const [overridden, setOverridden] = useState(Boolean(review?.overridden));
   const [showGrammar, setShowGrammar] = useState(false);
   const checkingRef = useRef(false);
   const voice = useChineseVoice();
@@ -821,12 +891,13 @@ function ExerciseCard({
   );
 
   useEffect(() => {
+    if (!active) return;
     if (feedback) {
       nextButtonRef.current?.focus();
     } else {
       firstInputRef.current?.focus();
     }
-  }, [feedback]);
+  }, [feedback, active]);
 
   const answered = feedback !== null;
 
@@ -896,7 +967,7 @@ function ExerciseCard({
   // Enter checks / advances even when focus was lost (e.g. a placed tile got disabled).
   const enterHandlerRef = useRef<(event: globalThis.KeyboardEvent) => void>(() => {});
   enterHandlerRef.current = (event) => {
-    if (event.key !== "Enter" || event.isComposing || event.repeat) return;
+    if (!active || event.key !== "Enter" || event.isComposing || event.repeat) return;
     // Action buttons (Next, I knew it…) handle Enter themselves; answer chips don't.
     if (event.target instanceof HTMLButtonElement && !event.target.classList.contains("tagChip")) return;
     if (exercise.mode === "reveal" && revealed && !answered) return;
@@ -1171,14 +1242,25 @@ function ExerciseCard({
                   : "Answer:"}
             </p>
           )}
+          {review && exercise.mode === "reveal" && (
+            <p className={feedback.correct ? "successText exerciseVerdict" : "errorText exerciseVerdict"}>
+              {feedback.correct ? "You knew it." : "You missed it."}
+            </p>
+          )}
+          {review?.retries ? (
+            <p className="entryMeta exerciseSubtle">
+              Retried: {review.retryCorrect ? "got it right" : "still missed"}
+              {review.retryResponse ? ` (${review.retryResponse})` : ""}.
+            </p>
+          ) : null}
           <AnswerPanel exercise={exercise} />
           <div className="phraseNav exerciseActions">
-            {!feedback.correct && exercise.mode !== "reveal" && (
+            {!review && !feedback.correct && exercise.mode !== "reveal" && (
               <button type="button" className="ghostButton" onClick={onRetry}>
                 Try again
               </button>
             )}
-            {!feedback.correct && feedback.response && exercise.mode === "text" && !overridden && !feedback.retried && (
+            {!review && !feedback.correct && feedback.response && exercise.mode === "text" && !overridden && !feedback.retried && (
               <button
                 type="button"
                 className="ghostButton"
